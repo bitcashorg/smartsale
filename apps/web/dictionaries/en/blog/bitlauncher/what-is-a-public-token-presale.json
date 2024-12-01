@@ -2,11 +2,7 @@
   "relatedBlogs": [
     {
       "id": "W8caLxKNTdahoemkXQT_sg",
-      "topics": [
-        "how_to",
-        "launchpad",
-        "dao"
-      ],
+      "topics": ["how_to", "launchpad", "dao"],
       "title": "Welcome to the Bitlauncher Presale Starting September 16th!",
       "slug": "welcome-to-the-bitlauncher-presale-starting-september-16th",
       "authorName": "Jun Dam",
@@ -33,11 +29,7 @@
     },
     {
       "id": "ecAGoOkaROa09DcoVKyOCA",
-      "topics": [
-        "dao",
-        "analysis",
-        "launchpad"
-      ],
+      "topics": ["dao", "analysis", "launchpad"],
       "title": "What is the Bitlauncher ($BL) Token?",
       "slug": "what-is-the-bitlauncher-bl-token",
       "authorName": "Jun Dam",
@@ -65,11 +57,7 @@
   ],
   "blogContent": {
     "id": "TBAOoPr9SPihQxeeKTGUQw",
-    "topics": [
-      "launchpad",
-      "investment",
-      "fundraising"
-    ],
+    "topics": ["launchpad", "investment", "fundraising"],
     "title": "What is a Public Token Presale?",
     "slug": "what-is-a-public-token-presale",
     "authorName": "Jun Dam",
@@ -140,9 +128,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "public token presale"
                     },
                     {
@@ -163,9 +149,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Raising Pre-Launch Capital:"
                             },
                             {
@@ -184,9 +168,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Gauging Interest and Building Community:"
                             },
                             {
@@ -234,9 +216,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Fixed Price Offering:"
                             },
                             {
@@ -255,9 +235,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Early Access Incentives:"
                             },
                             {
@@ -276,9 +254,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Limited Availability:"
                             },
                             {
@@ -335,9 +311,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Presale Details:"
                             },
                             {
@@ -356,9 +330,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Secure and Compliant:"
                             },
                             {
@@ -377,9 +349,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Conversion and Future Use:"
                             },
                             {
@@ -436,9 +406,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Ground-Floor Investment Opportunity:"
                             },
                             {
@@ -457,9 +425,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Potential for Significant Returns:"
                             },
                             {
@@ -478,9 +444,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Direct Impact on Project Success:"
                             },
                             {
@@ -568,10 +532,6 @@
       }
     }
   },
-  "topics": [
-    "launchpad",
-    "investment",
-    "fundraising"
-  ],
+  "topics": ["launchpad", "investment", "fundraising"],
   "shortLink": ""
 }

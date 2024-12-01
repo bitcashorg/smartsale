@@ -2,11 +2,7 @@
   "relatedBlogs": [],
   "blogContent": {
     "id": "180403467",
-    "topics": [
-      "LLM",
-      "RLHF",
-      "Summary"
-    ],
+    "topics": ["LLM", "RLHF", "Summary"],
     "title": "Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback [Summary]",
     "slug": "open-problems-and-fundamental-limitations-of-reinforcement-learning-from-human-fe",
     "authorName": "Prof. Otto Nomos",
@@ -31,9 +27,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Original Link: "
                     },
                     {
@@ -54,9 +48,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Introduction"
                     }
                   ]
@@ -75,9 +67,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Key Insight:"
                     }
                   ]
@@ -96,9 +86,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Actionable Advice:"
                     }
                   ]
@@ -141,9 +129,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 2: Background and Notation"
                     }
                   ]
@@ -162,9 +148,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Key Insight:"
                     }
                   ]
@@ -183,9 +167,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Actionable Advice:"
                     }
                   ]
@@ -228,9 +210,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 3: Open Problems and Limitations of RLHF"
                     }
                   ]
@@ -258,9 +238,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Key Insight:"
                     }
                   ]
@@ -279,9 +257,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Actionable Advice:"
                     }
                   ]
@@ -324,9 +300,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Addressing Challenges with RLHF"
                     }
                   ]
@@ -345,9 +319,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Key Insight:"
                     }
                   ]
@@ -366,9 +338,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Actionable Advice:"
                     }
                   ]
@@ -411,9 +381,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 4: Incorporating RLHF into a Broader Framework for Safer AI"
                     }
                   ]
@@ -441,9 +409,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Key Insight:"
                     }
                   ]
@@ -462,9 +428,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Actionable Advice:"
                     }
                   ]
@@ -507,9 +471,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 5: Governance and Transparency"
                     }
                   ]
@@ -546,9 +508,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Key Insight:"
                     }
                   ]
@@ -567,9 +527,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Actionable Advice:"
                     }
                   ]
@@ -612,9 +570,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 6: Discussion"
                     }
                   ]
@@ -633,9 +589,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Key Insight:"
                     }
                   ]
@@ -654,9 +608,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Actionable Advice:"
                     }
                   ]
@@ -700,10 +652,6 @@
       }
     }
   },
-  "topics": [
-    "LLM",
-    "RLHF",
-    "Summary"
-  ],
+  "topics": ["LLM", "RLHF", "Summary"],
   "shortLink": ""
 }

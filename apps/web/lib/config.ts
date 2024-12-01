@@ -1,4 +1,4 @@
-import { loadEnvConfig } from '@repo/config'
+import { loadEnvConfig } from '@smartsale/config'
 
 const appEnv = process.env.NEXT_PUBLIC_APP_ENV || 'dev'
 

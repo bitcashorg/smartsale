@@ -2,8 +2,8 @@
 
 import { handleAxiosError } from '@/lib/utils'
 import { createSupabaseServerClient } from '@/services/supabase'
-import { presaleInsertSchema } from '@repo/supabase'
-import { fromEntries } from '@repo/utils'
+import { presaleInsertSchema } from '@smartsale/supabase'
+import { fromEntries } from '@smartsale/utils'
 import axios from 'axios'
 import { cookies } from 'next/headers'
 import { Resend } from 'resend'
@@ -88,18 +88,18 @@ async function getCookieData() {
   return new Promise((resolve) =>
     setTimeout(() => {
       resolve(cookieData)
-    }, 1000)
+    }, 1000),
   )
 }
 
 // generate dub.co links
 export async function generateShortLink(url: string, withCookies = true) {
-  let cookieStorage: ReturnType<typeof cookies>;
-  let getShareLinkCookies: { value: string } | undefined;
-  
+  let cookieStorage: ReturnType<typeof cookies>
+  let getShareLinkCookies: { value: string } | undefined
+
   try {
     if (withCookies) {
-      cookieStorage = await getCookieData() as ReturnType<typeof cookies>;
+      cookieStorage = (await getCookieData()) as ReturnType<typeof cookies>
       getShareLinkCookies = cookieStorage.get('bitlauncher-share-link')
 
       if (getShareLinkCookies?.value) {
@@ -112,23 +112,24 @@ export async function generateShortLink(url: string, withCookies = true) {
       }
     }
 
-    const resolved: DubShareLinkResponse = !getShareLinkCookies || !withCookies
-      ? await axios
-          .post(
-            `https://api.dub.co/links?workspaceId=${process.env.DUB_WORKSPACE_ID}`,
-            {
-              domain: 'bitcash.to',
-              url,
-            },
-            {
-              headers: {
-                Authorization: `Bearer ${process.env.DUB_API_KEY}`,
-                'Content-Type': 'application/json',
+    const resolved: DubShareLinkResponse =
+      !getShareLinkCookies || !withCookies
+        ? await axios
+            .post(
+              `https://api.dub.co/links?workspaceId=${process.env.DUB_WORKSPACE_ID}`,
+              {
+                domain: 'bitcash.to',
+                url,
               },
-            },
-          )
-          .then((res) => res.data)
-      : (JSON.parse(getShareLinkCookies.value) as DubShareLinkResponse)
+              {
+                headers: {
+                  Authorization: `Bearer ${process.env.DUB_API_KEY}`,
+                  'Content-Type': 'application/json',
+                },
+              },
+            )
+            .then((res) => res.data)
+        : (JSON.parse(getShareLinkCookies.value) as DubShareLinkResponse)
 
     if (!resolved) throw new Error('Failed to generate short link')
 

@@ -1,4 +1,4 @@
-import { eosEvmTestnet } from '@repo/chains'
+import { eosEvmTestnet } from '@smartsale/chains'
 import type { Chain } from 'viem'
 import type { EVMTokenContractData } from '../../types'
 

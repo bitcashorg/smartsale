@@ -2,11 +2,7 @@
   "relatedBlogs": [],
   "blogContent": {
     "id": "180928004",
-    "topics": [
-      "LLM",
-      "Tools",
-      "Commentary"
-    ],
+    "topics": ["LLM", "Tools", "Commentary"],
     "title": "ToolLLM: Facilitating Large Language Models To Master 16000+ Real-World APIs [Commentary]",
     "slug": "toolllm-facilitating-large-language-models-to-master-16000-real-world-apis-commen",
     "authorName": "Prof. Otto Nomos",
@@ -112,9 +108,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 2: Dataset Construction"
                     }
                   ]
@@ -133,9 +127,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "API Collection:"
                     },
                     {
@@ -149,9 +141,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Instruction Generation:"
                     },
                     {
@@ -165,9 +155,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Solution Path Annotation:"
                     },
                     {
@@ -181,9 +169,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Key Insights:"
                     },
                     {
@@ -197,9 +183,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Actionable Insights for AI Startups:"
                     }
                   ]
@@ -216,9 +200,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Leverage Existing LLMs for Data Construction:"
                             },
                             {
@@ -237,9 +219,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Collect Diverse APIs:"
                             },
                             {
@@ -258,9 +238,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Generate Diverse Instructions:"
                             },
                             {
@@ -279,9 +257,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Consider Multi-Tool Instructions:"
                             },
                             {
@@ -332,9 +308,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 3: Experiments"
                     }
                   ]
@@ -371,9 +345,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Key Insights:"
                     },
                     {
@@ -387,9 +359,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Actionable Insights for AI Startups:"
                     }
                   ]
@@ -406,9 +376,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Consider Machine Evaluators:"
                             },
                             {
@@ -427,9 +395,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Leverage Existing Models:"
                             },
                             {
@@ -448,9 +414,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Compare with Other Strategies:"
                             },
                             {
@@ -469,9 +433,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Focus on Pass Rate:"
                             },
                             {
@@ -522,9 +484,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 4: Related Work"
                     }
                   ]
@@ -567,9 +527,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 5: Conclusion"
                     }
                   ]
@@ -613,10 +571,6 @@
       }
     }
   },
-  "topics": [
-    "LLM",
-    "Tools",
-    "Commentary"
-  ],
+  "topics": ["LLM", "Tools", "Commentary"],
   "shortLink": ""
 }

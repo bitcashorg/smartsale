@@ -2,10 +2,7 @@
   "relatedBlogs": [],
   "blogContent": {
     "id": "190258686",
-    "topics": [
-      "Getting Started",
-      "Industry"
-    ],
+    "topics": ["Getting Started", "Industry"],
     "title": "Empowering the Future: Unfolding the Power of Large Language Models Across Industries",
     "slug": "empowering-the-future-unfolding-the-power-of-large-language-models-across-industr",
     "authorName": "Prof. Otto Nomos",
@@ -44,9 +41,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Large Language Models (LLMs)"
                     },
                     {
@@ -102,9 +97,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "LLMs: A Brief Overview"
                     }
                   ]
@@ -164,9 +157,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "The Transformative Power of LLMs in Content Creation"
                     }
                   ]
@@ -219,9 +210,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Establish your objectives:"
                             },
                             {
@@ -240,9 +229,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Collaborate, don't replace:"
                             },
                             {
@@ -261,9 +248,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Train, iterate, and improve:"
                             },
                             {
@@ -282,9 +267,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Monitor and measure:"
                             },
                             {
@@ -387,9 +370,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Identify the needs"
                             },
                             {
@@ -408,9 +389,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Train your model"
                             },
                             {
@@ -429,9 +408,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Go live, but monitor"
                             },
                             {
@@ -450,9 +427,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Collect feedback and iterate"
                             },
                             {
@@ -530,9 +505,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Healthcare"
                     },
                     {
@@ -546,9 +519,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Finance"
                     },
                     {
@@ -562,9 +533,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Education"
                     },
                     {
@@ -578,9 +547,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Law"
                     },
                     {
@@ -594,9 +561,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Retail"
                     },
                     {
@@ -674,9 +639,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "data privacy and security"
                     },
                     {
@@ -685,9 +648,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "bias in AI models"
                     },
                     {
@@ -705,9 +666,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "explaining AI decisions"
                     },
                     {
@@ -716,9 +675,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "ethical considerations"
                     },
                     {
@@ -828,9 +785,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Take the torch, illuminate your path, and embrace the future of AI."
                     },
                     {
@@ -869,9 +824,6 @@
       }
     }
   },
-  "topics": [
-    "Getting Started",
-    "Industry"
-  ],
+  "topics": ["Getting Started", "Industry"],
   "shortLink": ""
 }

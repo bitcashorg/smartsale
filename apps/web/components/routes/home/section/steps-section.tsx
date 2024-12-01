@@ -50,7 +50,6 @@ export default function StepsSection({ lang, dict, id }: StepsSectionProps) {
                       <IconDownRightArrow className="size-4 transition-all group-focus-within:-rotate-45 group-hover:-rotate-45 [&_path]:stroke-white" />
                     </Link>
                   ) : (
-                    // biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
                     <Button
                       variant="tertiary"
                       size="icon"

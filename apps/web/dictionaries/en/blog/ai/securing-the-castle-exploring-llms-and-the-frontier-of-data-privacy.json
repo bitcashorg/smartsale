@@ -2,10 +2,7 @@
   "relatedBlogs": [],
   "blogContent": {
     "id": "190258836",
-    "topics": [
-      "Getting Started",
-      "Privacy"
-    ],
+    "topics": ["Getting Started", "Privacy"],
     "title": "Securing the Castle: Exploring LLMs and the Frontier of Data Privacy",
     "slug": "securing-the-castle-exploring-llms-and-the-frontier-of-data-privacy",
     "authorName": "Prof. Otto Nomos",
@@ -614,9 +611,6 @@
       }
     }
   },
-  "topics": [
-    "Getting Started",
-    "Privacy"
-  ],
+  "topics": ["Getting Started", "Privacy"],
   "shortLink": ""
 }

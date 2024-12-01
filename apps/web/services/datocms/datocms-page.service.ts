@@ -4,7 +4,8 @@ export async function getPageContent(
   category: 'terms_condition' | 'privacy_policy',
 ) {
   let dataRecord: MainContentBlock | null = null
-  let error
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
+  let error: any
 
   try {
     let pageName = ''
@@ -44,6 +45,7 @@ export async function getPageContent(
 
     error = (err as Error).message
   } finally {
+    // biome-ignore lint/correctness/noUnsafeFinally: <explanation>
     return {
       Data: dataRecord,
       Error: error,
@@ -59,6 +61,7 @@ export interface MainContentBlock {
         type: string
         children: {
           type: string
+          // biome-ignore lint/suspicious/noExplicitAny: <explanation>
           marks: any[]
           value: string
         }[]

@@ -12,7 +12,7 @@ export function PageContent({ data }: { data: PageContentData }) {
           case 'h2':
             return (
               <item.type
-                key={index}
+                key={item.text}
                 className={cn(
                   item.type === 'h1' ? 'heading' : 'heading2',
                   'text-center',
@@ -26,22 +26,22 @@ export function PageContent({ data }: { data: PageContentData }) {
             )
           case 'p':
             return (
-              <p key={index} className={'paragraph'}>
+              <p key={item.text} className={'paragraph'}>
                 {item.text}
               </p>
             )
           case 'ul':
             return (
-              <ul key={index} className={'mt-2 list-disc pl-6'}>
-                {item.items.map((li, liIndex) => (
-                  <li key={liIndex}>{li}</li>
+              <ul key={item.items.join('-')} className={'mt-2 list-disc pl-6'}>
+                {item.items.map((li) => (
+                  <li key={li}>{li}</li>
                 ))}
               </ul>
             )
           case 'Image':
             return (
               <Image
-                key={index}
+                key={item.src}
                 src={item.src}
                 alt={item.alt}
                 width={item.width}

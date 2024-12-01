@@ -6,11 +6,13 @@ const anthropic = createAnthropic({
   apiKey: process.env.CLAUDE_API_KEY,
 })
 
+// biome-ignore lint/suspicious/noExplicitAny: <explanation>
 export async function anthropicTranslate(content: any, locale: string) {
   // console.log('anthropicTranslate', locale, content)
-  let text
-  let finishReason
-  let usage
+  let text = ''
+  let finishReason = ''
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
+  let usage: any
   try {
     const response = await generateText({
       model: anthropic('claude-3-5-sonnet-20240620'),
@@ -31,12 +33,12 @@ export async function anthropicTranslate(content: any, locale: string) {
     LucideReceiptPoundSterling
   }
 
-  if (text) {
-    try {
-      const parsedText = JSON.parse(text)
-      return { translation: JSON.parse(text), finishReason, usage }
-    } catch (parseError) {
-      throw new Error('❌ Failed to parse translation')
-    }
+  if (!text) return
+
+  try {
+    const parsedText = JSON.parse(text)
+    return { translation: parsedText, finishReason, usage }
+  } catch (parseError) {
+    throw new Error('❌ Failed to parse translation')
   }
 }

@@ -12,13 +12,6 @@
     "enabled": true,
     "rules": {
       "recommended": true,
-      "suspicious": {
-        "noExplicitAny": "off"
-      },
-      "style": {
-        "noNonNullAssertion": "off",
-        "useShorthandArrayType": "off"
-      },
       "a11y": {
         "noSvgWithoutTitle": "off",
         "useButtonType": "off",
@@ -55,18 +48,17 @@
   },
   "files": {
     "ignore": [
-      "**/node_modules",
-      "**/dist",
-      "**/build",
-      "**/.next",
-      "**/.turbo",
-      "**/coverage",
-      "**/generated",
-      "**/*.min.js",
-      "**/*.d.ts",
-      "**/apps/faucet",
-      "**/apps/indexer",
-      "**/hardhat/auction"
+      "**/chat-icons.tsx",
+      "**/.trigger/**",
+      "**/vercel.json",
+      "**/dist/**",
+      "**/tsconfig.node.json",
+      "**/tsconfig.json",
+      "**/node_modules/**",
+      "**/.react-email/**",
+      "**/generated/**",
+      "hardhat/**",
+      "**/graphql/**"
     ]
   }
 }

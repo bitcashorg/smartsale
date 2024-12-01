@@ -7,7 +7,7 @@ import {
   TestnetMBOTSPL,
   TestnetUSDCred,
   TestnetUSDT,
-} from '@repo/auction'
+} from '@smartsale/auction'
 import { useEffect, useState } from 'react'
 import { parseUnits } from 'viem'
 import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
@@ -53,7 +53,7 @@ export function FaucetForm() {
   // update input when user changes address on wallet
   useEffect(() => {
     if (account.address !== address) setAddress(account.address)
-  }, [account.address, setAddress])
+  }, [account.address, address])
 
   return (
     <div className="flex flex-col w-full max-w-[1.5*md] items-start gap-4">

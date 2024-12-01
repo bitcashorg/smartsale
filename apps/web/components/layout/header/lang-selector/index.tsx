@@ -28,7 +28,7 @@ export function LangSelector({ lang }: LangProp) {
           {/* <DropdownMenuLabel>Select Language</DropdownMenuLabel> */}
           {/* <DropdownMenuSeparator /> */}
           {langSelectorOptions.map((option) => (
-            <LangSelectorItem option={option} lang={lang} />
+            <LangSelectorItem key={option.name} option={option} lang={lang} />
           ))}
         </DropdownMenuContent>
       </DropdownMenu>

@@ -5,7 +5,7 @@ import {
   trustWallet,
   walletConnectWallet,
 } from '@rainbow-me/rainbowkit/wallets'
-import { eosEvmTestnet } from '@repo/chains'
+import { eosEvmTestnet } from '@smartsale/chains'
 import { WagmiProvider } from 'wagmi'
 
 import { RainbowKitProvider, getDefaultConfig } from '@rainbow-me/rainbowkit'

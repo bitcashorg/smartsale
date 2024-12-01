@@ -10,8 +10,8 @@ import {
 } from '@/components/ui/table'
 import type { ProjectWithAuction } from '@/lib/projects'
 import { cn } from '@/lib/utils'
-import { TestnetEasyAuction, TestnetUSDCred } from '@repo/auction'
-import { toSmallestUnit } from '@repo/utils'
+import { TestnetEasyAuction, TestnetUSDCred } from '@smartsale/auction'
+import { toSmallestUnit } from '@smartsale/utils'
 import { readContract, writeContract } from '@wagmi/core'
 import { erc20Abi } from 'abitype/abis'
 import { useEffect, useState } from 'react'
@@ -132,7 +132,7 @@ export function AuctionBids({ project }: AuctionBidsProps) {
     if (!err || !('shortMessage' in err)) return
     toast.error(err.shortMessage)
     tanstack.reset()
-  }, [tanstack])
+  }, [tanstack.error, tanstack.reset])
 
   return (
     <div className="grid gap-5 md:grid-cols-2 md:gap-10">
@@ -144,8 +144,8 @@ export function AuctionBids({ project }: AuctionBidsProps) {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {bidInputs.map((_, index) => (
-            <TableRow key={index}>
+          {bidInputs.map((bid, index) => (
+            <TableRow key={JSON.stringify(bid)}>
               <TableCell
                 className={cn({
                   'bg-accent/20': index % 2,

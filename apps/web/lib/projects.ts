@@ -1,8 +1,9 @@
-import { TestnetMBOTSPL, type TokenContractData } from '@repo/auction'
-import { Tables } from '@repo/supabase'
+import { TestnetMBOTSPL, type TokenContractData } from '@smartsale/auction'
+import type { Tables } from '@smartsale/supabase'
 import { merge } from 'lodash'
 import type { StaticImageData } from 'next/image'
 
+// biome-ignore lint/suspicious/noExplicitAny: <explanation>
 export function getProjects(dict: any) {
   return merge(projects, dict.projects) as Project[]
 }
@@ -143,13 +144,15 @@ export interface ProjectContent {
 export type ProjectWithAuction = Required<
   Pick<Project, 'auctionId' | 'token'>
 > &
-  Project
-  & Tables<'presale'>
+  Project &
+  Tables<'presale'>
 
+// biome-ignore lint/suspicious/noExplicitAny: <explanation>
 export async function getProjectBySlug(slug: string, dict: any) {
   const project = projects.find((p) => p.slug === slug)
   if (!project) return null
   const content =
+    // biome-ignore lint/suspicious/noExplicitAny: <explanation>
     dict.projects.find((c: any) => c.id === project.id)?.content || {}
   return { ...project, content } as Project
 }

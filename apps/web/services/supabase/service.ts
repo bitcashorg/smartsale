@@ -1,4 +1,4 @@
-import type { Database, Tables, TablesInsert } from '@repo/supabase'
+import type { Database, Tables, TablesInsert } from '@smartsale/supabase'
 import type { SupabaseClient } from '@supabase/supabase-js'
 import type { Address } from 'viem'
 

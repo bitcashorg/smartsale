@@ -22,8 +22,8 @@ import {
 } from '@/lib/eos'
 import type { ProjectWithAuction } from '@/lib/projects'
 import { useSupabaseClient } from '@/services/supabase'
-import type { Tables } from '@repo/supabase'
-import { tokens } from '@repo/tokens'
+import type { Tables } from '@smartsale/supabase'
+import { tokens } from '@smartsale/tokens'
 import { useQuery } from '@tanstack/react-query'
 import Link from 'next/link'
 import { useMemo, useState } from 'react'
@@ -239,6 +239,7 @@ function PresaleDeposit({
         <CardDescription>Deposit USD tokens to participate.</CardDescription>
       </CardHeader>
       <div className="flex flex-col mb-5">
+        {/* biome-ignore lint/a11y/noLabelWithoutControl: <explanation> */}
         <label htmlFor="deposit" className="text-sm font-bold" />
         <div className="flex items-center justify-between gap-2 mb-5">
           <Input

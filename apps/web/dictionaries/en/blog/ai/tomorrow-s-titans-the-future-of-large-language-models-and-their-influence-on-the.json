@@ -2,10 +2,7 @@
   "relatedBlogs": [],
   "blogContent": {
     "id": "190258847",
-    "topics": [
-      "Getting Started",
-      "AGI"
-    ],
+    "topics": ["Getting Started", "AGI"],
     "title": "Tomorrow's Titans: The Future of Large Language Models and Their Influence on the Job Market and AGI",
     "slug": "tomorrow-s-titans-the-future-of-large-language-models-and-their-influence-on-the",
     "authorName": "Prof. Otto Nomos",
@@ -491,9 +488,6 @@
       }
     }
   },
-  "topics": [
-    "Getting Started",
-    "AGI"
-  ],
+  "topics": ["Getting Started", "AGI"],
   "shortLink": ""
 }

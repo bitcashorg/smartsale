@@ -1,4 +1,4 @@
-import type { AnyChain } from '@repo/chains'
+import type { AnyChain } from '@smartsale/chains'
 import type { Address } from 'viem'
 
 // expiclit type to enforce it

@@ -1,5 +1,5 @@
 {
-  "name": "@repo/errors",
+  "name": "@smartsale/errors",
   "main": "src/index.ts",
   "types": "src/index.ts",
   "devDependencies": {},

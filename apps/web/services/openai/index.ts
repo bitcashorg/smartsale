@@ -8,9 +8,12 @@ const openai = createOpenAI({
 
 export async function openAiTranslate(content: string, locale: string) {
   // console.log('openAiTranslate', locale, content)
-  let text
-  let finishReason
-  let usage
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
+  let text: any
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
+  let finishReason: any
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
+  let usage: any
   try {
     const response = await generateText({
       model: openai('gpt-3.5-turbo'),

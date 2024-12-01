@@ -2,7 +2,7 @@
 
 import { type ActionResult, failure, success } from '@/lib/actions'
 import { createSupabaseServerClient } from '@/services/supabase'
-import type { Tables } from '@repo/supabase'
+import type { Tables } from '@smartsale/supabase'
 import { createSafeActionClient } from 'next-safe-action'
 import { isAddress } from 'viem'
 import { z } from 'zod'

@@ -8,7 +8,7 @@ import {
   SelectValue,
 } from '@/components/ui/select'
 import type { SelectProps } from '@radix-ui/react-select'
-import type { TokenContractData } from '@repo/auction'
+import type { TokenContractData } from '@smartsale/auction'
 
 export function TokenSelect({ options, ...props }: TokenSelectParams) {
   return (
@@ -20,7 +20,7 @@ export function TokenSelect({ options, ...props }: TokenSelectParams) {
         <SelectGroup>
           <SelectLabel>Token</SelectLabel>
           {options.map((o, i) => (
-            <SelectItem key={i} value={i.toString()}>
+            <SelectItem key={JSON.stringify(o)} value={i.toString()}>
               {o.symbol} on{' '}
               {!o.chainId || o.chainId === 15557 ? 'EOSEVM' : 'Sepolia'}
             </SelectItem>

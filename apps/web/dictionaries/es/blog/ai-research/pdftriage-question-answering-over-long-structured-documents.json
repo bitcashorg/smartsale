@@ -2,10 +2,7 @@
   "relatedBlogs": [],
   "blogContent": {
     "id": "198277117",
-    "topics": [
-      "LLM",
-      "Retrieval"
-    ],
+    "topics": ["LLM", "Retrieval"],
     "title": "PDFTriage: Question Answering over Long, Structured Documents",
     "slug": "pdftriage-question-answering-over-long-structured-documents",
     "authorName": "Prof. Otto Nomos",
@@ -199,9 +196,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Problem of Context Length"
                             },
                             {
@@ -220,9 +215,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Document Structure"
                             },
                             {
@@ -241,9 +234,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "PDFTriage Approach"
                             },
                             {
@@ -262,9 +253,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Benchmark Dataset"
                             },
                             {
@@ -298,9 +287,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Enhanced Document Understanding"
                             },
                             {
@@ -319,9 +306,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "User Experience"
                             },
                             {
@@ -340,9 +325,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Supports Varied Document Types"
                             },
                             {
@@ -361,9 +344,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Research Enabler"
                             },
                             {
@@ -397,9 +378,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Complexity of Real-World Documents"
                             },
                             {
@@ -418,9 +397,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Scalability"
                             },
                             {
@@ -490,9 +467,6 @@
       }
     }
   },
-  "topics": [
-    "LLM",
-    "Retrieval"
-  ],
+  "topics": ["LLM", "Retrieval"],
   "shortLink": ""
 }

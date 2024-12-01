@@ -1,5 +1,6 @@
 import 'server-only'
 
+// biome-ignore lint/suspicious/noExplicitAny: <explanation>
 const dictionaries: { [key: string]: () => Promise<any> } = {
   en: () => import('./en').then((module) => module.default),
   es: () => import('./es').then((module) => module.default),
@@ -11,6 +12,7 @@ const dictionaries: { [key: string]: () => Promise<any> } = {
   zh: () => import('./zh').then((module) => module.default),
 }
 
+// biome-ignore lint/suspicious/noExplicitAny: <explanation>
 export const getDictionary = async (locale: string): Promise<any> => {
   if (!dictionaries[locale]) {
     throw new Error(`No dictionary found for locale: ${locale}`)

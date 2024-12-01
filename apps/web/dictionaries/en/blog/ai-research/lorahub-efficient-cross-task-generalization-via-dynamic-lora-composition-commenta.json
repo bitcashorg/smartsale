@@ -2,11 +2,7 @@
   "relatedBlogs": [],
   "blogContent": {
     "id": "180927998",
-    "topics": [
-      "LLM",
-      "Commentary",
-      "LORA"
-    ],
+    "topics": ["LLM", "Commentary", "LORA"],
     "title": "LoraHub: Efficient Cross-Task Generalization Via Dynamic LoRA Composition [Commentary]",
     "slug": "lorahub-efficient-cross-task-generalization-via-dynamic-lora-composition-commenta",
     "authorName": "Prof. Otto Nomos",
@@ -102,9 +98,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 2: Problem Statement"
                     }
                   ]
@@ -123,9 +117,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Key Insights:"
                     }
                   ]
@@ -144,9 +136,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Actionable Advice:"
                     }
                   ]
@@ -189,9 +179,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 3: Methodology"
                     }
                   ]
@@ -210,9 +198,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Key Insights:"
                     }
                   ]
@@ -231,9 +217,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Actionable Advice:"
                     }
                   ]
@@ -276,9 +260,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 4: Evaluation"
                     }
                   ]
@@ -297,9 +279,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Key Insights:"
                     }
                   ]
@@ -318,9 +298,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Actionable Advice:"
                     }
                   ]
@@ -363,9 +341,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 5: Analysis"
                     }
                   ]
@@ -384,9 +360,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Key Insights:"
                     }
                   ]
@@ -405,9 +379,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Actionable Advice:"
                     }
                   ]
@@ -450,9 +422,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 6: Related Work"
                     }
                   ]
@@ -471,9 +441,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Key Insights:"
                     }
                   ]
@@ -492,9 +460,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Actionable Advice:"
                     }
                   ]
@@ -537,9 +503,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 7: Conclusion"
                     }
                   ]
@@ -582,9 +546,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 8: Limitations & Future Work"
                     }
                   ]
@@ -603,9 +565,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Key Insights:"
                     }
                   ]
@@ -624,9 +584,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Actionable Advice:"
                     }
                   ]
@@ -670,10 +628,6 @@
       }
     }
   },
-  "topics": [
-    "LLM",
-    "Commentary",
-    "LORA"
-  ],
+  "topics": ["LLM", "Commentary", "LORA"],
   "shortLink": ""
 }

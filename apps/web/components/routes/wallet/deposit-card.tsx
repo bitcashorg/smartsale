@@ -24,8 +24,8 @@ import {
   genUsdtDepositSigningRequest,
 } from '@/lib/eos'
 import { cn } from '@/lib/utils'
-import type { EVMTokenContractData } from '@repo/auction'
-import { type EVMToken, tokens } from '@repo/tokens'
+import type { EVMTokenContractData } from '@smartsale/auction'
+import { type EVMToken, tokens } from '@smartsale/tokens'
 import { useMemo, useState } from 'react'
 import { toast } from 'sonner'
 import { erc20Abi, parseUnits } from 'viem'

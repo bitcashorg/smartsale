@@ -70,5 +70,6 @@ const DynamicSessionButton = dynamic(
 )
 
 interface HeaderProps extends LangProp {
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   dict: any
 }

@@ -17,7 +17,7 @@ All preview deployments run against the development environment.
 This package is used to provide environment configurations to the smartsale project.
 
 ```tsx
-import { environment } from '@repo/config
+import { environment } from '@smartsale/config
 
 // get the environment config for the current environment
 const config = environment[process.env.NEXT_PUBLIC_APP_ENV || 'dev']

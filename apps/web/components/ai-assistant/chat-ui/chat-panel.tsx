@@ -9,8 +9,6 @@ import { UserMessage } from './chat-message'
 import { PromptForm } from './prompt-form'
 
 export function ChatPanel({
-  id,
-  title,
   input,
   setInput,
   scrollToLatestQuestion,

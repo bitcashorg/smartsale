@@ -2,11 +2,7 @@
   "relatedBlogs": [],
   "blogContent": {
     "id": "198277160",
-    "topics": [
-      "LLM",
-      "Agents",
-      "Gaming"
-    ],
+    "topics": ["LLM", "Agents", "Gaming"],
     "title": "MindAgent: Emergent Gaming Interaction",
     "slug": "mindagent-emergent-gaming-interaction",
     "authorName": "Prof. Otto Nomos",
@@ -242,9 +238,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Complex Scheduling with LLMs"
                             },
                             {
@@ -263,9 +257,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "MindAgent Infrastructure"
                             },
                             {
@@ -284,9 +276,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "CUISINEWORLD Scenario"
                             },
                             {
@@ -305,9 +295,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Customized VR Version"
                             },
                             {
@@ -326,9 +314,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Efficiency Metric"
                             },
                             {
@@ -362,9 +348,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Advanced Gaming Scenarios"
                             },
                             {
@@ -383,9 +367,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Beyond Gaming"
                             },
                             {
@@ -404,9 +386,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Collaboration with Human Players"
                             },
                             {
@@ -425,9 +405,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "VR Integration"
                             },
                             {
@@ -446,9 +424,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Educational and Training Implications"
                             },
                             {
@@ -482,9 +458,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Computational Constraints"
                             },
                             {
@@ -503,9 +477,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Safety and Fair Play"
                             },
                             {
@@ -524,9 +496,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Adapting to Different Genres"
                             },
                             {
@@ -596,11 +566,7 @@
       }
     }
   },
-  "topics": [
-    "LLM",
-    "Agents",
-    "Gaming"
-  ],
+  "topics": ["LLM", "Agents", "Gaming"],
   "shortLink": {
     "data": null,
     "error": "You've reached your monthly limit of 1000 links on the Pro plan. Please upgrade to add more links."

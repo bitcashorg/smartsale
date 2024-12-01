@@ -18,7 +18,7 @@ export function FAQ({ lang, dict }: FAQProps) {
         >
           {dict.faq.questions.map(
             (item: { question: string; answer: string }, index: number) => (
-              <AccordionItem key={index} value={`item-${index}`}>
+              <AccordionItem key={item.question} value={`item-${index}`}>
                 <AccordionTrigger className="flex w-full items-center justify-between rounded-b px-6 py-4 text-left text-lg font-medium focus:outline-none data-[state=open]:bg-muted data-[state=open]:opacity-70 data-[state=open]:hover:no-underline">
                   {item.question}
                 </AccordionTrigger>
@@ -35,5 +35,6 @@ export function FAQ({ lang, dict }: FAQProps) {
 }
 
 export interface FAQProps extends LangProp {
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   dict: any
 }

@@ -2,10 +2,7 @@
   "relatedBlogs": [],
   "blogContent": {
     "id": "179737945",
-    "topics": [
-      "LLM",
-      "Summary"
-    ],
+    "topics": ["LLM", "Summary"],
     "title": "Challenges and Applications of Large Language Models [Summary]",
     "slug": "challenges-and-applications-of-large-language-models-summary",
     "authorName": "Prof. Otto Nomos",
@@ -73,9 +70,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Introduction"
                     },
                     {
@@ -122,9 +117,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 2.1: Unfathomable Datasets"
                     }
                   ]
@@ -152,9 +145,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 2.2: Tokenizer-Reliance"
                     },
                     {
@@ -177,9 +168,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 2.3: High Pre-Training Costs"
                     },
                     {
@@ -193,9 +182,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 2.4: Fine-Tuning Overhead"
                     },
                     {
@@ -213,9 +200,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "2.5 High Inference Latency"
                     },
                     {
@@ -238,9 +223,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "2.6 Limited Context Length"
                     },
                     {
@@ -263,9 +246,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "2.7 Prompt Brittleness"
                     },
                     {
@@ -288,9 +269,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "2.8 Hallucinations"
                     },
                     {
@@ -308,9 +287,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 2.9: Misaligned Behavior"
                     }
                   ]
@@ -347,9 +324,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 2.10: Outdated Knowledge"
                     }
                   ]
@@ -386,9 +361,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 2.11: Brittle Evaluations"
                     }
                   ]
@@ -425,9 +398,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 2.12: Evaluations Based on Static, Human-Written Ground Truth"
                     }
                   ]
@@ -459,9 +430,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 2.13: Indistinguishability between Generated and Human-Written Text"
                     }
                   ]
@@ -498,9 +467,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 2.14: Tasks Not Solvable By Scale"
                     }
                   ]
@@ -537,9 +504,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 2.15: Lacking Experimental Designs"
                     }
                   ]
@@ -576,9 +541,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 2.16: Lack of Reproducibility"
                     }
                   ]
@@ -648,9 +611,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 3.1: Chatbots"
                     }
                   ]
@@ -783,9 +744,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Dataset Quality"
                             },
                             {
@@ -804,9 +763,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Fine-tuning"
                             },
                             {
@@ -825,9 +782,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Memory Management"
                             },
                             {
@@ -846,9 +801,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Continuous Evaluation and Improvement"
                             },
                             {
@@ -867,9 +820,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Innovative Approaches"
                             },
                             {
@@ -887,9 +838,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 3.2: Computational Biology"
                     }
                   ]
@@ -994,9 +943,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Model Training"
                             },
                             {
@@ -1015,9 +962,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Model Selection"
                             },
                             {
@@ -1036,9 +981,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Context Window Size"
                             },
                             {
@@ -1056,9 +999,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 3.3: Computer Programming"
                     }
                   ]
@@ -1077,9 +1018,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "3.3.1 Code Generation"
                     }
                   ]
@@ -1134,9 +1073,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "3.3.2 Code Infilling and Generation"
                     }
                   ]
@@ -1191,9 +1128,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "3.3.3 Code Review and Assistance"
                     }
                   ]
@@ -1248,9 +1183,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 3.4: Creative Work"
                     }
                   ]
@@ -1269,9 +1202,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "3.4.1 Long Form"
                     }
                   ]
@@ -1290,9 +1221,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Key Insight:"
                     }
                   ]
@@ -1311,9 +1240,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Actionable Advice:"
                     }
                   ]
@@ -1332,9 +1259,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "3.4.2 Short Form"
                     }
                   ]
@@ -1353,9 +1278,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Key Insight:"
                     }
                   ]
@@ -1374,9 +1297,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Actionable Advice:"
                     }
                   ]
@@ -1395,9 +1316,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "3.4.3 Interactive"
                     }
                   ]
@@ -1447,9 +1366,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 3.5 Knowledge Work"
                     }
                   ]
@@ -1486,9 +1403,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 3.6 Law"
                     }
                   ]
@@ -1525,9 +1440,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 3.7 Medicine"
                     }
                   ]
@@ -1564,9 +1477,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 3.8 Reasoning"
                     }
                   ]
@@ -1598,9 +1509,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 3.9: Robotics and Embodied Agents"
                     }
                   ]
@@ -1637,9 +1546,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 3.10: Social Sciences & Psychology"
                     }
                   ]
@@ -1676,9 +1583,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 3.11: Synthetic Data Generation"
                     }
                   ]
@@ -1772,9 +1677,6 @@
       }
     }
   },
-  "topics": [
-    "LLM",
-    "Summary"
-  ],
+  "topics": ["LLM", "Summary"],
   "shortLink": ""
 }

@@ -129,8 +129,12 @@ async function processFile(
       sectionTranslation.translation
     ) {
       // console.log('🧑🏻‍💻 Section names translated!')
-      translatedSectionNames = sectionTranslation.translation.map(
-        (name: string) => name.trim(),
+      const translation = sectionTranslation.translation as Record<
+        string,
+        unknown
+      >
+      translatedSectionNames = Object.values(translation).map((name) =>
+        String(name).trim(),
       )
       // console.log('translatedSectionNames', translatedSectionNames)
     } else {
@@ -166,12 +170,18 @@ async function processFile(
           }
           throw new Error('❌ articleTranslation not found')
         })
-
         // console.log('🧑🏻‍💻 Articles translating!')
-        newSection.articles = await promiseAllWithConcurrencyLimit(
+        const translatedArticles = await promiseAllWithConcurrencyLimit(
           articleOpenAICalls,
           1,
         )
+        newSection.articles = translatedArticles.map((article) => ({
+          ...article,
+          id: article.id || '',
+          topics: article.topics || [],
+          title: article.title || '',
+          slug: article.slug || '',
+        })) as BlogArticleRecord[]
         // console.log('🧑🏻‍💻 Articles translated!')
         return newSection
       },
@@ -214,6 +224,7 @@ type Section = {
 }
 type BlogPageIndexProps = {
   sections: Section[]
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   pageSeo?: any
 }
 

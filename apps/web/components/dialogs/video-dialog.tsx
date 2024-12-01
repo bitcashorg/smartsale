@@ -34,7 +34,7 @@ export function VideoDialog({ video, trigger }: VideoDialogProps) {
     return () => {
       clearTimeout(timeout)
     }
-  }, [])
+  }, [isPlaylist])
 
   return (
     <Dialog>

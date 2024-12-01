@@ -2,11 +2,7 @@
   "relatedBlogs": [
     {
       "id": "190259333",
-      "topics": [
-        "LLM",
-        "Summary",
-        "UX"
-      ],
+      "topics": ["LLM", "Summary", "UX"],
       "title": "Latent Space Podcast 6/8/23 [Summary] - From RLHF to RLHB: The Case for Learning from Human Behavior - with Jeffrey Wang and Joe Reeve of Amplitude",
       "slug": "latent-space-podcast-6-8-23-summary-from-rlhf-to-rlhb-the-case-for-learning-from",
       "authorName": "Prof. Otto Nomos",
@@ -33,11 +29,7 @@
     },
     {
       "id": "190260528",
-      "topics": [
-        "Summary",
-        "LLM",
-        "UX"
-      ],
+      "topics": ["Summary", "LLM", "UX"],
       "title": "Latent Space Podcast 6/1/23 [Summary] - Building the AI × UX Scenius — with Linus Lee of Notion AI",
       "slug": "latent-space-podcast-6-1-23-summary-building-the-ai-x-ux-scenius-with-linus-le",
       "authorName": "Prof. Otto Nomos",
@@ -64,12 +56,7 @@
     },
     {
       "id": "190260557",
-      "topics": [
-        "Summary",
-        "Code",
-        "LLM",
-        "Agents"
-      ],
+      "topics": ["Summary", "Code", "LLM", "Agents"],
       "title": "Latent Space Podcast 5/25/23 [Summary] - Debugging the Internet with AI agents – with Itamar Friedman of Codium AI and AutoGPT",
       "slug": "latent-space-podcast-5-25-23-summary-debugging-the-internet-with-ai-agents-with",
       "authorName": "Prof. Otto Nomos",
@@ -96,10 +83,7 @@
     },
     {
       "id": "190260597",
-      "topics": [
-        "LLM",
-        "Structured Data"
-      ],
+      "topics": ["LLM", "Structured Data"],
       "title": "Latent Space Podcast 5/15/23 [Summary] - Guaranteed quality and structure in LLM outputs - with Shreya Rajpal of Guardrails AI",
       "slug": "latent-space-podcast-5-15-23-summary-guaranteed-quality-and-structure-in-llm-outp",
       "authorName": "Prof. Otto Nomos",
@@ -126,12 +110,7 @@
     },
     {
       "id": "190260606",
-      "topics": [
-        "LLM",
-        "Training",
-        "Agents",
-        "Multimodal"
-      ],
+      "topics": ["LLM", "Training", "Agents", "Multimodal"],
       "title": "Latent Space Podcast 5/8/23 [Summary] - The AI Founder Gene: Being Early, Building Fast, and Believing in Greatness — with Sharif Shameem of Lexica",
       "slug": "latent-space-podcast-5-8-23-summary-the-ai-founder-gene-being-early-building-fast",
       "authorName": "Prof. Otto Nomos",
@@ -158,11 +137,7 @@
     },
     {
       "id": "190260640",
-      "topics": [
-        "Summary",
-        "Open Source",
-        "LLM"
-      ],
+      "topics": ["Summary", "Open Source", "LLM"],
       "title": "Latent Space Podcast 5/5/23 [Summary] - No Moat: Closed AI gets its Open Source wakeup call — ft. Simon Willison",
       "slug": "latent-space-podcast-5-5-23-summary-no-moat-closed-ai-gets-its-open-source-wakeup",
       "authorName": "Prof. Otto Nomos",
@@ -189,11 +164,7 @@
     },
     {
       "id": "190260671",
-      "topics": [
-        "LLM",
-        "Code",
-        "Summary"
-      ],
+      "topics": ["LLM", "Code", "Summary"],
       "title": "Latent Space Podcast 5/3/23 [Summary] - Training a SOTA Code LLM in 1 week and Quantifying the Vibes — with Reza Shabani of Replit",
       "slug": "latent-space-podcast-5-3-23-summary-training-a-sota-code-llm-in-1-week-and-quanti",
       "authorName": "Prof. Otto Nomos",
@@ -220,11 +191,7 @@
     },
     {
       "id": "190629271",
-      "topics": [
-        "LLM",
-        "Small Models",
-        "Summary"
-      ],
+      "topics": ["LLM", "Small Models", "Summary"],
       "title": "Latent Space Podcast 4/28/23 [Summary] - Mapping the future of *truly* Open Models and Training Dolly for $30 — with Mike Conover of Databricks",
       "slug": "latent-space-podcast-4-28-23-summary-mapping-the-future-of-truly-open-models-and",
       "authorName": "Prof. Otto Nomos",
@@ -252,10 +219,7 @@
   ],
   "blogContent": {
     "id": "190259043",
-    "topics": [
-      "LLM",
-      "Summary"
-    ],
+    "topics": ["LLM", "Summary"],
     "title": "Google \"We Have No Moat, And Neither Does OpenAI\" [Commentary]",
     "slug": "google-we-have-no-moat-and-neither-does-openai-commentary",
     "authorName": "Prof. Otto Nomos",
@@ -280,9 +244,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Original Link: "
                     },
                     {
@@ -302,9 +264,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Author: "
                     },
                     {
@@ -319,9 +279,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": " AND "
                     },
                     {
@@ -351,9 +309,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Summary:"
                     }
                   ]
@@ -372,9 +328,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Commentary:"
                     }
                   ]
@@ -393,9 +347,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Actionable Insights:"
                     }
                   ]
@@ -412,9 +364,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Collaboration over Competition:"
                             },
                             {
@@ -433,9 +383,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Focus on Unique Value Proposition:"
                             },
                             {
@@ -454,9 +402,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Adapt Pricing Models:"
                             },
                             {
@@ -475,9 +421,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Embrace Lightweight Models:"
                             },
                             {
@@ -496,9 +440,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Third-party Integrations:"
                             },
                             {
@@ -517,9 +459,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Invest in R&D:"
                             },
                             {
@@ -579,9 +519,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Summary:"
                     }
                   ]
@@ -600,9 +538,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Commentary:"
                     }
                   ]
@@ -621,9 +557,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Actionable Insights:"
                     }
                   ]
@@ -640,9 +574,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Embrace Open Source:"
                             },
                             {
@@ -661,9 +593,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Leverage LoRA:"
                             },
                             {
@@ -682,9 +612,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Lower Barriers:"
                             },
                             {
@@ -703,9 +631,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Monitor Trends:"
                             },
                             {
@@ -724,9 +650,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Speed of Implementation:"
                             },
                             {
@@ -745,9 +669,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Foster Community:"
                             },
                             {
@@ -807,9 +729,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Summary:"
                     }
                   ]
@@ -828,9 +748,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Commentary:"
                     }
                   ]
@@ -849,9 +767,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Actionable Insights:"
                     }
                   ]
@@ -868,9 +784,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Leverage Fine-tuning Over Complete Retraining:"
                             },
                             {
@@ -889,9 +803,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Prioritize Quality of Data Over Quantity:"
                             },
                             {
@@ -910,9 +822,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Embrace the Open-Source Community:"
                             },
                             {
@@ -931,9 +841,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Establish a Presence in the Open-Source Community:"
                             },
                             {
@@ -952,9 +860,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Reconsider Intellectual Property Strategies:"
                             },
                             {
@@ -1014,9 +920,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Summary:"
                     }
                   ]
@@ -1035,9 +939,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Commentary:"
                     }
                   ]
@@ -1056,9 +958,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Actionable Insights:"
                     }
                   ]
@@ -1075,9 +975,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Stay Alert to Open-Source Developments:"
                             },
                             {
@@ -1096,9 +994,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Prioritize Accessibility:"
                             },
                             {
@@ -1117,9 +1013,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Leverage Low-Cost Training and Fine-Tuning:"
                             },
                             {
@@ -1138,9 +1032,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Harness Open Source for Innovation:"
                             },
                             {
@@ -1159,9 +1051,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Measure Real-World Impact:"
                             },
                             {
@@ -1180,9 +1070,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Embrace Collaborative Development:"
                             },
                             {
@@ -1225,9 +1113,6 @@
       }
     }
   },
-  "topics": [
-    "LLM",
-    "Summary"
-  ],
+  "topics": ["LLM", "Summary"],
   "shortLink": ""
 }

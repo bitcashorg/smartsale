@@ -2,11 +2,7 @@
   "relatedBlogs": [],
   "blogContent": {
     "id": "190258709",
-    "topics": [
-      "Getting Started",
-      "Alignment",
-      "Safety"
-    ],
+    "topics": ["Getting Started", "Alignment", "Safety"],
     "title": "Navigating the Moral Maze: Unraveling the Ethics of Large Language Models",
     "slug": "navigating-the-moral-maze-unraveling-the-ethics-of-large-language-models",
     "authorName": "Prof. Otto Nomos",
@@ -32,9 +28,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Introduction "
                     }
                   ]
@@ -66,9 +60,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "emphasis"
-                      ],
+                      "marks": ["emphasis"],
                       "value": "Can AI ever be truly unbiased? What happens if AI is misused? Who's accountable then?"
                     },
                     {
@@ -115,9 +107,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Walking the Tightrope: The Ethical Implications of AI and LLMs"
                     }
                   ]
@@ -214,9 +204,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Bias in AI: The Invisible Culprit"
                     }
                   ]
@@ -322,9 +310,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "A Spotlight on Ethical Measures in AI"
                     }
                   ]
@@ -448,9 +434,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Future Paths: Shaping the Ethical Use of LLMs"
                     }
                   ]
@@ -464,9 +448,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "We are the architects of this AI-dominated future"
                     },
                     {
@@ -516,9 +498,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "The future of AI is not a path we simply walk, it's a path we pave, piece by piece, with every ethical decision we make."
                     },
                     {
@@ -556,9 +536,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Conclusion: Charting the Ethical Course for AI and LLMs"
                     }
                   ]
@@ -590,9 +568,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "the crux of this journey lies not just in understanding and acknowledging these ethical aspects, but in actively incorporating them into our AI and LLM applications"
                     },
                     {
@@ -610,9 +586,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "And that, dear reader, is a future worth working for."
                     }
                   ]
@@ -647,10 +621,6 @@
       }
     }
   },
-  "topics": [
-    "Getting Started",
-    "Alignment",
-    "Safety"
-  ],
+  "topics": ["Getting Started", "Alignment", "Safety"],
   "shortLink": ""
 }

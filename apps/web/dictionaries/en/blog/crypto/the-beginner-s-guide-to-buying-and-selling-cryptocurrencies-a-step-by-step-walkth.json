@@ -2,10 +2,7 @@
   "relatedBlogs": [
     {
       "id": "165744328",
-      "topics": [
-        "Getting Started",
-        "How-To"
-      ],
+      "topics": ["Getting Started", "How-To"],
       "title": "Stay Ahead of the Game: A Guide to Staying Informed and Educated in the World of Cryptocurrency",
       "slug": "stay-ahead-of-the-game-a-guide-to-staying-informed-and-educated-in-the-world-of-c",
       "authorName": "Crypto Clairity",
@@ -33,10 +30,7 @@
   ],
   "blogContent": {
     "id": "165399242",
-    "topics": [
-      "How-To",
-      " Exchange"
-    ],
+    "topics": ["How-To", " Exchange"],
     "title": "The Beginner's Guide to Buying and Selling Cryptocurrencies: A Step-by-Step Walkthrough",
     "slug": "the-beginner-s-guide-to-buying-and-selling-cryptocurrencies-a-step-by-step-walkth",
     "authorName": "Crypto Clairity",
@@ -300,9 +294,6 @@
       }
     }
   },
-  "topics": [
-    "How-To",
-    " Exchange"
-  ],
+  "topics": ["How-To", " Exchange"],
   "shortLink": ""
 }

@@ -18,7 +18,7 @@ import {
   trustWallet,
   walletConnectWallet,
 } from '@rainbow-me/rainbowkit/wallets'
-import { eosEvmMainnet, eosEvmTestnet } from '@repo/chains'
+import { eosEvmMainnet, eosEvmTestnet } from '@smartsale/chains'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { merge } from 'lodash'
 import { ThemeProvider as NextThemesProvider } from 'next-themes'

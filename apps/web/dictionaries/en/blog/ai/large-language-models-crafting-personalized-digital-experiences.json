@@ -2,10 +2,7 @@
   "relatedBlogs": [],
   "blogContent": {
     "id": "190258861",
-    "topics": [
-      "Getting Started",
-      "Personalization"
-    ],
+    "topics": ["Getting Started", "Personalization"],
     "title": "Large Language Models: Crafting Personalized Digital Experiences",
     "slug": "large-language-models-crafting-personalized-digital-experiences",
     "authorName": "Prof. Otto Nomos",
@@ -353,9 +350,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Choose a Pre-trained Model:"
                             },
                             {
@@ -374,9 +369,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Understand the API:"
                             },
                             {
@@ -395,9 +388,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Play Around:"
                             },
                             {
@@ -416,9 +407,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Fine-Tune:"
                             },
                             {
@@ -437,9 +426,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Build and Test:"
                             },
                             {
@@ -656,9 +643,6 @@
       }
     }
   },
-  "topics": [
-    "Getting Started",
-    "Personalization"
-  ],
+  "topics": ["Getting Started", "Personalization"],
   "shortLink": ""
 }

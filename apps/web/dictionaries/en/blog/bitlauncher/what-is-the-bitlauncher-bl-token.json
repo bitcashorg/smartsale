@@ -2,11 +2,7 @@
   "relatedBlogs": [
     {
       "id": "W8caLxKNTdahoemkXQT_sg",
-      "topics": [
-        "how_to",
-        "launchpad",
-        "dao"
-      ],
+      "topics": ["how_to", "launchpad", "dao"],
       "title": "Welcome to the Bitlauncher Presale Starting September 16th!",
       "slug": "welcome-to-the-bitlauncher-presale-starting-september-16th",
       "authorName": "Jun Dam",
@@ -33,11 +29,7 @@
     },
     {
       "id": "TBAOoPr9SPihQxeeKTGUQw",
-      "topics": [
-        "launchpad",
-        "investment",
-        "fundraising"
-      ],
+      "topics": ["launchpad", "investment", "fundraising"],
       "title": "What is a Public Token Presale?",
       "slug": "what-is-a-public-token-presale",
       "authorName": "Jun Dam",
@@ -65,11 +57,7 @@
   ],
   "blogContent": {
     "id": "ecAGoOkaROa09DcoVKyOCA",
-    "topics": [
-      "dao",
-      "analysis",
-      "launchpad"
-    ],
+    "topics": ["dao", "analysis", "launchpad"],
     "title": "What is the Bitlauncher ($BL) Token?",
     "slug": "what-is-the-bitlauncher-bl-token",
     "authorName": "Jun Dam",
@@ -360,10 +348,6 @@
       }
     }
   },
-  "topics": [
-    "dao",
-    "analysis",
-    "launchpad"
-  ],
+  "topics": ["dao", "analysis", "launchpad"],
   "shortLink": ""
 }

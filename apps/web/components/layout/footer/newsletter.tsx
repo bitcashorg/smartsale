@@ -27,7 +27,7 @@ const formSchema = z.object({
 const formOptions = { resolver: zodResolver(formSchema) }
 type SubcriptionFormData = z.infer<typeof formSchema>
 
-export default function Newsletter({ lang }: LangProp) {
+export default function Newsletter() {
   const [state, setState] = useSetState({
     loading: false,
     data: '',
@@ -84,7 +84,7 @@ export default function Newsletter({ lang }: LangProp) {
   useEffect(() => {
     if (!state.data && !state.error) return
     setState({ data: '', error: '' })
-  }, [email])
+  }, [state.data, state.error, setState])
 
   return (
     <div
@@ -180,25 +180,5 @@ export default function Newsletter({ lang }: LangProp) {
         </section>
       </GoogleReCaptchaProvider>
     </div>
-  )
-}
-
-function DiscordButton() {
-  return (
-    <Link
-      href="https://discord.gg/KuR48XUxnG"
-      target="_blank"
-      rel="noopener noreferrer"
-      className={cn(
-        buttonVariants({
-          variant: 'outline',
-          radius: 'full',
-        }),
-        'size-14 border-transparent p-3.5 md:border-accent-500 lg:size-14',
-      )}
-    >
-      <IconDiscord className={'block size-full fill-accent-500'} />
-      <span className="sr-only">Discord</span>
-    </Link>
   )
 }

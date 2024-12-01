@@ -64,6 +64,7 @@ function optimizeContentBlock(
 ): ContentBlockTranslation {
   // console.log('optimizeContentBlock', JSON.stringify(contentBlock))
 
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   function extractValues(block: any): any {
     if (block.value) {
       return block.value
@@ -83,6 +84,7 @@ function reconstructContentBlock(
   translatedContentBlock: ContentBlockTranslation,
   originalContentBlock: MainArticleContentBlock['contentBlock'],
 ): MainArticleContentBlock['contentBlock'] {
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   function applyTranslation(original: any, translation: any): void {
     if (original.value && translation) {
       original.value =
@@ -90,12 +92,14 @@ function reconstructContentBlock(
           ? translation
           : translation[0] || original.value
     } else if (original.children && Array.isArray(translation)) {
+      // biome-ignore lint/suspicious/noExplicitAny: <explanation>
       original.children.forEach((child: any, idx: number) => {
         applyTranslation(child, translation[idx])
       })
     }
   }
 
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   originalContentBlock.forEach((block: any, index: number) => {
     applyTranslation(
       block.mainContent.value.document,

@@ -12,9 +12,9 @@ export function FooterLinks() {
         </p>
       </Link>
       <div className="grid w-full grid-cols-2 gap-5 mx-auto lg:grid-cols-3">
-        {footerNavStruct.sections.map((section, index) =>
+        {footerNavStruct.sections.map((section) =>
           section.items ? (
-            <SectionComponent key={index} section={section} />
+            <SectionComponent key={section.label} section={section} />
           ) : null,
         )}
       </div>
@@ -33,8 +33,8 @@ const SectionComponent = ({ section }: { section: NavSection }) => (
 
 const LinksList = ({ links }: { links: NavItem[] }) => (
   <ul className="mt-4 space-y-2">
-    {links.map((link, index) => (
-      <li key={index}>
+    {links.map((link) => (
+      <li key={link.href}>
         <a href={link.href} className="hover:underline">
           {link.label}
         </a>

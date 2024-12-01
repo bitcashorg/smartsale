@@ -1,4 +1,4 @@
-import type { EVMTokenContractData } from '@repo/auction'
+import type { EVMTokenContractData } from '@smartsale/auction'
 import { useSwitchChain } from 'wagmi'
 import { Button } from './ui/button'
 
@@ -14,10 +14,10 @@ export function AddTokenToWallet({
   // console.log({ address, symbol, decimals, image, name })
   const addTokenToMetaMask = async () => {
     try {
-      if (!window.ethereum && !window.ethereum.isMetaMask)
+      if (!window.ethereum || !window.ethereum.isMetaMask)
         alert('MetaMask is not installed')
       if (chainId) await switchChain({ chainId })
-      await window.ethereum.request({
+      await window?.ethereum?.request({
         method: 'wallet_watchAsset',
         params: {
           type: 'ERC20',
@@ -47,7 +47,21 @@ export function AddTokenToWallet({
 }
 
 interface CustomWindow extends Window {
-  ethereum?: any
+  ethereum?: {
+    isMetaMask?: boolean
+    request: (args: {
+      method: string
+      params: {
+        type: string
+        options: {
+          address: string
+          symbol: string
+          decimals: number
+          image?: string
+        }
+      }
+    }) => Promise<void>
+  }
 }
 
 declare let window: CustomWindow

@@ -1,13 +1,13 @@
 {
-  "name": "@repo/tokens",
+  "name": "@smartsale/tokens",
   "main": "src/index.ts",
   "devDependencies": {
-    "@repo/chains": "workspace:*"
+    "@smartsale/chains": "workspace:*"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "viem": "^2.21.3"
+    "viem": "2.x"
   }
 }

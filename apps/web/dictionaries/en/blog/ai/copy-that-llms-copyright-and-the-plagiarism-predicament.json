@@ -2,10 +2,7 @@
   "relatedBlogs": [],
   "blogContent": {
     "id": "190258732",
-    "topics": [
-      "Getting Started",
-      "Legal"
-    ],
+    "topics": ["Getting Started", "Legal"],
     "title": "Copy That? LLMs, Copyright, and the Plagiarism Predicament",
     "slug": "copy-that-llms-copyright-and-the-plagiarism-predicament",
     "authorName": "Prof. Otto Nomos",
@@ -44,9 +41,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "But, amid this spectacle of creativity, one question looms large: where does inspiration end and infringement begin?"
                     }
                   ]
@@ -69,9 +64,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "We're embarking on a journey that oscillates between the exhilarating world of AI and the intricate labyrinth of copyright laws. Are you ready to step into this uncharted territory?"
                     }
                   ]
@@ -514,9 +507,6 @@
       }
     }
   },
-  "topics": [
-    "Getting Started",
-    "Legal"
-  ],
+  "topics": ["Getting Started", "Legal"],
   "shortLink": ""
 }

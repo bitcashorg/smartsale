@@ -29,7 +29,8 @@ export async function getBlogCategory(
   first?: number,
 ) {
   let dataRecord: BlogArticleRecord[] = []
-  let error
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
+  let error: any
 
   try {
     let categoryRecordName = ''
@@ -135,6 +136,7 @@ export async function getBlogCategory(
     // replacing category kebab case with camel case
     const blogCategory = category.replace(/(\-\w)/g, (m) => m[1].toUpperCase())
 
+    // biome-ignore lint/correctness/noUnsafeFinally: <explanation>
     return {
       [`${blogCategory}Data`]: dataRecord,
       [`${blogCategory}Error`]: error,
@@ -639,13 +641,17 @@ export interface MainArticleContentBlock {
           type: string
           level?: number
           children: {
+            // biome-ignore lint/suspicious/noExplicitAny: <explanation>
             level?: any
             type: string
+            // biome-ignore lint/suspicious/noExplicitAny: <explanation>
             marks: any[]
             value: string
             children?: {
+              // biome-ignore lint/suspicious/noExplicitAny: <explanation>
               level?: any
               type: string
+              // biome-ignore lint/suspicious/noExplicitAny: <explanation>
               marks: any[]
               value: string
             }[]

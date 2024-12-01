@@ -1,4 +1,4 @@
-import type { ChainType } from '@repo/chains'
+import type { ChainType } from '@smartsale/chains'
 import type { Address } from 'viem'
 
 export interface BaseToken {

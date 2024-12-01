@@ -4,7 +4,7 @@ import { IconReferral } from '@/components/ui/icons'
 import { Skeleton } from '@/components/ui/skeleton'
 import { useCopyShortLink } from '@/hooks/use-copy-shortlink'
 import { useSession } from '@/hooks/use-session'
-import { chaingraphService } from '@repo/chaingraph'
+import { chaingraphService } from '@smartsale/chaingraph'
 import { AnimatePresence } from 'framer-motion'
 import { Copy, LucideCheck, LucideLoader2, LucideX } from 'lucide-react'
 import Image from 'next/image'
@@ -22,36 +22,12 @@ export default function ReferralProgramTab() {
     checkShareLink,
     [session?.account],
   )
-  const { value: accountReferrals, loading } = useAsync(
+  const { value: accountReferrals } = useAsync(
     async () =>
       await chaingraphService.checkAccountReferral(session?.account || ''),
     [session?.account],
   )
 
-  const referralList = [
-    {
-      id: 1,
-      date: '12/09/2024 17:09',
-      referralUser: 'Test',
-      contribution: 100,
-      myReward: 20,
-      contributionDate: '12/09/2024 17:09',
-      project: 'Bitlauncher',
-      accreditation: 'Test',
-      contributionToken: 'EOS',
-    },
-    {
-      id: 2,
-      date: '12/09/2024 17:09',
-      referralUser: 'Test',
-      contribution: 100,
-      myReward: 20,
-      contributionDate: '12/09/2024 17:09',
-      project: 'Bitlauncher',
-      accreditation: 'Test',
-      contributionToken: 'EOS',
-    },
-  ]
   return (
     <>
       <h1 className="text-3xl font-bold text-center">Referral Program</h1>
@@ -184,8 +160,6 @@ export default function ReferralProgramTab() {
               copyToClipboard()
             }
           }}
-          tabIndex={0}
-          role="button"
           className="bg-primary px-4 py-2 w-32 min-w-32 max-w-32 flex justify-start items-center gap-x-3 cursor-pointer border rounded-full border-[#747394]"
         >
           <span className="text-sm text-accent-500 select-none">

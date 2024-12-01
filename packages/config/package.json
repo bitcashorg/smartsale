@@ -1,5 +1,5 @@
 {
-  "name": "@repo/config",
+  "name": "@smartsale/config",
   "version": "0.0.1",
   "private": true,
   "description": "Shared Environment Configurations",
@@ -8,8 +8,8 @@
   "main": "./src/index.ts",
   "types": "./src/index.ts",
   "dependencies": {
-    "viem": "latest",
-    "@repo/chains": "workspace:*"
+    "viem": "2.x",
+    "@smartsale/chains": "workspace:*"
   },
   "devDependencies": {
     "typescript": "^5.3.3"

@@ -59,7 +59,7 @@ export default async function RootLayout({
           >
             {children}
           </main>
-          <Footer params={params} />
+          <Footer />
           <DynamicSessionDialog />
           <DynamicEsrDialog />
           <DynamicAiAssistant />

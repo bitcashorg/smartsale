@@ -2,10 +2,7 @@
   "relatedBlogs": [],
   "blogContent": {
     "id": "180869081",
-    "topics": [
-      "LLM",
-      "Summary"
-    ],
+    "topics": ["LLM", "Summary"],
     "title": "Llama 2: Open Foundation and Fine-Tuned Chat Models [Commentary]",
     "slug": "llama-2-open-foundation-and-fine-tuned-chat-models-commentary",
     "authorName": "Prof. Otto Nomos",
@@ -31,9 +28,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 2: Pretraining"
                     }
                   ]
@@ -52,9 +47,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Key Insights:"
                     }
                   ]
@@ -73,9 +66,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Actionable Advice:"
                     }
                   ]
@@ -118,9 +109,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 3: Fine-tuning"
                     }
                   ]
@@ -166,9 +155,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Key Insights:"
                     }
                   ]
@@ -187,9 +174,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Actionable Advice:"
                     }
                   ]
@@ -232,9 +217,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 4: Safety"
                     }
                   ]
@@ -271,9 +254,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Key Insights:"
                     }
                   ]
@@ -292,9 +273,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Actionable Advice:"
                     }
                   ]
@@ -337,9 +316,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 5: Discussion"
                     }
                   ]
@@ -358,9 +335,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Key Insights:"
                     }
                   ]
@@ -379,9 +354,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Actionable Advice:"
                     }
                   ]
@@ -424,9 +397,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Section 7: Conclusion"
                     }
                   ]
@@ -445,9 +416,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Key Insights:"
                     }
                   ]
@@ -466,9 +435,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Actionable Advice:"
                     }
                   ]
@@ -512,9 +479,6 @@
       }
     }
   },
-  "topics": [
-    "LLM",
-    "Summary"
-  ],
+  "topics": ["LLM", "Summary"],
   "shortLink": ""
 }

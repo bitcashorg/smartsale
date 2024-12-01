@@ -21,8 +21,8 @@ import {
   type PresaleContribution,
   getPresaleContributions,
 } from '@/services/supabase/service'
-import { allChains, eosEvmMainnet, eosEvmTestnet } from '@repo/chains'
-import { formatAddress } from '@repo/utils'
+import { allChains, eosEvmMainnet, eosEvmTestnet } from '@smartsale/chains'
+import { formatAddress } from '@smartsale/utils'
 import { useEffect, useState } from 'react'
 
 const explorerUrl =

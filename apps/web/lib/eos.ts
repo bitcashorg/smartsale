@@ -1,6 +1,6 @@
 'use client'
 
-import { tokens } from '@repo/tokens'
+import { tokens } from '@smartsale/tokens'
 import { APIClient, Asset, Name } from '@wharfkit/antelope'
 import {
   type AbiProvider,

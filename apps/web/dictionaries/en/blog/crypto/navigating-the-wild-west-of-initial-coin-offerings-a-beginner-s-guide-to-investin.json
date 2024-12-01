@@ -2,11 +2,7 @@
   "relatedBlogs": [
     {
       "id": "180563918",
-      "topics": [
-        "Tokenomics",
-        "Commentary",
-        "Fundraising"
-      ],
+      "topics": ["Tokenomics", "Commentary", "Fundraising"],
       "title": "Tokens: Investment Vehicle or Medium of Exchange (Not Both) [Commentary]",
       "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
       "authorName": "Crypto Clairity",
@@ -33,11 +29,7 @@
     },
     {
       "id": "180563922",
-      "topics": [
-        "Fundraising",
-        "Tokenomics",
-        "Commentary"
-      ],
+      "topics": ["Fundraising", "Tokenomics", "Commentary"],
       "title": "ICOs Leverage Network Effects [Commentary]",
       "slug": "icos-leverage-network-effects-commentary",
       "authorName": "Crypto Clairity",
@@ -64,11 +56,7 @@
     },
     {
       "id": "180556595",
-      "topics": [
-        "Fundraising",
-        "Tokenomics",
-        "Commentary"
-      ],
+      "topics": ["Fundraising", "Tokenomics", "Commentary"],
       "title": "The Blockchain Effect: Network Effects without Market Power Costs [Commentary]",
       "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
       "authorName": "Crypto Clairity",
@@ -95,11 +83,7 @@
     },
     {
       "id": "167184977",
-      "topics": [
-        "Tokenomics",
-        "DAO",
-        "Fundraising"
-      ],
+      "topics": ["Tokenomics", "DAO", "Fundraising"],
       "title": "Revolutionizing the Equity Model: How Tokenomics is Disrupting the Startup World",
       "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
       "authorName": "Crypto Clairity",
@@ -126,10 +110,7 @@
     },
     {
       "id": "167101094",
-      "topics": [
-        "Getting Started",
-        "Tokenomics"
-      ],
+      "topics": ["Getting Started", "Tokenomics"],
       "title": "Tokenomics 101: Unleashing the Power of Cryptocurrency!",
       "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
       "authorName": "Crypto Clairity",
@@ -156,10 +137,7 @@
     },
     {
       "id": "166981063",
-      "topics": [
-        "Getting Started",
-        "DAO"
-      ],
+      "topics": ["Getting Started", "DAO"],
       "title": "The Future is Here: The Rise of Decentralized Autonomous Organizations (DAOs)",
       "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
       "authorName": "Crypto Clairity",
@@ -180,10 +158,7 @@
     },
     {
       "id": "165744328",
-      "topics": [
-        "Getting Started",
-        "How-To"
-      ],
+      "topics": ["Getting Started", "How-To"],
       "title": "Stay Ahead of the Game: A Guide to Staying Informed and Educated in the World of Cryptocurrency",
       "slug": "stay-ahead-of-the-game-a-guide-to-staying-informed-and-educated-in-the-world-of-c",
       "authorName": "Crypto Clairity",
@@ -210,10 +185,7 @@
     },
     {
       "id": "165742753",
-      "topics": [
-        "Getting Started",
-        "Payments"
-      ],
+      "topics": ["Getting Started", "Payments"],
       "title": "Stablecoins: The Future of Cryptocurrency Transactions and Payments",
       "slug": "stablecoins-the-future-of-cryptocurrency-transactions-and-payments",
       "authorName": "Crypto Clairity",
@@ -240,10 +212,7 @@
     },
     {
       "id": "165685913",
-      "topics": [
-        "DeFi",
-        "Getting Started"
-      ],
+      "topics": ["DeFi", "Getting Started"],
       "title": "Decentralize Your Finance: An Introduction to the World of DeFi",
       "slug": "decentralize-your-finance-an-introduction-to-the-world-of-defi",
       "authorName": "Crypto Clairity",
@@ -270,10 +239,7 @@
     },
     {
       "id": "165685908",
-      "topics": [
-        "Getting Started",
-        "Fundraising"
-      ],
+      "topics": ["Getting Started", "Fundraising"],
       "title": "Disrupt the Status Quo: How Cryptocurrency is Revolutionizing Fundraising and Crowdfunding",
       "slug": "disrupt-the-status-quo-how-cryptocurrency-is-revolutionizing-fundraising-and-crow",
       "authorName": "Crypto Clairity",
@@ -301,10 +267,7 @@
   ],
   "blogContent": {
     "id": "165614216",
-    "topics": [
-      "Getting Started",
-      "Fundraising"
-    ],
+    "topics": ["Getting Started", "Fundraising"],
     "title": "Navigating the Wild West of Initial Coin Offerings: A Beginner's Guide to Investing in the Future of Technology",
     "slug": "navigating-the-wild-west-of-initial-coin-offerings-a-beginner-s-guide-to-investin",
     "authorName": "Crypto Clairity",
@@ -544,9 +507,6 @@
       }
     }
   },
-  "topics": [
-    "Getting Started",
-    "Fundraising"
-  ],
+  "topics": ["Getting Started", "Fundraising"],
   "shortLink": ""
 }

@@ -1,4 +1,4 @@
-import { TestnetEasyAuction } from '@repo/auction'
+import { TestnetEasyAuction } from '@smartsale/auction'
 import { useReadContract } from 'wagmi'
 
 export function useAuctionData(auctionId: number) {

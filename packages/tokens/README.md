@@ -1,4 +1,4 @@
-# @repo/tokens
+# @smartsale/tokens
 
 To install dependencies:
 

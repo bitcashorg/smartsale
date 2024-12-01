@@ -4,9 +4,9 @@ import type {
   AlchemyActivityEvent,
   AlchemyNetwork,
   AlchemyWebhookEvent,
-} from '@repo/alchemy'
-import { chainIdAlchemyNetwork } from '@repo/alchemy'
-import { evmChains } from '@repo/chains'
+} from '@smartsale/alchemy'
+import { chainIdAlchemyNetwork } from '@smartsale/alchemy'
+import { evmChains } from '@smartsale/chains'
 import { tasks } from '@trigger.dev/sdk/v3'
 import { Alchemy, type Network } from 'alchemy-sdk'
 import { NextResponse } from 'next/server'

@@ -1,5 +1,5 @@
 {
-  "name": "@repo/chains",
+  "name": "@smartsale/chains",
   "description": "Chain configurations",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
@@ -7,6 +7,6 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "viem": "^2.21.36"
+    "viem": "2.x"
   }
 }

@@ -2,13 +2,7 @@
   "relatedBlogs": [
     {
       "id": "198277124",
-      "topics": [
-        "LLM",
-        "Finance",
-        "Healthcare",
-        "Legal",
-        "Prompting"
-      ],
+      "topics": ["LLM", "Finance", "Healthcare", "Legal", "Prompting"],
       "title": "Adapting Large Language Models via Reading Comprehension",
       "slug": "adapting-large-language-models-via-reading-comprehension",
       "authorName": "Prof. Otto Nomos",
@@ -35,10 +29,7 @@
     },
     {
       "id": "198277342",
-      "topics": [
-        "LLM",
-        "Multilingual"
-      ],
+      "topics": ["LLM", "Multilingual"],
       "title": "OpenBA: An Open-sourced 15B Bilingual Asymmetric seq2seq Model Pre-trained from Scratch",
       "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
       "authorName": "Prof. Otto Nomos",
@@ -65,10 +56,7 @@
     },
     {
       "id": "198277117",
-      "topics": [
-        "LLM",
-        "Retrieval"
-      ],
+      "topics": ["LLM", "Retrieval"],
       "title": "PDFTriage: Question Answering over Long, Structured Documents",
       "slug": "pdftriage-question-answering-over-long-structured-documents",
       "authorName": "Prof. Otto Nomos",
@@ -95,10 +83,7 @@
     },
     {
       "id": "198277138",
-      "topics": [
-        "LLM",
-        "Fine-tuning"
-      ],
+      "topics": ["LLM", "Fine-tuning"],
       "title": "Sorted LLaMA: Unlocking the Potential of Intermediate Layers of Large Language Models for Dynamic Inference Using Sorted Fine-Tuning (SoFT)",
       "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
       "authorName": "Prof. Otto Nomos",
@@ -125,11 +110,7 @@
     },
     {
       "id": "198277150",
-      "topics": [
-        "LLM",
-        "Instruction Tuning",
-        "Multimodal"
-      ],
+      "topics": ["LLM", "Instruction Tuning", "Multimodal"],
       "title": "An Empirical Study of Scaling Instruct-Tuned Large Multimodal Models",
       "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
       "authorName": "Prof. Otto Nomos",
@@ -156,11 +137,7 @@
     },
     {
       "id": "198277217",
-      "topics": [
-        "LLM",
-        "Privacy",
-        "Edge"
-      ],
+      "topics": ["LLM", "Privacy", "Edge"],
       "title": "  Recovering from Privacy-Preserving Masking with Large Language Models",
       "slug": "recovering-from-privacy-preserving-masking-with-large-language-models",
       "authorName": "Prof. Otto Nomos",
@@ -187,10 +164,7 @@
     },
     {
       "id": "198277239",
-      "topics": [
-        "LLM",
-        "Chat"
-      ],
+      "topics": ["LLM", "Chat"],
       "title": "S3-DST: Structured Open-Domain Dialogue Segmentation and State Tracking in the Era of LLMs",
       "slug": "s3-dst-structured-open-domain-dialogue-segmentation-and-state-tracking-in-the-era",
       "authorName": "Prof. Otto Nomos",
@@ -217,10 +191,7 @@
     },
     {
       "id": "198277253",
-      "topics": [
-        "LLM",
-        "Audio"
-      ],
+      "topics": ["LLM", "Audio"],
       "title": "Augmenting text for spoken language understanding with Large Language Models",
       "slug": "augmenting-text-for-spoken-language-understanding-with-large-language-models",
       "authorName": "Prof. Otto Nomos",
@@ -247,10 +218,7 @@
     },
     {
       "id": "198277277",
-      "topics": [
-        "LLM",
-        "Compression"
-      ],
+      "topics": ["LLM", "Compression"],
       "title": "Language Modeling Is Compression",
       "slug": "language-modeling-is-compression",
       "authorName": "Prof. Otto Nomos",
@@ -277,10 +245,7 @@
     },
     {
       "id": "198277345",
-      "topics": [
-        "LLM",
-        "Multilingual"
-      ],
+      "topics": ["LLM", "Multilingual"],
       "title": "Baichuan 2: Open Large-scale Language Models",
       "slug": "baichuan-2-open-large-scale-language-models",
       "authorName": "Prof. Otto Nomos",
@@ -307,10 +272,7 @@
     },
     {
       "id": "198277446",
-      "topics": [
-        "LLM",
-        "Hallucination"
-      ],
+      "topics": ["LLM", "Hallucination"],
       "title": "Chain-of-Verification Reduces Hallucination in Large Language Models",
       "slug": "chain-of-verification-reduces-hallucination-in-large-language-models",
       "authorName": "Prof. Otto Nomos",
@@ -337,12 +299,7 @@
     },
     {
       "id": "198277458",
-      "topics": [
-        "LLM",
-        "Hallucination",
-        "Entity",
-        "Structured Data"
-      ],
+      "topics": ["LLM", "Hallucination", "Entity", "Structured Data"],
       "title": "LMDX: Language Model-based Document Information Extraction and Localization",
       "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
       "authorName": "Prof. Otto Nomos",
@@ -369,10 +326,7 @@
     },
     {
       "id": "198277209",
-      "topics": [
-        "LLM",
-        "Data"
-      ],
+      "topics": ["LLM", "Data"],
       "title": "  SlimPajama-DC: Understanding Data Combinations for LLM Training",
       "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
       "authorName": "Prof. Otto Nomos",
@@ -399,10 +353,7 @@
     },
     {
       "id": "198277109",
-      "topics": [
-        "LLM",
-        "Reasoning"
-      ],
+      "topics": ["LLM", "Reasoning"],
       "title": "Contrastive Decoding Improves Reasoning in Large Language Models",
       "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
       "authorName": "Prof. Otto Nomos",
@@ -429,11 +380,7 @@
     },
     {
       "id": "198277099",
-      "topics": [
-        "LLM",
-        "Multilingual",
-        "Data"
-      ],
+      "topics": ["LLM", "Multilingual", "Data"],
       "title": "CulturaX: A Cleaned, Enormous, and Multilingual Dataset for Large Language Models in 167 Languages",
       "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
       "authorName": "Prof. Otto Nomos",
@@ -460,11 +407,7 @@
     },
     {
       "id": "198044929",
-      "topics": [
-        "LLM",
-        "Data",
-        "Agents"
-      ],
+      "topics": ["LLM", "Data", "Agents"],
       "title": "A Data Source for Reasoning Embodied Agents",
       "slug": "accelerating-llm-inference-with-staged-speculative-decoding",
       "authorName": "Prof. Otto Nomos",
@@ -491,11 +434,7 @@
     },
     {
       "id": "198044900",
-      "topics": [
-        "LLM",
-        "Entity",
-        "Fine-tuning"
-      ],
+      "topics": ["LLM", "Entity", "Fine-tuning"],
       "title": "Leveraging Contextual Information for Effective Entity Salience Detection",
       "slug": "pde-refiner-achieving-accurate-long-rollouts-with-neural-pde-solvers",
       "authorName": "Prof. Otto Nomos",
@@ -523,10 +462,7 @@
   ],
   "blogContent": {
     "id": "198277196",
-    "topics": [
-      "LLM",
-      "Structured Data"
-    ],
+    "topics": ["LLM", "Structured Data"],
     "title": "Struc-Bench: Are Large Language Models Really Good at Generating Complex Structured Data?",
     "slug": "struc-bench-are-large-language-models-really-good-at-generating-complex-structure",
     "authorName": "Prof. Otto Nomos",
@@ -701,9 +637,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Problem Identification"
                             },
                             {
@@ -722,9 +656,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Struc-Bench Benchmark"
                             },
                             {
@@ -743,9 +675,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Detailed Analysis"
                             },
                             {
@@ -764,9 +694,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Structure-Aware Fine-tuning"
                             },
                             {
@@ -785,9 +713,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Ability Map"
                             },
                             {
@@ -821,9 +747,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Complex Output Generation"
                             },
                             {
@@ -842,9 +766,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Better Model Evaluations"
                             },
                             {
@@ -863,9 +785,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Structured Data in Applications"
                             },
                             {
@@ -884,9 +804,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Guidance for Future Research"
                             },
                             {
@@ -920,9 +838,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Complexity"
                             },
                             {
@@ -941,9 +857,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Adoption"
                             },
                             {
@@ -1013,9 +927,6 @@
       }
     }
   },
-  "topics": [
-    "LLM",
-    "Structured Data"
-  ],
+  "topics": ["LLM", "Structured Data"],
   "shortLink": ""
 }

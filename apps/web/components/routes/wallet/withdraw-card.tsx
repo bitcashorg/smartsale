@@ -17,7 +17,7 @@ import {
   SelectValue,
 } from '@/components/ui/select'
 import { cn } from '@/lib/utils'
-import { TestnetUSDCred } from '@repo/auction'
+import { TestnetUSDCred } from '@smartsale/auction'
 import { useState } from 'react'
 import { parseUnits } from 'viem'
 import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'
@@ -74,9 +74,9 @@ export function WithdrawCard() {
               </SelectTrigger>
               {/* @ts-ignore */}
               <SelectContent position="popper">
-                {coins.map((o, i) => (
+                {coins.map((o) => (
                   // @ts-ignore
-                  <SelectItem key={i} value={o.coin}>
+                  <SelectItem key={JSON.stringify(o)} value={o.coin}>
                     {o.coin}
                   </SelectItem>
                 ))}

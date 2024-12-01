@@ -2,11 +2,7 @@
   "relatedBlogs": [
     {
       "id": "TBAOoPr9SPihQxeeKTGUQw",
-      "topics": [
-        "launchpad",
-        "investment",
-        "fundraising"
-      ],
+      "topics": ["launchpad", "investment", "fundraising"],
       "title": "What is a Public Token Presale?",
       "slug": "what-is-a-public-token-presale",
       "authorName": "Jun Dam",
@@ -33,11 +29,7 @@
     },
     {
       "id": "ecAGoOkaROa09DcoVKyOCA",
-      "topics": [
-        "dao",
-        "analysis",
-        "launchpad"
-      ],
+      "topics": ["dao", "analysis", "launchpad"],
       "title": "What is the Bitlauncher ($BL) Token?",
       "slug": "what-is-the-bitlauncher-bl-token",
       "authorName": "Jun Dam",
@@ -65,11 +57,7 @@
   ],
   "blogContent": {
     "id": "W8caLxKNTdahoemkXQT_sg",
-    "topics": [
-      "how_to",
-      "launchpad",
-      "dao"
-    ],
+    "topics": ["how_to", "launchpad", "dao"],
     "title": "Welcome to the Bitlauncher Presale Starting September 16th!",
     "slug": "welcome-to-the-bitlauncher-presale-starting-september-16th",
     "authorName": "Jun Dam",
@@ -133,9 +121,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Register for an Account:"
                             },
                             {
@@ -182,9 +168,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Complete KYC Verification:"
                             },
                             {
@@ -205,9 +189,7 @@
                                   "children": [
                                     {
                                       "type": "span",
-                                      "marks": [
-                                        "strong"
-                                      ],
+                                      "marks": ["strong"],
                                       "value": "Geolocation Verification:"
                                     },
                                     {
@@ -226,9 +208,7 @@
                                   "children": [
                                     {
                                       "type": "span",
-                                      "marks": [
-                                        "strong"
-                                      ],
+                                      "marks": ["strong"],
                                       "value": "Restrictions:"
                                     },
                                     {
@@ -319,9 +299,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Connect Your Wallet:"
                             },
                             {
@@ -340,9 +318,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Credit Allocation:"
                             },
                             {
@@ -390,9 +366,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Fixed Price Purchase:"
                             },
                             {
@@ -440,9 +414,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Conversion and Allocation:"
                             },
                             {
@@ -461,9 +433,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Token Distribution:"
                             },
                             {
@@ -511,9 +481,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Supported Wallets and Exchanges:"
                             },
                             {
@@ -532,9 +500,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Compliance:"
                             },
                             {
@@ -552,9 +518,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Join us on this exciting venture and be part of shaping the future of AI and blockchain."
                     },
                     {
@@ -611,10 +575,6 @@
       }
     }
   },
-  "topics": [
-    "how_to",
-    "launchpad",
-    "dao"
-  ],
+  "topics": ["how_to", "launchpad", "dao"],
   "shortLink": ""
 }

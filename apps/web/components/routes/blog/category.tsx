@@ -39,6 +39,7 @@ export function CategoryComponent({ params, sections }: BlogCategoryPageProps) {
     setFilterSectionContent(null)
   }
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
     if (topic) {
       filterSectionContent()
@@ -55,14 +56,14 @@ export function CategoryComponent({ params, sections }: BlogCategoryPageProps) {
 
   return (
     <div className="flex flex-col items-center justify-start w-full py-10">
-      {(filteredSectionContent || sections)?.map((section, index) => {
+      {(filteredSectionContent || sections)?.map((section) => {
         const contents = topic ? section?.content : section?.content.slice(0, 4)
         //  console.log("contents::", contents)
         return (
           contents.length > 0 && (
             <section
               className="container mt-space-80"
-              key={index}
+              key={section.topic}
               id={section.topic}
             >
               <div className="flex items-center justify-between mb-space-32">
@@ -92,7 +93,7 @@ export function CategoryComponent({ params, sections }: BlogCategoryPageProps) {
                   <ArticleCard
                     post={post}
                     sectionSlug={category}
-                    key={index}
+                    key={post.slug}
                     lang={params.lang}
                     meta={true}
                     className={cn(

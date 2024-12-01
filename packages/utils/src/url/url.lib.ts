@@ -1,7 +1,12 @@
-declare let window: any
+declare let window: {
+  location: {
+    protocol: string
+    hostname: string
+  }
+}
 
 export function getSiteUrl() {
-  if (!window) throw new Error('window not found')
+  if (typeof window === 'undefined') throw new Error('window not found')
   const { protocol, hostname } = window.location
   return `${protocol}//${hostname}`
 }

@@ -2,11 +2,7 @@
   "relatedBlogs": [],
   "blogContent": {
     "id": "189576077",
-    "topics": [
-      "Image",
-      "Safety",
-      "Diffusion"
-    ],
+    "topics": ["Image", "Safety", "Diffusion"],
     "title": "FLIRT: Feedback Loop In-context Red Teaming",
     "slug": "flirt-feedback-loop-in-context-red-teaming",
     "authorName": "Prof. Otto Nomos",
@@ -141,10 +137,6 @@
       }
     }
   },
-  "topics": [
-    "Image",
-    "Safety",
-    "Diffusion"
-  ],
+  "topics": ["Image", "Safety", "Diffusion"],
   "shortLink": ""
 }

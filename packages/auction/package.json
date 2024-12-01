@@ -1,5 +1,5 @@
 {
-  "name": "@repo/auction",
+  "name": "@smartsale/auction",
   "version": "0.0.1",
   "private": true,
   "description": "Auction Smart Contracts Data",
@@ -9,11 +9,11 @@
   "author": "gaboesquivel.com",
   "license": "ISC",
   "dependencies": {
-    "viem": "latest",
-    "@repo/chains": "workspace:*"
+    "viem": "2.x",
+    "@smartsale/chains": "workspace:*"
   },
   "devDependencies": {
-    "@repo/tsconfig": "workspace:*",
+    "@smartsale/tsconfig": "workspace:*",
     "typescript": "^5.3.3",
     "@types/bun": "latest"
   }

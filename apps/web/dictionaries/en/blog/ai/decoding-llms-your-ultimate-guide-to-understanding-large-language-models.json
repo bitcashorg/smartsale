@@ -2,12 +2,7 @@
   "relatedBlogs": [
     {
       "id": "190259129",
-      "topics": [
-        "LLM",
-        "Hardware",
-        "Summary",
-        "Edge"
-      ],
+      "topics": ["LLM", "Hardware", "Summary", "Edge"],
       "title": "Latent Space Podcast 8/10/23 [Summary]: LLMs Everywhere: Running 70B models in browsers and iPhones using MLC — with Tianqi Chen of CMU / OctoML",
       "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
       "authorName": "Prof. Otto Nomos",
@@ -34,12 +29,7 @@
     },
     {
       "id": "190259172",
-      "topics": [
-        "Summary",
-        "LLM",
-        "Open Source",
-        "Small Models"
-      ],
+      "topics": ["Summary", "LLM", "Open Source", "Small Models"],
       "title": "Latent Space Podcast 7/19/23 [Summary] - Llama 2: The New Open LLM SOTA (ft. Nathan Lambert, Matt Bornstein, Anton Troynikov, Russell Kaplan, Whole Mars Catalog et al.)",
       "slug": "latent-space-podcast-7-19-23-summary-llama-2-the-new-open-llm-sota-ft-nathan-lamb",
       "authorName": "Prof. Otto Nomos",
@@ -66,11 +56,7 @@
     },
     {
       "id": "190259333",
-      "topics": [
-        "LLM",
-        "Summary",
-        "UX"
-      ],
+      "topics": ["LLM", "Summary", "UX"],
       "title": "Latent Space Podcast 6/8/23 [Summary] - From RLHF to RLHB: The Case for Learning from Human Behavior - with Jeffrey Wang and Joe Reeve of Amplitude",
       "slug": "latent-space-podcast-6-8-23-summary-from-rlhf-to-rlhb-the-case-for-learning-from",
       "authorName": "Prof. Otto Nomos",
@@ -97,12 +83,7 @@
     },
     {
       "id": "190260557",
-      "topics": [
-        "Summary",
-        "Code",
-        "LLM",
-        "Agents"
-      ],
+      "topics": ["Summary", "Code", "LLM", "Agents"],
       "title": "Latent Space Podcast 5/25/23 [Summary] - Debugging the Internet with AI agents – with Itamar Friedman of Codium AI and AutoGPT",
       "slug": "latent-space-podcast-5-25-23-summary-debugging-the-internet-with-ai-agents-with",
       "authorName": "Prof. Otto Nomos",
@@ -129,11 +110,7 @@
     },
     {
       "id": "190629271",
-      "topics": [
-        "LLM",
-        "Small Models",
-        "Summary"
-      ],
+      "topics": ["LLM", "Small Models", "Summary"],
       "title": "Latent Space Podcast 4/28/23 [Summary] - Mapping the future of *truly* Open Models and Training Dolly for $30 — with Mike Conover of Databricks",
       "slug": "latent-space-podcast-4-28-23-summary-mapping-the-future-of-truly-open-models-and",
       "authorName": "Prof. Otto Nomos",
@@ -161,10 +138,7 @@
   ],
   "blogContent": {
     "id": "190258582",
-    "topics": [
-      "Getting Started",
-      "LLM"
-    ],
+    "topics": ["Getting Started", "LLM"],
     "title": "Decoding LLMs: Your Ultimate Guide to Understanding Large Language Models",
     "slug": "decoding-llms-your-ultimate-guide-to-understanding-large-language-models",
     "authorName": "Prof. Otto Nomos",
@@ -533,9 +507,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "healthcare"
                     },
                     {
@@ -553,9 +525,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "legal sector"
                     },
                     {
@@ -573,9 +543,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "industrial world"
                     },
                     {
@@ -593,9 +561,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "creative industries"
                     },
                     {
@@ -669,9 +635,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Firstly"
                     },
                     {
@@ -685,9 +649,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Secondly"
                     },
                     {
@@ -701,9 +663,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Thirdly"
                     },
                     {
@@ -717,9 +677,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Lastly"
                     },
                     {
@@ -775,9 +733,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "Conclusion"
                     }
                   ]
@@ -787,9 +743,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "So, what have we explored in this grand expedition of LLMs?"
                     },
                     {
@@ -807,9 +761,7 @@
                     },
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "It may seem long; it may appear challenging, but remember – every sunrise begins in the dark."
                     },
                     {
@@ -823,9 +775,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": [
-                        "strong"
-                      ],
+                      "marks": ["strong"],
                       "value": "So, are you ready to welcome this sunrise, to embark on this exciting journey of discovery and growth?"
                     },
                     {
@@ -864,9 +814,6 @@
       }
     }
   },
-  "topics": [
-    "Getting Started",
-    "LLM"
-  ],
+  "topics": ["Getting Started", "LLM"],
   "shortLink": ""
 }

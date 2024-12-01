@@ -42,16 +42,24 @@ export function ProjectInfo({
 }: {
   project: ProjectWithAuction
   presale?: boolean
-  }) {
+}) {
   const presaleStartDate = new Date(project?.start_timestamptz || 0)
   const presaleEndDate = new Date(project?.end_timestamptz || 0)
   const fields: Array<Array<ItemProps>> = [
     [
       {
-        label: 'Presale', value: `${formatDate(presaleStartDate, 'numeric')} - ${formatDate(presaleEndDate, 'numeric')}
-        ` },
-      { label: 'Fundraising Goal', value: formatCurrency({ value: project.fundraising_goal / 100 }) },
-      { label: 'Max Allocation', value: formatCurrency({ value: project.max_allocation / 100 }) },
+        label: 'Presale',
+        value: `${formatDate(presaleStartDate, 'numeric')} - ${formatDate(presaleEndDate, 'numeric')}
+        `,
+      },
+      {
+        label: 'Fundraising Goal',
+        value: formatCurrency({ value: project.fundraising_goal / 100 }),
+      },
+      {
+        label: 'Max Allocation',
+        value: formatCurrency({ value: project.max_allocation / 100 }),
+      },
     ],
     [
       { label: 'Token Sale', value: 'TBD' },

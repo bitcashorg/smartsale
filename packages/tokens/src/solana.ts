@@ -1,15 +1,15 @@
 import type { SolanaToken } from './types'
 
-const baseTokens = [
-  {
-    symbol: 'USDC',
-    address: 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v',
-  },
-  {
-    symbol: 'USDT',
-    address: 'Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB',
-  },
-]
+// const baseTokens = [
+//   {
+//     symbol: 'USDC',
+//     address: 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v',
+//   },
+//   {
+//     symbol: 'USDT',
+//     address: 'Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB',
+//   },
+// ]
 
 export const solanaTokens: SolanaToken[] = []
 // baseTokens.map((token) => ({

@@ -5,7 +5,6 @@ import { youtube, type youtube_v3 } from '@googleapis/youtube'
 
 function getYouTubeApiKey() {
   const apiKey = process.env.YOUTUBE_API_KEY || ''
-  console.log('🍓 youtubeapiKey', apiKey)
   // if (!apiKey) throw new Error('YouTube API key not configured')
   return apiKey
 }

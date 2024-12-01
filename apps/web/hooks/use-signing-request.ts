@@ -2,7 +2,7 @@
 import { useSession } from '@/hooks/use-session'
 import { useSupabaseClient } from '@/services/supabase'
 import { createContextHook } from '@blockmatic/hooks-utils'
-import type { Tables } from '@repo/supabase'
+import type { Tables } from '@smartsale/supabase'
 import type { RealtimeChannel } from '@supabase/supabase-js'
 import { useMutation } from '@tanstack/react-query'
 import axios from 'axios'

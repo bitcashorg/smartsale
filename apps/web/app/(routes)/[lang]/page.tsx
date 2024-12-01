@@ -14,7 +14,7 @@ export default async function IndexPage({ params: { lang } }: IndexPageProps) {
       <DynamicUpcoming projects={projects} dict={dict} />
 
       <div className="narrow-container">
-        <DynamicFeatures lang={lang} dict={dict} id="features" />
+        <DynamicFeatures dict={dict} id="features" />
         <DynamicWhyChooseUs lang={lang} dict={dict} />
         <DynamicStepsSection lang={lang} dict={dict} id="steps" />
         <DynamicReferralSection />

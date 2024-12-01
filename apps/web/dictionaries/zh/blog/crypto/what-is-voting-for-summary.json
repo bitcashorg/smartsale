@@ -2,11 +2,7 @@
   "relatedBlogs": [
     {
       "id": "167184977",
-      "topics": [
-        "Tokenomics",
-        "DAO",
-        "Fundraising"
-      ],
+      "topics": ["Tokenomics", "DAO", "Fundraising"],
       "title": "Revolutionizing the Equity Model: How Tokenomics is Disrupting the Startup World",
       "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
       "authorName": "Crypto Clairity",
@@ -33,10 +29,7 @@
     },
     {
       "id": "166981063",
-      "topics": [
-        "Getting Started",
-        "DAO"
-      ],
+      "topics": ["Getting Started", "DAO"],
       "title": "The Future is Here: The Rise of Decentralized Autonomous Organizations (DAOs)",
       "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
       "authorName": "Crypto Clairity",
@@ -58,10 +51,7 @@
   ],
   "blogContent": {
     "id": "180563903",
-    "topics": [
-      "DAO",
-      "Summary"
-    ],
+    "topics": ["DAO", "Summary"],
     "title": "What is Voting For? [Summary]",
     "slug": "what-is-voting-for-summary",
     "authorName": "Crypto Clairity",
@@ -324,10 +314,7 @@
       }
     }
   },
-  "topics": [
-    "DAO",
-    "Summary"
-  ],
+  "topics": ["DAO", "Summary"],
   "shortLink": {
     "data": null,
     "error": "You've reached your monthly limit of 1000 links on the Pro plan. Please upgrade to add more links."

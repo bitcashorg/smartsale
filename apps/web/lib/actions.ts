@@ -13,7 +13,7 @@
  *
  */
 
-import { type AppError, type AppErrorCode, logAppErr } from '@repo/errors'
+import { type AppError, type AppErrorCode, logAppErr } from '@smartsale/errors'
 
 export type ActionResult<T> = Success<T> | Failure
 

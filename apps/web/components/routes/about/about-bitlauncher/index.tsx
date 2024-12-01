@@ -46,7 +46,7 @@ export async function AboutBitlauncherPageLanding({
   )
 }
 
-interface Image {
+interface BitlauncherImage {
   alt: string
   src: string
   width: number
@@ -58,7 +58,7 @@ export interface AboutBitlauncherPageContent {
   paragraph: React.ReactNode
   paragraph2: React.ReactNode
   paragraph3: React.ReactNode
-  image: Image
+  image: BitlauncherImage
 }
 
 interface AboutBitlauncherPageProps {

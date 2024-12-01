@@ -1,6 +1,7 @@
 import { cn } from '@/lib/utils'
 
 // TODO: Do types
+// biome-ignore lint/suspicious/noExplicitAny: <explanation>
 export const Tag = (props: any) => {
   const { title } = props
   return (

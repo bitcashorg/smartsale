@@ -97,6 +97,7 @@ export const nanoid = customAlphabet(
   7,
 ) // 7-character random string
 
+// biome-ignore lint/suspicious/noExplicitAny: <explanation>
 export async function fetcher<JSON = any>(
   input: RequestInfo,
   init?: RequestInit,
@@ -118,7 +119,10 @@ export async function fetcher<JSON = any>(
   return res.json()
 }
 
-export function formatDate(input: string | number | Date, length?: "long" | "numeric" | "2-digit" | "short" | "narrow"): string {
+export function formatDate(
+  input: string | number | Date,
+  length?: 'long' | 'numeric' | '2-digit' | 'short' | 'narrow',
+): string {
   const date = new Date(input)
   return date.toLocaleDateString('en-US', {
     month: length || 'long',

@@ -2,7 +2,7 @@ import * as fs from 'node:fs'
 import path from 'node:path'
 import type { Lang } from '@/dictionaries/locales'
 import { getFilePath, parseFile } from '@/lib/file'
-import { getErrorMessage } from '@repo/errors'
+import { getErrorMessage } from '@smartsale/errors'
 import { uniq } from 'lodash'
 import {
   type BlogArticleRecord,
@@ -402,13 +402,15 @@ export async function getBlogArticleData(
   const blogCategory = category.replace(/(\-\w)/g, (m: string) =>
     m[1].toUpperCase(),
   )
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   const data: any = categories[`${blogCategory}Data`]
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   const error: any = categories[`${blogCategory}Error`]
 
-  let categoryContent: any[]
-  categoryContent = data
+  const categoryContent = data
   if (categoryContent.length < 1 || error) return null
 
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   let relatedBlogs: any = []
   const blogContent = categoryContent[0]
 
@@ -429,7 +431,7 @@ export async function getBlogArticleData(
     const titleRegex = new RegExp(`(${escapedTitle})`, 'gi')
 
     relatedBlogs = relatedBlogs[`${blogCategory}Data`]
-      .map((blog: any) => {
+      .map((blog: BlogAiRecord) => {
         const { contentBlock, ...rest } = blog
         return rest
       })

@@ -2,11 +2,7 @@
   "relatedBlogs": [],
   "blogContent": {
     "id": "197990687",
-    "topics": [
-      "LLM",
-      "Healthcare",
-      "Summarization"
-    ],
+    "topics": ["LLM", "Healthcare", "Summarization"],
     "title": "Clinical Text Summarization: Adapting Large Language Models Can Outperform Human Experts",
     "slug": "openproteinset-training-data-for-structural-biology-at-scale",
     "authorName": "Prof. Otto Nomos",
@@ -270,9 +266,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Clinical Importance"
                             },
                             {
@@ -291,9 +285,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Diverse Application"
                             },
                             {
@@ -312,9 +304,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Superiority to Human Summaries"
                             },
                             {
@@ -333,9 +323,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "In-depth Analysis"
                             },
                             {
@@ -369,9 +357,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Time-saving for Clinicians"
                             },
                             {
@@ -390,9 +376,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Improved Patient Care"
                             },
                             {
@@ -411,9 +395,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Educational Value"
                             },
                             {
@@ -432,9 +414,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Inter-departmental Communication"
                             },
                             {
@@ -453,9 +433,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "EHR Integration"
                             },
                             {
@@ -489,9 +467,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Dependability"
                             },
                             {
@@ -510,9 +486,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Data Privacy"
                             },
                             {
@@ -531,9 +505,7 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": [
-                                "strong"
-                              ],
+                              "marks": ["strong"],
                               "value": "Generalizability"
                             },
                             {
@@ -603,10 +575,6 @@
       }
     }
   },
-  "topics": [
-    "LLM",
-    "Healthcare",
-    "Summarization"
-  ],
+  "topics": ["LLM", "Healthcare", "Summarization"],
   "shortLink": ""
 }

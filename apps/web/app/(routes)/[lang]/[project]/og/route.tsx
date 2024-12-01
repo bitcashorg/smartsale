@@ -102,8 +102,12 @@ export async function GET(req: NextRequest, context: { params: Params }) {
         height: 627,
       },
     )
-  } catch (e: any) {
-    console.log(`${e.message}`)
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      console.error('Failed to generate OG image:', error.message)
+    } else {
+      console.error('Failed to generate OG image:', error)
+    }
     return new Response('Failed to generate the image', {
       status: 500,
     })

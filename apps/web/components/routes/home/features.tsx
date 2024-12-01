@@ -7,16 +7,17 @@ import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import Balancer from 'react-wrap-balancer'
 
-export function Features({ lang, dict, id }: FeaturesProps) {
+export function Features({ dict, id }: FeaturesProps) {
   return (
     <Section
       heading={dict.featuresContent[0].title}
       subheading={dict.featuresContent[0].description}
       id={id}
     >
+      {/* biome-ignore lint/suspicious/noExplicitAny: <explanation> */}
       {dict.featuresContent.slice(1).map((content: any, index: number) => (
         <div
-          key={index}
+          key={content.title}
           className={cn(
             'mx-auto grid items-center gap-6 lg:grid-cols-2 lg:gap-20',
             index === 0 ? 'border-b border-muted pb-20' : 'pt-20',
@@ -68,7 +69,7 @@ export function Features({ lang, dict, id }: FeaturesProps) {
 }
 
 interface FeaturesProps {
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   dict: any
-  lang: Lang
   id?: string
 }

@@ -10,7 +10,7 @@ import {
   extractTitleAndDescriptionNested,
   injectTextAfterTranslation,
 } from '@/services/datocms/translation/utils'
-import { getErrorMessage } from '@repo/errors'
+import { getErrorMessage } from '@smartsale/errors'
 import _ from 'lodash'
 
 async function processFile(

@@ -8,8 +8,8 @@ import {
   TableRow,
 } from '@/components/ui/table'
 import { useSupabaseClient } from '@/services/supabase'
-import { TestnetEasyAuction } from '@repo/auction'
-import { formatAddress } from '@repo/utils'
+import { TestnetEasyAuction } from '@smartsale/auction'
+import { formatAddress } from '@smartsale/utils'
 import BN from 'bn.js'
 import { format } from 'date-fns'
 import Link from 'next/link'
@@ -19,6 +19,7 @@ import { useAccount, useReadContract } from 'wagmi'
 export function AuctionOrders() {
   const supabase = useSupabaseClient()
   const { address } = useAccount()
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   const [orders, setOrders] = useState<any[]>([])
   const userId = useReadContract({
     ...TestnetEasyAuction,
@@ -74,7 +75,7 @@ export function AuctionOrders() {
     return () => {
       supabase.removeChannel(channel)
     }
-  }, [userId.data, setOrders, supabase])
+  }, [userId.data, supabase])
 
   // console.log(stringify(orders))
 
@@ -92,8 +93,8 @@ export function AuctionOrders() {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {orders.map((order, index) => (
-            <TableRow key={index}>
+          {orders.map((order) => (
+            <TableRow key={order.id}>
               <TableCell>
                 {(
                   Number(formatTokenAmount(order.sell_amount)) /

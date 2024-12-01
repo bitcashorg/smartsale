@@ -1,5 +1,5 @@
 import { appConfig } from '@/lib/config'
-import type { Database } from '@repo/supabase'
+import type { Database } from '@smartsale/supabase'
 import { createBrowserClient } from '@supabase/ssr'
 import { useMemo } from 'react'
 
