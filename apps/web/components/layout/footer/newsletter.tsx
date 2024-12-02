@@ -1,14 +1,13 @@
 'use client'
+
 import { subscribeToNewsletter } from '@/app/actions/general'
-import { Button, buttonVariants } from '@/components/ui/button'
-import { IconDiscord, IconDownRightArrow } from '@/components/ui/icons'
-import { cn, motionProps } from '@/lib/utils'
-import type { LangProp } from '@/types/routing.type'
+import { motionProps } from '@/lib/motion'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { cn } from '@smartsale/ui'
+import { Button } from '@smartsale/ui'
+import { IconDownRightArrow } from '@smartsale/ui'
 import { motion } from 'framer-motion'
 import { LucideCheck, LucideLoader2 } from 'lucide-react'
-import Link from 'next/link'
-import { useEffect } from 'react'
 import { useFormStatus } from 'react-dom'
 import {
   GoogleReCaptcha,
@@ -19,12 +18,11 @@ import { useSetState } from 'react-use'
 import { z } from 'zod'
 import { FooterLinks } from './footer-links'
 
-// Schema for form validation with Zod
 const formSchema = z.object({
   email: z.string().email({ message: 'Invalid email address' }),
   recaptcha: z.string().optional(),
 })
-const formOptions = { resolver: zodResolver(formSchema) }
+
 type SubcriptionFormData = z.infer<typeof formSchema>
 
 export default function Newsletter() {
@@ -33,10 +31,20 @@ export default function Newsletter() {
     data: '',
     error: '',
   })
-  const { register, setValue, watch, formState } =
-    useForm<SubcriptionFormData>(formOptions)
 
-  const onSubmit = async (formData: FormData) => {
+  const { register, setValue, watch, formState } = useForm<SubcriptionFormData>(
+    {
+      resolver: zodResolver(formSchema),
+    },
+  )
+
+  const { pending } = useFormStatus()
+  const recaptchaToken = watch('recaptcha')
+  const email = watch('email')
+  const isEmailValid = !formState.errors.email && email?.match(/.+@.+\..+/)
+  const isReadyToSubmit = (recaptchaToken && isEmailValid) || pending
+
+  async function onSubmit(formData: FormData) {
     setState({ loading: true })
     const result = await subscribeToNewsletter(formData)
     setState({
@@ -46,22 +54,14 @@ export default function Newsletter() {
     })
   }
 
-  const { pending } = useFormStatus()
-
-  const recaptchaToken = watch('recaptcha')
-  const email = watch('email')
-  const isEmailValid =
-    !formState.errors.email && email && email.match(/.+@.+\..+/)
-  const isReadyToSubmit =
-    (recaptchaToken && !formState.errors.email && isEmailValid) || pending
-
-  const newsletterIconResponse = () => {
+  function newsletterIconResponse() {
     if (pending || state.loading)
       return (
         <motion.span key="loading-icon" {...motionProps.iconMotionProps}>
           <LucideLoader2 size={26} className="animate-spin stroke-white" />
         </motion.span>
       )
+
     if (state.data)
       return (
         <motion.span key="success-icon" {...motionProps.iconMotionProps}>
@@ -81,6 +81,7 @@ export default function Newsletter() {
     )
   }
 
+  // Reset state when data/error changes
   useEffect(() => {
     if (!state.data && !state.error) return
     setState({ data: '', error: '' })
@@ -93,12 +94,11 @@ export default function Newsletter() {
     >
       <GoogleReCaptchaProvider
         reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''}
-        // language="[optional_language]"
         container={{
           element: '#newsletter',
           parameters: {
-            badge: 'bottomright', //'[inline|bottomright|bottomleft]', // optional, default undefined
-            theme: 'dark', // optional, default undefined
+            badge: 'bottomright',
+            theme: 'dark',
           },
         }}
       >
@@ -111,6 +111,7 @@ export default function Newsletter() {
                 exclusive discounts, sign up with your email below:
               </p>
             </div>
+
             <div className="flex flex-col items-center w-full">
               <form
                 action={onSubmit}
@@ -128,21 +129,22 @@ export default function Newsletter() {
                   type="hidden"
                   {...register('recaptcha', { required: true })}
                 />
-                <GoogleReCaptcha
-                  onVerify={(v) => {
-                    const timeout = setTimeout(() => {
-                      if (v.toString() && recaptchaToken !== v.toString()) {
-                        setValue('recaptcha', v.toString())
-                      }
 
+                <GoogleReCaptcha
+                  onVerify={(token) => {
+                    const timeout = setTimeout(() => {
+                      if (token && recaptchaToken !== token) {
+                        setValue('recaptcha', token)
+                      }
                       clearTimeout(timeout)
                     }, 90000)
 
                     if (!recaptchaToken) {
-                      setValue('recaptcha', v.toString())
+                      setValue('recaptcha', token)
                     }
                   }}
                 />
+
                 <Button
                   type="submit"
                   variant="tertiary"
@@ -154,25 +156,25 @@ export default function Newsletter() {
                   {newsletterIconResponse()}
                 </Button>
               </form>
-              {formState.errors.email || state.error ? (
+
+              {(formState.errors.email || state.error) && (
                 <p
                   role="alert"
                   className="mt-2 rounded-full bg-destructive px-4 py-0.5 text-destructive-foreground"
                 >
-                  {'✖ '}
-                  {formState.errors.email?.message}
+                  ✖ {formState.errors.email?.message}
                   {state.error}
                 </p>
-              ) : null}
-              {state.data ? (
+              )}
+
+              {state.data && (
                 <p
                   role="alert"
                   className="mt-2 rounded-full bg-success px-4 py-0.5 text-success-foreground"
                 >
-                  {'✔ '}
-                  {state.data}
+                  ✔ {state.data}
                 </p>
-              ) : null}
+              )}
             </div>
           </div>
 

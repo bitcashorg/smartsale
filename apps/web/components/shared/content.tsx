@@ -1,4 +1,4 @@
-import { cn } from '@/lib/utils'
+import { cn } from '@smartsale/ui'
 import Image from 'next/image'
 import Balancer from 'react-wrap-balancer'
 

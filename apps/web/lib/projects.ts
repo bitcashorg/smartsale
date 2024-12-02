@@ -1,4 +1,3 @@
-import { TestnetMBOTSPL, type TokenContractData } from '@smartsale/auction'
 import type { Tables } from '@smartsale/supabase'
 import { merge } from 'lodash'
 import type { StaticImageData } from 'next/image'
@@ -115,7 +114,11 @@ export interface Project {
     ContentSection
   >
   auctionId?: number
-  token?: TokenContractData
+  token?: {
+    address: string
+    decimals: number
+    name: string
+  }
   presaleOpen?: boolean
   registrationOpen?: boolean
   auctionClosed?: boolean

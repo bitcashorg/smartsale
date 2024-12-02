@@ -1,5 +1,5 @@
 import crypto from 'node:crypto'
-import { appConfig } from '@/lib/config'
+import { appConfig } from '@/config'
 import type {
   AlchemyActivityEvent,
   AlchemyNetwork,

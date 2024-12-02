@@ -1,7 +1,7 @@
 import { Section } from '@/components/shared/section'
-import { Card } from '@/components/ui/card'
-import type { Lang } from '@/dictionaries/locales'
 import type { Feature } from '@/types/home'
+import type { Lang } from '@smartsale/content'
+import { Card } from '@smartsale/ui'
 import * as Icons from 'lucide-react'
 
 export function WhyChooseUs({ lang, dict }: WhyChooseUsProps) {

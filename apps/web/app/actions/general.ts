@@ -1,9 +1,7 @@
 'use server'
 
-import { handleAxiosError } from '@/lib/utils'
-import { createSupabaseServerClient } from '@/services/supabase'
-import { presaleInsertSchema } from '@smartsale/supabase'
-import { fromEntries } from '@smartsale/utils'
+import { fromEntries } from '@smartsale/lib'
+import { createSupabaseServerClient } from '@smartsale/supabase/src/sdk'
 import axios from 'axios'
 import { cookies } from 'next/headers'
 import { Resend } from 'resend'
@@ -160,4 +158,20 @@ export interface DubShareLinkResponse {
 export type ActionState = {
   data?: string
   error?: string
+}
+
+function handleAxiosError(error: unknown) {
+  if (axios.isAxiosError(error) && error.response) {
+    return {
+      data: error.response.data,
+      status: error.response.status,
+      headers: error.response.headers,
+    }
+  }
+  console.error('An error occurred:', error)
+  return {
+    data: error as Error,
+    status: (error as Error).name,
+    headers: null,
+  }
 }

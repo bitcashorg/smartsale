@@ -2,8 +2,8 @@ import { LearnSection } from '@/components/routes/home/section/learn-section'
 import StepsSection from '@/components/routes/home/section/steps-section'
 import { BgHeader } from '@/components/shared/bg-header'
 import { PageContent } from '@/components/shared/content'
-import { getDictionary } from '@/dictionaries'
 import type { CommonPageProps } from '@/types/routing.type'
+import { getDictionary } from '@smartsale/content'
 import type { Metadata } from 'next'
 
 export default async function SecurityTips({ params }: CommonPageProps) {

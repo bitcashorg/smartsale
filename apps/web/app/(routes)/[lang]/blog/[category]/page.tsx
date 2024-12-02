@@ -1,6 +1,5 @@
 import { BlogSections } from '@/components/routes/blog/blog-sections'
 import { BgHeader } from '@/components/shared/bg-header'
-import { type Lang, locales } from '@/dictionaries/locales'
 import { generateMetadataFromSEO } from '@/lib/seo'
 import {
   type ArticlesSection,
@@ -8,6 +7,7 @@ import {
   getBlogCategoryLandingData,
   getPageSeoText,
 } from '@/services/datocms'
+import { type Lang, locales } from '@smartsale/content'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 

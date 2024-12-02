@@ -1,4 +1,4 @@
-import { appConfig } from '@/lib/config'
+import { appConfig } from '@/config'
 import type { Project } from '@/lib/projects'
 import Image from 'next/image'
 import type { ReactNode } from 'react'

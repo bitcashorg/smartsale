@@ -2,8 +2,8 @@
 
 import { useEffect, useRef, useState } from 'react'
 
-import { Card } from '@/components/ui/card'
-import { cn } from '@/lib/utils'
+import { cn } from '@smartsale/ui'
+import { Card } from '@smartsale/ui'
 import Link from 'next/link'
 
 export function ArticleIndex({ articleHeaders }: ArticleIndexProps) {

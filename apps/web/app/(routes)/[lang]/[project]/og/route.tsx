@@ -1,9 +1,9 @@
 import { ImageResponse } from '@vercel/og'
 import type { NextRequest } from 'next/server'
-
+import '@smartsale/ui/smartsale.css'
 import '@/app/globals.css'
-import { getDictionary } from '@/dictionaries'
 import { getProjectBySlug } from '@/lib/projects'
+import { getDictionary } from '@smartsale/content'
 
 type Params = {
   project: string

@@ -1,4 +1,4 @@
-import { cn } from '@/lib/utils'
+import { cn } from '@smartsale/ui'
 
 // TODO: Do types
 // biome-ignore lint/suspicious/noExplicitAny: <explanation>

@@ -1,18 +1,15 @@
 'use client'
 
-import { IconReferral } from '@/components/ui/icons'
-import { Skeleton } from '@/components/ui/skeleton'
 import { useCopyShortLink } from '@/hooks/use-copy-shortlink'
 import { useSession } from '@/hooks/use-session'
 import { chaingraphService } from '@smartsale/chaingraph'
+import { Skeleton } from '@smartsale/ui'
+import { IconReferral } from '@smartsale/ui'
+import { Card, CardContent, CardHeader } from '@smartsale/ui'
 import { AnimatePresence } from 'framer-motion'
 import { Copy, LucideCheck, LucideLoader2, LucideX } from 'lucide-react'
 import Image from 'next/image'
 import { useAsync } from 'react-use'
-import { Card, CardContent, CardHeader } from '../../../ui/card'
-import ReferralDesktopList from './referral-desktop-list'
-import ReferralMobileList from './referral-mobile-list'
-import ReferralShareButton from './referral-share-button'
 
 export default function ReferralProgramTab() {
   // Hook is created separated due useSession is being used somewhere where the referral hook is not at the useSession context, even though the SessionProvider is being used in the main layout.tsx

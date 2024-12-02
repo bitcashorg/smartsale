@@ -1,4 +1,4 @@
-import { locales } from '@/dictionaries/locales'
+import { locales } from '@smartsale/content'
 import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
 

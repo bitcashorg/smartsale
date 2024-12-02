@@ -4,10 +4,10 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from '@/components/ui/card'
+} from '@smartsale/ui'
 import { FileIcon, ListFilterIcon } from 'lucide-react'
 
-import { Button } from '@/components/ui/button'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@smartsale/ui'
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -15,7 +15,8 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
+} from '@smartsale/ui'
+import { Button } from '@smartsale/ui'
 import {
   Table,
   TableBody,
@@ -23,10 +24,9 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from '@/components/ui/table'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+} from '@smartsale/ui'
 
-import { Badge } from '@/components/ui/badge'
+import { Badge } from '@smartsale/ui'
 
 export function WalletTabs() {
   return (

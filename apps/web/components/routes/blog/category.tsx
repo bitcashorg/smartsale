@@ -1,13 +1,13 @@
 'use client'
 
-import type { Lang } from '@/dictionaries/locales'
-import { cn } from '@/lib/utils'
 import type {
   BlogArticleRecord,
   CMSLayoutText,
   CMSPageSeoText,
   getBlogCategoriesTypes,
 } from '@/services/datocms'
+import type { Lang } from '@smartsale/content'
+import { cn } from '@smartsale/ui'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
 import { useEffect, useState } from 'react'

@@ -1,7 +1,7 @@
-import { buttonVariants } from '@/components/ui/button'
-import { IconDiscord, IconTelegram, IconTwitterX } from '@/components/ui/icons'
 import type { Project } from '@/lib/projects'
-import { cn } from '@/lib/utils'
+import { cn } from '@smartsale/ui'
+import { buttonVariants } from '@smartsale/ui'
+import { IconDiscord, IconTelegram, IconTwitterX } from '@smartsale/ui'
 import Link from 'next/link'
 
 import { Fragment } from 'react'

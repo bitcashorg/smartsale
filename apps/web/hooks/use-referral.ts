@@ -1,6 +1,6 @@
 'use client'
 
-import { appConfig } from '@/lib/config'
+import { appConfig } from '@/config'
 import { useSearchParams } from 'next/navigation'
 import { useEffect } from 'react'
 import { useSetState } from 'react-use'

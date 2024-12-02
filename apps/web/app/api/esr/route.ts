@@ -1,15 +1,11 @@
 import { deflateRawSync, inflateRawSync } from 'node:zlib'
 import { savePresaleDepositIntent } from '@/app/actions/save-deposit'
-import { appConfig } from '@/lib/config'
-import { createSupabaseServerClient } from '@/services/supabase'
-import {
-  getWhitelistedAddress,
-  insertTransaction,
-} from '@/services/supabase/service'
-import { eosEvmMainnet } from '@smartsale/chains'
+import { appConfig } from '@/config'
 import { getErrorMessage } from '@smartsale/errors'
+import { getWhitelistedAddress } from '@smartsale/supabase'
+import { createSupabaseServerClient } from '@smartsale/supabase'
 import { tasks } from '@trigger.dev/sdk/v3'
-import { ABI, APIClient, Action } from '@wharfkit/antelope'
+import { APIClient } from '@wharfkit/antelope'
 import {
   type AbiProvider,
   SigningRequest,

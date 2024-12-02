@@ -1,10 +1,10 @@
 'use client'
 
 import { registerAddress } from '@/app/actions/register-address'
-import { Button, type ButtonProps } from '@/components/ui/button'
 import { useSession } from '@/hooks/use-session'
-import { useSupabaseClient } from '@/services/supabase'
-import { formatAddress, formatAddressShort } from '@smartsale/utils'
+import { formatAddress, formatAddressShort } from '@smartsale/lib'
+import { useSupabaseClient } from '@smartsale/supabase/src/sdk'
+import { Button, type ButtonProps } from '@smartsale/ui'
 import { useQuery } from '@tanstack/react-query'
 import { useAction } from 'next-safe-action/hooks'
 import { useAccount, useSignMessage } from 'wagmi'

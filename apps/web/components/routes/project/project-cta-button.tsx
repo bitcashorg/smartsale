@@ -1,9 +1,9 @@
 'use client'
 
-import { Button } from '@/components/ui/button'
 import { useSession } from '@/hooks/use-session'
 import type { Project } from '@/lib/projects'
-import { useSupabaseClient } from '@/services/supabase'
+import { useSupabaseClient } from '@smartsale/supabase/src/sdk'
+import { Button } from '@smartsale/ui'
 import { useQuery } from '@tanstack/react-query'
 import Link from 'next/link'
 import { useAccount } from 'wagmi'

@@ -1,27 +1,25 @@
-import { AuctionBids } from '@/components/routes/project/auction/auction-bids'
 import { AuctionDataCard } from '@/components/routes/project/auction/auction-data-card'
 import { ProjectHeader } from '@/components/routes/project/project-header'
 import { ProjectPresaleData } from '@/components/routes/project/project-presale-data'
 import { Countdown } from '@/components/shared/countdown'
+import { appConfig } from '@/config'
+import {
+  type ProjectWithAuction,
+  getProjectBySlug,
+  getProjects,
+} from '@/lib/projects'
+import type { ProjectPageParams, ProjectPageProps } from '@/types/routing.type'
+import { locales } from '@smartsale/content'
+import { getDictionary } from '@smartsale/content'
+import { getPresaleData } from '@smartsale/supabase'
+import { createSupabaseServerClient } from '@smartsale/supabase/src/sdk'
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from '@/components/ui/card'
-import { getDictionary } from '@/dictionaries'
-import { locales } from '@/dictionaries/locales'
-import { appConfig } from '@/lib/config'
-import {
-  type ProjectWithAuction,
-  getProjectBySlug,
-  getProjects,
-} from '@/lib/projects'
-import { createSupabaseServerClient } from '@/services/supabase'
-import { getPresaleData } from '@/services/supabase/service'
-import type { ProjectPageParams, ProjectPageProps } from '@/types/routing.type'
-import dynamic from 'next/dynamic'
+} from '@smartsale/ui'
 import { redirect } from 'next/navigation'
 
 export default async function AuctionPage({ params }: ProjectPageProps) {
@@ -57,8 +55,8 @@ export default async function AuctionPage({ params }: ProjectPageProps) {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                {/* biome-ignore lint/style/noNonNullAssertion: <explanation> */}
-                <AuctionBids project={project!} />
+                coming soon
+                {/* <AuctionBids project={project!} /> */}
               </CardContent>
             </Card>
           </div>

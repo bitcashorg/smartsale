@@ -1,7 +1,7 @@
 'use client'
 
+import { appConfig } from '@/config'
 import { useErc20Balance } from '@/hooks/use-balance'
-import { appConfig } from '@/lib/config'
 import { eosEvmMainnet } from '@smartsale/chains'
 import { type Address, erc20Abi } from 'viem'
 import { useAccount } from 'wagmi'

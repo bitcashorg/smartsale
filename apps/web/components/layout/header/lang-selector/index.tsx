@@ -1,11 +1,11 @@
 import { LangSetter } from '@/components/layout/header/lang-selector/lang-setter'
-import { Button } from '@/components/ui/button'
+import type { LangProp } from '@/types/routing.type'
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
-import type { LangProp } from '@/types/routing.type'
+} from '@smartsale/ui'
+import { Button } from '@smartsale/ui'
 import { ChevronDownIcon } from 'lucide-react'
 import { LangSelectorItem } from './lang-selector-item'
 import { langSelectorOptions } from './lang-selector-options'

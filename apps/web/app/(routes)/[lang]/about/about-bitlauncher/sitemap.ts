@@ -1,4 +1,4 @@
-import { AVAILABLE_LANGS } from '@/lib/config'
+import { AVAILABLE_LANGS } from '@/config'
 import type { MetadataRoute } from 'next'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {

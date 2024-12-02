@@ -58,7 +58,7 @@ React/Next.js:
 
     import type { ActionResult } from '@/app/actions/actions.d.ts'
     import { logAppErr } from '@/lib/errors/index'
-    import { createSupabaseServerClient } from '@/services/supabase'
+    import { createSupabaseServerClient } from '@smartsale/supabase'
     import { type Tables, presaleDepositInsertSchema } from '@smartsale/supabase'
     import { ok } from 'neverthrow'
     import { createSafeActionClient } from 'next-safe-action'

@@ -1,4 +1,5 @@
-import { Card } from '@/components/ui/card'
+import type { YouTubePlaylistItem } from '@smartsale/content/index'
+import { Card } from '@smartsale/ui'
 import {
   Dialog,
   DialogContent,
@@ -6,8 +7,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@/components/ui/dialog'
-import type { YouTubePlaylistItem } from '@/services/youtube/index'
+} from '@smartsale/ui'
 import Image from 'next/image'
 
 export function ShortVideo({ video }: { video: YouTubePlaylistItem }) {

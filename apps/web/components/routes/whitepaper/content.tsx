@@ -1,7 +1,7 @@
-import { WHITE_PAPER } from '@/dictionaries/en/whitepaper'
 import type React from 'react'
 import { useEffect, useRef } from 'react'
 import Balancer from 'react-wrap-balancer'
+import { WHITE_PAPER } from '../../../../../packages/smartsale-content/src/dictionaries/en/whitepaper'
 import { NavigationContainer } from './navigator'
 
 interface WhitepaperContentProps {

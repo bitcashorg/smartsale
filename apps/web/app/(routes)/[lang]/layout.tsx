@@ -3,13 +3,13 @@ import '@/app/globals.css'
 import Footer from '@/components/layout/footer/footer'
 import { Header } from '@/components/layout/header'
 import { Providers } from '@/components/layout/providers'
-import { getDictionary } from '@/dictionaries'
-import { locales } from '@/dictionaries/locales'
-import { appConfig } from '@/lib/config'
+import { appConfig } from '@/config'
 import { FuturaPTBold, FuturaPTDemi, LufgaBold } from '@/lib/fonts'
-import { cn } from '@/lib/utils'
 import type { CommonPageParams } from '@/types/routing.type'
 import { GoogleAnalytics } from '@next/third-parties/google'
+import { locales } from '@smartsale/content'
+import { cn } from '@smartsale/ui'
+import { getDictionary } from '../../../../../packages/smartsale-content/src/dictionaries'
 import '@rainbow-me/rainbowkit/styles.css'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
@@ -105,8 +105,7 @@ const DynamicEsrDialog = dynamic(
   },
 )
 const DynamicAiAssistant = dynamic(
-  () =>
-    import('../../../components/ai-assistant').then((mod) => mod.AiAssistant),
+  () => import('@smartsale/ai').then((mod) => mod.AiAssistant),
   {
     ssr: false,
   },

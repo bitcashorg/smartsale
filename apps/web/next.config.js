@@ -64,9 +64,8 @@ const nextConfig = {
     '@smartsale/core',
     '@smartsale/alchemy',
     '@smartsale/trigger',
-    '@smartsale/hooks',
     '@smartsale/lib',
-    '@smartsale/utils',
+    '@smartsale/content',
   ],
   experimental: {
     ...(process.env.NODE_ENV === 'development'

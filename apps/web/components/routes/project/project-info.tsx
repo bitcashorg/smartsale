@@ -1,5 +1,5 @@
 import type { ProjectWithAuction } from '@/lib/projects'
-import { formatCurrency, formatDate } from '@/lib/utils'
+import { formatCurrency, formatDate } from '@smartsale/lib'
 import React, { type ReactNode, Fragment } from 'react'
 import { ProjectShare } from './project-share'
 
