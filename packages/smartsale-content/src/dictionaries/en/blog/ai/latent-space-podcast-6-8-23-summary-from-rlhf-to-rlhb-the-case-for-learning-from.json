@@ -1,0 +1,1565 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "190259319",
+      "topics": ["Summary", "LLM", "Training"],
+      "title": "Latent Space Podcast 8/16/23 [Summary] - The Mathematics of Training LLMs — with Quentin Anthony of Eleuther AI",
+      "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:19:45+01:00",
+      "description": "Explore the math behind training LLMs with Quentin Anthony from Eleuther AI. Dive into the Transformers Math 101 article & master distributed training techniques for peak GPU performance.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692324088-screenshot-2023-08-17-at-9-59-17-pm.png"
+      },
+      "seo": {
+        "description": "Dive into the Transformers Math 101 article & master distributed training techniques for peak GPU performance.",
+        "title": "Latent Space Podcast 8/16/23 [Summary] Math of Training LLMs",
+        "twitterCard": null,
+        "image": {
+          "width": 1576,
+          "height": 554,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692324088-screenshot-2023-08-17-at-9-59-17-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259129",
+      "topics": ["LLM", "Hardware", "Summary", "Edge"],
+      "title": "Latent Space Podcast 8/10/23 [Summary]: LLMs Everywhere: Running 70B models in browsers and iPhones using MLC — with Tianqi Chen of CMU / OctoML",
+      "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:18:37+01:00",
+      "description": "Explore the magic of MLC with Tianqi Chen: deploying 70B models on browsers & iPhones. Dive into XGBoost, TVM's creation, & the future of universal AI deployments. ",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
+      },
+      "seo": {
+        "description": "Explore deploying 70B models on browsers & iPhones. Dive into XGBoost, TVM's creation, & the future of universal AI deployments. ",
+        "title": "Latent Space 8/10/23 [Summary]: LLMs Everywhere",
+        "twitterCard": null,
+        "image": {
+          "width": 1538,
+          "height": 548,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259087",
+      "topics": ["Summary", "LLM", "Code", "Open Source", "Small Models"],
+      "title": "Latent Space Podcast 8/4/23 [Summary] Latent Space x AI Breakdown crossover pod! ",
+      "slug": "latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:16:33+01:00",
+      "description": "Join AI Breakdown & Latent Space for the summer AI tech roundup: Dive into GPT4.5, Llama 2, AI tools, the rising AI engineer, and more!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png"
+      },
+      "seo": {
+        "description": "Dive into GPT4.5, Llama 2, AI tools, the rising AI engineer, and more!",
+        "title": "Latent Space Podcast 8/4/23 [Summary] AI Breakdown crossover",
+        "twitterCard": null,
+        "image": {
+          "width": 1578,
+          "height": 558,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259111",
+      "topics": ["Summary", "Transformers", "Training", "Open Source"],
+      "title": " Latent Space Podcast 7/26/23 [Summary] FlashAttention 2: making Transformers 800% faster - Tri Dao of Together AI",
+      "slug": "latent-space-podcast-7-26-23-summary-flashattention-2-making-transformers-800-fas",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:14:13+01:00",
+      "description": "Discover how FlashAttention revolutionized AI speed with Tri Dao, as he unveils the power of FlashAttention 2, dives into Stanford's Hazy Lab & future AI insights.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691543194-screenshot-2023-08-08-at-8-43-59-pm.png"
+      },
+      "seo": {
+        "description": "Discover how FlashAttention revolutionized AI speed with Tri Dao, as he unveils the power of FlashAttention 2",
+        "title": " Latent Space Podcast 7/26/23 [Summary] FlashAttention 2",
+        "twitterCard": null,
+        "image": {
+          "width": 1648,
+          "height": 594,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1691543194-screenshot-2023-08-08-at-8-43-59-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259172",
+      "topics": ["Summary", "LLM", "Open Source", "Small Models"],
+      "title": "Latent Space Podcast 7/19/23 [Summary] - Llama 2: The New Open LLM SOTA (ft. Nathan Lambert, Matt Bornstein, Anton Troynikov, Russell Kaplan, Whole Mars Catalog et al.)",
+      "slug": "latent-space-podcast-7-19-23-summary-llama-2-the-new-open-llm-sota-ft-nathan-lamb",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:12:38+01:00",
+      "description": "Explore Llama 2, the latest AI breakthrough with experts Nathan Lambert, Matt Bornstein & more. Dive into datasets, benchmarks & AI predictions. Llama insights & drama await in this top podcast!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691968295-screenshot-2023-08-13-at-7-11-06-pm.png"
+      },
+      "seo": {
+        "description": "Dive into datasets, benchmarks & AI predictions. Llama insights & drama await in this top podcast!",
+        "title": "Latent Space Podcast 7/19/23 [Summary] - Llama 2",
+        "twitterCard": null,
+        "image": {
+          "width": 1632,
+          "height": 574,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1691968295-screenshot-2023-08-13-at-7-11-06-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259191",
+      "topics": ["Summary", "Code", "LLM"],
+      "title": "Latent Space Podcast 7/10/23 [Summary] - Code Interpreter == GPT 4.5 (w/ Simon Willison, Alex Volkov, Aravind Srinivas, Alex Graveley, et al.)",
+      "slug": "latent-space-podcast-7-10-23-summary-code-interpreter-gpt-4-5-w-simon-willison-al",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:09:26+01:00",
+      "description": "Explore ChatGPT's Code Interpreter: a game-changer in AI. Dive into its 1000x capabilities leap with Simon, Alex & top AI experts. #CodeAugmentedInference #GPT4_5",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692048911-screenshot-2023-08-14-at-3-34-05-pm.png"
+      },
+      "seo": {
+        "description": "Explore ChatGPT's Code Interpreter: a game-changer in AI. Dive into its 1000x capabilities leap with Simon, Alex & top AI experts. ",
+        "title": "Latent Space Podcast  [Summary] Code Interpreter = GPT 4.5",
+        "twitterCard": null,
+        "image": {
+          "width": 1596,
+          "height": 582,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692048911-screenshot-2023-08-14-at-3-34-05-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259216",
+      "topics": ["Summary", "Open Source"],
+      "title": "Latent Space Podcast 7/2/23 [Summary] AI Trends: a Latent Space x Practical AI crossover pod!",
+      "slug": "latent-space-podcast-7-2-23-summary-ai-trends-a-latent-space-x-practical-ai-cross",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:08:36+01:00",
+      "description": "Explore the fusion of Practical AI & Latent Space as they delve into 2023's top AI trends, reflect on standout episodes, and share insights on navigating the AI evolution.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692146916-screenshot-2023-08-15-at-5-20-38-pm.png"
+      },
+      "seo": {
+        "description": "2023's top AI trends, reflect on standout episodes, and share insights on navigating the AI evolution.",
+        "title": "Latent Space Podcast 7/2/23 [Summary] AI Trends ",
+        "twitterCard": null,
+        "image": {
+          "width": 1600,
+          "height": 532,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692146916-screenshot-2023-08-15-at-5-20-38-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259238",
+      "topics": ["Hardware", "LLM", "Summary"],
+      "title": "Latent Space Podcast 6/20/23 [Summary] - Commoditizing the Petaflop — with George Hotz of the tiny corp",
+      "slug": "latent-space-podcast-6-20-23-summary-commoditizing-the-petaflop-with-george-ho",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:07:15+01:00",
+      "description": "George Hotz of tiny corp challenges Nvidia & Google! Dive into the world of AMD collaborations, insights on ggml, Mojo, Elon & GPT-4, plus a peek into AI Girlfriend. ",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692154615-screenshot-2023-08-15-at-10-55-40-pm.png"
+      },
+      "seo": {
+        "description": "George Hotz of tiny corp challenges Nvidia & Google! AMD collaborations, insights on ggml, Mojo, Elon & GPT-4, plus a peek into AI Girlfriend. ",
+        "title": "Latent Space Podcast 6/20/23 [Summary] - George Hotz ",
+        "twitterCard": null,
+        "image": {
+          "width": 1586,
+          "height": 508,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692154615-screenshot-2023-08-15-at-10-55-40-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259294",
+      "topics": ["LLM", "Functions", "Summary"],
+      "title": "Latent Space Podcast 6/14/23 [Summary] - Emergency Pod: OpenAI's new Functions API, 75% Price Drop, 4x Context Length (w/ Alex Volkov, Simon Willison, Riley Goodside, Joshua Lochner, Stefania Druga, Eric Elliott, Mayo Oshin et al)",
+      "slug": "latent-space-podcast-6-14-23-summary-emergency-pod-openai-s-new-functions-api-75",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:05:04+01:00",
+      "description": "Explore the June 2023 OpenAI updates with top AI engineers from Scale, Microsoft, Pinecone, & Huggingface. Dive into the Code x LLM paradigms and discover Recursive Function Agents.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692221668-screenshot-2023-08-16-at-5-32-29-pm.png"
+      },
+      "seo": {
+        "description": "Explore the June 2023 OpenAI updates with top AI engineers from Scale, Microsoft, Pinecone, & Huggingface. ",
+        "title": "Latent Space Podcast 6/20/23 [Summary] - Emergency Pod",
+        "twitterCard": null,
+        "image": {
+          "width": 1626,
+          "height": 606,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692221668-screenshot-2023-08-16-at-5-32-29-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190260528",
+      "topics": ["Summary", "LLM", "UX"],
+      "title": "Latent Space Podcast 6/1/23 [Summary] - Building the AI × UX Scenius — with Linus Lee of Notion AI",
+      "slug": "latent-space-podcast-6-1-23-summary-building-the-ai-x-ux-scenius-with-linus-le",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:00:12+01:00",
+      "description": "Explore Notion AI's transformative approach to AI and UX. Dive into the future of AI-augmented workspaces, the value beyond chat interfaces, and insights on effective knowledge work. Recap of AI×UX NYC meetup included!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692390655-screenshot-2023-08-18-at-4-28-51-pm.png"
+      },
+      "seo": {
+        "description": "Explore Notion AI's transformative approach to AI and UX. ",
+        "title": "Latent Space Podcast 6/1/23 [Summary] - AI × UX Scenius",
+        "twitterCard": null,
+        "image": {
+          "width": 1614,
+          "height": 546,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692390655-screenshot-2023-08-18-at-4-28-51-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190260557",
+      "topics": ["Summary", "Code", "LLM", "Agents"],
+      "title": "Latent Space Podcast 5/25/23 [Summary] - Debugging the Internet with AI agents – with Itamar Friedman of Codium AI and AutoGPT",
+      "slug": "latent-space-podcast-5-25-23-summary-debugging-the-internet-with-ai-agents-with",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:58:27+01:00",
+      "description": "Explore the future of AI with Itamar Friedman from Codium AI on 'Debugging the Internet'. Dive into 'Extreme DRY' agents, the rapid sync of specs & tests, and the balance between code & testing. Plus, insights from Toran & an exclusive look at AutoGPT's roadmap!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692397413-screenshot-2023-08-18-at-6-10-09-pm.png"
+      },
+      "seo": {
+        "description": "Dive into 'Extreme DRY' agents, the rapid sync of specs & tests, and the balance between code & testing. ",
+        "title": "Latent Space Pod 5/25/23 [Summary] Debugging the Internet",
+        "twitterCard": null,
+        "image": {
+          "width": 1568,
+          "height": 548,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692397413-screenshot-2023-08-18-at-6-10-09-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190260577",
+      "topics": ["LLM", "Small Models"],
+      "title": "Latent Space Podcast 5/20/23 [Summary] - MPT-7B and The Beginning of Context=Infinity — with Jonathan Frankle and Abhinav Venigalla of MosaicML",
+      "slug": "latent-space-podcast-5-20-23-summary-mpt-7b-and-the-beginning-of-context-infinity",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:33+01:00",
+      "description": "Dive into MosaicML's 9-day, $200k \"llongboi\" MPT-7B training, data prep insights, & the rise of open AI models with experts Frankle & Venigalla.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692409795-screenshot-2023-08-18-at-9-49-21-pm.png"
+      },
+      "seo": {
+        "description": "Dive into MosaicML's 9-day, $200k \"llongboi\" MPT-7B training, data prep insights, & the rise of open AI models ",
+        "title": "Latent Space Podcast 6/25/23 [Summary] MosaicML",
+        "twitterCard": null,
+        "image": {
+          "width": 1568,
+          "height": 556,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692409795-screenshot-2023-08-18-at-9-49-21-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190260597",
+      "topics": ["LLM", "Structured Data"],
+      "title": "Latent Space Podcast 5/15/23 [Summary] - Guaranteed quality and structure in LLM outputs - with Shreya Rajpal of Guardrails AI",
+      "slug": "latent-space-podcast-5-15-23-summary-guaranteed-quality-and-structure-in-llm-outp",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:56:26+01:00",
+      "description": "Explore Ep. 12 with Shreya Rajpal of Guardrails AI: Dive deep into validating LLM outputs, refining answers through re-asking loops, and establishing SLAs for models. Master the nuances of AI quality assurance.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692495732-screenshot-2023-08-19-at-9-38-27-pm.png"
+      },
+      "seo": {
+        "description": "Explore Ep. 12 with Shreya Rajpal of Guardrails AI: Dive deep into validating LLM outputs.",
+        "title": "Latent Space Podcast 5/15/23 [Summary] Quality LLM Outputs",
+        "twitterCard": null,
+        "image": {
+          "width": 1580,
+          "height": 512,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692495732-screenshot-2023-08-19-at-9-38-27-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190260606",
+      "topics": ["LLM", "Training", "Agents", "Multimodal"],
+      "title": "Latent Space Podcast 5/8/23 [Summary] - The AI Founder Gene: Being Early, Building Fast, and Believing in Greatness — with Sharif Shameem of Lexica",
+      "slug": "latent-space-podcast-5-8-23-summary-the-ai-founder-gene-being-early-building-fast",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:52:09+01:00",
+      "description": "Ep.11 with Sharif Shameem of Lexica: Dive into the AI founder mindset, uncovering the secrets to pioneering innovation, building game-changing tech, training models, and the intriguing potential of Agents and genomic sequencing. ",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692501984-screenshot-2023-08-19-at-11-24-05-pm.png"
+      },
+      "seo": {
+        "description": "Ep.11 with Sharif Shameem of Lexica: Dive into the AI founder mindset, uncovering the secrets to pioneering innovation.",
+        "title": "Latent Space Pod 5/8/23 [Summary] The AI Founder Gene",
+        "twitterCard": null,
+        "image": {
+          "width": 1606,
+          "height": 550,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692501984-screenshot-2023-08-19-at-11-24-05-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190260640",
+      "topics": ["Summary", "Open Source", "LLM"],
+      "title": "Latent Space Podcast 5/5/23 [Summary] - No Moat: Closed AI gets its Open Source wakeup call — ft. Simon Willison",
+      "slug": "latent-space-podcast-5-5-23-summary-no-moat-closed-ai-gets-its-open-source-wakeup",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:49:18+01:00",
+      "description": "Explore 'No Moat: Closed AI's Open Source Awakening' with Simon Willison. Dive into leaked Google Moat memo insights, Google Brain Drain, and Python's speed boost with Mojo.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692566921-screenshot-2023-08-20-at-5-25-53-pm.png"
+      },
+      "seo": {
+        "description": "Explore 'No Moat: Closed AI's Open Source Awakening' with Simon Willison. Dive into leaked Google Moat memo insights.",
+        "title": "Latent Space Podcast 5/5/23 [Summary] - No Moat",
+        "twitterCard": null,
+        "image": {
+          "width": 1602,
+          "height": 532,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692566921-screenshot-2023-08-20-at-5-25-53-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190260671",
+      "topics": ["LLM", "Code", "Summary"],
+      "title": "Latent Space Podcast 5/3/23 [Summary] - Training a SOTA Code LLM in 1 week and Quantifying the Vibes — with Reza Shabani of Replit",
+      "slug": "latent-space-podcast-5-3-23-summary-training-a-sota-code-llm-in-1-week-and-quanti",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:46:08+01:00",
+      "description": "Ep. 10 with Reza Shabani: Dive deep into the rapid training of a state-of-the-art Code LLM, explore Replit Ghostwriter's future, and journey from Finance to AI. Discover the transition from Kaplan to Chinchilla and more!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692584998-screenshot-2023-08-20-at-10-17-26-pm.png"
+      },
+      "seo": {
+        "description": "Ep. 10 with Reza Shabani: Dive deep into the rapid training of a state-of-the-art Code LLM!",
+        "title": "Latent Space Pod 5/3/23 [Summary] - SOTA Code LLM",
+        "twitterCard": null,
+        "image": {
+          "width": 1566,
+          "height": 530,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692584998-screenshot-2023-08-20-at-10-17-26-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190629271",
+      "topics": ["LLM", "Small Models", "Summary"],
+      "title": "Latent Space Podcast 4/28/23 [Summary] - Mapping the future of *truly* Open Models and Training Dolly for $30 — with Mike Conover of Databricks",
+      "slug": "latent-space-podcast-4-28-23-summary-mapping-the-future-of-truly-open-models-and",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:33:12+01:00",
+      "description": "Explore the future of open models with Mike Conover of Databricks. Dive deep into Dolly's creation, its transition from 1.0 to 2.0, & the influences behind its development. Ep.9 touches on model infrastructure, Databricks' vision, & more. #AI #OpenModels #Dolly",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694038707-screenshot-2023-09-06-at-3-12-24-pm.png"
+      },
+      "seo": {
+        "description": "Ep.9 touches on model infrastructure, Databricks' vision, & more. #AI #OpenModels #Dolly",
+        "title": "Latent Space Pod 4/28/23 [Summary] - Mike of Databricks",
+        "twitterCard": null,
+        "image": {
+          "width": 1572,
+          "height": 628,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1694038707-screenshot-2023-09-06-at-3-12-24-pm.png"
+        }
+      }
+    },
+    {
+      "id": "191164291",
+      "topics": ["LLM", "Enterprise", "Summary"],
+      "title": "Latent Space Podcast 4/21/23 [Summary] - AI-powered Search for the Enterprise — with Deedy Das of Glean",
+      "slug": "latent-space-podcast-4-21-23-summary-ai-powered-search-for-the-enterprise-with",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:31:31+01:00",
+      "description": "Ep.8: Dive into AI in enterprise search with Deedy Das of Glean. Unpack challenges in creating an AI search giant, Google vs ChatGPT comparisons, AI infrastructure intricacies, spotting AI-generated text, and why businesses need more than just Document QA.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694134074-screenshot-2023-09-07-at-5-43-48-pm.png"
+      },
+      "seo": {
+        "description": "Ep.8: Dive into AI in enterprise search with Deedy Das of Glean. Unpack challenges in creating an AI search giant, Google vs ChatGPT ...",
+        "title": "Latent Space Podcast 4/21/23 [Summary] - with Deedy Das ",
+        "twitterCard": null,
+        "image": {
+          "width": 1608,
+          "height": 530,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1694134074-screenshot-2023-09-07-at-5-43-48-pm.png"
+        }
+      }
+    },
+    {
+      "id": "191165673",
+      "topics": ["Summary", "Vision"],
+      "title": "Latent Space Podcast 4/13/23 [Summary] - Segment Anything Model and the Hard Problems of Computer Vision — with Joseph Nelson of Roboflow",
+      "slug": "latent-space-podcast-4-13-23-summary-segment-anything-model-and-the-hard-problems",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:30:03+01:00",
+      "description": "Explore Ep.7 with Joseph Nelson on the Segment Anything Model by Meta. Dive deep into Computer Vision's future, the significance of OCR, Image Segmentation, and beyond. #Roboflow #AI",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694150379-screenshot-2023-09-07-at-10-15-52-pm.png"
+      },
+      "seo": {
+        "description": "Dive deep into Computer Vision's future, the significance of OCR, Image Segmentation, and beyond. #Roboflow #AI",
+        "title": "Latent Space Podcast 4/13/23 [Summary] - Segment Anything ",
+        "twitterCard": null,
+        "image": {
+          "width": 1604,
+          "height": 604,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1694150379-screenshot-2023-09-07-at-10-15-52-pm.png"
+        }
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "190259333",
+    "topics": ["LLM", "Summary", "UX"],
+    "title": "Latent Space Podcast 6/8/23 [Summary] - From RLHF to RLHB: The Case for Learning from Human Behavior - with Jeffrey Wang and Joe Reeve of Amplitude",
+    "slug": "latent-space-podcast-6-8-23-summary-from-rlhf-to-rlhb-the-case-for-learning-from",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2023-10-05T09:02:33+01:00",
+    "description": "Explore AI & analytics with Jeffrey Wang & Joe Reeve on Latent Space Live! Dive into why AI values Analytics and the power of first-party behavioral data. ",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692386432-screenshot-2023-08-18-at-3-17-04-pm.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Original Link: "
+                    },
+                    {
+                      "url": "https://www.latent.space/p/amplitude#details",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "From RLHF to RLHB: The Case for Learning from Human Behavior - with Jeffrey Wang and Joe Reeve of Amplitude"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Summary"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": ["strong"],
+                      "value": "AI at Amplitude with Alessio, Jeffrey, Joe, and Swyx"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Alessio, the host, starts by explaining the podcast's focus on AI research and its application, emphasizing the show's technical orientation."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Jeffrey, a co-founder and Chief Architect at Amplitude, introduces himself. He’s been in the field of product analytics for about a decade, helping businesses understand user behavior data to make informed product decisions. He finds recent trends in AI especially exciting, recognizing AI's increasing importance in product data and development."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Joe Reeve shares his background in tech startups and mentions his current role leading AI R&D at Amplitude. Both he and Jeffrey express enthusiasm for the innovations they're exploring."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The discussion moves to Amplitude's journey with AI. Jeffrey provides an overview: Amplitude's primary goal is helping customers utilize their product data to enhance their offerings. With digital products generating vast amounts of data, sifting through this information is challenging. Amplitude aims to bridge the gap between the massive data and actionable insights, viewing this as an AI-centric problem. He also recounts the origin of Amplitude, emphasizing the significance of product analytics in the gaming sector, where meticulous analysis of user data is critical."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Drawing parallels, Swyx mentions other tech giants like Slack and Discord that originated from gaming ventures."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The conversation shifts to current R&D efforts. Joe highlights their dual approach: implementing AI in their products and supporting their customers in doing the same. They've developed a framework to identify areas for AI integration by examining collaboration touchpoints, deeply embedding features, and creating supplementary AI tools. One of their recent tools allows users to input queries, which are then translated into charts. However, they faced challenges with AI models losing context or generating errors."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "In essence, the conversation offers insights into how a tech company like Amplitude is navigating the ever-evolving world of AI, dealing with challenges, and envisioning the future."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "screenshot-2023-08-18-at-3-17-04-pm",
+            "height": 550,
+            "width": 1674,
+            "filename": "screenshot-2023-08-18-at-3-17-04-pm.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692386432-screenshot-2023-08-18-at-3-17-04-pm.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Harnessing AI in Product Evolution: Challenges and Breakthroughs"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Swyx and Joe discuss the evolution and application of machine learning models (ML) and large language models (LLM) in product development."
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Products Released"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Joe elaborates on a feature they rolled out called \"question to chart\" which allows users to ask a question and get a chart as a response. This new feature is part of their LLM initiative and was rolled out to AI design partners."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Contrast with Existing ML Models"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Swyx points out a potential conflict in using both traditional ML models and the new AI initiatives. Joe explains that they utilize traditional ML to narrow down data for LLMs, which handles more complex reasoning."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Challenges Faced"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Joe mentions two key pain points: hallucination and multi-query issues. To address these, they're tracking inferences and trying to understand why certain models fail."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Utilizing AI in Amplitude Products"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Joe highlights that they use their own product, Amplitude, to measure and improve AI's performance. They are also working on helping companies build AI products with Amplitude."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Measurement of AI Effectiveness"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Joe touches upon the challenge of assessing AI's performance. Many companies struggle with understanding how effective their AI models are. By measuring user behaviors, like content sharing, Joe believes that they can get a more accurate gauge of AI's value."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Potential for A-B Testing with AI"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": They discuss the idea of generating variations in user interfaces and content with AI and testing their effectiveness. This leads to a broader conversation about self-improving products and how generative AI can automate processes. Jeffrey gives an example of how generative models might revolutionize copywriting in the future by auto-generating and optimizing content."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "In essence, the conversation revolves around the potential of AI in product development, its challenges, and the innovative solutions being created to address them."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls10-img1",
+            "height": 956,
+            "width": 956,
+            "filename": "abls10-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692389086-abls10-img1.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": ["strong"],
+                      "value": "Just-In-Time UIs and The Evolution of Analytics"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 3,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": ["emphasis"],
+                      "value": "Shaping the Future of User-Interface with Advanced Analytics and AI"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Alessio"
+                            },
+                            {
+                              "type": "span",
+                              "value": " delves into the concept of Just-In-Time UIs, discussing the preference-based user interactions. He mentions how platforms like Amplitude have transitioned from solely dashboard-driven designs to offering tailored displays based on user preferences."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Jeffrey"
+                            },
+                            {
+                              "type": "span",
+                              "value": " envisions multiple paths for the future of analytics. He champions the precision of SQL and code, emphasizing their clarity over natural language. However, he also recognizes the utility of natural language interfaces for those unfamiliar with data structures. Jeffrey believes the balance between natural language expressiveness and code precision will evolve, with natural language leading the initial inquiry phase and precise code defining specifics."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Joe"
+                            },
+                            {
+                              "type": "span",
+                              "value": " emphasizes the potential of models becoming more integrated features. He stresses the need for users to understand the model's actions and maintain the ability to intervene. Joe also highlights the importance of providing detailed feedback data for continuous model improvement."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Swyx"
+                            },
+                            {
+                              "type": "span",
+                              "value": " points out the challenges tied to chat interfaces, raising questions about how to optimize user interaction time. He references Copilot's unique metrics on code retention as a successful approach to gauge product efficacy."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Jeffrey and Joe"
+                            },
+                            {
+                              "type": "span",
+                              "value": " further elaborate on selecting the right AI models, with an inclination towards using general models for exploration. They note the efficiency and cost-effectiveness of embedding-based approaches once the utility of a general model is confirmed. Both stress the importance of understanding user intent, with Jeffrey emphasizing the challenges of quantifying match quality with LLMs."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "The discussion ends with "
+                            },
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Alessio"
+                            },
+                            {
+                              "type": "span",
+                              "value": " posing a thought on the interplay between the quality of the model versus the volume and quality of data, with Jeffrey noting that both are crucial components in the AI ecosystem."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls10-img2",
+            "height": 956,
+            "width": 956,
+            "filename": "abls10-img2.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692389129-abls10-img2.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Striking a Balance: Ethical AI Training and the Nature of Intelligence"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "In a discussion between Swyx, Joe, Jeffrey, and Alessio, the main topic revolved around the ethics and best practices of training AI models on user data, especially when users might not be fully aware."
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Ethics on Training with User Data"
+                            },
+                            {
+                              "type": "span",
+                              "value": ":"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "list",
+                          "style": "bulleted",
+                          "children": [
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "Swyx initiated the conversation, inquiring about the ethical implications of using user data for training without their knowledge."
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "Joe emphasized the importance of keeping Personally Identifiable Information (PII) away from training data to prevent unintended information leakage, such as an AI accidentally generating a social security number. Joe noted ongoing experiments to strip PII from prompts and other data while still allowing models to operate effectively."
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "User Privacy & Tracking"
+                            },
+                            {
+                              "type": "span",
+                              "value": ":"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "list",
+                          "style": "bulleted",
+                          "children": [
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "Jeffrey spoke about the spectrum of user privacy concerning tracking. On one end, some users don't want any tracking, while on the other, there are those who are fine with being tracked across the internet. The challenge is to strike a balance between tracking everything and having insufficient data to improve products. Jeffrey underscored the importance of using pseudo-anonymized first-party data to improve products without breaching privacy."
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Creativity & Intelligence in AI"
+                            },
+                            {
+                              "type": "span",
+                              "value": ":"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "list",
+                          "style": "bulleted",
+                          "children": [
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "During a lightning round of questions, both Jeffrey and Joe touched on the progress of AI in areas previously thought to be purely human domains, like creativity. Jeffrey was surprised by the creative potential of AI in tasks like image and text generation, while Joe discussed the rapid advancements in AI, especially how they've been integrated with the internet."
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Defining Intelligence"
+                            },
+                            {
+                              "type": "span",
+                              "value": ":"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "list",
+                          "style": "bulleted",
+                          "children": [
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "Jeffrey posed a fundamental question about the nature of intelligence, noting how traditional benchmarks of human intelligence, like chess, have been surpassed by AI. The conversation touched on concepts like free will and the efficiency of the human brain compared to artificial systems."
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Takeaways"
+                            },
+                            {
+                              "type": "span",
+                              "value": ":"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "list",
+                          "style": "bulleted",
+                          "children": [
+                            {
+                              "type": "listItem",
+                              "children": [
+                                {
+                                  "type": "paragraph",
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "value": "Jeffrey stressed that we are still in the early stages of the AI revolution, implying that there's a lot more to come. Joe highlighted the importance of letting machines augment human capabilities rather than replace them, advocating for the harmony between human skills and machine capabilities."
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The session ended with Swyx opening up the floor for audience questions."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls10-img5",
+            "height": 956,
+            "width": 956,
+            "filename": "abls10-img5.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692389175-abls10-img5.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": ["strong"],
+                      "value": "Customized AI Query Mechanisms in Chatbots"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": ["emphasis"],
+                      "value": "Audience Inquiry"
+                    },
+                    {
+                      "type": "span",
+                      "value": ": A member of the audience inquired about the inner workings of an AI-driven chatbot, particularly curious about its model and how it turns single English queries into multiple sub-queries."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": ["emphasis"],
+                      "value": "Joe's Response"
+                    },
+                    {
+                      "type": "span",
+                      "value": ":"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Their system uses a custom query engine instead of SQL."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "They categorize questions to determine chart types, for instance, if they should use segmentation, line, or funnel charts, along with chart naming."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "They initially considered Lang chain, a tool great for prototyping, but found it limiting and instead developed an internal wrapper with TypeScript. This allows them to write code and infer transactions within their system."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Currently, they use GPT-3.5 but are considering integrating GPT-4 and other models in the future. They also have fallback plans for clients who prefer not to use OpenAI by employing internal or open-source models trained on smaller datasets."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": ["emphasis"],
+                      "value": "Jeffrey's Insights"
+                    },
+                    {
+                      "type": "span",
+                      "value": ":"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "The key to their system's effectiveness is breaking down problems sufficiently, allowing them to guide the model to make specific decisions like chart type selection."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "GPT models can be overwhelmed by too much information, hence their method of providing contextual prompts and breaking down tasks results in a higher quality output."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": ["emphasis"],
+                      "value": "Swyx's Questions & Insights"
+                    },
+                    {
+                      "type": "span",
+                      "value": ":"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Swyx was interested in their experience with LangChain and their choice of databases."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Joe mentioned they have been using embedding or vector search in production for a while with Postgres, and recently shifted to PG Vector."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Swyx highlighted the importance of separating taxonomies from actual data to ensure data protection and prevent prompt injection."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "In essence, the discussion revolved around the intricacies of implementing a chatbot, the choice of models, and ensuring both efficiency and security in their system."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls10-img6",
+            "height": 956,
+            "width": 956,
+            "filename": "abls10-img6.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692389365-abls10-img6.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": ["strong"],
+                      "value": "Unpacking Future Potential: Behavioral AI and Predictive Patterns"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Audience member inquires about a novel model, hinting at an \"Amplitude GPT\", trained on user behavior data and wonders about its capabilities. Jeffrey elucidates the potential of such models. He anticipates superior predictive capabilities, especially predicting user group behaviors, such as churning, purchasing, or upselling. Jeffrey's vision extends to understanding deeper patterns in sessions, enabling unsupervised categorization of users based on future outcomes. This would assist in discerning the reasons behind behavioral disparities and attempt to answer challenging questions on causation in product analytics. Furthermore, Jeffrey highlights the challenges of data interpretation in tools that automatically record user sessions due to the noise in data. Ideally, a perfect behavioral model could interpret such data, eliminating the need for manual instrumentation. While such a model is still in the realm of speculation, the aspiration is to make the analytics process seamless and more intuitive in the future. The conversation concludes with Swyx expressing gratitude to the listeners."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls10-img4",
+            "height": 956,
+            "width": 956,
+            "filename": "abls10-img4.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692389240-abls10-img4.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Explore AI & analytics with Jeffrey Wang & Joe Reeve on Latent Space Live! Dive into why AI values Analytics and the power of first-party behavioral data. ",
+      "title": "Latent Space Podcast 6/8/23 [Summary] - From RLHF to RLHB",
+      "twitterCard": null,
+      "image": {
+        "width": 1674,
+        "height": 550,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692386432-screenshot-2023-08-18-at-3-17-04-pm.png"
+      }
+    }
+  },
+  "topics": ["LLM", "Summary", "UX"],
+  "shortLink": ""
+}

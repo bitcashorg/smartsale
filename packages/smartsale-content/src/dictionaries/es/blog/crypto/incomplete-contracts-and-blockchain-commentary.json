@@ -1,0 +1,451 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180563939",
+      "topics": ["DAO", "Tokenomics", "Commentary"],
+      "title": "A Framework for Blockchain Governance Design: The Prysm Group Wheel [Commentary]",
+      "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:19:19+01:00",
+      "description": "Navigate the complexities of blockchain governance with the Prysm Group Wheel. Your roadmap to effective blockchain governance design.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+      },
+      "seo": {
+        "description": "Navigate the complexities of blockchain governance with the Prysm Group Wheel. Your roadmap to effective blockchain governance design.",
+        "title": "A Framework for Blockchain Governance Design [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 1400,
+          "height": 1383,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+        }
+      }
+    },
+    {
+      "id": "180217169",
+      "topics": ["Tokenomics", "Commentary"],
+      "title": "Economics of Tokenized Incentives 3: Token Value Won’t Align Stakeholders [Commentary]",
+      "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:23+01:00",
+      "description": "Uncover the pitfalls of using token value as a performance metric in blockchain platforms. Learn to design effective incentive systems.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+      },
+      "seo": {
+        "description": "Uncover the pitfalls of using token value as a performance metric in blockchain platforms. Learn to design effective incentive systems.",
+        "title": "Economics of Tokenized Incentives 3 [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+        }
+      }
+    },
+    {
+      "id": "180217123",
+      "topics": ["Tokenomics", "Commentary"],
+      "title": "Economics of Tokenized Incentives 2: Selecting Effective Performance Metrics [Commentary]",
+      "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:05+01:00",
+      "description": "Discover the power of performance metrics in blockchain pay-for-performance systems. Learn to align incentives with platform goals effectively.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+      },
+      "seo": {
+        "description": "Discover the power of performance metrics in blockchain pay-for-performance systems. Learn to align incentives with platform goals effectively.",
+        "title": "Economics of Tokenized Incentives 2 [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+        }
+      }
+    },
+    {
+      "id": "180217082",
+      "topics": ["Tokenomics", "Commentary"],
+      "title": "Economics of Tokenized Incentives 1: Intro to Pay for Performance [Commentary]",
+      "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:15:12+01:00",
+      "description": "Dive into the complexities of pay-for-performance incentives in blockchain platforms. Learn the trade-offs and design considerations for success.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+      },
+      "seo": {
+        "description": "Dive into the complexities of pay-for-performance incentives in blockchain platforms. Learn the trade-offs and design considerations for success",
+        "title": "Economics of Tokenized Incentives 1 [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+        }
+      }
+    },
+    {
+      "id": "180563918",
+      "topics": ["Tokenomics", "Commentary", "Fundraising"],
+      "title": "Tokens: Investment Vehicle or Medium of Exchange (Not Both) [Commentary]",
+      "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:13:31+01:00",
+      "description": "Delve into the dual role of tokens in the blockchain economy. Uncover the fine line between investment vehicle and medium of exchange.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
+      },
+      "seo": {
+        "description": "Delve into the dual role of tokens in the blockchain economy. Uncover the fine line between investment vehicle and medium of exchange.",
+        "title": "Tokens: Investment or Medium of Exchange [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
+        }
+      }
+    },
+    {
+      "id": "180563922",
+      "topics": ["Fundraising", "Tokenomics", "Commentary"],
+      "title": "ICOs Leverage Network Effects [Commentary]",
+      "slug": "icos-leverage-network-effects-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:12:06+01:00",
+      "description": "Discover how ICOs harness the power of network effects to fuel their success. ICOs and network effects, a dynamic duo!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+      },
+      "seo": {
+        "description": "Discover how ICOs harness the power of network effects to fuel their success. ICOs and network effects, a dynamic duo!",
+        "title": "ICOs Leverage Network Effects [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+        }
+      }
+    },
+    {
+      "id": "180556595",
+      "topics": ["Fundraising", "Tokenomics", "Commentary"],
+      "title": "The Blockchain Effect: Network Effects without Market Power Costs [Commentary]",
+      "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:11:14+01:00",
+      "description": "Explore how blockchain enables network effects without the downsides of market power. Discover the game-changing Blockchain Effect.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+      },
+      "seo": {
+        "description": "Explore how blockchain enables network effects without the downsides of market power. Discover the game-changing Blockchain Effect.",
+        "title": "Network Effects without Market Power Costs [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+        }
+      }
+    },
+    {
+      "id": "180563931",
+      "topics": ["Tokenomics", "Commentary"],
+      "title": "Blockchain Incentive Structures: What they are and why they matter [Commentary]",
+      "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:02+01:00",
+      "description": "Understand the core of blockchain incentive structures and their significance in driving user behavior and platform success.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+      },
+      "seo": {
+        "description": "Understand the core of blockchain incentive structures and their significance in driving user behavior and platform success.",
+        "title": "Blockchain Incentive Structures [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+        }
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "180556627",
+    "topics": ["Commentary", "Smart Contracts"],
+    "title": "Incomplete Contracts and Blockchain [Commentary]",
+    "slug": "incomplete-contracts-and-blockchain-commentary",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:14:44+01:00",
+    "description": "Demystify the relationship between incomplete contracts and blockchain. Understand how blockchain can fill contractual gaps.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690856249-cbc5-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Original Link: "
+                    },
+                    {
+                      "url": "https://medium.com/prysmeconomics/incomplete-contracts-and-blockchain-ac9f348a2e6f?source=user_profile---------12----------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Incomplete Contracts and Blockchain"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": "\n\nAuthor: "
+                    },
+                    {
+                      "url": "https://medium.com/@cathybarreraphd?source=post_page-----ac9f348a2e6f--------------------------------",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noopener follow"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Cathy Barrera, PhD"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Summary & Commentary"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The study of Contract Theory highlights how contracts, a fundamental part of economic activity, are inherently incomplete due to the impossibility of accounting for all possible contingencies and verifying all actions. This inherent incompleteness presents a unique opportunity for blockchain technology."
+                    }
+                  ]
+                },
+                {
+                  "type": "thematicBreak"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Blockchain startups should focus on:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": ["strong"],
+                      "value": "Improving Quality of Information"
+                    },
+                    {
+                      "type": "span",
+                      "value": ": The smart contract technology in blockchains allows for automated execution of agreements. However, the major gain is not in automating the execution of verifiable terms, which traditional institutions already handle relatively well. Instead, the most significant efficiency gains can be realized by improving the quality of information so more terms can be included in contracts."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Actionable Insight: Blockchain startups should consider how they can utilize technology to make more information verifiable. For instance, in the insurance sector, telematics devices can verify driving behavior, which was previously unverifiable."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": ["strong"],
+                      "value": "Expanding Contingency Coverage"
+                    },
+                    {
+                      "type": "span",
+                      "value": ": Technology can help broaden the coverage of contracts, making them more complete. Artificial intelligence (AI) and big data could potentially be employed to predict and account for a wider range of contingencies."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Actionable Insight: Invest in predictive technologies like AI and machine learning to identify and manage possible contract contingencies better."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": ["strong"],
+                      "value": "Coping with Incomplete Contracts"
+                    },
+                    {
+                      "type": "span",
+                      "value": ": Rather than trying to make contracts complete, which is unrealistic, startups should focus on establishing measures for dealing with the inherent incompleteness of contracts."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Actionable Insight: Establish procedures for dispute resolution and contract amendment. Make use of the transparency and immutability of the blockchain for recording any changes and resolutions."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": ["strong"],
+                      "value": "Maximizing Enforceability"
+                    },
+                    {
+                      "type": "span",
+                      "value": ": Since contracts are only as good as their enforceability, startups should focus on ensuring the enforceability of contracts by leveraging blockchain's inherent transparency and security features."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Actionable Insight: Blockchain projects should be designed in a way that they maximize the enforceability of contracts, ensuring that the system does not become a bottleneck but an enabler in the enforcement process."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The combination of blockchain technology and the principles of Contract Theory offers a new pathway to reshape our transactional relationships. Blockchain can go beyond merely facilitating transactions to revolutionize the core functioning of our contractual systems. However, for that, we need to focus on the inherent incompleteness of contracts and how blockchain can help address this limitation."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "cbc5-img1",
+            "height": 862,
+            "width": 862,
+            "filename": "cbc5-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1690856249-cbc5-img1.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Demystify the relationship between incomplete contracts and blockchain. Understand how blockchain can fill contractual gaps.",
+      "title": "Incomplete Contracts and Blockchain [Commentary]",
+      "twitterCard": null,
+      "image": {
+        "width": 862,
+        "height": 862,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690856249-cbc5-img1.png"
+      }
+    }
+  },
+  "topics": ["Commentary", "Smart Contracts"],
+  "shortLink": ""
+}

@@ -1,4 +1,4 @@
-import type { Lang } from '@/dictionaries/locales'
+import type { Lang } from '@smartsale/content'
 
 export const langSelectorOptions: LangSelectorOption[] = [
   { name: 'English', code: 'en' },

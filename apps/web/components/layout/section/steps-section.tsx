@@ -1,11 +1,11 @@
 'use client'
 
 import { Section } from '@/components/shared/section'
-import { buttonVariants } from '@/components/ui/button'
-import { IconDownRightArrow } from '@/components/ui/icons'
-import type { Lang } from '@/dictionaries/locales'
 import { useSession } from '@/hooks/use-session'
-import { cn } from '@/lib/utils'
+import type { Lang } from '@smartsale/content'
+import { cn } from '@smartsale/ui'
+import { buttonVariants } from '@smartsale/ui'
+import { IconDownRightArrow } from '@smartsale/ui'
 import Link from 'next/link'
 
 export default function StepsSection({ lang, dict }: StepsSectionProps) {
@@ -23,7 +23,7 @@ export default function StepsSection({ lang, dict }: StepsSectionProps) {
             index: number,
           ) => (
             <div
-              key={`${index}__step-content`}
+              key={`${step.title}__step-content`}
               className="flex min-h-[260px] flex-col items-center justify-between rounded-3xl bg-white/90 md:px-6 xl:px-9 py-6 text-black/90 shadow-md backdrop-blur-xl lg:w-1/3 lg:max-w-[450px] lg:items-start xl:py-9"
             >
               <h3 className="flex w-full h-10 text-3xl font-bold whitespace-pre-line md:text-1xl lg:justify-start lg:text-left lg:text-2xl">
@@ -47,7 +47,6 @@ export default function StepsSection({ lang, dict }: StepsSectionProps) {
                     <IconDownRightArrow className="size-4 transition-all group-focus-within:-rotate-45 group-hover:-rotate-45 [&_path]:stroke-white" />
                   </Link>
                 ) : (
-                  // biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
                   <div
                     onClick={loginOrConnect}
                     className={cn(
@@ -71,6 +70,7 @@ export default function StepsSection({ lang, dict }: StepsSectionProps) {
 }
 
 export interface StepsSectionProps {
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   dict: any
   lang: Lang
 }

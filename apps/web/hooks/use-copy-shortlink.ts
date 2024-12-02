@@ -1,6 +1,6 @@
 import { generateShortLink } from '@/app/actions/general'
 import { useSession } from '@/hooks/use-session'
-import { useSupabaseClient } from '@/services/supabase'
+import { useSupabaseClient } from '@smartsale/supabase/src/sdk'
 import { useState } from 'react'
 import { toast } from 'sonner'
 

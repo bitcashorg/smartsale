@@ -2,11 +2,11 @@ export const dynamic = 'force-dynamic'
 
 import { generateShortLink } from '@/app/actions/general'
 import { BlogPage } from '@/components/routes/blog/article'
-import { type Lang, locales } from '@/dictionaries/locales'
 import { generateMetadataFromSEO } from '@/lib/seo'
 import { getBlogArticleData } from '@/services/datocms'
 import { getBlogCategory } from '@/services/datocms/datacms-blog-category.service'
 import { getAllArticles } from '@/services/datocms/datocms-all-articles.service'
+import { type Lang, locales } from '@smartsale/content'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 

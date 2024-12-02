@@ -1,6 +1,6 @@
 'use client'
 
-import { tokens } from '@repo/tokens'
+import { tokens } from '@smartsale/tokens'
 import { APIClient, Asset, Name } from '@wharfkit/antelope'
 import {
   type AbiProvider,
@@ -10,7 +10,7 @@ import {
 } from 'eosio-signing-request'
 import pako from 'pako'
 import { v4 as uuidv4 } from 'uuid'
-import { appConfig } from './config'
+import { appConfig } from '../config'
 
 const eos = new APIClient({
   url: appConfig.eosRpc,

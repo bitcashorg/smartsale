@@ -3,6 +3,7 @@ import { identify, track } from '@multibase/js'
 export function useMultibase() {
   const identifyUser = (
     address: `0x${string}`,
+    // biome-ignore lint/suspicious/noExplicitAny: <explanation>
     properties: Record<string, any>,
   ) => identify(address, properties)
 
@@ -15,5 +16,6 @@ export function useMultibase() {
 }
 
 interface MultibaseTrackPropertiesProps {
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   [key: string]: any
 }

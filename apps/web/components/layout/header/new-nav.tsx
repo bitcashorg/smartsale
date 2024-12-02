@@ -2,8 +2,9 @@
 import Link from 'next/link'
 import * as React from 'react'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@smartsale/ui'
 
+import type { LangProp } from '@/types/routing.type'
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -12,8 +13,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from '@/components/ui/navigation-menu'
-import type { LangProp } from '@/types/routing.type'
+} from '@smartsale/ui'
 import { navStruct } from '../nav-struct'
 
 export function Navigation({ lang }: LangProp) {

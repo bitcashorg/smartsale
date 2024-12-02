@@ -1,0 +1,527 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277138",
+    "topics": ["LLM", "Fine-tuning"],
+    "title": "Sorted LLaMA: Unlocking the Potential of Intermediate Layers of Large Language Models for Dynamic Inference Using Sorted Fine-Tuning (SoFT)",
+    "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-27T03:33:31+01:00",
+    "description": "Abstract Commentary & Rating",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Published on Sep 16"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Authors:"
+                    },
+                    {
+                      "url": "https://huggingface.co/parsareal",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Parsa Kavehzadeh"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/vpcom",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Mojtaba Valipour"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/marzieh7",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Marzieh Tahaei"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/alighodsi",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Ali Ghodsi"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Boxing Chen,"
+                    },
+                    {
+                      "url": "https://huggingface.co/mrgzadeh",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Mehdi Rezagholizadeh"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Abstract"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The rapid advancement of large language models (LLMs) has revolutionized natural language processing (NLP). While these models excel at understanding and generating human-like text, their widespread deployment can be prohibitively expensive. SortedNet is a recent training technique for enabling dynamic inference for deep neural networks. It leverages network modularity to create sub-models with varying computational loads, sorting them based on computation/accuracy characteristics in a nested manner. We extend SortedNet to generative NLP tasks, making large language models dynamic without any pretraining and by only replacing standard Supervised Fine-Tuning (SFT) with Sorted Fine-Tuning (SoFT) at the same costs. Our approach boosts model efficiency, eliminating the need for multiple models for various scenarios during inference. We show that using this approach, we are able to unlock the potential of intermediate layers of transformers in generating the target output. Our sub-models remain integral components of the original model, minimizing storage requirements and transition costs between different computational/latency budgets. By applying this approach on LLaMa 2 13B for tuning on the Stanford Alpaca dataset and comparing it to normal tuning and early exit via PandaLM benchmark, we show that Sorted Fine-Tuning can deliver models twice as fast as the original model while maintaining or exceeding performance."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.08968",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "View arXiv page"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.08968",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "View PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Commentary"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The paper titled \"Sorted LLaMA: Unlocking the Potential of Intermediate Layers of Large Language Models for Dynamic Inference Using Sorted Fine-Tuning (SoFT)\" delves into the realm of making Large Language Models (LLMs) more efficient and cost-effective. The primary focus is on allowing dynamic inference without requiring significant adjustments to the models."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Key Insights:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Efficiency Problem"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The paper acknowledges the challenge with LLMs—they're computationally expensive, making real-world deployment challenging, especially in real-time or latency-sensitive applications."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "SortedNet Adaptation"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The authors extend the SortedNet technique (previously applied to deep neural networks) to NLP tasks, specifically generative ones. This approach aims to dynamically adjust the model's depth during inference, essentially using only the necessary computation to produce an answer."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "SoFT Over SFT"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The proposal is to replace the standard Supervised Fine-Tuning (SFT) with Sorted Fine-Tuning (SoFT). This change doesn't increase the costs but promises better efficiency."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Potential of Intermediate Layers"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": A key takeaway is that not all layers in a transformer are necessarily required for every task. The potential of intermediate layers can be unlocked for target output generation, which can be more computationally efficient."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Performance Gains"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The proposed method offers models that can be twice as fast as the original, with the same or better performance."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Potential Real-World Impact:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Cost-Effective Deployment"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": For companies or applications that leverage LLMs, this approach could significantly reduce computational costs, making widespread deployment more feasible."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Real-time Applications"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": With faster models, applications that require real-time language processing—like chatbots, virtual assistants, and more—can benefit immensely."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Storage and Transition Benefits"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": As the sub-models remain part of the original model, storage requirements aren't increased. Transitioning between computational budgets becomes smoother and more efficient."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Customization"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Depending on the computational constraints of a particular application, users can choose the appropriate model depth, providing flexibility."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Broad Applicability"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Given that this is a fine-tuning approach, it could be applied to various LLMs across diverse domains."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Challenges:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Adoption Time"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": It might take some time for businesses and developers to adopt and adjust to this new fine-tuning approach."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Domain-Specific Challenges"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The effectiveness of this method across a diverse range of domains and tasks remains to be extensively tested."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Given the rising importance of LLMs in numerous applications and the ever-present need to optimize computational costs without compromising performance:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "I'd rate the real-world impact of this paper as a 9 out of 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The ability to harness the capabilities of LLMs more efficiently could drastically change how these models are deployed, making them more ubiquitous in various applications."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Abstract Commentary & Rating\n",
+      "title": "Sorted LLaMA: ... Inference Using Sorted Fine-Tuning (SoFT)",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": ["LLM", "Fine-tuning"],
+  "shortLink": {
+    "data": null,
+    "error": "You've reached your monthly limit of 1000 links on the Pro plan. Please upgrade to add more links."
+  }
+}

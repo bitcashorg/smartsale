@@ -2,14 +2,14 @@ import type { Project } from '@/lib/projects'
 
 import { ExternalLinkButton } from '@/components/nextjs/button-link'
 import { NestedLinkButton } from '@/components/nextjs/nested-link'
-import { Button, buttonVariants } from '@/components/ui/button'
+import { cn } from '@smartsale/ui'
+import { Button, buttonVariants } from '@smartsale/ui'
 import {
   IconDiscord,
   IconDownRightArrow,
   IconTelegram,
   IconTwitterX,
-} from '@/components/ui/icons'
-import { cn } from '@/lib/utils'
+} from '@smartsale/ui'
 import { Suspense } from 'react'
 
 export function AuctionCardButtons({ project }: { project: Project }) {
@@ -47,9 +47,9 @@ export function AuctionCardButtons({ project }: { project: Project }) {
             link: `https://t.me/${telegramGroup}`,
             title: 'Telegram Group',
           },
-        ].map(({ icon: Icon, link, title: socialTitle }, index) => (
+        ].map(({ icon: Icon, link, title: socialTitle }) => (
           <Suspense
-            key={`susp-${index}`}
+            key={`susp-${socialTitle}`}
             fallback={
               <Button
                 variant="outline"
@@ -62,7 +62,7 @@ export function AuctionCardButtons({ project }: { project: Project }) {
             }
           >
             <ExternalLinkButton
-              key={`card-button-${index}`}
+              key={`card-button-${socialTitle}`}
               variant="outline"
               // ? Currently, Bitlauncher Community does not have a Telegram group (got blocked). Only Bitcash but the legacy channel.
               disabled={project.id === 1 && socialTitle === 'Telegram Group'}

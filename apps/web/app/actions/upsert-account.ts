@@ -1,7 +1,7 @@
 'use server'
 
 import { type ActionResult, failure, success } from '@/lib/actions'
-import { createSupabaseServerClient } from '@/services/supabase'
+import { createSupabaseServerClient } from '@smartsale/supabase/src/sdk'
 import { createSafeActionClient } from 'next-safe-action'
 import { z } from 'zod'
 

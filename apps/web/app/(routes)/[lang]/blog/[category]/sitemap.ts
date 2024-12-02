@@ -1,4 +1,4 @@
-import { AVAILABLE_LANGS } from '@/lib/config'
+import { AVAILABLE_LANGS } from '@/config'
 import { getArticleSections } from '@/services/datocms'
 import type { MetadataRoute } from 'next'
 import type { CategoryPageProps } from './page'

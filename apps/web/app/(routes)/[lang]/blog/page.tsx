@@ -1,12 +1,12 @@
 import { BlogSections } from '@/components/routes/blog/blog-sections'
 import { HeroSection } from '@/components/routes/blog/hero-section/index'
-import type { Lang } from '@/dictionaries/locales'
 import { generateMetadataFromSEO } from '@/lib/seo'
 import {
   getArticleSections,
   getPageSeoText,
   getRecentArticleSections,
 } from '@/services/datocms'
+import type { Lang } from '@smartsale/content'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 

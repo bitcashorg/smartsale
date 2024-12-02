@@ -2,13 +2,13 @@
 
 import { SessionDialog } from '@/components/dialogs/session/session-dialog'
 import { OnboardingCarousel } from '@/components/shared/onbording-carousel'
-import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
-import { IconDownRightArrow, IconReferral } from '@/components/ui/icons'
 import { useSession } from '@/hooks/use-session'
+import { Dialog, DialogContent, DialogTrigger } from '@smartsale/ui'
+import { IconDownRightArrow, IconReferral } from '@smartsale/ui'
 import { useRouter } from 'next/navigation'
 import { isMobile } from 'react-device-detect'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '@smartsale/ui'
 import React from 'react'
 
 export function ReferralSection() {

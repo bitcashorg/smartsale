@@ -1,5 +1,5 @@
 import { CommunityCard } from '@/components/shared/community-card'
-import { cn } from '@/lib/utils'
+import { cn } from '@smartsale/ui'
 import Balancer from 'react-wrap-balancer'
 
 export function BgHeader({

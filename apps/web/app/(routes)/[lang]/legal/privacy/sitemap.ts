@@ -1,10 +1,8 @@
-import { AVAILABLE_LANGS } from '@/lib/config'
+import { AVAILABLE_LANGS } from '@/config'
 import type { CommonPageProps } from '@/types/routing.type'
 import type { MetadataRoute } from 'next'
 
-export default async function sitemap({
-  params,
-}: CommonPageProps): Promise<MetadataRoute.Sitemap> {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   return [
     {
       url: `https://${process.env.NEXT_PUBLIC_APP_URL}/legal/privacy`,

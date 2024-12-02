@@ -1,7 +1,7 @@
 'use client'
 
-import { Button, type ButtonProps } from '@/components/ui/button'
-import { cn } from '@/lib/utils'
+import { cn } from '@smartsale/ui'
+import { Button, type ButtonProps } from '@smartsale/ui'
 
 interface ExternalLinkButtonProps extends ButtonProps {
   link: string

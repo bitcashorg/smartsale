@@ -15,12 +15,12 @@ export function HeroSection({ recent, lang }: HeroSectionProps) {
       />
       <ul className="flex-col space-y-10 lg:w-1/2">
         {secondary?.map(
-          (post, index) =>
+          (post) =>
             post.articles.length > 0 && (
               <HeroSubCard
                 sectionSlug={post?.slug}
                 post={post.articles[0]}
-                key={`hero-section_sub-card-${index}`}
+                key={`hero-section_sub-card-${post.slug}`}
               />
             ),
         )}

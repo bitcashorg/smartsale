@@ -1,6 +1,6 @@
-import { cn } from '@/lib/utils'
 import type { ArticlesSection } from '@/services/datocms'
 import type { LangProp } from '@/types/routing.type'
+import { cn } from '@smartsale/ui'
 import Link from 'next/link'
 import { ArticleCard } from '../../shared/article-card'
 import { LucideIcons } from './lucide-icons'

@@ -1,15 +1,11 @@
 import { deflateRawSync, inflateRawSync } from 'node:zlib'
 import { savePresaleDepositIntent } from '@/app/actions/save-deposit'
-import { appConfig } from '@/lib/config'
-import { createSupabaseServerClient } from '@/services/supabase'
-import {
-  getWhitelistedAddress,
-  insertTransaction,
-} from '@/services/supabase/service'
-import { eosEvmMainnet } from '@repo/chains'
-import { getErrorMessage } from '@repo/errors'
+import { appConfig } from '@/config'
+import { getErrorMessage } from '@smartsale/errors'
+import { getWhitelistedAddress } from '@smartsale/supabase'
+import { createSupabaseServerClient } from '@smartsale/supabase'
 import { tasks } from '@trigger.dev/sdk/v3'
-import { ABI, APIClient, Action } from '@wharfkit/antelope'
+import { APIClient } from '@wharfkit/antelope'
 import {
   type AbiProvider,
   SigningRequest,
@@ -178,25 +174,4 @@ const SigningRequestCallbackPayloadSchema = z.object({
   rbn: z.string(),
   ex: z.string().optional(),
   cid: z.string().optional(),
-})
-
-const abi = ABI.from({
-  version: 'eosio::abi/1.0',
-  types: [],
-  variants: [],
-  structs: [
-    {
-      name: 'transfer',
-      base: '',
-      fields: [
-        { name: 'from', type: 'name' },
-        { name: 'to', type: 'name' },
-        { name: 'quantity', type: 'asset' },
-        { name: 'memo', type: 'string' },
-      ],
-    },
-  ],
-  actions: [],
-  tables: [],
-  ricardian_clauses: [],
 })

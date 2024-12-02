@@ -1,9 +1,9 @@
-import { Card, CardContent, CardFooter } from '@/components/ui/card'
 import { readingTime } from '@/lib/blog'
-// import { isMobile } from 'react-device-detect'
-import { cn } from '@/lib/utils'
 import type { BlogArticleRecord } from '@/services/datocms'
 import type { LangProp } from '@/types/routing.type'
+// import { isMobile } from 'react-device-detect'
+import { cn } from '@smartsale/ui'
+import { Card, CardContent, CardFooter } from '@smartsale/ui'
 import Image from 'next/image'
 import Link from 'next/link'
 

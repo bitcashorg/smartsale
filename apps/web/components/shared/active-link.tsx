@@ -1,6 +1,6 @@
 'use client'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@smartsale/ui'
 import Link from 'next/link'
 import { useParams, usePathname } from 'next/navigation'
 import type { MouseEventHandler } from 'react'

@@ -1,10 +1,15 @@
-import { cn } from '@/lib/utils'
+import { cn } from '@smartsale/ui'
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+  Button,
+  Card,
+  IconDownRightArrow,
+  buttonVariants,
+} from '@smartsale/ui'
 import { Suspense } from 'react'
 import { NestedLinkButton } from '../nextjs/nested-link'
-import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar'
-import { Button, buttonVariants } from '../ui/button'
-import { Card } from '../ui/card'
-import { IconDownRightArrow } from '../ui/icons'
 
 export function CommunityCard() {
   return (

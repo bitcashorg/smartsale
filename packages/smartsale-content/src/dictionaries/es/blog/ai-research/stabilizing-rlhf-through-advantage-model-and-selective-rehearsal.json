@@ -1,0 +1,429 @@
+{
+  "relatedBlogs": [],
+  "blogContent": {
+    "id": "198277360",
+    "topics": ["LLM", "RLHF"],
+    "title": "Stabilizing RLHF through Advantage Model and Selective Rehearsal",
+    "slug": "stabilizing-rlhf-through-advantage-model-and-selective-rehearsal",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2024-05-24T05:22:15+01:00",
+    "description": "Abstract Commentary & Rating",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Published on Sep 18"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Authors:"
+                    },
+                    {
+                      "url": "https://huggingface.co/Baolin",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Baolin Peng"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ","
+                    },
+                    {
+                      "url": "https://huggingface.co/freesunshine0316",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "Linfeng Song"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "span",
+                      "value": ",Ye Tian,Lifeng Jin,Haitao Mi,Dong Yu"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Abstract"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Large Language Models (LLMs) have revolutionized natural language processing, yet aligning these models with human values and preferences using RLHF remains a significant challenge. This challenge is characterized by various instabilities, such as reward hacking and catastrophic forgetting. In this technical report, we propose two innovations to stabilize RLHF training: 1) Advantage Model, which directly models advantage score i.e., extra reward compared to the expected rewards and regulates score distributions across tasks to prevent reward hacking. 2) Selective Rehearsal, which mitigates catastrophic forgetting by strategically selecting data for PPO training and knowledge rehearsing. Our experimental analysis on public and proprietary datasets reveals that the proposed methods not only increase stability in RLHF training but also achieve higher reward scores and win rates."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "url": "https://arxiv.org/abs/2309.10202",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "View arXiv page"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "https://arxiv.org/pdf/2309.10202",
+                      "meta": [
+                        {
+                          "id": "rel",
+                          "value": "noreferrer"
+                        },
+                        {
+                          "id": "target",
+                          "value": "_blank"
+                        }
+                      ],
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "View PDF"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Commentary"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The paper \"Stabilizing RLHF through Advantage Model and Selective Rehearsal\" delves into addressing the challenges that come with aligning Large Language Models (LLMs) with human values and preferences using Reinforcement Learning from Human Feedback (RLHF)."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Key Takeaways:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Challenges with RLHF"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Aligning LLMs to human preferences using RLHF presents hurdles like reward hacking (where the model finds ways to maximize reward without actually providing the intended value) and catastrophic forgetting (where a model forgets previously learned tasks when learning new ones)."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Advantage Model"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": This technique aims to prevent reward hacking by modeling the advantage score, which is the extra reward compared to expected rewards, and regulating score distributions across tasks."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Selective Rehearsal"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": To counteract catastrophic forgetting, this method strategically selects data for PPO training and knowledge rehearsing."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Positive Results"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The paper reports that the introduced methods not only enhance stability in RLHF training but also lead to higher reward scores and win rates."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Potential Real-World Impact:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Better Alignment with Human Values"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": If LLMs can be better trained to align with human values using RLHF, the resultant models will produce outputs that are more desirable, safe, and user-centric."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Robust LLMs"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The proposed techniques could lead to models that are less susceptible to potential pitfalls, making them more reliable for critical tasks."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Broad Applicability"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": While the focus is on LLMs, the techniques presented could have broader implications for other machine learning models where alignment with human feedback is crucial."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Industry Standard"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": If the introduced methods are robust and effective, they might become standard techniques in RLHF for LLMs, leading to a widespread impact on how models are trained in the future."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Challenges:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Implementation"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Despite the reported advantages, the real-world impact depends on how easily these techniques can be implemented in various scenarios and how they interact with other techniques and methods."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Given the paper's focus on stabilizing RLHF, a crucial aspect of training LLMs, and the promising results they report:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "I'd rate the real-world impact of this paper as a 9 out of 10."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The stabilization of RLHF training is pivotal in ensuring LLMs align well with human values. Implementing these techniques could lead to safer and more reliable language models, which in turn would benefit a wide array of applications across industries."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "researchpaper9",
+            "height": 816,
+            "width": 1456,
+            "filename": "researchpaper9.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Abstract Commentary & Rating\n",
+      "title": "Stabilizing RLHF ... Advantage Model & Selective Rehearsal",
+      "twitterCard": null,
+      "image": {
+        "width": 1456,
+        "height": 816,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      }
+    }
+  },
+  "topics": ["LLM", "RLHF"],
+  "shortLink": ""
+}

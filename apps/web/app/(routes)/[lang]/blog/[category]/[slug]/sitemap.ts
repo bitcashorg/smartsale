@@ -1,4 +1,4 @@
-import { AVAILABLE_LANGS } from '@/lib/config'
+import { AVAILABLE_LANGS } from '@/config'
 import { getBlogCategoryLandingData } from '@/services/datocms'
 import type { MetadataRoute } from 'next'
 import type { ArticlePageProps } from './page'

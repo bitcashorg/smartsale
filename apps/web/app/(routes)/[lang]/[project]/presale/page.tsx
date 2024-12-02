@@ -3,16 +3,16 @@ import { PresaleTransactionsCard } from '@/components/routes/project/presale/pre
 import { ProjectHeader } from '@/components/routes/project/project-header'
 import { ProjectPresaleData } from '@/components/routes/project/project-presale-data'
 import { Countdown } from '@/components/shared/countdown'
-import { Card, CardContent } from '@/components/ui/card'
-import { getDictionary } from '@/dictionaries'
 import { type ProjectWithAuction, getProjectBySlug } from '@/lib/projects'
-import { createSupabaseServerClient } from '@/services/supabase/server'
+import type { ProjectPageProps } from '@/types/routing.type'
+import { getDictionary } from '@smartsale/content'
 import {
   getPresaleContributions,
   getPresaleData,
   getProjectData,
-} from '@/services/supabase/service'
-import type { ProjectPageProps } from '@/types/routing.type'
+} from '@smartsale/supabase'
+import { createSupabaseServerClient } from '@smartsale/supabase/src/sdk/server'
+import { Card, CardContent } from '@smartsale/ui'
 import { redirect } from 'next/navigation'
 import { getAddress } from 'viem'
 

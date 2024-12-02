@@ -2,8 +2,8 @@ import {
   type AboutBitlauncherPageContent,
   AboutBitlauncherPageLanding,
 } from '@/components/routes/about/about-bitlauncher'
-import { getDictionary } from '@/dictionaries'
 import type { CommonPageProps } from '@/types/routing.type'
+import { getDictionary } from '@smartsale/content'
 import type { Metadata } from 'next'
 
 export default async function AboutBitlauncher({ params }: CommonPageProps) {

@@ -1,6 +1,6 @@
 'use client'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@smartsale/ui'
 import { type VariantProps, cva } from 'class-variance-authority'
 import { motion } from 'framer-motion'
 

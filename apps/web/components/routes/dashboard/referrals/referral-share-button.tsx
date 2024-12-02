@@ -1,20 +1,16 @@
 'use client'
 
-import { Button } from '@/components/ui/button'
+import { useMediaQuery } from '@/hooks/use-media-query'
+import { cn } from '@smartsale/ui'
 import {
   Drawer,
   DrawerContent,
   DrawerTitle,
   DrawerTrigger,
-} from '@/components/ui/drawer'
-import { IconTelegram, IconTwitterX } from '@/components/ui/icons'
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from '@/components/ui/popover'
-import { useMediaQuery } from '@/hooks/use-media-query'
-import { cn } from '@/lib/utils'
+} from '@smartsale/ui'
+import { Button } from '@smartsale/ui'
+import { Popover, PopoverContent, PopoverTrigger } from '@smartsale/ui'
+import { IconTelegram, IconTwitterX } from '@smartsale/ui'
 import { Share } from 'lucide-react'
 import { Facebook, Linkedin, Phone, X } from 'lucide-react'
 import {

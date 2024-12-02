@@ -1,6 +1,6 @@
 import { PageContent } from '@/components/shared/content'
-import { getDictionary } from '@/dictionaries'
 import type { CommonPageProps } from '@/types/routing.type'
+import { getDictionary } from '@smartsale/content'
 import type { Metadata } from 'next'
 import React from 'react'
 

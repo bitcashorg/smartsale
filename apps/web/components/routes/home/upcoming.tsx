@@ -22,6 +22,7 @@ export function Upcoming({ dict, projects }: UpcomingProps) {
 }
 
 interface UpcomingProps {
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   dict: any
   projects: Project[]
 }

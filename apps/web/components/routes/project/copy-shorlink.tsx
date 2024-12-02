@@ -2,7 +2,7 @@
 import { useCopyShortLink } from '@/hooks/use-copy-shortlink'
 import { useReferral } from '@/hooks/use-referral'
 import { useSession } from '@/hooks/use-session'
-import { useSupabaseClient } from '@/services/supabase/client'
+import { useSupabaseClient } from '@smartsale/supabase/src/sdk/client'
 import { AnimatePresence } from 'framer-motion'
 import { LucideCheck, LucideLoader2, LucideShare, LucideX } from 'lucide-react'
 import { useParams } from 'next/navigation'

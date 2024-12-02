@@ -1,0 +1,26 @@
+{
+  "name": "@smartsale/alchemy",
+  "version": "0.0.1",
+  "private": true,
+  "main": "src/index.ts",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "create-activities": "bun webhooks/activity.ts",
+    "create-dev-hook": "bun webhooks/activity-dev.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@smartsale/chains": "workspace:*",
+
+    "@smartsale/tokens": "workspace:*",
+    "alchemy-sdk": "^3.4.1",
+    "lodash": "^4.17.21",
+    "viem": "2.x",
+    "zod": "^3.23.8"
+  }
+}

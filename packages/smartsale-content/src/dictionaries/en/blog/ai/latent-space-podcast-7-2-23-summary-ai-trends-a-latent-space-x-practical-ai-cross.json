@@ -1,0 +1,1157 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "190259319",
+      "topics": ["Summary", "LLM", "Training"],
+      "title": "Latent Space Podcast 8/16/23 [Summary] - The Mathematics of Training LLMs — with Quentin Anthony of Eleuther AI",
+      "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:19:45+01:00",
+      "description": "Explore the math behind training LLMs with Quentin Anthony from Eleuther AI. Dive into the Transformers Math 101 article & master distributed training techniques for peak GPU performance.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692324088-screenshot-2023-08-17-at-9-59-17-pm.png"
+      },
+      "seo": {
+        "description": "Dive into the Transformers Math 101 article & master distributed training techniques for peak GPU performance.",
+        "title": "Latent Space Podcast 8/16/23 [Summary] Math of Training LLMs",
+        "twitterCard": null,
+        "image": {
+          "width": 1576,
+          "height": 554,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692324088-screenshot-2023-08-17-at-9-59-17-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259129",
+      "topics": ["LLM", "Hardware", "Summary", "Edge"],
+      "title": "Latent Space Podcast 8/10/23 [Summary]: LLMs Everywhere: Running 70B models in browsers and iPhones using MLC — with Tianqi Chen of CMU / OctoML",
+      "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:18:37+01:00",
+      "description": "Explore the magic of MLC with Tianqi Chen: deploying 70B models on browsers & iPhones. Dive into XGBoost, TVM's creation, & the future of universal AI deployments. ",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
+      },
+      "seo": {
+        "description": "Explore deploying 70B models on browsers & iPhones. Dive into XGBoost, TVM's creation, & the future of universal AI deployments. ",
+        "title": "Latent Space 8/10/23 [Summary]: LLMs Everywhere",
+        "twitterCard": null,
+        "image": {
+          "width": 1538,
+          "height": 548,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259087",
+      "topics": ["Summary", "LLM", "Code", "Open Source", "Small Models"],
+      "title": "Latent Space Podcast 8/4/23 [Summary] Latent Space x AI Breakdown crossover pod! ",
+      "slug": "latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:16:33+01:00",
+      "description": "Join AI Breakdown & Latent Space for the summer AI tech roundup: Dive into GPT4.5, Llama 2, AI tools, the rising AI engineer, and more!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png"
+      },
+      "seo": {
+        "description": "Dive into GPT4.5, Llama 2, AI tools, the rising AI engineer, and more!",
+        "title": "Latent Space Podcast 8/4/23 [Summary] AI Breakdown crossover",
+        "twitterCard": null,
+        "image": {
+          "width": 1578,
+          "height": 558,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259111",
+      "topics": ["Summary", "Transformers", "Training", "Open Source"],
+      "title": " Latent Space Podcast 7/26/23 [Summary] FlashAttention 2: making Transformers 800% faster - Tri Dao of Together AI",
+      "slug": "latent-space-podcast-7-26-23-summary-flashattention-2-making-transformers-800-fas",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:14:13+01:00",
+      "description": "Discover how FlashAttention revolutionized AI speed with Tri Dao, as he unveils the power of FlashAttention 2, dives into Stanford's Hazy Lab & future AI insights.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691543194-screenshot-2023-08-08-at-8-43-59-pm.png"
+      },
+      "seo": {
+        "description": "Discover how FlashAttention revolutionized AI speed with Tri Dao, as he unveils the power of FlashAttention 2",
+        "title": " Latent Space Podcast 7/26/23 [Summary] FlashAttention 2",
+        "twitterCard": null,
+        "image": {
+          "width": 1648,
+          "height": 594,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1691543194-screenshot-2023-08-08-at-8-43-59-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259172",
+      "topics": ["Summary", "LLM", "Open Source", "Small Models"],
+      "title": "Latent Space Podcast 7/19/23 [Summary] - Llama 2: The New Open LLM SOTA (ft. Nathan Lambert, Matt Bornstein, Anton Troynikov, Russell Kaplan, Whole Mars Catalog et al.)",
+      "slug": "latent-space-podcast-7-19-23-summary-llama-2-the-new-open-llm-sota-ft-nathan-lamb",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:12:38+01:00",
+      "description": "Explore Llama 2, the latest AI breakthrough with experts Nathan Lambert, Matt Bornstein & more. Dive into datasets, benchmarks & AI predictions. Llama insights & drama await in this top podcast!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1691968295-screenshot-2023-08-13-at-7-11-06-pm.png"
+      },
+      "seo": {
+        "description": "Dive into datasets, benchmarks & AI predictions. Llama insights & drama await in this top podcast!",
+        "title": "Latent Space Podcast 7/19/23 [Summary] - Llama 2",
+        "twitterCard": null,
+        "image": {
+          "width": 1632,
+          "height": 574,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1691968295-screenshot-2023-08-13-at-7-11-06-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259191",
+      "topics": ["Summary", "Code", "LLM"],
+      "title": "Latent Space Podcast 7/10/23 [Summary] - Code Interpreter == GPT 4.5 (w/ Simon Willison, Alex Volkov, Aravind Srinivas, Alex Graveley, et al.)",
+      "slug": "latent-space-podcast-7-10-23-summary-code-interpreter-gpt-4-5-w-simon-willison-al",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:09:26+01:00",
+      "description": "Explore ChatGPT's Code Interpreter: a game-changer in AI. Dive into its 1000x capabilities leap with Simon, Alex & top AI experts. #CodeAugmentedInference #GPT4_5",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692048911-screenshot-2023-08-14-at-3-34-05-pm.png"
+      },
+      "seo": {
+        "description": "Explore ChatGPT's Code Interpreter: a game-changer in AI. Dive into its 1000x capabilities leap with Simon, Alex & top AI experts. ",
+        "title": "Latent Space Podcast  [Summary] Code Interpreter = GPT 4.5",
+        "twitterCard": null,
+        "image": {
+          "width": 1596,
+          "height": 582,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692048911-screenshot-2023-08-14-at-3-34-05-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259238",
+      "topics": ["Hardware", "LLM", "Summary"],
+      "title": "Latent Space Podcast 6/20/23 [Summary] - Commoditizing the Petaflop — with George Hotz of the tiny corp",
+      "slug": "latent-space-podcast-6-20-23-summary-commoditizing-the-petaflop-with-george-ho",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:07:15+01:00",
+      "description": "George Hotz of tiny corp challenges Nvidia & Google! Dive into the world of AMD collaborations, insights on ggml, Mojo, Elon & GPT-4, plus a peek into AI Girlfriend. ",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692154615-screenshot-2023-08-15-at-10-55-40-pm.png"
+      },
+      "seo": {
+        "description": "George Hotz of tiny corp challenges Nvidia & Google! AMD collaborations, insights on ggml, Mojo, Elon & GPT-4, plus a peek into AI Girlfriend. ",
+        "title": "Latent Space Podcast 6/20/23 [Summary] - George Hotz ",
+        "twitterCard": null,
+        "image": {
+          "width": 1586,
+          "height": 508,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692154615-screenshot-2023-08-15-at-10-55-40-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259294",
+      "topics": ["LLM", "Functions", "Summary"],
+      "title": "Latent Space Podcast 6/14/23 [Summary] - Emergency Pod: OpenAI's new Functions API, 75% Price Drop, 4x Context Length (w/ Alex Volkov, Simon Willison, Riley Goodside, Joshua Lochner, Stefania Druga, Eric Elliott, Mayo Oshin et al)",
+      "slug": "latent-space-podcast-6-14-23-summary-emergency-pod-openai-s-new-functions-api-75",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:05:04+01:00",
+      "description": "Explore the June 2023 OpenAI updates with top AI engineers from Scale, Microsoft, Pinecone, & Huggingface. Dive into the Code x LLM paradigms and discover Recursive Function Agents.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692221668-screenshot-2023-08-16-at-5-32-29-pm.png"
+      },
+      "seo": {
+        "description": "Explore the June 2023 OpenAI updates with top AI engineers from Scale, Microsoft, Pinecone, & Huggingface. ",
+        "title": "Latent Space Podcast 6/20/23 [Summary] - Emergency Pod",
+        "twitterCard": null,
+        "image": {
+          "width": 1626,
+          "height": 606,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692221668-screenshot-2023-08-16-at-5-32-29-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190259333",
+      "topics": ["LLM", "Summary", "UX"],
+      "title": "Latent Space Podcast 6/8/23 [Summary] - From RLHF to RLHB: The Case for Learning from Human Behavior - with Jeffrey Wang and Joe Reeve of Amplitude",
+      "slug": "latent-space-podcast-6-8-23-summary-from-rlhf-to-rlhb-the-case-for-learning-from",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:02:33+01:00",
+      "description": "Explore AI & analytics with Jeffrey Wang & Joe Reeve on Latent Space Live! Dive into why AI values Analytics and the power of first-party behavioral data. ",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692386432-screenshot-2023-08-18-at-3-17-04-pm.png"
+      },
+      "seo": {
+        "description": "Explore AI & analytics with Jeffrey Wang & Joe Reeve on Latent Space Live! Dive into why AI values Analytics and the power of first-party behavioral data. ",
+        "title": "Latent Space Podcast 6/8/23 [Summary] - From RLHF to RLHB",
+        "twitterCard": null,
+        "image": {
+          "width": 1674,
+          "height": 550,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692386432-screenshot-2023-08-18-at-3-17-04-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190260528",
+      "topics": ["Summary", "LLM", "UX"],
+      "title": "Latent Space Podcast 6/1/23 [Summary] - Building the AI × UX Scenius — with Linus Lee of Notion AI",
+      "slug": "latent-space-podcast-6-1-23-summary-building-the-ai-x-ux-scenius-with-linus-le",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T09:00:12+01:00",
+      "description": "Explore Notion AI's transformative approach to AI and UX. Dive into the future of AI-augmented workspaces, the value beyond chat interfaces, and insights on effective knowledge work. Recap of AI×UX NYC meetup included!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692390655-screenshot-2023-08-18-at-4-28-51-pm.png"
+      },
+      "seo": {
+        "description": "Explore Notion AI's transformative approach to AI and UX. ",
+        "title": "Latent Space Podcast 6/1/23 [Summary] - AI × UX Scenius",
+        "twitterCard": null,
+        "image": {
+          "width": 1614,
+          "height": 546,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692390655-screenshot-2023-08-18-at-4-28-51-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190260557",
+      "topics": ["Summary", "Code", "LLM", "Agents"],
+      "title": "Latent Space Podcast 5/25/23 [Summary] - Debugging the Internet with AI agents – with Itamar Friedman of Codium AI and AutoGPT",
+      "slug": "latent-space-podcast-5-25-23-summary-debugging-the-internet-with-ai-agents-with",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:58:27+01:00",
+      "description": "Explore the future of AI with Itamar Friedman from Codium AI on 'Debugging the Internet'. Dive into 'Extreme DRY' agents, the rapid sync of specs & tests, and the balance between code & testing. Plus, insights from Toran & an exclusive look at AutoGPT's roadmap!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692397413-screenshot-2023-08-18-at-6-10-09-pm.png"
+      },
+      "seo": {
+        "description": "Dive into 'Extreme DRY' agents, the rapid sync of specs & tests, and the balance between code & testing. ",
+        "title": "Latent Space Pod 5/25/23 [Summary] Debugging the Internet",
+        "twitterCard": null,
+        "image": {
+          "width": 1568,
+          "height": 548,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692397413-screenshot-2023-08-18-at-6-10-09-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190260640",
+      "topics": ["Summary", "Open Source", "LLM"],
+      "title": "Latent Space Podcast 5/5/23 [Summary] - No Moat: Closed AI gets its Open Source wakeup call — ft. Simon Willison",
+      "slug": "latent-space-podcast-5-5-23-summary-no-moat-closed-ai-gets-its-open-source-wakeup",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:49:18+01:00",
+      "description": "Explore 'No Moat: Closed AI's Open Source Awakening' with Simon Willison. Dive into leaked Google Moat memo insights, Google Brain Drain, and Python's speed boost with Mojo.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692566921-screenshot-2023-08-20-at-5-25-53-pm.png"
+      },
+      "seo": {
+        "description": "Explore 'No Moat: Closed AI's Open Source Awakening' with Simon Willison. Dive into leaked Google Moat memo insights.",
+        "title": "Latent Space Podcast 5/5/23 [Summary] - No Moat",
+        "twitterCard": null,
+        "image": {
+          "width": 1602,
+          "height": 532,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692566921-screenshot-2023-08-20-at-5-25-53-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190260671",
+      "topics": ["LLM", "Code", "Summary"],
+      "title": "Latent Space Podcast 5/3/23 [Summary] - Training a SOTA Code LLM in 1 week and Quantifying the Vibes — with Reza Shabani of Replit",
+      "slug": "latent-space-podcast-5-3-23-summary-training-a-sota-code-llm-in-1-week-and-quanti",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:46:08+01:00",
+      "description": "Ep. 10 with Reza Shabani: Dive deep into the rapid training of a state-of-the-art Code LLM, explore Replit Ghostwriter's future, and journey from Finance to AI. Discover the transition from Kaplan to Chinchilla and more!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1692584998-screenshot-2023-08-20-at-10-17-26-pm.png"
+      },
+      "seo": {
+        "description": "Ep. 10 with Reza Shabani: Dive deep into the rapid training of a state-of-the-art Code LLM!",
+        "title": "Latent Space Pod 5/3/23 [Summary] - SOTA Code LLM",
+        "twitterCard": null,
+        "image": {
+          "width": 1566,
+          "height": 530,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1692584998-screenshot-2023-08-20-at-10-17-26-pm.png"
+        }
+      }
+    },
+    {
+      "id": "190629271",
+      "topics": ["LLM", "Small Models", "Summary"],
+      "title": "Latent Space Podcast 4/28/23 [Summary] - Mapping the future of *truly* Open Models and Training Dolly for $30 — with Mike Conover of Databricks",
+      "slug": "latent-space-podcast-4-28-23-summary-mapping-the-future-of-truly-open-models-and",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:33:12+01:00",
+      "description": "Explore the future of open models with Mike Conover of Databricks. Dive deep into Dolly's creation, its transition from 1.0 to 2.0, & the influences behind its development. Ep.9 touches on model infrastructure, Databricks' vision, & more. #AI #OpenModels #Dolly",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694038707-screenshot-2023-09-06-at-3-12-24-pm.png"
+      },
+      "seo": {
+        "description": "Ep.9 touches on model infrastructure, Databricks' vision, & more. #AI #OpenModels #Dolly",
+        "title": "Latent Space Pod 4/28/23 [Summary] - Mike of Databricks",
+        "twitterCard": null,
+        "image": {
+          "width": 1572,
+          "height": 628,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1694038707-screenshot-2023-09-06-at-3-12-24-pm.png"
+        }
+      }
+    },
+    {
+      "id": "191164291",
+      "topics": ["LLM", "Enterprise", "Summary"],
+      "title": "Latent Space Podcast 4/21/23 [Summary] - AI-powered Search for the Enterprise — with Deedy Das of Glean",
+      "slug": "latent-space-podcast-4-21-23-summary-ai-powered-search-for-the-enterprise-with",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:31:31+01:00",
+      "description": "Ep.8: Dive into AI in enterprise search with Deedy Das of Glean. Unpack challenges in creating an AI search giant, Google vs ChatGPT comparisons, AI infrastructure intricacies, spotting AI-generated text, and why businesses need more than just Document QA.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694134074-screenshot-2023-09-07-at-5-43-48-pm.png"
+      },
+      "seo": {
+        "description": "Ep.8: Dive into AI in enterprise search with Deedy Das of Glean. Unpack challenges in creating an AI search giant, Google vs ChatGPT ...",
+        "title": "Latent Space Podcast 4/21/23 [Summary] - with Deedy Das ",
+        "twitterCard": null,
+        "image": {
+          "width": 1608,
+          "height": 530,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1694134074-screenshot-2023-09-07-at-5-43-48-pm.png"
+        }
+      }
+    },
+    {
+      "id": "191165673",
+      "topics": ["Summary", "Vision"],
+      "title": "Latent Space Podcast 4/13/23 [Summary] - Segment Anything Model and the Hard Problems of Computer Vision — with Joseph Nelson of Roboflow",
+      "slug": "latent-space-podcast-4-13-23-summary-segment-anything-model-and-the-hard-problems",
+      "authorName": "Prof. Otto Nomos",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      },
+      "_publishedAt": "2023-10-05T08:30:03+01:00",
+      "description": "Explore Ep.7 with Joseph Nelson on the Segment Anything Model by Meta. Dive deep into Computer Vision's future, the significance of OCR, Image Segmentation, and beyond. #Roboflow #AI",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1694150379-screenshot-2023-09-07-at-10-15-52-pm.png"
+      },
+      "seo": {
+        "description": "Dive deep into Computer Vision's future, the significance of OCR, Image Segmentation, and beyond. #Roboflow #AI",
+        "title": "Latent Space Podcast 4/13/23 [Summary] - Segment Anything ",
+        "twitterCard": null,
+        "image": {
+          "width": 1604,
+          "height": 604,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1694150379-screenshot-2023-09-07-at-10-15-52-pm.png"
+        }
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "190259216",
+    "topics": ["Summary", "Open Source"],
+    "title": "Latent Space Podcast 7/2/23 [Summary] AI Trends: a Latent Space x Practical AI crossover pod!",
+    "slug": "latent-space-podcast-7-2-23-summary-ai-trends-a-latent-space-x-practical-ai-cross",
+    "authorName": "Prof. Otto Nomos",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+    },
+    "_publishedAt": "2023-10-05T09:08:36+01:00",
+    "description": "Explore the fusion of Practical AI & Latent Space as they delve into 2023's top AI trends, reflect on standout episodes, and share insights on navigating the AI evolution.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1692146916-screenshot-2023-08-15-at-5-20-38-pm.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Original Link: "
+                    },
+                    {
+                      "url": "https://www.latent.space/p/practical-ai-trends#details",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "[Practical AI] AI Trends: a Latent Space x Practical AI crossover pod!"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Summary"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "In a crossover episode with the Latent Space podcast, host Daniel Whitenack from Practical FM joined co-hosts Alessio Fanelli and Shawn Wang. The discussion began with introductions, with Whitenack highlighting his background in computational physics, his tenure as a data scientist at SIL International, and his recent venture with Prediction Guard. The podcast touched on the rise of AI, its global community, and the practical implications and uses of AI technology in everyday life."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Daniel also shed light on episodes of Practical AI, sharing personal favorites and audience hits. Episodes like \"Fully Connected\" are particularly enlightening, as they delve deep into AI topics such as ChatGPT, diffusion models, and AlphaFold. Another highlight was the \"AI for Africa\" series, which emphasized the importance of AI being inclusive and accommodating for various global use cases."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Throughout the conversation, there was a consistent theme of focusing on the practical, day-to-day uses of AI, rather than getting caught up in the hype."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "screenshot-2023-08-15-at-5-20-38-pm",
+            "height": 532,
+            "width": 1600,
+            "filename": "screenshot-2023-08-15-at-5-20-38-pm.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692146916-screenshot-2023-08-15-at-5-20-38-pm.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "AI Roundtable: Insights, Excitements, and Challenges in the Modern AI Landscape"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "In a podcast episode, Shawn Wang, Alessio Fanelli, and Daniel Whitenack discuss their personal episode highlights, trends in the AI industry, and the evolution of model evaluation."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": ["strong"],
+                      "value": "Episode Highlights:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Alessio Fanelli's highlight was the episode with Mike Conover from Databricks discussing DALL-E. He emphasizes Mike's passion and the exciting release of the RedPajama dataset."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Shawn Wang recalled the news-driven episode on ChatGPT Plugins where 4,000 people tuned in. He finds value in capturing real-time reactions to significant AI developments."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Daniel Whitenack reminisces about the time when image generation was trending but now finds himself immersed in NLP and language models."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": ["strong"],
+                      "value": "Trends in the AI Industry:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "The most popular episode was on Metaflow, a Python package for full-stack data science modeling, which resonated with listeners due to the challenges of the model lifecycle in practical applications."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Daniel notes that the industry is transitioning from traditional MLOps to a new kind of operations (possibly termed LLMOps), focused more on leveraging pre-trained models."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Alessio mentions that their most popular episodes revolved around model-based topics, including discussions about the limitations of traditional benchmarks and the need for better evaluations."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": ["strong"],
+                      "value": "Model Evaluation:"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "bulleted",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Alessio talked about the rapid evolution of benchmarks, indicating the need for better evaluation metrics for models like GPT-4."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Shawn brings up HellaSwag's adversarially-generated benchmarks and the surprising revelation that less than 1% of the data for \"Segment Anything from Meta\" was human-generated."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Daniel observes the growing trend of model-generated output and datasets, emphasizing that the scale of simulated or augmented data is astounding."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Shawn voices concerns about \"mode collapse\" and the possibility of models over-optimizing for median use cases, potentially sidelining low-resource applications."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "value": "Daniel believes that linguistic diversity in large language models can benefit downstream, lower-resource languages."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Throughout the discussion, the trio touches upon the evolving landscape of AI, the importance of benchmarks, and the challenges and potential of using models to evaluate other models."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls6-img1",
+            "height": 936,
+            "width": 936,
+            "filename": "abls6-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692149396-abls6-img1.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": ["strong"],
+                      "value": "Grassroots AI Efforts & The Changing Landscape of AI Models"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": ["emphasis"],
+                      "value": "Shawn Wang"
+                    },
+                    {
+                      "type": "span",
+                      "value": " explores the impact and mission of "
+                    },
+                    {
+                      "type": "span",
+                      "marks": ["strong"],
+                      "value": "Masakhane"
+                    },
+                    {
+                      "type": "span",
+                      "value": ", a grassroots organization of African NLP researchers creating relevant technologies for Africa. "
+                    },
+                    {
+                      "type": "span",
+                      "marks": ["emphasis"],
+                      "value": "Daniel Whitenack"
+                    },
+                    {
+                      "type": "span",
+                      "value": " elaborates on the unique challenges faced by African communities, stressing the importance of building AI solutions tailored to specific needs. He cites examples of advanced tech in the U.S., such as tractors running on Kubernetes clusters, versus the contrasting requirements in Africa, like drought identification or disaster relief."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Daniel further delves into the \"AI for Africa\" episodes, highlighting the vast difference in tech applications across regions. He encourages global participation, pointing to Masakhane as a model for how local expertise can shape meaningful technology."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Turning to the topic of AI models, Daniel references an insightful episode from "
+                    },
+                    {
+                      "type": "span",
+                      "marks": ["strong"],
+                      "value": "Raj Shah"
+                    },
+                    {
+                      "type": "span",
+                      "value": " of Hugging Face on the capabilities of Large Language Models (LLMs). The episode discusses various axes like model accessibility, commercial usability, task specificity, and more. This discussion provides a guide for navigating the overwhelming number of models available today."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Both Shawn and Daniel discuss their strategies for staying updated in the rapidly evolving AI landscape. They touch on the role of platforms like Twitter and Hugging Face, emphasizing the importance of keeping an eye on download statistics to gauge model popularity."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Finally, Daniel highlights an interesting collaboration where grassroots efforts led to the creation of language models in six African languages. These models, discovered by Meta on Hugging Face, have now been incorporated into new models released by the tech giant. This showcases the full-circle impact of community-driven AI initiatives, further emphasizing the significance of tailored technological solutions."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls6-img2",
+            "height": 936,
+            "width": 936,
+            "filename": "abls6-img2.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692149410-abls6-img2.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "AI Landscape Evolution: From Open-Source Advocacy to the Rise of AI Engineering"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "In a podcast episode, Alessio Fanelli highlights the shift in the AI landscape, pointing to how a proliferation of models are becoming available on platforms like Hugging Face, democratizing access and creating opportunities for more players to participate. The conversation delves into Jonathan Frankle's advocacy for keeping AI models open-source. Shawn Wang and Daniel Whitenack discuss the potential of incorporating audio enhancements to podcasts to maintain engagement. They also discuss a past episode with Kirsten Lum, who addressed the challenges of managing ML tasks in mid-sized organizations compared to larger enterprises."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "A significant part of the conversation focuses on the practical implementation of AI in enterprises. Daniel underscores that while many companies experiment with tools like ChatGPT, they often don't progress past superficial usage. He emphasizes the need for businesses to dig deeper into the applications of these models, from prompt engineering to more complex operations. The discussion evolves into the topic of prompt engineering, its hype, and its genuine significance in the AI ecosystem. Shawn Wang introduces the term \"AI engineering,\" suggesting that the discipline is evolving as a subset of software engineering, marking a shift from traditional ML roles to a fusion with general software engineering roles."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls6-img3",
+            "height": 936,
+            "width": 936,
+            "filename": "abls6-img3.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692149425-abls6-img3.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Transitioning to AI: Challenges, the Importance of UX, and the Evolution of Data Labeling"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": ["strong"],
+                      "value": "Unique Challenges of Engineers vs. Data Scientists Transitioning to AI"
+                    },
+                    {
+                      "type": "span",
+                      "value": " Daniel Whitenack and Shawn Wang discuss the challenges faced by software engineers and data scientists as they transition into AI-focused roles. For software developers, confronting non-deterministic systems, particularly those they don't fully control, like blackbox models from OpenAI, presents a unique hurdle. They're also working with a model whose capabilities have not been fully tapped into yet."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "From a data scientist's perspective, Whitenack highlights the instinct to jump into model training and fine-tuning, even though significant achievements can be made through data augmentation and prompting. He underscores that data scientists have dealt with uncertainties for a while, but it's different when they aren't in charge of the datasets or the training."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": ["strong"],
+                      "value": "The Value of AI User Experience (UX)"
+                    },
+                    {
+                      "type": "span",
+                      "value": " Wang introduces the concept of AI UX, emphasizing that the final step of showcasing AI output in a user-friendly manner can be as crucial as training the model. This is evidenced by OpenAI's ChatGPT, which many deem a UX breakthrough. Whitenack concurs, suggesting that while innovations in modeling and data are critical, a poor user experience can nullify those advances. He cites Gmail's smooth AI-powered autocomplete feature as an example of seamless AI integration that provides immediate value to users."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": ["strong"],
+                      "value": "Discussion on Dataset Evolution and Curation"
+                    },
+                    {
+                      "type": "span",
+                      "value": " Whitenack mentions the evolution in NLP datasets and the popularity of open-source tools like Label Studio for data labeling. Wang notes that Label Studio has introduced tools for fine-tuning generative AI models. Whitenack discusses the challenges companies face in understanding instruction-tuned models and emphasizes the importance of clear tooling around this process to make it more approachable."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Finally, Wang ponders on why multiple data-labeling companies like Label Box and Label Studio continue to emerge and flourish even when giants like Scale already exist in the market, pointing to the ongoing importance and evolution of data-centric AI."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls6-img4",
+            "height": 936,
+            "width": 936,
+            "filename": "abls6-img4.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692149436-abls6-img4.png"
+          }
+        ]
+      },
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Deciphering AI's Shift from Model-Centric to Data-Centric Paradigms"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": ["strong"],
+                      "value": "AI Customization and The Evolution of Data Use"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": ["emphasis"],
+                      "value": "Daniel Whitenack"
+                    },
+                    {
+                      "type": "span",
+                      "value": " discusses the evolving relationship between AI and businesses, emphasizing a shift from a model-centric to a data-centric approach. Many enterprises, he notes, are now thinking about leveraging state-of-the-art models for their data. This involves either enhancing these models with their data or fine-tuning them, a perspective reflected by the rise of APIs that offer fine-tuning."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": ["emphasis"],
+                      "value": "Shawn Wang"
+                    },
+                    {
+                      "type": "span",
+                      "value": " raises a pertinent point on OpenAI's shift away from fine-tuning for models like GPT-3.5 and GPT-4. He also delves into the gray area of unlabeled datasets for unsupervised and self-supervised learning. The conversation further delves into the challenges of determining the right data mix for training models and highlights the lack of clarity on the best practices."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Whitenack adds insight into the world of data mixes, suggesting that the exact composition of data used by top models like those from OpenAI remains unknown. This creates a challenge for those attempting to emulate such models. He emphasizes the importance of experimenting with different mixes of data to optimize model training. Whitenack encourages AI enthusiasts to remain hands-on, leveraging the array of available tools to gain a better understanding of models and to foster innovation."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "In a lightning round, Whitenack highlights his astonishment at the general-purpose capabilities of large language models, especially beyond traditional NLP tasks. He points out the huge potential for exploration in AI, especially with respect to languages other than English and Mandarin, and also in diverse modalities of communication like sign language. He ends with a call to action, urging individuals to get involved and hands-on with AI models to gain intuition and insight."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": ["strong"],
+                      "value": "End Note"
+                    },
+                    {
+                      "type": "span",
+                      "value": ": The transcript is open source and available on GitHub for improvements."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "abls6-img5",
+            "height": 936,
+            "width": 936,
+            "filename": "abls6-img5.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1692149458-abls6-img5.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "2023's top AI trends, reflect on standout episodes, and share insights on navigating the AI evolution.",
+      "title": "Latent Space Podcast 7/2/23 [Summary] AI Trends ",
+      "twitterCard": null,
+      "image": {
+        "width": 1600,
+        "height": 532,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1692146916-screenshot-2023-08-15-at-5-20-38-pm.png"
+      }
+    }
+  },
+  "topics": ["Summary", "Open Source"],
+  "shortLink": ""
+}

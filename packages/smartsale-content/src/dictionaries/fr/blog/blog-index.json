@@ -1,0 +1,1010 @@
+{
+  "sections": [
+    {
+      "name": "AI",
+      "slug": "ai",
+      "articles": [
+        {
+          "id": "SpdLuuYEQgW8rwSHNzhmxA",
+          "topics": ["Applications"],
+          "title": "Masterbots : Elever l'IA au-dela de ChatGPT avec le partage social et l'innovation conviviale",
+          "slug": "masterbots-elevating-ai-beyond-chatgpt-with-social-sharing-and-user-friendly-inno",
+          "authorName": "Jun Dam",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+          },
+          "_publishedAt": "2024-06-22T16:00:40+01:00",
+          "description": "Le blog presente Masterbots, une plateforme revolutionnant l'interaction IA avec des chatbots specifiques au domaine et une fonctionnalite de partage social unique, invitant les collaborateurs a rejoindre son developpement ouvert et pilote par la communaute.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1712270604-screenshot-2024-04-04-at-3-43-11-pm.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Masterbots: Elevating AI Beyond ChatGPT with Social Sharing and User-Friendly Innovation",
+            "title": "Masterbots: Elevating AI Beyond ChatGPT ",
+            "twitterCard": null,
+            "image": {
+              "width": 1452,
+              "height": 934,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1712270604-screenshot-2024-04-04-at-3-43-11-pm.png"
+            }
+          }
+        },
+        {
+          "id": "190259319",
+          "topics": ["Résumé", "MLL", "Formation"],
+          "title": "Podcast de l'Espace Latent 16/08/23 [Résumé] - Les Mathématiques de la Formation des MLL avec Quentin Anthony d'Eleuther AI",
+          "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
+          "authorName": "Prof. Otto Nomos",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+          },
+          "_publishedAt": "2023-10-05T09:19:45+01:00",
+          "description": "Explorez les mathématiques derrière la formation des MLL avec Quentin Anthony d'Eleuther AI. Plongez dans l'article Mathématiques des Transformateurs 101 et maîtrisez les techniques de formation distribuée pour une performance GPU optimale.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1692324088-screenshot-2023-08-17-at-9-59-17-pm.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Dive into the Transformers Math 101 article & master distributed training techniques for peak GPU performance.",
+            "title": "Latent Space Podcast 8/16/23 [Summary] Math of Training LLMs",
+            "twitterCard": null,
+            "image": {
+              "width": 1576,
+              "height": 554,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1692324088-screenshot-2023-08-17-at-9-59-17-pm.png"
+            }
+          }
+        },
+        {
+          "id": "190259129",
+          "topics": ["LLM", "Matériel", "Résumé", "Bord"],
+          "title": "Podcast de l'Espace Latent 8/10/23 [Résumé] : LLMs Partout : Exécuter des modèles de 70B dans les navigateurs et les iPhones en utilisant MLC — avec Tianqi Chen de CMU / OctoML",
+          "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
+          "authorName": "Prof. Otto Nomos",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+          },
+          "_publishedAt": "2023-10-05T09:18:37+01:00",
+          "description": "Explorez la magie de MLC avec Tianqi Chen : déploiement de modèles de 70B sur les navigateurs et iPhones. Plongez dans XGBoost, la création de TVM, et l'avenir des déploiements universels d'IA.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Explore deploying 70B models on browsers & iPhones. Dive into XGBoost, TVM's creation, & the future of universal AI deployments. ",
+            "title": "Latent Space 8/10/23 [Summary]: LLMs Everywhere",
+            "twitterCard": null,
+            "image": {
+              "width": 1538,
+              "height": 548,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
+            }
+          }
+        },
+        {
+          "id": "190259087",
+          "topics": ["Summary", "LLM", "Code", "Open Source", "Small Models"],
+          "title": "Latent Space Podcast 8/4/23 [Summary] Latent Space x AI Breakdown crossover pod! ",
+          "slug": "latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod",
+          "authorName": "Prof. Otto Nomos",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+          },
+          "_publishedAt": "2023-10-05T09:16:33+01:00",
+          "description": "Join AI Breakdown & Latent Space for the summer AI tech roundup: Dive into GPT4.5, Llama 2, AI tools, the rising AI engineer, and more!",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Dive into GPT4.5, Llama 2, AI tools, the rising AI engineer, and more!",
+            "title": "Latent Space Podcast 8/4/23 [Summary] AI Breakdown crossover",
+            "twitterCard": null,
+            "image": {
+              "width": 1578,
+              "height": 558,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png"
+            }
+          }
+        },
+        {
+          "id": "190259111",
+          "topics": ["Summary", "Transformers", "Training", "Open Source"],
+          "title": " Latent Space Podcast 7/26/23 [Summary] FlashAttention 2: making Transformers 800% faster - Tri Dao of Together AI",
+          "slug": "latent-space-podcast-7-26-23-summary-flashattention-2-making-transformers-800-fas",
+          "authorName": "Prof. Otto Nomos",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+          },
+          "_publishedAt": "2023-10-05T09:14:13+01:00",
+          "description": "Discover how FlashAttention revolutionized AI speed with Tri Dao, as he unveils the power of FlashAttention 2, dives into Stanford's Hazy Lab & future AI insights.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1691543194-screenshot-2023-08-08-at-8-43-59-pm.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Discover how FlashAttention revolutionized AI speed with Tri Dao, as he unveils the power of FlashAttention 2",
+            "title": " Latent Space Podcast 7/26/23 [Summary] FlashAttention 2",
+            "twitterCard": null,
+            "image": {
+              "width": 1648,
+              "height": 594,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1691543194-screenshot-2023-08-08-at-8-43-59-pm.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "AI Research",
+      "slug": "ai-research",
+      "articles": [
+        {
+          "id": "198277124",
+          "topics": [
+            "MLL",
+            "Finance",
+            "Soins de sante",
+            "Juridique",
+            "Incitation"
+          ],
+          "title": "Adaptation des grands modeles de langage via la comprehension de lecture",
+          "slug": "adapting-large-language-models-via-reading-comprehension",
+          "authorName": "Prof. Otto Nomos",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+          },
+          "_publishedAt": "2024-05-27T03:34:22+01:00",
+          "description": "Commentaire et evaluation abstraits",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Abstract Commentary & Rating\n",
+            "title": "Adapting Large Language Models via Reading Comprehension",
+            "twitterCard": null,
+            "image": {
+              "width": 1456,
+              "height": 816,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+            }
+          }
+        },
+        {
+          "id": "198277342",
+          "topics": ["MLM", "Multilingue"],
+          "title": "OpenBA : Un modèle asymétrique bilingue de 15B open source pré-entraîné à partir de zéro",
+          "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
+          "authorName": "Prof. Otto Nomos",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+          },
+          "_publishedAt": "2024-05-27T03:34:02+01:00",
+          "description": "Commentaire et évaluation de l'abstract",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Abstract Commentary & Rating\n",
+            "title": "OpenBA: An Open-sourced 15B Bilingual ... Model ...",
+            "twitterCard": null,
+            "image": {
+              "width": 1456,
+              "height": 816,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+            }
+          }
+        },
+        {
+          "id": "198277117",
+          "topics": ["MLL", "Recuperation"],
+          "title": "PDFTriage: Reponse aux questions sur des documents longs et structures",
+          "slug": "pdftriage-question-answering-over-long-structured-documents",
+          "authorName": "Prof. Otto Nomos",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+          },
+          "_publishedAt": "2024-05-27T03:33:49+01:00",
+          "description": "Commentaire et evaluation de l'abstract",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Abstract Commentary & Rating\n",
+            "title": "PDFTriage: Q & A over Long, Structured Documents",
+            "twitterCard": null,
+            "image": {
+              "width": 1456,
+              "height": 816,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+            }
+          }
+        },
+        {
+          "id": "198277138",
+          "topics": ["MLL", "Ajustement fin"],
+          "title": "LLaMA Trie: Exploiter le potentiel des couches intermediaires des grands modeles de langage pour l'inference dynamique en utilisant l'ajustement fin trie (SoFT)",
+          "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
+          "authorName": "Prof. Otto Nomos",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+          },
+          "_publishedAt": "2024-05-27T03:33:31+01:00",
+          "description": "Commentaire et evaluation de l'abstract",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Abstract Commentary & Rating\n",
+            "title": "Sorted LLaMA: ... Inference Using Sorted Fine-Tuning (SoFT)",
+            "twitterCard": null,
+            "image": {
+              "width": 1456,
+              "height": 816,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+            }
+          }
+        },
+        {
+          "id": "198277150",
+          "topics": ["MLM", "Réglage des instructions", "Multimodal"],
+          "title": "Une étude empirique sur le dimensionnement des grands modèles multimodaux avec instructions",
+          "slug": "an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models",
+          "authorName": "Prof. Otto Nomos",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+          },
+          "_publishedAt": "2024-05-27T03:33:15+01:00",
+          "description": "Commentaire et évaluation de l'abstract",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Abstract Commentary & Rating\n",
+            "title": "An Empirical Study of Scaling Instruct-Tuned LLMs",
+            "twitterCard": null,
+            "image": {
+              "width": 1456,
+              "height": 816,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Bitlauncher",
+      "slug": "bitlauncher",
+      "articles": [
+        {
+          "id": "W8caLxKNTdahoemkXQT_sg",
+          "topics": ["how_to", "launchpad", "dao"],
+          "title": "Welcome to the Bitlauncher Presale Starting September 16th!",
+          "slug": "welcome-to-the-bitlauncher-presale-starting-september-16th",
+          "authorName": "Jun Dam",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+          },
+          "_publishedAt": "2024-09-12T21:10:12+01:00",
+          "description": "Bitlauncher Presale begins September 16th, 2024, offering a unique opportunity to contribute capital in the intersection of AI and cryptocurrency. Secure your presale tokens at $1 each and be part of this transformative venture.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1724390484-bitlauncherpresale2.jpg"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Bitlauncher Presale starts September 16th, 2024. Join the AI-crypto revolution by securing presale tokens at $1 each.",
+            "title": "Bitlauncher Presale Starting September 16th!",
+            "twitterCard": "summary_large_image",
+            "image": {
+              "width": 1312,
+              "height": 736,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1724390484-bitlauncherpresale2.jpg"
+            }
+          }
+        },
+        {
+          "id": "TBAOoPr9SPihQxeeKTGUQw",
+          "topics": ["launchpad", "investment", "fundraising"],
+          "title": "What is a Public Token Presale?",
+          "slug": "what-is-a-public-token-presale",
+          "authorName": "Jun Dam",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+          },
+          "_publishedAt": "2024-08-27T05:32:23+01:00",
+          "description": "Public token presales provide early investment chances at fixed prices before main sales. They help projects raise pre-launch funds, gauge interest, and build community, offering potential benefits for participants.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1724733057-pre-sale-bitlauncher-blog.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Public token presales offer early investment opportunities before main sale, helping projects raise pre-launch capital.",
+            "title": "What is a Public Token Presale?",
+            "twitterCard": "summary_large_image",
+            "image": {
+              "width": 1312,
+              "height": 736,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1724733057-pre-sale-bitlauncher-blog.png"
+            }
+          }
+        },
+        {
+          "id": "ecAGoOkaROa09DcoVKyOCA",
+          "topics": ["dao", "analysis", "launchpad"],
+          "title": "What is the Bitlauncher ($BL) Token?",
+          "slug": "what-is-the-bitlauncher-bl-token",
+          "authorName": "Jun Dam",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+          },
+          "_publishedAt": "2024-08-27T05:06:47+01:00",
+          "description": "Bitlauncher's public token presale offers early investment opportunities in AI and blockchain projects. Secure tokens at $1 each, contribute to pre-launch funding, and join the growing community.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1724389825-whatisbltoken1.webp"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Bitlauncher ($BL) token: Powering the AI-focused launchpad, enabling governance, transactions, and ecosystem growth.",
+            "title": "What is the Bitlauncher ($BL) Token?",
+            "twitterCard": "summary_large_image",
+            "image": {
+              "width": 1797,
+              "height": 603,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1724356923-bl-thumbnail.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Bitcash",
+      "slug": "bitcash",
+      "articles": [
+        {
+          "id": "CD89KaoLSh6nQbiMhxX0EQ",
+          "topics": ["aire de lancement"],
+          "title": "Assurer la confiance et l'intégrité : Conformité réglementaire et mesures de sécurité",
+          "slug": "ensuring-trust-and-integrity-regulatory-compliance-and-security-measures",
+          "authorName": "Jun Dam",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+          },
+          "_publishedAt": "2024-06-20T16:21:42+01:00",
+          "description": "Cette section décrit l'approche proactive de notre plateforme pour se conformer aux normes réglementaires mondiales et mettre en œuvre des mesures de sécurité avancées, assurant un environnement sûr et conforme pour les utilisateurs dans les espaces crypto et IA.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1710562461-bitlauncherregsecimg.webp"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "This section outlines our platform's proactive approach to adhering to global regulatory standards and implementing advanced security measures.",
+            "title": "Regulatory Compliance and Security Measures",
+            "twitterCard": null,
+            "image": {
+              "width": 700,
+              "height": 700,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1710562461-bitlauncherregsecimg.webp"
+            }
+          }
+        },
+        {
+          "id": "H_DP7HFORBuw9rID5Jkhhw",
+          "topics": ["comment_faire"],
+          "title": "Comment s'inscrire et KYC à Bitcash",
+          "slug": "how-to-register-and-kyc-to-bitcash",
+          "authorName": "Roberto \"Andler\" Lucas",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1715639160-andler-file-photo.jpg"
+          },
+          "_publishedAt": "2024-06-20T16:20:40+01:00",
+          "description": "Nous couvrons une gamme de sujets, y compris l'inscription à un compte Bitcash, la configuration d'un nom de compte et d'un référent, l'identification et la sécurisation des appareils, la fourniture d'identification et d'informations personnelles pour le KYC, la prise de photos pour la vérification KYC, et l'attente de l'approbation et rejoindre la communauté.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1715638953-bitcash-logo-frame-w-bg.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "We are learning how to register a Bitcash account, set up the account, identify devices, KYC, and waiting for approval and join the community!",
+            "title": "How to Register and KYC to Bitcash",
+            "twitterCard": "summary",
+            "image": {
+              "width": 1440,
+              "height": 1440,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1715831775-splash-edited.png"
+            }
+          }
+        },
+        {
+          "id": "fbM-UqrYQXGhw6HB4C6swQ",
+          "topics": ["aire de lancement"],
+          "title": "Feuille de route stratégique : Pionnier de l'innovation blockchain et succès des startups IA",
+          "slug": "strategic-roadmap-pioneering-blockchain-innovation-and-ai-startup-success",
+          "authorName": "Jun Dam",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+          },
+          "_publishedAt": "2024-03-15T05:13:30+00:00",
+          "description": "Présentation du plan par phases de bitLauncher pour le déploiement de technologies révolutionnaires, la croissance pilotée par la communauté et le développement de la chaîne équitable Antelope, afin de révolutionner les paysages de l'IA et des cryptomonnaies.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1710479575-roadmapbitlauncher.webp"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Outlining bitLauncher's phased plan for groundbreaking technology deployment",
+            "title": "bitLauncher Strategic Roadmap",
+            "twitterCard": null,
+            "image": {
+              "width": 700,
+              "height": 700,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1710479575-roadmapbitlauncher.webp"
+            }
+          }
+        },
+        {
+          "id": "I4jShMnWRruvJgDbrucwDw",
+          "topics": ["launchpad"],
+          "title": "The Technological Backbone of bitLauncher",
+          "slug": "the-technological-backbone-of-bitcash-launchpad",
+          "authorName": "Jun Dam",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+          },
+          "_publishedAt": "2024-03-14T05:33:20+00:00",
+          "description": "This section details bitLauncher's integration of cutting-edge blockchain technologies and innovative tools, including Bitcash payments, DAO governance, and a non-profit blockchain vision, setting the stage for transparent, secure, and equitable AI startup growth.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1710011354-techsectionwpimg.webp"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "This section details bitLauncher's integration of cutting-edge blockchain technologies and innovative tools.",
+            "title": "The Technological Backbone of bitLauncher",
+            "twitterCard": null,
+            "image": {
+              "width": 700,
+              "height": 700,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1710011354-techsectionwpimg.webp"
+            }
+          }
+        },
+        {
+          "id": "BEfgGhndSsCn5MBU89RO3A",
+          "topics": ["launchpad"],
+          "title": "Empowering Innovation: Vision, Mission, and Strategic Goals of bitLauncher",
+          "slug": "empowering-innovation-vision-mission-and-strategic-goals-of-bitcash-launchpad",
+          "authorName": "Jun Dam",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+          },
+          "_publishedAt": "2024-03-14T05:31:29+00:00",
+          "description": "This section outlines bitcash Launchpad's vision to revolutionize AI innovation with cryptocurrency, detailing our mission to democratize AI development and our strategic goals for creating a community-driven, transparent, and ethical technological future.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1709370139-whitepaper-p4.webp"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "This section outlines our vision, mission and goals to revolutionize AI innovation with cryptocurrency.",
+            "title": "Empowering Innovation: Vision, Mission, and Strategic Goals ",
+            "twitterCard": null,
+            "image": {
+              "width": 700,
+              "height": 700,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1709370139-whitepaper-p4.webp"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Startup",
+      "slug": "startup",
+      "articles": [
+        {
+          "id": "166795692",
+          "topics": ["Commencer", "Affaires & Administration"],
+          "title": "Maitriser la Tresorerie: Le Guide Ultime pour les Fondateurs de Startups",
+          "slug": "mastering-cash-flow-the-ultimate-guide-for-startup-founders",
+          "authorName": "Bootstrap Briggs",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
+          },
+          "_publishedAt": "2024-06-20T16:40:26+01:00",
+          "description": "Maitrisez la tresorerie avec notre guide ultime pour les fondateurs de startups. Apprenez des strategies pour maintenir la liquidite, gerer les finances et assurer la stabilite de l'entreprise.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1687312847-sb20-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": " Learn strategies to maintain liquidity, manage finances, and ensure business stability.",
+            "title": "Mastering Cash Flow: The Ultimate Guide for Startup Founders",
+            "twitterCard": null,
+            "image": {
+              "width": 614,
+              "height": 614,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1687312847-sb20-img1.png"
+            }
+          }
+        },
+        {
+          "id": "166788631",
+          "topics": ["Commencer", "Affaires & Administration"],
+          "title": "Budgetisation intelligente pour les startups: un guide étape par étape pour construire une base financière solide",
+          "slug": "smart-budgeting-for-startups-a-step-by-step-guide-to-building-a-strong-financial",
+          "authorName": "Bootstrap Briggs",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
+          },
+          "_publishedAt": "2024-06-20T16:40:00+01:00",
+          "description": "Construisez une base financière solide avec notre guide de budgétisation intelligent pour les startups. Apprenez à gérer les fonds efficacement pour une croissance durable de l'entreprise.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1687310597-sb19-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Learn to manage funds effectively for sustainable business growth.",
+            "title": "Smart Budgeting for Startups",
+            "twitterCard": null,
+            "image": {
+              "width": 614,
+              "height": 614,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1687310597-sb19-img1.png"
+            }
+          }
+        },
+        {
+          "id": "165816954",
+          "topics": ["Commencer", "Équipes & RH"],
+          "title": "Construire une équipe de rêve : Le guide ultime pour assembler votre équipe de démarrage",
+          "slug": "building-a-dream-team-the-ultimate-guide-to-assembling-your-startup-squad",
+          "authorName": "Bootstrap Briggs",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
+          },
+          "_publishedAt": "2024-06-19T03:48:19+01:00",
+          "description": "Formez votre équipe de démarrage idéale avec notre guide complet. Augmentez l'efficacité de l'équipe et la croissance de la startup avec nos conseils d'experts.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1687119615-sb5-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Form your ideal startup team with our comprehensive guide. Boost team efficiency and startup growth with our expert advice.",
+            "title": "The Ultimate Guide to Assembling Your Startup Squad",
+            "twitterCard": null,
+            "image": {
+              "width": 1024,
+              "height": 1024,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1687119615-sb5-img1.png"
+            }
+          }
+        },
+        {
+          "id": "166322203",
+          "topics": ["Getting Started", "Sales & Marketing"],
+          "title": "The Blueprint to Success: A Guide to Crafting a Winning Sales Plan for Your Startup",
+          "slug": "the-blueprint-to-success-a-guide-to-crafting-a-winning-sales-plan-for-your-startu",
+          "authorName": "Steve Savant",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
+          },
+          "_publishedAt": "2023-10-05T02:08:22+01:00",
+          "description": "Craft a winning sales plan for your startup with our blueprint to success. Gain insights into driving revenue and achieving sustainable growth.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1687212250-sb16-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Gain insights into driving revenue and achieving sustainable growth.",
+            "title": "A Guide to Crafting a Winning Sales Plan for Your Startup",
+            "twitterCard": null,
+            "image": {
+              "width": 994,
+              "height": 994,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1687212250-sb16-img1.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Crypto",
+      "slug": "crypto",
+      "articles": [
+        {
+          "id": "180217169",
+          "topics": ["Économie des jetons", "Commentaire"],
+          "title": "Économie des incitations tokenisées 3 : La valeur du jeton n'alignera pas les parties prenantes [Commentaire]",
+          "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
+          "authorName": "Crypto Clairity",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+          },
+          "_publishedAt": "2023-10-05T09:17:23+01:00",
+          "description": "Découvrez les pièges de l'utilisation de la valeur du jeton comme indicateur de performance sur les plateformes blockchain. Apprenez à concevoir des systèmes d'incitation efficaces.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Uncover the pitfalls of using token value as a performance metric in blockchain platforms. Learn to design effective incentive systems.",
+            "title": "Economics of Tokenized Incentives 3 [Commentary]",
+            "twitterCard": null,
+            "image": {
+              "width": 862,
+              "height": 862,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+            }
+          }
+        },
+        {
+          "id": "180217123",
+          "topics": ["Économie des jetons", "Commentaire"],
+          "title": "Économie des incitations tokenisées 2 : Sélectionner des métriques de performance efficaces [Commentaire]",
+          "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
+          "authorName": "Crypto Clairity",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+          },
+          "_publishedAt": "2023-10-05T09:17:05+01:00",
+          "description": "Découvrez le pouvoir des métriques de performance dans les systèmes de paiement pour performance sur blockchain. Apprenez à aligner efficacement les incitations avec les objectifs de la plateforme.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Discover the power of performance metrics in blockchain pay-for-performance systems. Learn to align incentives with platform goals effectively.",
+            "title": "Economics of Tokenized Incentives 2 [Commentary]",
+            "twitterCard": null,
+            "image": {
+              "width": 862,
+              "height": 862,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+            }
+          }
+        },
+        {
+          "id": "180217082",
+          "topics": ["Tokenomie", "Commentaire"],
+          "title": "Economie des incitations tokenisees 1 : Introduction au paiement pour performance [Commentaire]",
+          "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
+          "authorName": "Crypto Clairity",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+          },
+          "_publishedAt": "2023-10-05T09:15:12+01:00",
+          "description": "Plongez dans les complexites des incitations au paiement pour performance sur les plateformes blockchain. Decouvrez les compromis et les considerations de conception pour reussir.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Dive into the complexities of pay-for-performance incentives in blockchain platforms. Learn the trade-offs and design considerations for success",
+            "title": "Economics of Tokenized Incentives 1 [Commentary]",
+            "twitterCard": null,
+            "image": {
+              "width": 862,
+              "height": 862,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+            }
+          }
+        },
+        {
+          "id": "180556627",
+          "topics": ["Commentaire", "Contrats intelligents"],
+          "title": "Contrats incomplets et blockchain [Commentaire]",
+          "slug": "incomplete-contracts-and-blockchain-commentary",
+          "authorName": "Crypto Clairity",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+          },
+          "_publishedAt": "2023-10-05T09:14:44+01:00",
+          "description": "Demystifier la relation entre les contrats incomplets et la blockchain. Comprendre comment la blockchain peut combler les lacunes contractuelles.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1690856249-cbc5-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Demystify the relationship between incomplete contracts and blockchain. Understand how blockchain can fill contractual gaps.",
+            "title": "Incomplete Contracts and Blockchain [Commentary]",
+            "twitterCard": null,
+            "image": {
+              "width": 862,
+              "height": 862,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1690856249-cbc5-img1.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Bitcoin",
+      "slug": "bitcoin",
+      "articles": [
+        {
+          "id": "165362142",
+          "topics": ["Commencer", "Preuve de travail", "Minage"],
+          "title": "Decouvrir le pouvoir du minage de Bitcoin: Une introduction aux algorithmes de preuve de travail",
+          "slug": "unlocking-the-power-of-bitcoin-mining-an-introduction-to-proof-of-work-algorithms",
+          "authorName": "Maxi Millie",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
+          },
+          "_publishedAt": "2023-10-05T05:55:09+01:00",
+          "description": "Plongez dans le monde du minage de Bitcoin et le concept fascinant des algorithmes de preuve de travail. Explorez le potentiel et les recompenses de cette technologie transformatrice.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1686858321-bb9-img0edited.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Delve into the world of Bitcoin mining and the fascinating concept of proof-of-work algorithms. ",
+            "title": " An Introduction to Proof-of-Work Algorithms",
+            "twitterCard": null,
+            "image": {
+              "width": 1024,
+              "height": 1024,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1686858321-bb9-img0edited.png"
+            }
+          }
+        },
+        {
+          "id": "165340146",
+          "topics": ["Commencer", "Preuve de Travail"],
+          "title": "La sécurité économique de Bitcoin: Comment la Preuve de Travail permet un réseau sûr et sécurisé",
+          "slug": "the-economic-security-of-bitcoin-how-proof-of-work-enables-a-safe-and-secure-netw",
+          "authorName": "Maxi Millie",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
+          },
+          "_publishedAt": "2023-10-05T05:53:43+01:00",
+          "description": "Découvrez la sécurité économique de Bitcoin et la puissance de la preuve de travail. Explorez comment cette technologie innovante assure un réseau sûr et sécurisé pour l'avenir.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1686856982-bb8-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Explore how this innovative technology ensures a safe and secure network for the future.",
+            "title": "The Economic Security of Bitcoin: Proof-of-Work",
+            "twitterCard": null,
+            "image": {
+              "width": 1024,
+              "height": 1024,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1686856982-bb8-img1.png"
+            }
+          }
+        },
+        {
+          "id": "165340050",
+          "topics": ["Commencer", "Juridique"],
+          "title": "Naviguer dans le paysage legal et reglementaire du Bitcoin: Comprendre les regles et les opportunites",
+          "slug": "navigating-the-legal-and-regulatory-landscape-of-bitcoin-understanding-the-rules",
+          "authorName": "Maxi Millie",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
+          },
+          "_publishedAt": "2023-10-05T05:52:05+01:00",
+          "description": "Restez informe et conforme avec notre guide complet sur le paysage legal et reglementaire du Bitcoin. Naviguez les complexites de la cryptomonnaie avec confiance.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1686855768-bb7-img1edited.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Stay informed and compliant with our comprehensive guide to the legal and regulatory landscape of Bitcoin. ",
+            "title": "Navigating the Legal and Regulatory Landscape of Bitcoin",
+            "twitterCard": null,
+            "image": {
+              "width": 1024,
+              "height": 1024,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1686855768-bb7-img1edited.png"
+            }
+          }
+        },
+        {
+          "id": "165337859",
+          "topics": ["Commencer", "Sécurité"],
+          "title": "L'avenir du stockage de Bitcoin: Une introduction aux portefeuilles Bitcoin et aux solutions de stockage innovantes",
+          "slug": "the-future-of-bitcoin-storage-an-introduction-to-bitcoin-wallets-and-innovative-s",
+          "authorName": "Maxi Millie",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
+          },
+          "_publishedAt": "2023-10-05T05:50:52+01:00",
+          "description": "Explorez le monde des portefeuilles Bitcoin et des solutions de stockage innovantes. Apprenez à sécuriser et gérer vos actifs numériques avec notre guide introductif complet.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1686854653-bb6-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Learn how to secure and manage your digital assets with our comprehensive introductory guide.",
+            "title": "An Introduction to Bitcoin Wallets and Storage Solutions",
+            "twitterCard": null,
+            "image": {
+              "width": 1024,
+              "height": 1024,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1686854653-bb6-img1.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Investing",
+      "slug": "investing",
+      "articles": [
+        {
+          "id": "174592759",
+          "topics": ["Commencer", "Alternatives"],
+          "title": "Liberer le potentiel: Maitriser les investissements alternatifs pour le succes des investisseurs",
+          "slug": "unleashing-the-potential-mastering-alternative-investments-for-contributor-success",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T02:11:13+01:00",
+          "description": "Elargissez votre savoir-faire en investissement avec des investissements alternatifs! Plongez dans le monde du capital-investissement, des fonds spéculatifs et des matières premières pour dynamiser votre portefeuille. Ce blog offre des conseils d'experts pour les investisseurs cherchant à réussir dans les stratégies d'investissement alternatif.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689120056-ib6-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Dive into the world of private equity, hedge funds, and commodities to supercharge your portfolio. ",
+            "title": "Mastering Alternative Investments for Contributor Success",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689120056-ib6-img1.png"
+            }
+          }
+        },
+        {
+          "id": "175015363",
+          "topics": ["Commencer", "Fonds communs de placement & ETFs"],
+          "title": "Revelation des avantages et des inconvenients des fonds negocies en bourse (ETFs) : Un guide complet pour les investisseurs",
+          "slug": "unveiling-the-pros-and-cons-of-exchange-traded-funds-etfs-a-comprehensive-guide-f",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T02:09:18+01:00",
+          "description": "Decouvrez les avantages et les inconvenients de l'investissement dans les ETFs. Prenez des decisions eclairees et maximisez votre potentiel d'investissement avec ce guide complet.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689186966-ib8-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Make informed decisions and maximize your investment potential with this comprehensive guide.\n\n",
+            "title": "Unveiling the Pros and Cons of Exchange-Traded Funds (ETFs)",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689186966-ib8-img1.png"
+            }
+          }
+        },
+        {
+          "id": "176002890",
+          "topics": ["Commencer", "Gestion des Risques"],
+          "title": "Protegez vos investissements: Un guide complet pour reconnaitre et eviter la fraude a l'investissement",
+          "slug": "shield-your-investments-a-comprehensive-guide-to-recognizing-and-avoiding-investm",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T02:08:41+01:00",
+          "description": "Protegez votre argent durement gagne! Apprenez a identifier les escroqueries d'investissement et protegez votre avenir financier avec notre guide complet pour eviter la fraude a l'investissement",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689384626-ib19-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Guard your hard-earned money! Learn to spot investment scams and protect your financial future.",
+            "title": "A Comprehensive Guide to Avoiding Investment Fraud",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689384626-ib19-img1.png"
+            }
+          }
+        },
+        {
+          "id": "176002763",
+          "topics": ["Getting Started", "Insurance"],
+          "title": "Insurance Planning 101: Navigating Life, Disability, and Long-Term Care Insurance",
+          "slug": "insurance-planning-101-navigating-life-disability-and-long-term-care-insurance",
+          "authorName": "Mister Moneybags",
+          "authorPicture": {
+            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+          },
+          "_publishedAt": "2023-10-05T02:07:57+01:00",
+          "description": "Secure your future with smart insurance planning. Dive into life, disability, and long-term care insurance to safeguard your financial health.",
+          "thumbnail": {
+            "url": "https://www.datocms-assets.com/101962/1689381721-ib18-img1.png"
+          },
+          "contentBlock": [],
+          "seo": {
+            "description": "Dive into life, disability, and long-term care insurance to safeguard your financial health.",
+            "title": "Insurance Planning 101",
+            "twitterCard": null,
+            "image": {
+              "width": 870,
+              "height": 870,
+              "title": null,
+              "alt": null,
+              "url": "https://www.datocms-assets.com/101962/1689381721-ib18-img1.png"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

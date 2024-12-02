@@ -1,9 +1,5 @@
-import { Button } from '@/components/ui/button'
-import {
-  Pagination,
-  PaginationContent,
-  PaginationItem,
-} from '@/components/ui/pagination'
+import { Pagination, PaginationContent, PaginationItem } from '@smartsale/ui'
+import { Button } from '@smartsale/ui'
 import {
   ChevronLeftIcon,
   ChevronRightIcon,
@@ -19,8 +15,9 @@ import {
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
+} from '@smartsale/ui'
 
+import { Separator } from '@smartsale/ui'
 import {
   Card,
   CardContent,
@@ -28,8 +25,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from '@/components/ui/card'
-import { Separator } from '@/components/ui/separator'
+} from '@smartsale/ui'
 
 export function OrderCard() {
   return (

@@ -1,0 +1,560 @@
+{
+  "relatedBlogs": [
+    {
+      "id": "180563939",
+      "topics": ["DAO", "Tokenomics", "Commentary"],
+      "title": "A Framework for Blockchain Governance Design: The Prysm Group Wheel [Commentary]",
+      "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:19:19+01:00",
+      "description": "Navigate the complexities of blockchain governance with the Prysm Group Wheel. Your roadmap to effective blockchain governance design.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+      },
+      "seo": {
+        "description": "Navigate the complexities of blockchain governance with the Prysm Group Wheel. Your roadmap to effective blockchain governance design.",
+        "title": "A Framework for Blockchain Governance Design [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 1400,
+          "height": 1383,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+        }
+      }
+    },
+    {
+      "id": "180217169",
+      "topics": ["Tokenomics", "Commentary"],
+      "title": "Economics of Tokenized Incentives 3: Token Value Won’t Align Stakeholders [Commentary]",
+      "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:23+01:00",
+      "description": "Uncover the pitfalls of using token value as a performance metric in blockchain platforms. Learn to design effective incentive systems.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+      },
+      "seo": {
+        "description": "Uncover the pitfalls of using token value as a performance metric in blockchain platforms. Learn to design effective incentive systems.",
+        "title": "Economics of Tokenized Incentives 3 [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+        }
+      }
+    },
+    {
+      "id": "180217123",
+      "topics": ["Tokenomics", "Commentary"],
+      "title": "Economics of Tokenized Incentives 2: Selecting Effective Performance Metrics [Commentary]",
+      "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:17:05+01:00",
+      "description": "Discover the power of performance metrics in blockchain pay-for-performance systems. Learn to align incentives with platform goals effectively.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+      },
+      "seo": {
+        "description": "Discover the power of performance metrics in blockchain pay-for-performance systems. Learn to align incentives with platform goals effectively.",
+        "title": "Economics of Tokenized Incentives 2 [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+        }
+      }
+    },
+    {
+      "id": "180217082",
+      "topics": ["Tokenomics", "Commentary"],
+      "title": "Economics of Tokenized Incentives 1: Intro to Pay for Performance [Commentary]",
+      "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:15:12+01:00",
+      "description": "Dive into the complexities of pay-for-performance incentives in blockchain platforms. Learn the trade-offs and design considerations for success.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+      },
+      "seo": {
+        "description": "Dive into the complexities of pay-for-performance incentives in blockchain platforms. Learn the trade-offs and design considerations for success",
+        "title": "Economics of Tokenized Incentives 1 [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+        }
+      }
+    },
+    {
+      "id": "180556627",
+      "topics": ["Commentary", "Smart Contracts"],
+      "title": "Incomplete Contracts and Blockchain [Commentary]",
+      "slug": "incomplete-contracts-and-blockchain-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:14:44+01:00",
+      "description": "Demystify the relationship between incomplete contracts and blockchain. Understand how blockchain can fill contractual gaps.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690856249-cbc5-img1.png"
+      },
+      "seo": {
+        "description": "Demystify the relationship between incomplete contracts and blockchain. Understand how blockchain can fill contractual gaps.",
+        "title": "Incomplete Contracts and Blockchain [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690856249-cbc5-img1.png"
+        }
+      }
+    },
+    {
+      "id": "180563918",
+      "topics": ["Tokenomics", "Commentary", "Fundraising"],
+      "title": "Tokens: Investment Vehicle or Medium of Exchange (Not Both) [Commentary]",
+      "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:13:31+01:00",
+      "description": "Delve into the dual role of tokens in the blockchain economy. Uncover the fine line between investment vehicle and medium of exchange.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
+      },
+      "seo": {
+        "description": "Delve into the dual role of tokens in the blockchain economy. Uncover the fine line between investment vehicle and medium of exchange.",
+        "title": "Tokens: Investment or Medium of Exchange [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
+        }
+      }
+    },
+    {
+      "id": "180563922",
+      "topics": ["Fundraising", "Tokenomics", "Commentary"],
+      "title": "ICOs Leverage Network Effects [Commentary]",
+      "slug": "icos-leverage-network-effects-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:12:06+01:00",
+      "description": "Discover how ICOs harness the power of network effects to fuel their success. ICOs and network effects, a dynamic duo!",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+      },
+      "seo": {
+        "description": "Discover how ICOs harness the power of network effects to fuel their success. ICOs and network effects, a dynamic duo!",
+        "title": "ICOs Leverage Network Effects [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+        }
+      }
+    },
+    {
+      "id": "180563931",
+      "topics": ["Tokenomics", "Commentary"],
+      "title": "Blockchain Incentive Structures: What they are and why they matter [Commentary]",
+      "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:10:02+01:00",
+      "description": "Understand the core of blockchain incentive structures and their significance in driving user behavior and platform success.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+      },
+      "seo": {
+        "description": "Understand the core of blockchain incentive structures and their significance in driving user behavior and platform success.",
+        "title": "Blockchain Incentive Structures [Commentary]",
+        "twitterCard": null,
+        "image": {
+          "width": 862,
+          "height": 862,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+        }
+      }
+    },
+    {
+      "id": "167184977",
+      "topics": ["Tokenomics", "DAO", "Fundraising"],
+      "title": "Revolutionizing the Equity Model: How Tokenomics is Disrupting the Startup World",
+      "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T09:02:51+01:00",
+      "description": "Unlock the future of startups with tokenomics! Explore how this innovative concept is reshaping the equity model and revolutionizing the startup landscape.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
+      },
+      "seo": {
+        "description": "Explore how this innovative concept is reshaping the equity model and revolutionizing the startup landscape.",
+        "title": "How Tokenomics is Disrupting the Startup World",
+        "twitterCard": null,
+        "image": {
+          "width": 994,
+          "height": 994,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
+        }
+      }
+    },
+    {
+      "id": "167101094",
+      "topics": ["Getting Started", "Tokenomics"],
+      "title": "Tokenomics 101: Unleashing the Power of Cryptocurrency!",
+      "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:57:58+01:00",
+      "description": "Discover the power of cryptocurrency through Tokenomics 101 - an in-depth guide to understanding the economics behind digital assets.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687391799-tb1-img1.png"
+      },
+      "seo": {
+        "description": "an in-depth guide to understanding the economics behind digital assets.",
+        "title": "Tokenomics 101: Unleashing the Power of Cryptocurrency!",
+        "twitterCard": null,
+        "image": {
+          "width": 994,
+          "height": 994,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1687391799-tb1-img1.png"
+        }
+      }
+    },
+    {
+      "id": "165685908",
+      "topics": ["Getting Started", "Fundraising"],
+      "title": "Disrupt the Status Quo: How Cryptocurrency is Revolutionizing Fundraising and Crowdfunding",
+      "slug": "disrupt-the-status-quo-how-cryptocurrency-is-revolutionizing-fundraising-and-crow",
+      "authorName": "Crypto Clairity",
+      "authorPicture": {
+        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      },
+      "_publishedAt": "2023-10-05T08:33:36+01:00",
+      "description": "Explore the groundbreaking potential of cryptocurrency in fundraising and crowdfunding. Discover how digital currencies are disrupting the traditional methods in our insightful blog post.",
+      "thumbnail": {
+        "url": "https://www.datocms-assets.com/101962/1687046260-cb17-img1edited.png"
+      },
+      "seo": {
+        "description": "Explore the groundbreaking potential of cryptocurrency in fundraising and crowdfunding. ",
+        "title": "How Crypto is Revolutionizing Fundraising and Crowdfunding",
+        "twitterCard": null,
+        "image": {
+          "width": 1024,
+          "height": 1024,
+          "title": null,
+          "alt": null,
+          "url": "https://www.datocms-assets.com/101962/1687046260-cb17-img1edited.png"
+        }
+      }
+    }
+  ],
+  "blogContent": {
+    "id": "180556595",
+    "topics": ["Fundraising", "Tokenomics", "Commentary"],
+    "title": "The Blockchain Effect: Network Effects without Market Power Costs [Commentary]",
+    "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
+    "authorName": "Crypto Clairity",
+    "authorPicture": {
+      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+    },
+    "_publishedAt": "2023-10-05T09:11:14+01:00",
+    "description": "Explore how blockchain enables network effects without the downsides of market power. Discover the game-changing Blockchain Effect.",
+    "thumbnail": {
+      "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+    },
+    "contentBlock": [
+      {
+        "mainContent": {
+          "value": {
+            "schema": "dast",
+            "document": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Summary & Commentary"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "Link to Original Article: "
+                    },
+                    {
+                      "url": "https://www.prysmgroup.io/articles/network-effects-without-market-power-costs",
+                      "type": "link",
+                      "children": [
+                        {
+                          "type": "span",
+                          "value": "https://www.prysmgroup.io/articles/network-effects-without-market-power-costs"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The article discusses the role of blockchain technology in reducing the 'cost of networking' and the implications for blockchain startups. Here's a concise summary and commentary:"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": ["strong"],
+                      "value": "Summary"
+                    },
+                    {
+                      "type": "span",
+                      "value": ": "
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The MIT Cryptoeconomics Lab is pioneering academic research in the blockchain and crypto space. One of its key insights is that blockchain technology can reduce the 'cost of networking', which is the inefficiencies caused by the market power of internet giants like Google, Amazon, and Facebook. Blockchain technology can leverage network effects without the detrimental impact of market power because it creates assets that cannot be owned. This means that no single entity can control the network and exert market power over it. However, this also presents a challenge for blockchain startups who want to raise funds or earn revenues from their creations. Initial Coin Offerings (ICOs) offer one solution by allowing developers to collect funds upfront by pre-selling access to the platform they are building."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": ["strong"],
+                      "value": "Commentary"
+                    },
+                    {
+                      "type": "span",
+                      "value": ": "
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "span",
+                      "value": "The idea of reducing the 'cost of networking' through blockchain technology is a powerful one. It suggests that blockchain can democratize the digital space by removing the market power of internet giants. However, this also presents a unique challenge for blockchain startups. Without the ability to exert market power, they need to find new ways to raise funds and generate revenues. ICOs offer one solution, but as the market matures, we can expect to see the emergence of new business models and funding solutions."
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": 2,
+                  "children": [
+                    {
+                      "type": "span",
+                      "marks": ["strong"],
+                      "value": "Actionable Insights"
+                    },
+                    {
+                      "type": "span",
+                      "value": ":"
+                    }
+                  ]
+                },
+                {
+                  "type": "list",
+                  "style": "numbered",
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Leverage Network Effects"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Blockchain startups should leverage network effects to increase the value of their platforms. This can be done by encouraging user participation and fostering a vibrant community."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Explore New Funding Solutions"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Traditional funding models may not be suitable for blockchain startups. Consider innovative solutions like ICOs, token sales, or even decentralized autonomous organizations (DAOs)."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Stay Ahead of the Curve"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": The blockchain space is rapidly evolving. Stay informed about the latest research and developments to identify new opportunities and challenges."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Focus on User Value"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Without the ability to exert market power, the success of a blockchain platform will depend on its ability to deliver value to users. Focus on creating a platform that meets the needs of your users and provides them with tangible benefits."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "span",
+                              "marks": ["strong"],
+                              "value": "Collaborate with Academia"
+                            },
+                            {
+                              "type": "span",
+                              "value": ": Academic institutions like the MIT Cryptoeconomics Lab are conducting valuable research in the blockchain space. Collaborate with these institutions to gain insights and validate your business model."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "topImages": [
+          {
+            "basename": "cbc4-img1",
+            "height": 862,
+            "width": 862,
+            "filename": "cbc4-img1.png",
+            "format": "png",
+            "alt": null,
+            "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "description": "Explore how blockchain enables network effects without the downsides of market power. Discover the game-changing Blockchain Effect.",
+      "title": "Network Effects without Market Power Costs [Commentary]",
+      "twitterCard": null,
+      "image": {
+        "width": 862,
+        "height": 862,
+        "title": null,
+        "alt": null,
+        "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+      }
+    }
+  },
+  "topics": ["Fundraising", "Tokenomics", "Commentary"],
+  "shortLink": {
+    "data": null,
+    "error": "You've reached your monthly limit of 1000 links on the Pro plan. Please upgrade to add more links."
+  }
+}

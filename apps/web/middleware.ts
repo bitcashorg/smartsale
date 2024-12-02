@@ -1,8 +1,8 @@
 import { match } from '@formatjs/intl-localematcher'
+import { defaultLocale, locales } from '@smartsale/content'
 import Negotiator from 'negotiator'
 import { cookies } from 'next/headers'
 import { type NextRequest, NextResponse } from 'next/server'
-import { defaultLocale, locales } from './dictionaries/locales'
 
 export function middleware(request: NextRequest) {
   const cookieStore = cookies()

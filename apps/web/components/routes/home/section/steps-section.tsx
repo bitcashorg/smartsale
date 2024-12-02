@@ -1,11 +1,11 @@
 'use client'
 
 import { Section } from '@/components/shared/section'
-import { Button, buttonVariants } from '@/components/ui/button'
-import { IconDownRightArrow } from '@/components/ui/icons'
-import type { Lang } from '@/dictionaries/locales'
 import { useSession } from '@/hooks/use-session'
-import { cn } from '@/lib/utils'
+import type { Lang } from '@smartsale/content'
+import { cn } from '@smartsale/ui'
+import { Button, buttonVariants } from '@smartsale/ui'
+import { IconDownRightArrow } from '@smartsale/ui'
 import Link from 'next/link'
 
 export default function StepsSection({ lang, dict, id }: StepsSectionProps) {
@@ -50,7 +50,6 @@ export default function StepsSection({ lang, dict, id }: StepsSectionProps) {
                       <IconDownRightArrow className="size-4 transition-all group-focus-within:-rotate-45 group-hover:-rotate-45 [&_path]:stroke-white" />
                     </Link>
                   ) : (
-                    // biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
                     <Button
                       variant="tertiary"
                       size="icon"

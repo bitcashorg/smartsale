@@ -1,5 +1,5 @@
 import { getBitUsdBalance, getEosBalance } from '@/lib/eos'
-import { useEffect } from 'react'
+import { useCallback, useEffect } from 'react'
 import { useSetState } from 'react-use'
 import { useSession } from './use-session'
 
@@ -11,12 +11,15 @@ export function useEosBalances() {
     mbots: '0',
   })
 
-  const getBalances = async (account: string) => {
-    setState({
-      eos: await getEosBalance(account),
-      bitusd: await getBitUsdBalance(account),
-    })
-  }
+  const getBalances = useCallback(
+    async (account: string) => {
+      setState({
+        eos: await getEosBalance(account),
+        bitusd: await getBitUsdBalance(account),
+      })
+    },
+    [setState],
+  )
 
   useEffect(() => {
     if (!session?.account) return
@@ -31,7 +34,7 @@ export function useEosBalances() {
     return () => {
       clearInterval(interval)
     }
-  }, [session?.account])
+  }, [session?.account, getBalances])
 
   return state
 }
