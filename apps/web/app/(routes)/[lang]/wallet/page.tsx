@@ -45,7 +45,7 @@ export default function WalletPage() {
 export const metadata: Metadata = {
   title: 'Wallet Balances',
   description:
-    'Your balances on the Bitcash | Bitlauncher ecosystem. Connect your Bitcash and EVM wallets',
+    'Your balances on the Bitlauncher | Bitcash  ecosystem. Connect your Bitcash and EVM wallets',
 }
 
 function BalancesCard() {
