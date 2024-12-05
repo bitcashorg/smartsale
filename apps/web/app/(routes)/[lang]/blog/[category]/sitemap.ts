@@ -1,18 +1,16 @@
 import { AVAILABLE_LANGS } from '@/lib/config'
-import { getArticleSections } from '@/services/datocms'
+import { getAllArticles } from '@/services/datocms/datocms-all-articles.service'
 import type { MetadataRoute } from 'next'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  let sections = []
-  try {
-    sections = await getArticleSections('en')
-  } catch (error) {
-    return []
-  }
+  const articles = await getAllArticles()
+  if (!articles) return []
 
-  const categories = sections.map((section) => section.slug)
+  const categoryUrls = articles
+    .map((article) => article.category)
+    .filter((category, index, self) => self.indexOf(category) === index)
 
-  return categories.map((category) => ({
+  return categoryUrls.map((category) => ({
     url: `https://${process.env.NEXT_PUBLIC_APP_URL}/blog/${category}`,
     lastModified: new Date(),
     priority: 0.7,
