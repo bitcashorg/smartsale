@@ -6,10 +6,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const articles = await getAllArticles()
   if (!articles) return []
 
-  const categoryUrls = articles
-    .map((article) => article.category)
-    .filter((category, index, self) => self.indexOf(category) === index)
-
+  const categoryUrls = [...new Set(articles.map((article) => article.category))]
   return categoryUrls.map((category) => ({
     url: `https://${process.env.NEXT_PUBLIC_APP_URL}/blog/${category}`,
     lastModified: new Date(),
