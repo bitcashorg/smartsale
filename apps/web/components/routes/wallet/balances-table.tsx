@@ -1,17 +1,17 @@
 'use client'
 
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from '@/components/ui/table'
 import { useErc20Balance, useNativeBalance } from '@/hooks/use-balance'
 import { useEosBalances } from '@/hooks/use-eos-balances'
+import {
+    Table,
+    TableBody,
+    TableCell,
+    TableHead,
+    TableHeader,
+    TableRow,
+} from '@repo/ui/table'
 
-import { TestnetBLPL, TestnetMBOTSPL, TestnetUSDCred } from '@repo/auction'
+import { TestnetBLPL, TestnetUSDCred } from '@repo/auction'
 import { useAccount } from 'wagmi'
 
 export function BalancesTable() {

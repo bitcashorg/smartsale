@@ -1,28 +1,27 @@
 'use client'
 
-import { Button } from '@/components/ui/button'
-import {
-  Drawer,
-  DrawerContent,
-  DrawerTitle,
-  DrawerTrigger,
-} from '@/components/ui/drawer'
-import { IconTelegram, IconTwitterX } from '@/components/ui/icons'
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from '@/components/ui/popover'
 import { useMediaQuery } from '@/hooks/use-media-query'
 import { cn } from '@/lib/utils'
-import { Share } from 'lucide-react'
-import { Facebook, Linkedin, Phone, X } from 'lucide-react'
+import { Button } from '@repo/ui/button'
 import {
-  FacebookShareButton,
-  LinkedinShareButton,
-  TelegramShareButton,
-  TwitterShareButton,
-  WhatsappShareButton,
+    Drawer,
+    DrawerContent,
+    DrawerTitle,
+    DrawerTrigger,
+} from '@repo/ui/drawer'
+import { IconTelegram, IconTwitterX } from '@repo/ui/icons'
+import {
+    Popover,
+    PopoverContent,
+    PopoverTrigger,
+} from '@repo/ui/popover'
+import { Facebook, Linkedin, Phone, Share, X } from 'lucide-react'
+import {
+    FacebookShareButton,
+    LinkedinShareButton,
+    TelegramShareButton,
+    TwitterShareButton,
+    WhatsappShareButton,
 } from 'next-share'
 import { useState } from 'react'
 

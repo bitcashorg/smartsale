@@ -1,31 +1,29 @@
 'use client'
 
-import { Button, buttonVariants } from '@/components/ui/button'
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card'
-import { Input } from '@/components/ui/input'
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select'
 import { useSigningRequest } from '@/hooks/use-signing-request'
-import { appConfig } from '@/lib/config'
 import {
-  genBitusdDepositSigningRequest,
-  genUsdtDepositSigningRequest,
+    genBitusdDepositSigningRequest,
+    genUsdtDepositSigningRequest,
 } from '@/lib/eos'
 import { cn } from '@/lib/utils'
-import type { EVMTokenContractData } from '@repo/auction'
 import { type EVMToken, tokens } from '@repo/tokens'
+import { Button, buttonVariants } from '@repo/ui/button'
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+} from '@repo/ui/card'
+import { Input } from '@repo/ui/input'
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+} from '@repo/ui/select'
 import { useMemo, useState } from 'react'
 import { toast } from 'sonner'
 import { erc20Abi, parseUnits } from 'viem'

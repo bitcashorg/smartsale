@@ -6,14 +6,14 @@ import * as React from 'react'
 import { isMobile } from 'react-device-detect'
 import Textarea from 'react-textarea-autosize'
 
-import { Button } from '@/components/ui/button'
-import { Card } from '@/components/ui/card'
+import { Button } from '@repo/ui/button'
+import { Card } from '@repo/ui/card'
 import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from '@/components/ui/tooltip'
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
+} from '@repo/ui/tooltip'
 import type { Message } from 'ai'
 import { nanoid } from 'nanoid'
 import { useCallback, useEffect, useRef } from 'react'

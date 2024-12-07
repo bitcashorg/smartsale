@@ -4,16 +4,16 @@ import * as React from 'react'
 
 import { cn } from '@/lib/utils'
 
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
-} from '@/components/ui/navigation-menu'
 import type { LangProp } from '@/types/routing.type'
+import {
+    NavigationMenu,
+    NavigationMenuContent,
+    NavigationMenuItem,
+    NavigationMenuLink,
+    NavigationMenuList,
+    NavigationMenuTrigger,
+    navigationMenuTriggerStyle,
+} from '@repo/ui/navigation-menu'
 import { navStruct } from '../nav-struct'
 
 export function Navigation({ lang }: LangProp) {

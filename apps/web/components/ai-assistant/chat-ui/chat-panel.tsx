@@ -1,4 +1,4 @@
-import { Card } from '@/components/ui/card'
+import { Card } from '@repo/ui/card'
 import { useActions, useUIState } from 'ai/rsc'
 import { nanoid } from 'nanoid'
 
