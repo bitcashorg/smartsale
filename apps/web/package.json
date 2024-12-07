@@ -55,6 +55,7 @@
     "@repo/supabase": "workspace:*",
     "@repo/tokens": "workspace:*",
     "@repo/utils": "workspace:*",
+    "@repo/ui": "workspace:*",
     "@supabase/ssr": "^0.4.0",
     "@supabase/supabase-js": "^2.44.4",
     "@tanstack/react-query": "^5.51.11",
