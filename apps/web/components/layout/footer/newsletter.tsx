@@ -1,18 +1,18 @@
 'use client'
 import { subscribeToNewsletter } from '@/app/actions/general'
-import { Button, buttonVariants } from '@/components/ui/button'
-import { IconDiscord, IconDownRightArrow } from '@/components/ui/icons'
 import { cn, motionProps } from '@/lib/utils'
 import type { LangProp } from '@/types/routing.type'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { Button, buttonVariants } from '@repo/ui/button'
+import { IconDiscord, IconDownRightArrow } from '@repo/ui/icons'
 import { motion } from 'framer-motion'
 import { LucideCheck, LucideLoader2 } from 'lucide-react'
 import Link from 'next/link'
 import { useEffect } from 'react'
 import { useFormStatus } from 'react-dom'
 import {
-  GoogleReCaptcha,
-  GoogleReCaptchaProvider,
+    GoogleReCaptcha,
+    GoogleReCaptchaProvider,
 } from 'react-google-recaptcha-v3'
 import { useForm } from 'react-hook-form'
 import { useSetState } from 'react-use'

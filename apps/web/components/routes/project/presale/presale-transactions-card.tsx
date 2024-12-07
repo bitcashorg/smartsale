@@ -1,27 +1,27 @@
 'use client'
 
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card'
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from '@/components/ui/table'
 import { appConfig } from '@/lib/config'
 import { useSupabaseClient } from '@/services/supabase'
 import {
-  type PresaleContribution,
-  getPresaleContributions,
+    type PresaleContribution,
+    getPresaleContributions,
 } from '@/services/supabase/service'
 import { allChains, eosEvmMainnet, eosEvmTestnet } from '@repo/chains'
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardHeader,
+    CardTitle,
+} from '@repo/ui/card'
+import {
+    Table,
+    TableBody,
+    TableCell,
+    TableHead,
+    TableHeader,
+    TableRow,
+} from '@repo/ui/table'
 import { formatAddress } from '@repo/utils'
 import { useEffect, useState } from 'react'
 

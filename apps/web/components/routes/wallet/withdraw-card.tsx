@@ -1,23 +1,23 @@
 'use client'
 
-import { Button, buttonVariants } from '@/components/ui/button'
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card'
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select'
 import { cn } from '@/lib/utils'
 import { TestnetUSDCred } from '@repo/auction'
+import { Button, buttonVariants } from '@repo/ui/button'
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+} from '@repo/ui/card'
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+} from '@repo/ui/select'
 import { useState } from 'react'
 import { parseUnits } from 'viem'
 import { useAccount, useSwitchChain, useWriteContract } from 'wagmi'

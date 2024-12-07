@@ -1,6 +1,6 @@
 'use client'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '@repo/ui/button'
 import { useActions, useUIState } from 'ai/rsc'
 import type { AI } from '../actions/create-ai'
 

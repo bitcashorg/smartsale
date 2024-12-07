@@ -1,8 +1,8 @@
 import { VideoDialog } from '@/components/dialogs/video-dialog'
-import { Card, CardContent } from '@/components/ui/card'
-import { cn } from '@/lib/utils' // Import the utility function
+import { cn } from '@/lib/utils'; // Import the utility function
 import type { YouTubePlaylistItem } from '@/services/youtube/index'
 import type { LangProp } from '@/types/routing.type'
+import { Card, CardContent } from '@repo/ui/card'
 import Image from 'next/image'
 import Balancer from 'react-wrap-balancer'
 

@@ -3,14 +3,13 @@ import { WithdrawCard } from '@/components/routes/wallet/withdraw-card'
 import type { Metadata } from 'next'
 
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card'
+    Card,
+    CardContent,
+    CardDescription,
+    CardHeader,
+    CardTitle,
+} from '@repo/ui/card'
 
-import { PresaleTransactionsCard } from '@/components/routes/project/presale/presale-transactions-card'
 import { BalancesTable } from '@/components/routes/wallet/balances-table'
 import { appConfig } from '@/lib/config'
 import { redirect } from 'next/navigation'
