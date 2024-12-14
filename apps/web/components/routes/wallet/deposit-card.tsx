@@ -2,28 +2,23 @@
 
 import { useSigningRequest } from '@/hooks/use-signing-request'
 import {
-    genBitusdDepositSigningRequest,
-    genUsdtDepositSigningRequest,
+  genBitusdDepositSigningRequest,
+  genUsdtDepositSigningRequest,
 } from '@/lib/eos'
 import { cn } from '@/lib/utils'
 import { type EVMToken, tokens } from '@repo/tokens'
-import { Button, buttonVariants } from '@repo/ui/button'
 import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-} from '@repo/ui/card'
-import { Input } from '@repo/ui/input'
-import {
-    Select,
-    SelectContent,
-    SelectItem,
-    SelectTrigger,
-    SelectValue,
-} from '@repo/ui/select'
+  Button, buttonVariants, Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle, Input, Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue
+} from '@repo/ui'
 import { useMemo, useState } from 'react'
 import { toast } from 'sonner'
 import { erc20Abi, parseUnits } from 'viem'

@@ -2,13 +2,13 @@
 import { useSupabaseClient } from '@/services/supabase'
 import { TestnetEasyAuction } from '@repo/auction'
 import {
-    Table,
-    TableBody,
-    TableCell,
-    TableHead,
-    TableHeader,
-    TableRow,
-} from '@repo/ui/table'
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@repo/ui'
 import { formatAddress } from '@repo/utils'
 import BN from 'bn.js'
 import { format } from 'date-fns'

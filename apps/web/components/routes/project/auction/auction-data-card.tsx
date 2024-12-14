@@ -1,12 +1,13 @@
-import { Avatar, AvatarFallback, AvatarImage } from '@repo/ui/avatar'
-
 import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle,
-} from '@repo/ui/card'
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@repo/ui'
 
 import { AuctionChart } from './auction-chart'
 

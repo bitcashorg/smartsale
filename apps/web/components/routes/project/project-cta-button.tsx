@@ -3,7 +3,7 @@
 import { useSession } from '@/hooks/use-session'
 import type { Project } from '@/lib/projects'
 import { useSupabaseClient } from '@/services/supabase'
-import { Button } from '@repo/ui/button'
+import { Button } from '@repo/ui'
 import { useQuery } from '@tanstack/react-query'
 import Link from 'next/link'
 import { useAccount } from 'wagmi'

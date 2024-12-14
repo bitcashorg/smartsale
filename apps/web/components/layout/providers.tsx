@@ -6,19 +6,19 @@ import { UseSigningRequestProvider } from '@/hooks/use-signing-request'
 import { appConfig } from '@/lib/config'
 import multibase, { MultibaseProvider } from '@multibase/js'
 import {
-    RainbowKitProvider,
-    type Theme,
-    getDefaultConfig,
-    lightTheme,
+  RainbowKitProvider,
+  type Theme,
+  getDefaultConfig,
+  lightTheme,
 } from '@rainbow-me/rainbowkit'
 import type { _chains } from '@rainbow-me/rainbowkit/dist/config/getDefaultConfig'
 import {
-    metaMaskWallet,
-    trustWallet,
-    walletConnectWallet,
+  metaMaskWallet,
+  trustWallet,
+  walletConnectWallet,
 } from '@rainbow-me/rainbowkit/wallets'
 import { eosEvmMainnet, eosEvmTestnet } from '@repo/chains'
-import { TooltipProvider } from '@repo/ui/tooltip'
+import { TooltipProvider } from '@repo/ui'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { merge } from 'lodash'
 import { ThemeProvider as NextThemesProvider } from 'next-themes'
@@ -26,14 +26,14 @@ import type { ThemeProviderProps } from 'next-themes/dist/types'
 import { NuqsAdapter } from 'nuqs/adapters/next/app'
 import { WagmiProvider } from 'wagmi'
 import {
-    arbitrum,
-    avalanche,
-    base,
-    bsc,
-    mainnet,
-    optimism,
-    polygon,
-    sepolia,
+  arbitrum,
+  avalanche,
+  base,
+  bsc,
+  mainnet,
+  optimism,
+  polygon,
+  sepolia,
 } from 'wagmi/chains'
 
 const queryClient = new QueryClient()

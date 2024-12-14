@@ -3,13 +3,12 @@ import type { Project } from '@/lib/projects'
 import { ExternalLinkButton } from '@/components/nextjs/button-link'
 import { NestedLinkButton } from '@/components/nextjs/nested-link'
 import { cn } from '@/lib/utils'
-import { Button, buttonVariants } from '@repo/ui/button'
 import {
-    IconDiscord,
-    IconDownRightArrow,
-    IconTelegram,
-    IconTwitterX,
-} from '@repo/ui/icons'
+  Button, buttonVariants, IconDiscord,
+  IconDownRightArrow,
+  IconTelegram,
+  IconTwitterX
+} from '@repo/ui'
 import { Suspense } from 'react'
 
 export function AuctionCardButtons({ project }: { project: Project }) {

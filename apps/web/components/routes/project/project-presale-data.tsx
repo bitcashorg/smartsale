@@ -2,7 +2,7 @@
 
 import { useSupabaseClient } from '@/services/supabase'
 import type { Tables } from '@repo/supabase'
-import { Card, CardContent, CardHeader, CardTitle } from '@repo/ui/card'
+import { Card, CardContent, CardHeader, CardTitle } from '@repo/ui'
 import { Handshake, Users } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { formatUnits } from 'viem'

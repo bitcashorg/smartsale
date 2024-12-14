@@ -2,7 +2,7 @@
 
 import { Chat } from '@/components/ai-assistant/chat-ui';
 import { DraggableResizableCard } from '@/components/shared/draggable-resizable-card';
-import { Card } from '@repo/ui/card';
+import { Card } from '@repo/ui';
 
 export function ChatDraggable({
   id,

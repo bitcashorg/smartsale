@@ -7,12 +7,12 @@ import { getDictionary } from '@/dictionaries'
 import { type ProjectWithAuction, getProjectBySlug } from '@/lib/projects'
 import { createSupabaseServerClient } from '@/services/supabase/server'
 import {
-    getPresaleContributions,
-    getPresaleData,
-    getProjectData,
+  getPresaleContributions,
+  getPresaleData,
+  getProjectData,
 } from '@/services/supabase/service'
 import type { ProjectPageProps } from '@/types/routing.type'
-import { Card, CardContent } from '@repo/ui/card'
+import { Card, CardContent } from '@repo/ui'
 import { redirect } from 'next/navigation'
 import { getAddress } from 'viem'
 

@@ -1,4 +1,4 @@
-import { Separator } from '@repo/ui/separator'
+import { Separator } from '@repo/ui'
 import type { UIState } from '../actions/create-ai'
 
 export interface ChatList {

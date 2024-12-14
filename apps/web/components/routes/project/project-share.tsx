@@ -1,7 +1,6 @@
 import type { Project } from '@/lib/projects'
 import { cn } from '@/lib/utils'
-import { buttonVariants } from '@repo/ui/button'
-import { IconDiscord, IconTelegram, IconTwitterX } from '@repo/ui/icons'
+import { buttonVariants, IconDiscord, IconTelegram, IconTwitterX } from '@repo/ui'
 import Link from 'next/link'
 
 import { Fragment } from 'react'

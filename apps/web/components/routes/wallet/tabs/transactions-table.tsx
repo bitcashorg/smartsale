@@ -1,13 +1,13 @@
 'use client'
 import { useSupabaseClient } from '@/services/supabase'
 import {
-    Table,
-    TableBody,
-    TableCell,
-    TableHead,
-    TableHeader,
-    TableRow,
-} from '@repo/ui/table'
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@repo/ui'
 import { formatAddress } from '@repo/utils'
 import { format } from 'date-fns'
 import Link from 'next/link'

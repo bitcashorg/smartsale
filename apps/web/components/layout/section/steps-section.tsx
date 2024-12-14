@@ -4,8 +4,7 @@ import { Section } from '@/components/shared/section'
 import type { Lang } from '@/dictionaries/locales'
 import { useSession } from '@/hooks/use-session'
 import { cn } from '@/lib/utils'
-import { buttonVariants } from '@repo/ui/button'
-import { IconDownRightArrow } from '@repo/ui/icons'
+import { buttonVariants, IconDownRightArrow } from '@repo/ui'
 import Link from 'next/link'
 
 export default function StepsSection({ lang, dict }: StepsSectionProps) {

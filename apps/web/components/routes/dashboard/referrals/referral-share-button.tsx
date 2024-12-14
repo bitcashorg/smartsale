@@ -2,26 +2,21 @@
 
 import { useMediaQuery } from '@/hooks/use-media-query'
 import { cn } from '@/lib/utils'
-import { Button } from '@repo/ui/button'
 import {
-    Drawer,
-    DrawerContent,
-    DrawerTitle,
-    DrawerTrigger,
-} from '@repo/ui/drawer'
-import { IconTelegram, IconTwitterX } from '@repo/ui/icons'
-import {
-    Popover,
-    PopoverContent,
-    PopoverTrigger,
-} from '@repo/ui/popover'
+  Button, Drawer,
+  DrawerContent,
+  DrawerTitle,
+  DrawerTrigger, IconTelegram, IconTwitterX, Popover,
+  PopoverContent,
+  PopoverTrigger
+} from '@repo/ui'
 import { Facebook, Linkedin, Phone, Share, X } from 'lucide-react'
 import {
-    FacebookShareButton,
-    LinkedinShareButton,
-    TelegramShareButton,
-    TwitterShareButton,
-    WhatsappShareButton,
+  FacebookShareButton,
+  LinkedinShareButton,
+  TelegramShareButton,
+  TwitterShareButton,
+  WhatsappShareButton,
 } from 'next-share'
 import { useState } from 'react'
 

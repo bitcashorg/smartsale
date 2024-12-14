@@ -14,16 +14,13 @@ import type { ProjectWithAuction } from '@/lib/projects'
 import { useSupabaseClient } from '@/services/supabase'
 import type { Tables } from '@repo/supabase'
 import { tokens } from '@repo/tokens'
-import { Button } from '@repo/ui/button'
-import { CardDescription, CardHeader, CardTitle } from '@repo/ui/card'
-import { Input } from '@repo/ui/input'
 import {
-    Select,
+    Button, CardDescription, CardHeader, CardTitle, Input, Select,
     SelectContent,
     SelectItem,
     SelectTrigger,
-    SelectValue,
-} from '@repo/ui/select'
+    SelectValue
+} from '@repo/ui'
 import { useQuery } from '@tanstack/react-query'
 import Link from 'next/link'
 import { useMemo, useState } from 'react'

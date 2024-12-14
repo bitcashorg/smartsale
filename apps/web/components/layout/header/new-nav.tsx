@@ -6,14 +6,14 @@ import { cn } from '@/lib/utils'
 
 import type { LangProp } from '@/types/routing.type'
 import {
-    NavigationMenu,
-    NavigationMenuContent,
-    NavigationMenuItem,
-    NavigationMenuLink,
-    NavigationMenuList,
-    NavigationMenuTrigger,
-    navigationMenuTriggerStyle,
-} from '@repo/ui/navigation-menu'
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from '@repo/ui'
 import { navStruct } from '../nav-struct'
 
 export function Navigation({ lang }: LangProp) {

@@ -1,5 +1,5 @@
 import { readingTime } from '@/lib/blog'
-import { Card, CardContent, CardFooter } from '@repo/ui/card'
+import { Card, CardContent, CardFooter } from '@repo/ui'
 // import { isMobile } from 'react-device-detect'
 import { cn } from '@/lib/utils'
 import type { BlogArticleRecord } from '@/services/datocms'

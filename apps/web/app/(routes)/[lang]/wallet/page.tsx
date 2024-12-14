@@ -3,12 +3,12 @@ import { WithdrawCard } from '@/components/routes/wallet/withdraw-card'
 import type { Metadata } from 'next'
 
 import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle,
-} from '@repo/ui/card'
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@repo/ui'
 
 import { BalancesTable } from '@/components/routes/wallet/balances-table'
 import { appConfig } from '@/lib/config'

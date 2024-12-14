@@ -3,13 +3,13 @@
 import { cn } from '@/lib/utils'
 import type { LangProp } from '@/types/routing.type'
 import {
-    Dialog,
-    DialogContent,
-    DialogDescription,
-    DialogHeader,
-    DialogTitle,
-    DialogTrigger,
-} from '@repo/ui/dialog'
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@repo/ui'
 import { useEffect } from 'react'
 
 const BASE_YT_EMBED_URL = 'https://www.youtube.com/embed/'

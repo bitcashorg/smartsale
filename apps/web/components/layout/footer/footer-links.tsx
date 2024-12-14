@@ -1,4 +1,4 @@
-import { IconBitlauncher } from '@repo/ui/icons'
+import { IconBitlauncher } from '@repo/ui'
 import Link from 'next/link'
 import { type NavItem, type NavSection, footerNavStruct } from '../nav-struct'
 

@@ -2,7 +2,7 @@
 
 import { setLanguage } from '@/app/actions/set-lang'
 import type { Lang } from '@/dictionaries/locales'
-import { DropdownMenuItem } from '@repo/ui/dropdown-menu'
+import { DropdownMenuItem } from '@repo/ui'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import type { LangSelectorOption } from './lang-selector-options'

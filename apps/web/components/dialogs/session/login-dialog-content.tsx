@@ -2,11 +2,11 @@
 
 import { useSession } from '@/hooks/use-session'
 import {
-    DialogDescription,
-    DialogFooter,
-    DialogHeader,
-    DialogTitle,
-} from '@repo/ui/dialog'
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from '@repo/ui'
 import { ChevronRight } from 'lucide-react'
 import Link from 'next/link'
 import QRCode from 'react-qr-code'

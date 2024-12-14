@@ -1,12 +1,12 @@
 import type { YouTubePlaylistItem } from '@/services/youtube/index'
 import {
-    Dialog,
-    DialogContent,
-    DialogDescription,
-    DialogHeader,
-    DialogTitle,
-    DialogTrigger,
-} from '@repo/ui/dialog'
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@repo/ui'
 import Image from 'next/image'
 import { Card } from '../../../ui/card'
 

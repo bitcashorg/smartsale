@@ -2,7 +2,7 @@ import { ChevronLeft, ChevronRight, MoreHorizontal } from 'lucide-react'
 import * as React from 'react'
 
 import { cn } from '@/lib/utils'
-import { type ButtonProps, buttonVariants } from '@repo/ui/button'
+import { type ButtonProps, buttonVariants } from '@repo/ui'
 
 const Pagination = ({ className, ...props }: React.ComponentProps<'nav'>) => (
   <nav
@@ -106,12 +106,12 @@ const PaginationEllipsis = ({
 PaginationEllipsis.displayName = 'PaginationEllipsis'
 
 export {
-    Pagination,
-    PaginationContent,
-    PaginationEllipsis,
-    PaginationItem,
-    PaginationLink,
-    PaginationNext,
-    PaginationPrevious
+  Pagination,
+  PaginationContent,
+  PaginationEllipsis,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious
 }
 

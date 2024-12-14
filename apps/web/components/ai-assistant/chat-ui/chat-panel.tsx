@@ -1,4 +1,4 @@
-import { Card } from '@repo/ui/card'
+import { Card } from '@repo/ui'
 import { useActions, useUIState } from 'ai/rsc'
 import { nanoid } from 'nanoid'
 

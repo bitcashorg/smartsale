@@ -5,12 +5,11 @@ import { useSession } from '@/hooks/use-session'
 import { appConfig } from '@/lib/config'
 import { cn } from '@/lib/utils'
 import { useAccountModal } from '@rainbow-me/rainbowkit'
-import { Button } from '@repo/ui/button'
 import {
-    Popover,
-    PopoverContent,
-    PopoverTrigger,
-} from '@repo/ui/popover'
+  Button, Popover,
+  PopoverContent,
+  PopoverTrigger
+} from '@repo/ui'
 
 import { formatAddress } from '@repo/utils'
 import { LogOut, User, Wallet } from 'lucide-react'

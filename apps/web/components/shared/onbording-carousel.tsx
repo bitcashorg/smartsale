@@ -1,13 +1,13 @@
 import React from 'react'
 
 import {
-    Carousel,
-    type CarouselApi,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-} from '@repo/ui/carousel'
+  Carousel,
+  type CarouselApi,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@repo/ui'
 
 import Image from 'next/image'
 

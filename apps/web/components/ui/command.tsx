@@ -6,7 +6,7 @@ import { Search } from 'lucide-react'
 import * as React from 'react'
 
 import { cn } from '@/lib/utils'
-import { Dialog, DialogContent } from '@repo/ui/dialog'
+import { Dialog, DialogContent } from '@repo/ui'
 
 const Command = React.forwardRef<
   React.ElementRef<typeof CommandPrimitive>,
@@ -143,8 +143,8 @@ const CommandShortcut = ({
 CommandShortcut.displayName = 'CommandShortcut'
 
 export {
-    Command,
-    CommandDialog, CommandEmpty,
-    CommandGroup, CommandInput, CommandItem, CommandList, CommandSeparator, CommandShortcut
+  Command,
+  CommandDialog, CommandEmpty,
+  CommandGroup, CommandInput, CommandItem, CommandList, CommandSeparator, CommandShortcut
 }
 

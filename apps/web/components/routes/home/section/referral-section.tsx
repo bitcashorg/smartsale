@@ -3,12 +3,11 @@
 import { SessionDialog } from '@/components/dialogs/session/session-dialog'
 import { OnboardingCarousel } from '@/components/shared/onbording-carousel'
 import { useSession } from '@/hooks/use-session'
-import { Dialog, DialogContent, DialogTrigger } from '@repo/ui/dialog'
-import { IconDownRightArrow, IconReferral } from '@repo/ui/icons'
+import { Dialog, DialogContent, DialogTrigger, IconDownRightArrow, IconReferral } from '@repo/ui'
 import { useRouter } from 'next/navigation'
 import { isMobile } from 'react-device-detect'
 
-import { Button } from '@repo/ui/button'
+import { Button } from '@repo/ui'
 import React from 'react'
 
 export function ReferralSection() {

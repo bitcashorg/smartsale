@@ -1,5 +1,5 @@
 import { useReferral } from '@/hooks/use-referral'
-import { IconDownRightArrow } from '@repo/ui/icons'
+import { IconDownRightArrow } from '@repo/ui'
 import { X } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { Button } from '../ui/button'

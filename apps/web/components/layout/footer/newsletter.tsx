@@ -3,16 +3,16 @@ import { subscribeToNewsletter } from '@/app/actions/general'
 import { cn, motionProps } from '@/lib/utils'
 import type { LangProp } from '@/types/routing.type'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { Button, buttonVariants } from '@repo/ui/button'
-import { IconDiscord, IconDownRightArrow } from '@repo/ui/icons'
+import { Button, buttonVariants, IconDiscord, IconDownRightArrow } from '@repo/ui'
 import { motion } from 'framer-motion'
 import { LucideCheck, LucideLoader2 } from 'lucide-react'
 import Link from 'next/link'
 import { useEffect } from 'react'
+// @ts-ignore
 import { useFormStatus } from 'react-dom'
 import {
-    GoogleReCaptcha,
-    GoogleReCaptchaProvider,
+  GoogleReCaptcha,
+  GoogleReCaptchaProvider,
 } from 'react-google-recaptcha-v3'
 import { useForm } from 'react-hook-form'
 import { useSetState } from 'react-use'
@@ -113,6 +113,7 @@ export default function Newsletter({ lang }: LangProp) {
             </div>
             <div className="flex flex-col items-center w-full">
               <form
+                // @ts-ignore
                 action={onSubmit}
                 className="flex h-[62px] w-full max-w-[342px] items-center justify-center gap-2 self-center rounded-full bg-secondary p-1 text-black/90"
               >

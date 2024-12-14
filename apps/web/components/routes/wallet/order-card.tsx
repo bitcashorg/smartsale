@@ -1,35 +1,29 @@
-import { Button } from '@repo/ui/button'
 import {
-    Pagination,
-    PaginationContent,
-    PaginationItem,
-} from '@repo/ui/pagination'
+  Button,
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+  Pagination,
+  PaginationContent,
+  PaginationItem,
+  Separator,
+} from '@repo/ui'
 import {
-    ChevronLeftIcon,
-    ChevronRightIcon,
-    CopyIcon,
-    CreditCardIcon,
-    MoveVerticalIcon,
-    TruckIcon,
+  ChevronLeftIcon,
+  ChevronRightIcon,
+  CopyIcon,
+  CreditCardIcon,
+  MoveVerticalIcon,
+  TruckIcon,
 } from 'lucide-react'
-
-import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuItem,
-    DropdownMenuSeparator,
-    DropdownMenuTrigger,
-} from '@repo/ui/dropdown-menu'
-
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-} from '@repo/ui/card'
-import { Separator } from '@repo/ui/separator'
 
 export function OrderCard() {
   return (
