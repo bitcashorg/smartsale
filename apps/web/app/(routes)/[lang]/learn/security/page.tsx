@@ -31,7 +31,7 @@ export default async function SecurityTips({ params }: CommonPageProps) {
 }
 
 export const metadata: Metadata = {
-  title: 'Top Security Tips for a Safer Digital Experience',
+  title: 'Security Tips | Bitlauncher',
   description:
-    'Discover essential security tips to protect yourself online. Join the AI/Web3 revolution and stay ahead with our expert advice.',
+    'Be part of the intelligent future and join the Ai/Web3 revolution now!',
 }

@@ -33,7 +33,7 @@ export default async function BlogPage({ params }: BlogPageProps) {
 export async function generateMetadata({
   params,
 }: BlogPageProps): Promise<Metadata> {
-  const pageSeo = await getPageSeoText('bitlauncher')
+  const pageSeo = await getPageSeoText('home')
   const seoData = {
     title: pageSeo.pageSeo?.title || '',
     description: pageSeo.pageSeo?.description || '',
