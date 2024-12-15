@@ -1,6 +1,6 @@
 'use server'
 
-import { type ActionResult, failure, success } from '@/lib/actions'
+import { type ActionResult, failure, success } from '@smartsale/lib'
 import { type Tables, presaleDepositInsertSchema } from '@smartsale/supabase'
 import { chainTypeSchema } from '@smartsale/supabase'
 import { createSupabaseServerClient } from '@smartsale/supabase/src/sdk'

@@ -1,6 +1,5 @@
 import { Tag } from '@/components/shared/tag'
 import { readingTime } from '@/lib/blog'
-import type { BlogArticleRecord } from '@/services/datocms'
 import type { LangProp } from '@/types/routing.type'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -70,6 +69,7 @@ export const HeroArticleCard = ({
 }
 
 export interface HeroArticleCardProps extends LangProp {
-  post: BlogArticleRecord
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
+  post: any
   sectionSlug: string
 }

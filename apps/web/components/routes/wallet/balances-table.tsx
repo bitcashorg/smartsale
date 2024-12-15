@@ -11,33 +11,33 @@ import {
   TableRow,
 } from '@smartsale/ui'
 
-import { TestnetBLPL, TestnetMBOTSPL, TestnetUSDCred } from '@smartsale/core'
+// import { TestnetBLPL, TestnetMBOTSPL, TestnetUSDCred } from '@smartsale/core'
 import { useAccount } from 'wagmi'
 
 export function BalancesTable() {
   const { address } = useAccount()
   const eosBalances = useEosBalances()
 
-  const usdCredBalance = useErc20Balance({
-    contract: TestnetUSDCred.address,
-    abi: TestnetUSDCred.abi,
-    address: address || '0x',
-    chainId: TestnetUSDCred.chainId,
-  })
+  // const usdCredBalance = useErc20Balance({
+  //   contract: TestnetUSDCred.address,
+  //   abi: TestnetUSDCred.abi,
+  //   address: address || '0x',
+  //   chainId: TestnetUSDCred.chainId,
+  // })
 
-  const blplBalance = useErc20Balance({
-    contract: TestnetBLPL.address,
-    abi: TestnetBLPL.abi,
-    address: address || '0x',
-    chainId: TestnetBLPL.chainId,
-  })
+  // const blplBalance = useErc20Balance({
+  //   contract: TestnetBLPL.address,
+  //   abi: TestnetBLPL.abi,
+  //   address: address || '0x',
+  //   chainId: TestnetBLPL.chainId,
+  // })
 
   const eosEvmBalance = useNativeBalance(address)
 
   const coins = [
     {
       coin: 'BLPL',
-      totalAmount: `${blplBalance.formatted || 0}`,
+      totalAmount: `${0}`,
       nertwork: 'EOS EVM',
       description: 'Bitlauncher Prelaunch Token',
     },
@@ -49,7 +49,7 @@ export function BalancesTable() {
     },
     {
       coin: 'USDCred',
-      totalAmount: `${usdCredBalance.formatted || 0}`,
+      totalAmount: `${0}`,
       nertwork: 'EOS EVM',
       description: 'Bitlaucher Bidding Token',
     },

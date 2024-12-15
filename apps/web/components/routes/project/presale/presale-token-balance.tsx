@@ -1,6 +1,5 @@
 'use client'
 
-import { appConfig } from '@/config'
 import { useErc20Balance } from '@/hooks/use-balance'
 import { eosEvmMainnet } from '@smartsale/chains'
 import { type Address, erc20Abi } from 'viem'
@@ -15,7 +14,7 @@ export function PresaleTokenBalance({
     contract: tokenAddress,
     abi: erc20Abi,
     address: address as Address,
-    chainId: appConfig.env === 'prod' ? eosEvmMainnet.id : eosEvmMainnet.id,
+    chainId: eosEvmMainnet.id,
   })
   const withoutDecimals = formatted ? formatted.toString().split('.')[0] : 0
 

@@ -1,4 +1,4 @@
-import { getCMSSdk } from '@/services/datocms/graphql/cms'
+import { getCMSSdk } from './graphql/cms'
 import type {
   BlogAiModelFilter,
   BlogAiRecord,
@@ -15,7 +15,7 @@ import type {
   BlogStartupRecord,
   ResearchAiRecord,
   SeoField,
-} from '@/services/datocms/graphql/generated/cms'
+} from './graphql/generated/cms'
 
 export async function getBlogCategory(
   category: string,

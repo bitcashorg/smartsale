@@ -127,10 +127,10 @@ export default function ReferralProgramTab() {
                   </Card>
 
                   <div className="hidden h-full w-1/3 justify-end items-center md:flex">
-                    <ReferralShareButton
+                    {/* <ReferralShareButton
                       title="Signup in Bitcash App!"
                       url={shareLinkData?.data?.short_link || ''}
-                    />
+                    /> */}
                   </div>
                 </div>
               </div>
@@ -165,10 +165,10 @@ export default function ReferralProgramTab() {
           <AnimatePresence>{iconsMap[status]}</AnimatePresence>
         </div>
 
-        <ReferralShareButton
+        {/* <ReferralShareButton
           title="Signup in Bitcash App!"
           url={shareLinkData?.data?.short_link || ''}
-        />
+        /> */}
       </div>
     </>
   )

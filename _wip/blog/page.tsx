@@ -1,19 +1,15 @@
 import { BlogSections } from '@/components/routes/blog/blog-sections'
 import { HeroSection } from '@/components/routes/blog/hero-section/index'
 import { generateMetadataFromSEO } from '@/lib/seo'
-import {
-  getArticleSections,
-  getPageSeoText,
-  getRecentArticleSections,
-} from '@/services/datocms'
+import { getBlogIndex, getRecentArticles } from '@smartsale/content'
 import type { Lang } from '@smartsale/content'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
 export default async function BlogPage({ params }: BlogPageProps) {
-  const sections = await getArticleSections(params.lang)
-  const recent = await getRecentArticleSections()
-  if (!sections) notFound()
+  const data = await getBlogIndex({ lang: params.lang })
+  const recent = await getRecentArticles()
+  if (!data) notFound()
 
   return (
     <div className="narrow-container">
@@ -24,7 +20,7 @@ export default async function BlogPage({ params }: BlogPageProps) {
       </header>
       <main>
         <HeroSection recent={recent} lang={params.lang} />
-        <BlogSections sections={sections} lang={'en'} />
+        <BlogSections sections={data.sections} lang={'en'} />
       </main>
     </div>
   )
@@ -33,12 +29,19 @@ export default async function BlogPage({ params }: BlogPageProps) {
 export async function generateMetadata({
   params,
 }: BlogPageProps): Promise<Metadata> {
-  const pageSeo = await getPageSeoText('home')
+  // const pageSeo = await getPageSeoText('home')
+  // const seoData = {
+  //   title: pageSeo.pageSeo?.title || '',
+  //   description: pageSeo.pageSeo?.description || '',
+  //   ogType: 'website',
+  //   ogImageUrl: pageSeo.pageSeo?.image?.url || '',
+  //   twitterCard: 'summary_large_image',
+  // }
   const seoData = {
-    title: pageSeo.pageSeo?.title || '',
-    description: pageSeo.pageSeo?.description || '',
+    title: 'Blog',
+    description: 'Blog',
     ogType: 'website',
-    ogImageUrl: pageSeo.pageSeo?.image?.url || '',
+    ogImageUrl: '',
     twitterCard: 'summary_large_image',
   }
 

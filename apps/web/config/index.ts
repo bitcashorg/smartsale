@@ -1,6 +1,8 @@
 const getEnvVar = (key: string) => process.env[key] || ''
 
-export const AVAILABLE_LANGS = ['en', 'es', 'pt', 'fr', 'vi', 'ko', 'zh']
+export const AVAILABLE_LANGS = getEnvVar('NEXT_PUBLIC_AVAILABLE_LANGS').split(
+  ',',
+)
 
 export const appConfig = {
   supabase: {
@@ -53,9 +55,5 @@ export const appConfig = {
     learn: getEnvVar('NEXT_PUBLIC_LEARN_SECTION') === 'true',
     i18n: getEnvVar('NEXT_PUBLIC_NEW_I18N') === 'true',
     auction: getEnvVar('NEXT_PUBLIC_FEAT_AUCTION') === 'true',
-  },
-  datocms: {
-    endpoint: getEnvVar('NEXT_PUBLIC_CMS_GRAPHQL_API'),
-    key: getEnvVar('NEXT_PUBLIC_CMS_API_KEY'),
   },
 } as const

@@ -1,5 +1,5 @@
 import { readingTime } from '@/lib/blog'
-import type { BlogArticleRecord } from '@/services/datocms'
+// import type { BlogArticleRecord } from '@/services/datocms'
 import type { LangProp } from '@/types/routing.type'
 // import { isMobile } from 'react-device-detect'
 import { cn } from '@smartsale/ui'
@@ -14,9 +14,10 @@ export const ArticleCard = ({
   className,
   meta = false,
 }: ArticleCardProps) => {
-  const title =
-    post.title ||
-    post.slug.replace(/-/g, ' ').replace(/\b\w/g, (l) => l.toUpperCase())
+  // const title =
+  //   post.title ||
+  //   post.slug.replace(/-/g, ' ').replace(/\b\w/g, (l) => l.toUpperCase())
+  const title = 'test'
 
   // console.log('post', post)
   return (
@@ -83,7 +84,8 @@ export const ArticleCard = ({
 }
 
 export interface ArticleCardProps extends LangProp {
-  post: BlogArticleRecord
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
+  post: any
   sectionSlug: string
   meta: boolean
   className?: string

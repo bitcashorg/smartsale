@@ -62,7 +62,7 @@ export default async function RootLayout({
           <Footer />
           <DynamicSessionDialog />
           <DynamicEsrDialog />
-          <DynamicAiAssistant />
+          {/* <DynamicAiAssistant /> */}
           <DynamicVConsole />
         </Providers>
 
@@ -104,12 +104,12 @@ const DynamicEsrDialog = dynamic(
     ssr: false,
   },
 )
-const DynamicAiAssistant = dynamic(
-  () => import('@smartsale/ai').then((mod) => mod.AiAssistant),
-  {
-    ssr: false,
-  },
-)
+// const DynamicAiAssistant = dynamic(
+//   () => import('@smartsale/ai').then((mod) => mod.AiAssistant),
+//   {
+//     ssr: false,
+//   },
+// )
 
 interface RootLayoutProps {
   children: React.ReactNode

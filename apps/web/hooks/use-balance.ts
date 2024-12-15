@@ -1,7 +1,6 @@
 import { wagmiConfig } from '@/components/layout/providers'
-import { appConfig } from '@/config'
-import { eosEvmMainnet, eosEvmTestnet } from '@smartsale/chains'
-import { numberWithCommas } from '@smartsale/lib'
+import { eosEvmMainnet } from '@smartsale/chains'
+import { formatCurrency } from '@smartsale/lib'
 import { watchBlockNumber } from '@wagmi/core'
 import { useEffect } from 'react'
 import { type Abi, type Address, formatUnits } from 'viem'
@@ -10,12 +9,14 @@ import { useBalance, useReadContracts } from 'wagmi'
 export function useNativeBalance(address?: Address) {
   const balance = useBalance({
     address,
-    chainId: appConfig.env === 'dev' ? eosEvmTestnet.id : eosEvmMainnet.id,
+    chainId: eosEvmMainnet.id,
   })
 
   const formatted =
     balance.data &&
-    numberWithCommas(formatUnits(balance.data.value, balance.data.decimals))
+    formatCurrency({
+      value: formatUnits(balance.data.value, balance.data.decimals),
+    })
 
   useEffect(() => {
     const unwatch = watchBlockNumber(wagmiConfig, {
@@ -69,7 +70,7 @@ export function useErc20Balance({
 
   const formatted =
     data?.value && data?.decimals
-      ? numberWithCommas(formatUnits(data.value, data.decimals))
+      ? formatCurrency({ value: formatUnits(data.value, data.decimals) })
       : 0
 
   useEffect(() => {

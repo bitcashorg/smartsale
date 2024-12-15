@@ -1,12 +1,10 @@
-import type { Database } from '@opyn/supabase'
-import { opynConfig } from '@smartsale/lib'
+import type { Database } from '@smartsale/supabase'
 import { createClient } from '@supabase/supabase-js'
 
 // TODO: secure this, use anon key for now
 export const createSupabaseServerClient = () => {
   return createClient<Database>(
-    opynConfig.supabase.url,
-    // opynConfig.supabase.serviceRoleKey,
-    opynConfig.supabase.anonKey,
+    process.env.NEXT_PUBLIC_SUPABASE_URL || '',
+    process.env.SUPABASE_SERVICE_ROLE_KEY || '',
   )
 }

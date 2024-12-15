@@ -1,4 +1,3 @@
-import type { ArticlesSection } from '@/services/datocms'
 import type { LangProp } from '@/types/routing.type'
 import { cn } from '@smartsale/ui'
 import Link from 'next/link'
@@ -41,7 +40,7 @@ export function BlogSections({
                 </Link>
               </div>
 
-              <ul className="sm:grid-cols-auto-dense flex w-full flex-col gap-20 py-5 sm:grid sm:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] sm:flex-wrap md:gap-5 lg:grid-cols-[repeat(auto-fill,minmax(260px,1fr))]">
+              {/* <ul className="sm:grid-cols-auto-dense flex w-full flex-col gap-20 py-5 sm:grid sm:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] sm:flex-wrap md:gap-5 lg:grid-cols-[repeat(auto-fill,minmax(260px,1fr))]">
                 {section?.articles
                   // ?.slice(0, 4)
                   ?.map((post, index) => (
@@ -57,7 +56,7 @@ export function BlogSections({
                       )}
                     />
                   ))}
-              </ul>
+              </ul> */}
             </section>
           ),
       )}
@@ -66,7 +65,8 @@ export function BlogSections({
 }
 export interface BlogSectionsProps extends LangProp {
   children?: React.ReactNode
-  sections: ArticlesSection[]
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
+  sections: any[]
   category?: string
   className?: string
 }

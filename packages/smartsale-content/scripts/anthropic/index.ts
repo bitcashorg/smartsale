@@ -1,9 +1,10 @@
 import { createAnthropic } from '@ai-sdk/anthropic'
 import { generateText } from 'ai'
 import { LucideReceiptPoundSterling } from 'lucide-react'
+import { contentConfig } from '../../config'
 
 const anthropic = createAnthropic({
-  apiKey: process.env.CLAUDE_API_KEY,
+  apiKey: contentConfig.anthropic.key,
 })
 
 // biome-ignore lint/suspicious/noExplicitAny: <explanation>

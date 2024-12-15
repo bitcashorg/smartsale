@@ -49,8 +49,7 @@ export function ProjectInfo({
     [
       {
         label: 'Presale',
-        value: `${formatDate(presaleStartDate, 'numeric')} - ${formatDate(presaleEndDate, 'numeric')}
-        `,
+        value: `${formatDate(presaleStartDate)} - ${formatDate(presaleEndDate)}`,
       },
       {
         label: 'Fundraising Goal',

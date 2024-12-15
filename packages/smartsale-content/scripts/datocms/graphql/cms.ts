@@ -1,11 +1,8 @@
-import type { ExecutionResult } from '@/services/datocms/graphql/generated/cms/runtime/types'
-import { GraphqlOperation } from '@genql/runtime'
+import type { ExecutionResult } from './generated/cms/runtime/types'
 import axios, { type AxiosRequestConfig } from 'axios'
-
-import { appConfig } from '@/config'
 import { createClient } from './generated/cms'
-
 export { everything } from './generated/cms'
+import { contentConfig } from '../../../config'
 
 type GraphQLSdkProps = {
   config?: AxiosRequestConfig
@@ -23,7 +20,7 @@ export function getCMSSdk({ config }: GraphQLSdkProps = {}) {
       const headers: Record<string, string> = {
         Accept: 'application/json',
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${appConfig.datocms.key}`,
+        Authorization: `Bearer ${contentConfig.datocms.key}`,
       }
 
       // if (appConfig.features.inDevelopment) {
@@ -40,7 +37,7 @@ export function getCMSSdk({ config }: GraphQLSdkProps = {}) {
       let fetchResponse
 
       try {
-        fetchResponse = axios.post(appConfig.datocms.endpoint, operation, {
+        fetchResponse = axios.post(contentConfig.datocms.endpoint, operation, {
           headers,
           ...config,
         })

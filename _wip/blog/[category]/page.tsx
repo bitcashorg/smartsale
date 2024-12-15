@@ -1,12 +1,7 @@
 import { BlogSections } from '@/components/routes/blog/blog-sections'
 import { BgHeader } from '@/components/shared/bg-header'
 import { generateMetadataFromSEO } from '@/lib/seo'
-import {
-  type ArticlesSection,
-  getArticleSections,
-  getBlogCategoryLandingData,
-  getPageSeoText,
-} from '@/services/datocms'
+import { getBlogIndex } from '@smartsale/content'
 import { type Lang, locales } from '@smartsale/content'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
@@ -17,45 +12,40 @@ export default async function Page(props: CategoryPageProps) {
     searchParams: { topic },
   } = props
 
-  const data = await getBlogCategoryLandingData(lang, category)
+  const data = await getBlogIndex({ lang, category })
   if (!data) notFound()
 
   const { sections, pageSeo } = data
   if (!pageSeo) notFound()
 
-  const blogSections = topic
-    ? (sections as ArticlesSection[]).filter((section) =>
-        section.articles.some((acticle) => acticle.topics.includes(topic)),
-      )
-    : (sections as ArticlesSection[])
-
   return (
     <section className="py-10">
       <BgHeader
-        heading={pageSeo?.title || 'Blog Category Page'}
-        subheading={pageSeo?.description || ''}
+        heading={'Blog Category Page'}
+        subheading={''}
         className="!text-6xl [&_+_div]:md:!text-2xl [&_+_div]:md:!py-0"
         background="about"
       />
       <div className="narrow-container">
-        <BlogSections sections={blogSections} lang={lang} category={category} />
+        <BlogSections sections={sections} lang={lang} category={category} />
       </div>
     </section>
   )
 }
 
 export async function generateStaticParams(): Promise<CategoryPageParams[]> {
-  const params: CategoryPageParams[] = (
-    await Promise.all(
-      locales.map(async (lang): Promise<CategoryPageParams[]> => {
-        const sections = await getArticleSections(lang)
-        if (!sections) throw 'sections not found'
-        const categories = sections.map((section) => section.slug)
-        return categories.map((category) => ({ lang, category }))
-      }),
-    )
-  ).flat()
-  return params
+  // const params: CategoryPageParams[] = (
+  //   await Promise.all(
+  //     locales.map(async (lang): Promise<CategoryPageParams[]> => {
+  //       const data = await getBlogIndex({ lang })
+  //       if (!data) throw 'sections not found'
+  //       const categories = data.sections.map((section) => section.slug)
+  //       return categories.map((category) => ({ lang, category }))
+  //     }),
+  //   )
+  // ).flat()
+  // return params
+  return []
 }
 
 export async function generateMetadata(
@@ -65,13 +55,13 @@ export async function generateMetadata(
     params: { lang, category },
   } = props
 
-  const pageSeo = await getPageSeoText(category)
+  const pageSeo = await getBlogIndex({ lang, category })
 
   const seoData = {
-    title: pageSeo?.pageSeo?.title || '',
-    description: pageSeo?.pageSeo?.description || '',
+    title: '',
+    description: '',
     ogType: 'website',
-    ogImageUrl: pageSeo?.pageSeo?.image?.url || '',
+    ogImageUrl: '',
     twitterCard: 'summary_large_image',
   }
 

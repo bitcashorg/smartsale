@@ -1,6 +1,6 @@
 import { VideoDialog } from '@/components/dialogs/video-dialog'
 import type { LangProp } from '@/types/routing.type'
-import type { YouTubePlaylistItem } from '@smartsale/content'
+// import type { YouTubePlaylistItem } from '@smartsale/content'
 import { cn } from '@smartsale/ui' // Import the utility function
 import { Card, CardContent } from '@smartsale/ui'
 import Image from 'next/image'
@@ -39,6 +39,7 @@ export function MediaCard({ video, lang, className }: MediaCardProps) {
 }
 
 export interface MediaCardProps extends LangProp {
-  video: YouTubePlaylistItem
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
+  video: any
   className?: string // Add className prop to the interface
 }

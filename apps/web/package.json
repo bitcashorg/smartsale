@@ -22,7 +22,6 @@
   "dependencies": {
     "@blockmatic/hooks-utils": "^3.0.0",
     "@formatjs/intl-localematcher": "^0.5.4",
-    "@googleapis/youtube": "^20.0.0",
     "@headlessui/react": "^2.1.2",
     "@hookform/resolvers": "^3.9.0",
     "@huggingface/inference": "^2.8.1",

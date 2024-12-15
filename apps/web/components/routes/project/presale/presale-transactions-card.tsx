@@ -25,10 +25,7 @@ import {
 } from '@smartsale/ui'
 import { useEffect, useState } from 'react'
 
-const explorerUrl =
-  appConfig.env === 'prod'
-    ? eosEvmMainnet.blockExplorers?.default.url
-    : eosEvmTestnet.blockExplorers?.default.url
+const explorerUrl = eosEvmTestnet.blockExplorers?.default.url
 
 export function PresaleTransactionsCard(params: {
   contributions: PresaleContribution[]

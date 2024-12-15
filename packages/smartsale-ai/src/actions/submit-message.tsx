@@ -11,11 +11,10 @@ import { z } from 'zod'
 
 import { CryptoSkeleton } from '../crypto-ui/crypto-skeleton'
 
-import { MediaCard } from '@/components/shared/media-card'
-import {
-  fetchPublicYouTubePlaylist,
-  searchYouTubeChannel,
-} from '@smartsale/content'
+// import {
+//   fetchPublicYouTubePlaylist,
+//   searchYouTubeChannel,
+// } from '@smartsale/content'
 import { createSupabaseServerClient } from '@smartsale/supabase/src/sdk'
 import { AIMedia } from '../chat-ui/ai-media'
 import { SpinnerMessage } from '../chat-ui/chat-message'
@@ -190,61 +189,62 @@ export async function submitUserMessage({
         generate: async function* ({ query, type }) {
           console.log('🍓 media', query, type)
           yield <BotCard>Searching for media...</BotCard>
+          return <BotCard>Failed to load media content.</BotCard>
 
-          try {
-            if (type === 'news') {
-              const playlistId = 'PL6BKGVqekhB_R8wjPFN-p6dGkcIy_bM1D'
-              const playlistItems = await fetchPublicYouTubePlaylist({
-                playlistId,
-                maxResults: 5,
-              })
+          // try {
+          //   if (type === 'news') {
+          //     const playlistId = 'PL6BKGVqekhB_R8wjPFN-p6dGkcIy_bM1D'
+          //     const playlistItems = await fetchPublicYouTubePlaylist({
+          //       playlistId,
+          //       maxResults: 5,
+          //     })
 
-              if (!playlistItems.length) {
-                return <BotCard>No news videos found.</BotCard>
-              }
+          //     if (!playlistItems.length) {
+          //       return <BotCard>No news videos found.</BotCard>
+          //     }
 
-              const videos = playlistItems.map((item) => ({
-                thumbnailUrl: `https://img.youtube.com/vi/${item.snippet.resourceId.videoId}/0.jpg`,
-                videoUrl: `https://www.youtube.com/embed/${item.snippet.resourceId.videoId}`,
-                title: item.snippet.title,
-              }))
+          //     const videos = playlistItems.map((item) => ({
+          //       thumbnailUrl: `https://img.youtube.com/vi/${item.snippet.resourceId.videoId}/0.jpg`,
+          //       videoUrl: `https://www.youtube.com/embed/${item.snippet.resourceId.videoId}`,
+          //       title: item.snippet.title,
+          //     }))
 
-              return (
-                <AIMedia
-                  title={playlistItems[0].snippet.title}
-                  description={playlistItems[0].snippet.description}
-                  videos={videos}
-                />
-              )
-            }
+          //     return (
+          //       <AIMedia
+          //         title={playlistItems[0].snippet.title}
+          //         description={playlistItems[0].snippet.description}
+          //         videos={videos}
+          //       />
+          //     )
+          //   }
 
-            const searchResults = await searchYouTubeChannel({
-              channelId: 'UChzuWZjo_PvOrRTDfkojp3w',
-              query,
-              maxResults: 5,
-            })
+          //   const searchResults = await searchYouTubeChannel({
+          //     channelId: 'UChzuWZjo_PvOrRTDfkojp3w',
+          //     query,
+          //     maxResults: 5,
+          //   })
 
-            if (!searchResults.length) {
-              return <BotCard>No videos found matching your query.</BotCard>
-            }
+          //   if (!searchResults.length) {
+          //     return <BotCard>No videos found matching your query.</BotCard>
+          //   }
 
-            const videos = searchResults.map((video) => ({
-              thumbnailUrl: `https://img.youtube.com/vi/${video.videoId}/0.jpg`,
-              videoUrl: `https://www.youtube.com/embed/${video.videoId}`,
-              title: video.title,
-            }))
+          //   const videos = searchResults.map((video) => ({
+          //     thumbnailUrl: `https://img.youtube.com/vi/${video.videoId}/0.jpg`,
+          //     videoUrl: `https://www.youtube.com/embed/${video.videoId}`,
+          //     title: video.title,
+          //   }))
 
-            return (
-              <AIMedia
-                title={searchResults[0].title}
-                description={searchResults[0].description}
-                videos={videos}
-              />
-            )
-          } catch (error) {
-            console.error('Error fetching media:', error)
-            return <BotCard>Failed to load media content.</BotCard>
-          }
+          //   return (
+          //     <AIMedia
+          //       title={searchResults[0].title}
+          //       description={searchResults[0].description}
+          //       videos={videos}
+          //     />
+          //   )
+          // } catch (error) {
+          //   console.error('Error fetching media:', error)
+          //   return <BotCard>Failed to load media content.</BotCard>
+          // }
         },
       },
       listCryptos: {

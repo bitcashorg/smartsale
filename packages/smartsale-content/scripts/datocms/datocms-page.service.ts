@@ -1,4 +1,4 @@
-import { getCMSSdk } from '@/services/datocms/graphql/cms'
+import { getCMSSdk } from './graphql/cms'
 
 export async function getPageContent(
   category: 'terms_condition' | 'privacy_policy',

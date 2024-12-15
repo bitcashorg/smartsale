@@ -4,7 +4,7 @@ import {
   MediaSections,
 } from '@/components/shared/media-sections'
 import { Section } from '@/components/shared/section'
-import type { ArticlesSection } from '@/services/datocms'
+// import type { ArticlesSection } from '@/services/datocms'
 import type { LangProp } from '@/types/routing.type'
 
 export async function RecentArticles({ lang }: LangProp) {
@@ -127,7 +127,8 @@ export async function RecentArticles({ lang }: LangProp) {
     <Section heading="Recent Media and Articles">
       <MediaSections sections={recentMedia} lang={lang} />
       <BlogSections
-        sections={recentArcticles as unknown as ArticlesSection[]}
+        // biome-ignore lint/suspicious/noExplicitAny: <explanation>
+        sections={recentArcticles as unknown as any[]}
         lang={lang}
         className="pb-0 mb-0"
       />

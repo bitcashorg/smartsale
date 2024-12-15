@@ -1,17 +1,17 @@
 import * as fs from 'node:fs/promises'
 import * as path from 'node:path'
-import { anthropicTranslate } from '@/services/anthropic'
-import type { BlogArticleData } from '@/services/datocms'
+import { getErrorMessage } from '@smartsale/errors'
+import { promiseAllWithConcurrencyLimit } from '@smartsale/lib'
+import _ from 'lodash'
+import { type Lang, locales } from '../src/dictionaries/locales'
+import { anthropicTranslate } from './anthropic'
+import type { BlogArticleData } from './datocms'
 import {
   type TranslationData,
   extractTextForTranslation,
   extractTitleAndDescriptionNested,
   injectTextAfterTranslation,
-} from '@/services/datocms/translation/utils'
-import { type Lang, locales } from '@smartsale/content/locales'
-import { getErrorMessage } from '@smartsale/errors'
-import { promiseAllWithConcurrencyLimit } from '@smartsale/lib'
-import _ from 'lodash'
+} from './datocms/translation/utils'
 
 async function processFile(
   file: string,

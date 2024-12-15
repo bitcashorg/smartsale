@@ -1,9 +1,10 @@
 import { createOpenAI } from '@ai-sdk/openai'
 import { generateText } from 'ai'
+import { contentConfig } from '../../config'
 
 const openai = createOpenAI({
   compatibility: 'strict',
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: contentConfig.openai.key,
 })
 
 export async function openAiTranslate(content: string, locale: string) {

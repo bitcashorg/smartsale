@@ -1,6 +1,6 @@
 import { HeroArticleCard } from '@/components/routes/blog/hero-section/hero-card'
 import { HeroSubCard } from '@/components/routes/blog/hero-section/hero-subcard'
-import type { ArticlesSection } from '@/services/datocms'
+// import type { ArticlesSection } from '@/services/datocms'
 import type { LangProp } from '@/types/routing.type'
 
 export function HeroSection({ recent, lang }: HeroSectionProps) {
@@ -18,9 +18,9 @@ export function HeroSection({ recent, lang }: HeroSectionProps) {
           (post) =>
             post.articles.length > 0 && (
               <HeroSubCard
-                sectionSlug={post?.slug}
-                post={post.articles[0]}
-                key={`hero-section_sub-card-${post.slug}`}
+              // sectionSlug={post?.slug}
+              // post={post.articles[0]}
+              // key={`hero-section_sub-card-${post.slug}`}
               />
             ),
         )}
@@ -30,5 +30,6 @@ export function HeroSection({ recent, lang }: HeroSectionProps) {
 }
 
 interface HeroSectionProps extends LangProp {
-  recent: ArticlesSection[]
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
+  recent: any[]
 }

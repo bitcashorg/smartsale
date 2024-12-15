@@ -1,5 +1,5 @@
-import { getCMSSdk } from '@/services/datocms/graphql/cms'
-import type { SeoField } from '@/services/datocms/graphql/generated/cms'
+import { getCMSSdk } from './graphql/cms'
+import type { SeoField } from './graphql/generated/cms'
 
 export async function getAllArticles() {
   try {

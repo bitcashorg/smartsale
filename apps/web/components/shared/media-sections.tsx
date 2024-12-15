@@ -1,6 +1,6 @@
 import { LucideIcons } from '@/components/routes/blog/lucide-icons'
 import type { LangProp } from '@/types/routing.type'
-import type { YouTubePlaylistItem } from '@smartsale/content'
+// import type { YouTubePlaylistItem } from '@smartsale/content'
 import { cn } from '@smartsale/ui'
 import Link from 'next/link'
 import { MediaCard } from './media-card'
@@ -55,7 +55,8 @@ export interface MediaSectionsProps extends LangProp {
 
 export type MediaSection = {
   title: string
-  videos: YouTubePlaylistItem[]
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
+  videos: any[]
   link: {
     href: string
     label: string

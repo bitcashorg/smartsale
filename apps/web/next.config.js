@@ -62,6 +62,7 @@ const nextConfig = {
     '@smartsale/ai',
     '@smartsale/supabase',
     '@smartsale/core',
+    '@smartsale/hooks',
     '@smartsale/alchemy',
     '@smartsale/trigger',
     '@smartsale/lib',

@@ -1,5 +1,5 @@
 {
   "extends": ["../../tooling/tsconfig/react-library.json"],
-  "include": ["src", "../smartsale-hooks/src/devtools", "../../__dev/config"],
+  "include": ["src"],
   "exclude": ["node_modules"]
 }

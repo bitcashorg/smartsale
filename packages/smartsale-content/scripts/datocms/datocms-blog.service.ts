@@ -1,9 +1,9 @@
 import * as fs from 'node:fs'
 import path from 'node:path'
-import { getFilePath, parseFile } from '@/lib/file'
 import type { Lang } from '@smartsale/content'
+import { getErrorMessage } from '@smartsale/errors'
 import { uniq } from 'lodash'
-import { getErrorMessage } from '../../../../packages/smartsale-errors/src'
+import { getFilePath, parseFile } from '../utils/file-utils'
 import {
   type BlogArticleRecord,
   getBlogCategory,
@@ -84,10 +84,11 @@ export async function getArticleSections(
     try {
       console.log('😬 trying english version', { dirPath, filePath, fileName })
       const englishVersion = parseFile(`/dictionaries/en/blog/${fileName}`)
-      if (englishVersion) {
-        console.log('😬 returning english version')
-        return englishVersion.sections
-      }
+      // if (englishVersion) {
+      //   console.log('😬 returning english version')
+      //   return englishVersion.sections
+      // }
+      return []
     } catch (error) {
       console.error('❌ Failed to get cached file. Fetching new data', error)
     }
@@ -268,7 +269,7 @@ export async function getBlogCategoryLandingData(
       const englishVersion = parseFile(
         `/dictionaries/en/blog/${category}/${fileName}`,
       )
-      if (englishVersion) return englishVersion
+      // if (englishVersion) return englishVersion
     } catch (error) {
       console.error('❌ Failed to get cached file. Fetching new data', error)
     }

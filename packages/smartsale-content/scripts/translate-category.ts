@@ -1,6 +1,6 @@
-import { anthropicTranslate } from '@/services/anthropic'
-import type { BlogArticleRecord } from '@/services/datocms'
-import { type Lang, locales } from '@smartsale/content/locales'
+import { type Lang, locales } from '../src/dictionaries/locales'
+import { anthropicTranslate } from './anthropic'
+import type { BlogArticleRecord } from './datocms'
 
 import type { Dirent } from 'node:fs'
 import * as fs from 'node:fs/promises'

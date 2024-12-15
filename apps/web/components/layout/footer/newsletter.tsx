@@ -8,6 +8,7 @@ import { Button } from '@smartsale/ui'
 import { IconDownRightArrow } from '@smartsale/ui'
 import { motion } from 'framer-motion'
 import { LucideCheck, LucideLoader2 } from 'lucide-react'
+import { useEffect } from 'react'
 import { useFormStatus } from 'react-dom'
 import {
   GoogleReCaptcha,

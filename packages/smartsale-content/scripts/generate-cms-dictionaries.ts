@@ -2,15 +2,19 @@ import {
   getArticleSections,
   getBlogArticleData,
   getBlogCategoryLandingData,
-} from '@/services/datocms'
+} from './datocms'
 
 import * as fs from 'node:fs'
 import { constants } from 'node:fs/promises'
 import path from 'node:path'
-import { generateShortLink } from '@/app/actions/general'
-import { AVAILABLE_LANGS } from '@/config'
-import type { Lang } from '@smartsale/content/locales'
+import { Dub } from 'dub'
 import pLimit from 'p-limit'
+import { contentConfig } from '../config'
+import type { Lang } from '../src/dictionaries/locales'
+
+const dub = new Dub({
+  token: contentConfig.dub.key,
+})
 
 async function getArticleCategories(lang: Lang) {
   const categoriesData = await getArticleSections(lang as Lang)
@@ -52,8 +56,11 @@ async function addShortLinksForArticles(
       const canonicalUrl = `https://bitlauncher.ai/${lang}/${category}/${slug}`
 
       if (!json.shortLink) {
-        const shortLink = (await generateShortLink(canonicalUrl, false)).data
-          ?.shortLink
+        const shortLink = (
+          await dub.links.create({
+            url: canonicalUrl,
+          })
+        ).shortLink
 
         json.shortLink = shortLink ?? ''
 
@@ -73,11 +80,11 @@ async function main() {
   const limit = pLimit(1)
 
   const categories = await Promise.all(
-    AVAILABLE_LANGS.map((lang) => getArticleCategories(lang as Lang)),
+    contentConfig.i18n.langs.map((lang) => getArticleCategories(lang as Lang)),
   )
   let langIndex = 0
 
-  for (const lang of AVAILABLE_LANGS) {
+  for (const lang of contentConfig.i18n.langs) {
     for (const category of categories[langIndex]) {
       const articles = (
         await getBlogCategoryLandingData(lang as Lang, category)

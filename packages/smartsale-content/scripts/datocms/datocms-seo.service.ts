@@ -1,5 +1,5 @@
-import { getCMSSdk } from '@/services/datocms/graphql/cms'
-import type { PageSeoRecord } from '@/services/datocms/graphql/generated/cms'
+import { getCMSSdk } from './graphql/cms'
+import type { PageSeoRecord } from './graphql/generated/cms'
 
 export async function getPageSeoText(type: string): Promise<CMSPageSeoText> {
   try {

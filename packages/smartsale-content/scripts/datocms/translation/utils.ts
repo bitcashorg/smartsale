@@ -1,7 +1,7 @@
 import type {
   BlogArticleRecord,
   MainArticleContentBlock,
-} from '@/services/datocms/datacms-blog-category.service'
+} from '../datacms-blog-category.service'
 
 export interface TranslationData {
   title: string
