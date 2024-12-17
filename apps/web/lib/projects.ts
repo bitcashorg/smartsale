@@ -1,8 +1,8 @@
-import { TestnetMBOTSPL, type TokenContractData } from '@repo/auction'
-import { Tables } from '@repo/supabase'
+import type { Tables } from '@smartsale/supabase'
 import { merge } from 'lodash'
 import type { StaticImageData } from 'next/image'
 
+// biome-ignore lint/suspicious/noExplicitAny: <explanation>
 export function getProjects(dict: any) {
   return merge(projects, dict.projects) as Project[]
 }
@@ -19,7 +19,11 @@ export const projects: Project[] = [
     thumbnailImage: '/images/bitcash.webp',
     badgeText: 'LIVE',
     linkPath: '/bitcash-bitlauncher',
-    token: TestnetMBOTSPL,
+    token: {
+      address: '0x0000000000000000000000000000000000000000',
+      decimals: 18,
+      name: 'test',
+    },
     auctionId: 9,
     presaleOpen: false,
     twitterUsername: 'bitcashorg',
@@ -42,7 +46,11 @@ export const projects: Project[] = [
     badgeText: 'COMING SOON',
     linkPath: '#',
     auctionId: 9,
-    token: TestnetMBOTSPL,
+    token: {
+      address: '0x0000000000000000000000000000000000000000',
+      decimals: 18,
+      name: 'test',
+    },
     presaleOpen: true,
     twitterUsername: 'masterbotsai',
     telegramGroup: 'bitlauncher',
@@ -60,7 +68,11 @@ export const projects: Project[] = [
     thumbnailImage: '/images/wizartworld.webp',
     badgeText: 'FUTURE',
     linkPath: '#',
-    token: TestnetMBOTSPL,
+    token: {
+      address: '0x0000000000000000000000000000000000000000',
+      decimals: 18,
+      name: 'test',
+    },
     auctionId: 9,
     twitterUsername: 'wizartworld',
     telegramGroup: 'bitlauncher',
@@ -78,7 +90,11 @@ export const projects: Project[] = [
     thumbnailImage: '/images/bitcash.webp',
     badgeText: 'LIVE',
     linkPath: '/bitlauncher-test',
-    token: TestnetMBOTSPL,
+    token: {
+      address: '0x0000000000000000000000000000000000000000',
+      decimals: 18,
+      name: 'test',
+    },
     auctionId: 9,
     presaleOpen: true,
     twitterUsername: 'bitcashorg',
@@ -114,7 +130,11 @@ export interface Project {
     ContentSection
   >
   auctionId?: number
-  token?: TokenContractData
+  token?: {
+    address: string
+    decimals: number
+    name: string
+  }
   presaleOpen?: boolean
   registrationOpen?: boolean
   auctionClosed?: boolean
@@ -143,13 +163,15 @@ export interface ProjectContent {
 export type ProjectWithAuction = Required<
   Pick<Project, 'auctionId' | 'token'>
 > &
-  Project
-  & Tables<'presale'>
+  Project &
+  Tables<'presale'>
 
+// biome-ignore lint/suspicious/noExplicitAny: <explanation>
 export async function getProjectBySlug(slug: string, dict: any) {
   const project = projects.find((p) => p.slug === slug)
   if (!project) return null
   const content =
+    // biome-ignore lint/suspicious/noExplicitAny: <explanation>
     dict.projects.find((c: any) => c.id === project.id)?.content || {}
   return { ...project, content } as Project
 }

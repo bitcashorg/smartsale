@@ -1,44 +1,125 @@
+# General
+
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-__dev
-# dependencies
-node_modules
+
+# Node.js dependencies
+node_modules/
+**/node_modules
 .pnp
 .pnp.js
 
-# testing
-coverage
-
-# next.js
-.next/
-out/
-build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
+# Logs
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
 
-# local env files
+# Caches
+.cache
+.npm
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Build outputs
+build/
+out/
+.next/
+dist/
+.nuxt
+.vuepress/dist
+.temp
+
+# Coverage directories
+coverage
+*.lcov
+.nyc_output
+
+# IDEs and editors
+.vscode
+.idea
+.vscode-test
+
+# Miscellaneous
+.DS_Store
+*.pem
+.lock-wscript
+node_repl_history
+*.tgz
+.yarn-integrity
+
+# Environment variables
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-# turbo
+# Parcel cache (https://parceljs.org/)
+.parcel-cache
+
+# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# Bower dependency directory (https://bower.io/)
+bower_components
+
+# Snowpack dependency directory (https://snowpack.dev/)
+web_modules/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional caches
+.eslintcache
+.stylelintcache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Serverless directories
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# TurboRepo
 .turbo
 
-# vercel
+# Vercel
 .vercel
 
-# development 
-_dev
+# Based on https://raw.githubusercontent.com/github/gitignore/main/Node.gitignore
 
-.react-email
+# development files
+__dev
 
-# nohup.out
-nohup.out 
+# Supabase
+.branches
+.temp
+.env
+
+
+# Trigger.dev
+.trigger

@@ -1,10 +1,10 @@
-import { Button } from '@/components/ui/button'
+import { Button } from '@smartsale/ui'
+import { IconBitlauncher } from '@smartsale/ui'
 import Link from 'next/link'
-import { IconBitlauncher } from '../../ui/icons'
 import { NavLinks } from './nav-links'
 
 import { SessionButtonLoader } from '@/components/dialogs/session/session-button'
-import { appConfig } from '@/lib/config'
+import { appConfig } from '@/config'
 import type { LangProp } from '@/types/routing.type'
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
@@ -70,5 +70,6 @@ const DynamicSessionButton = dynamic(
 )
 
 interface HeaderProps extends LangProp {
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   dict: any
 }

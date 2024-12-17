@@ -1,8 +1,8 @@
 'use client'
 
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { useSupabaseClient } from '@/services/supabase'
-import type { Tables } from '@repo/supabase'
+import type { Tables } from '@smartsale/supabase'
+import { useSupabaseClient } from '@smartsale/supabase/src/sdk'
+import { Card, CardContent, CardHeader, CardTitle } from '@smartsale/ui'
 import { Handshake, Users } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { formatUnits } from 'viem'

@@ -8,33 +8,33 @@
   "type": "module",
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@types/bn.js": "^5.1.6",
     "@types/bun": "latest",
-    "husky": "^9.1.6",
-    "turbo": "^2.2.3"
+    "husky": "^9.1.7",
+    "turbo": "^2.3.3"
   },
   "scripts": {
     "build": "turbo build --no-daemon",
     "dev": "turbo dev --no-daemon --parallel",
-    "dev:web": "turbo dev --filter=@repo/web",
-    "dev:jobs": "turbo jobs --filter=@repo/jobs",
-    "dev:faucet": "turbo dev --filter=@repo/faucet",
+    "dev:web": "turbo dev --filter=@smartsale/web",
+    "dev:jobs": "turbo jobs --filter=@smartsale/trigger",
+    "dev:faucet": "turbo dev --filter=@smartsale/faucet",
     "clean": "git clean -xdf node_modules",
     "clean:workspaces": "turbo clean",
-    "format-and-lint": "biome check .",
-    "format-and-lint:fix": "biome check . --write",
-    "clean:node_modules": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
+    "clean:node_modules": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
+    "lint": "biome check .",
+    "lint:fix": "biome check . --write",
+    "prepare": "husky",
+    "pre-commit": "bun lint:fix"
   },
   "engines": {
     "bun": "1.x"
   },
   "packageManager": "bun@1.1.20",
   "workspaces": {
-    "packages": [
-      "apps/*",
-      "packages/*",
-      "services/*",
-      "tooling/*"
-    ]
+    "packages": ["apps/*", "packages/*", "tooling/*"]
+  },
+  "module": "index.ts",
+  "peerDependencies": {
+    "typescript": "^5.0.0"
   }
 }

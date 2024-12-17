@@ -1,0 +1,22 @@
+{
+  "name": "@smartsale/content",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^0.0.54",
+    "@ai-sdk/openai": "^0.0.71",
+    "@genql/runtime": "^2.10.0",
+    "@googleapis/youtube": "^20.0.0",
+    "datocms-structured-text-to-plain-text": "^4.0.1",
+    "dub": "^0.46.5",
+    "graphql": "^16.9.0",
+    "graphql-ws": "^5.16.0",
+    "react-datocms": "^7.0.1"
+  }
+}

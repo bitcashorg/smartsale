@@ -1,6 +1,7 @@
 import type { Project } from '@/lib/projects'
-import { cn, formatCurrency } from '@/lib/utils'
-import { createSupabaseServerClient, getPresaleData } from '@/services/supabase'
+import { formatCurrency } from '@smartsale/lib'
+import { createSupabaseServerClient, getPresaleData } from '@smartsale/supabase'
+import { cn } from '@smartsale/ui'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Suspense } from 'react'
@@ -14,8 +15,9 @@ export async function AuctionCard({
   dict,
 }: {
   project: Project
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   dict: any
-  }) {
+}) {
   const {
     id,
     title,
@@ -26,6 +28,8 @@ export async function AuctionCard({
     badgeText,
     linkPath,
   } = project
+
+  // biome-ignore lint/suspicious/noImplicitAnyLet: <explanation>
   let presale
   try {
     const supabase = await createSupabaseServerClient()
@@ -87,7 +91,9 @@ export async function AuctionCard({
                 {dict.auction.maxAllocation}
               </span>
               <b className="text-xs md:text-sm lg:text-base">
-                {presale?.max_allocation ? formatCurrency({ value: presale.max_allocation / 100 }) : maxAllocation}
+                {presale?.max_allocation
+                  ? formatCurrency({ value: presale.max_allocation / 100 })
+                  : maxAllocation}
               </b>
             </li>
           </ul>

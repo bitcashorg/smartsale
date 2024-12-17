@@ -1,7 +1,7 @@
-import { getDictionary } from '@/dictionaries'
-import { AVAILABLE_LANGS } from '@/lib/config'
+import { AVAILABLE_LANGS } from '@/config'
 import { getProjects } from '@/lib/projects'
 import type { ProjectPageProps } from '@/types/routing.type'
+import { getDictionary } from '@smartsale/content'
 import type { MetadataRoute } from 'next'
 
 export default async function sitemap({

@@ -2,17 +2,21 @@
 
 import { useEffect, useRef, useState } from 'react'
 
-import { Card } from '@/components/ui/card'
-import { cn } from '@/lib/utils'
+import { cn } from '@smartsale/ui'
+import { Card } from '@smartsale/ui'
 import Link from 'next/link'
 
 export function ArticleIndex({ articleHeaders }: ArticleIndexProps) {
-  const [activeSection, setActiveSection] = useState<any>(null)
+  const [activeSection, setActiveSection] = useState<{
+    anchor: string
+    text: string
+    level: number
+  } | null>(null)
   const observer = useRef<IntersectionObserver | null>(null)
 
   useEffect(() => {
     const handleIntersection = (entries: IntersectionObserverEntry[]) => {
-      entries.forEach((entry) => {
+      for (const entry of entries) {
         if (entry.isIntersecting) {
           const currentSection = articleHeaders?.find(
             ({ anchor }) => anchor === entry.target.id,
@@ -21,7 +25,7 @@ export function ArticleIndex({ articleHeaders }: ArticleIndexProps) {
             setActiveSection(currentSection)
           }
         }
-      })
+      }
     }
 
     // Initialize IntersectionObserver
@@ -31,14 +35,15 @@ export function ArticleIndex({ articleHeaders }: ArticleIndexProps) {
       //why is this not working well when content is too close to each other ?
       rootMargin: '0px 0px -80% 0px',
     })
-
     // Observe each section
-    articleHeaders?.forEach(({ anchor }) => {
+    if (!articleHeaders) return
+
+    for (const { anchor } of articleHeaders) {
       const section = document.getElementById(anchor)
       if (section) {
         observer.current?.observe(section)
       }
-    })
+    }
 
     // Cleanup on unmount
     return () => {
@@ -53,15 +58,15 @@ export function ArticleIndex({ articleHeaders }: ArticleIndexProps) {
       </div>
 
       <div className="flex flex-col w-full space-y-3 mt-space-10">
-        {articleHeaders?.map((header, index) => {
-          const HeadingTag = `h${header.level}` as any
+        {articleHeaders?.map((header) => {
+          const HeadingTag = `h${header.level}` as React.ElementType
           return (
             <HeadingTag
               // className={cn(
               //   'font-bold',
               //   header.level == 3 ? 'ml-3 text-h-text' : 'text-footer-text'
               // )}
-              key={index}
+              key={header.anchor}
             >
               <Link
                 href={`#${header.anchor}`}

@@ -1,8 +1,8 @@
-import { IconDownRightArrow } from '@/components/ui/icons'
 import { useReferral } from '@/hooks/use-referral'
+import { IconDownRightArrow } from '@smartsale/ui'
+import { Button } from '@smartsale/ui'
 import { X } from 'lucide-react'
 import React, { useEffect, useState } from 'react'
-import { Button } from '../ui/button'
 
 interface ReferalHomeBannerProps {
   onClose: () => void
@@ -51,7 +51,6 @@ export default function ReferralHomeBanner({
   return (
     <div className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a29] bg-opacity-50 min-h-screen flex items-center justify-center p-4">
       <div className="bg-gradient-to-br from-[#1a1a4ab4] to-[#0d0d35a0] backdrop-blur-[30px] rounded-3xl p-8 max-w-6xl w-full relative">
-        {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
         <button
           className="absolute top-4 right-4 text-[#e728a9] hover:text-[#ff51ed] transition-colors"
           onClick={onClose}

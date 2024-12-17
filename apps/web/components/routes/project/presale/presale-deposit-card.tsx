@@ -4,16 +4,6 @@ import { savePresaleDepositIntent } from '@/app/actions/save-deposit'
 import { PresaleTokenBalance } from '@/components/routes/project/presale/presale-token-balance'
 import { ProjectGridCard } from '@/components/routes/project/project-grid-card'
 import { ProjectInfo } from '@/components/routes/project/project-info'
-import { Button } from '@/components/ui/button'
-import { CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Input } from '@/components/ui/input'
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select'
 import { useSession } from '@/hooks/use-session'
 import { useSigningRequest } from '@/hooks/use-signing-request'
 import {
@@ -21,9 +11,19 @@ import {
   genUsdtDepositSigningRequest,
 } from '@/lib/eos'
 import type { ProjectWithAuction } from '@/lib/projects'
-import { useSupabaseClient } from '@/services/supabase'
-import type { Tables } from '@repo/supabase'
-import { tokens } from '@repo/tokens'
+import type { Tables } from '@smartsale/supabase'
+import { useSupabaseClient } from '@smartsale/supabase/src/sdk'
+import { tokens } from '@smartsale/tokens'
+import { Input } from '@smartsale/ui'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@smartsale/ui'
+import { CardDescription, CardHeader, CardTitle } from '@smartsale/ui'
+import { Button } from '@smartsale/ui'
 import { useQuery } from '@tanstack/react-query'
 import Link from 'next/link'
 import { useMemo, useState } from 'react'
@@ -239,6 +239,7 @@ function PresaleDeposit({
         <CardDescription>Deposit USD tokens to participate.</CardDescription>
       </CardHeader>
       <div className="flex flex-col mb-5">
+        {/* biome-ignore lint/a11y/noLabelWithoutControl: <explanation> */}
         <label htmlFor="deposit" className="text-sm font-bold" />
         <div className="flex items-center justify-between gap-2 mb-5">
           <Input

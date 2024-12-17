@@ -1,0 +1,12 @@
+{
+  "name": "@smartsale/chains",
+  "description": "Chain configurations",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "viem": "2.x"
+  }
+}

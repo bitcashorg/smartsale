@@ -1,0 +1,27 @@
+{
+  "name": "@smartsale/hooks",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "devDependencies": {
+    "wagmi": "2.x",
+    "@smartsale/core": "workspace:*",
+    "@types/bun": "latest",
+    "@types/react": "18.x",
+    "@types/react-dom": "18.x",
+    "@tanstack/react-query": "^5.61.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@smartsale/core": "workspace:*",
+    "@smartsale/lib": "workspace:*",
+    "@smartsale/types": "workspace:*",
+    "next": "^15.0.3",
+    "nuqs": "^2.2.3",
+    "react-use": "^17.5.1",
+    "vconsole": "^3.15.1",
+    "viem": "2.x",
+    "wagmi": "2.x"
+  }
+}

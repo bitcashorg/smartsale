@@ -1,7 +1,7 @@
-import { WHITE_PAPER } from '@/dictionaries/en/whitepaper'
 import type React from 'react'
 import { useEffect, useRef } from 'react'
 import Balancer from 'react-wrap-balancer'
+import { WHITE_PAPER } from '../../../../../packages/smartsale-content/src/dictionaries/en/whitepaper'
 import { NavigationContainer } from './navigator'
 
 interface WhitepaperContentProps {
@@ -27,8 +27,11 @@ export const WhitepaperContent = ({
           <p className="paragraph mb-[27px]">
             {typeof content.text === 'string'
               ? content.text
-              : content.text?.map((part, idx) => (
-                  <span key={idx} className={part.bold ? 'font-bold' : ''}>
+              : content.text?.map((part) => (
+                  <span
+                    key={part.text}
+                    className={part.bold ? 'font-bold' : ''}
+                  >
                     {part.text}
                   </span>
                 ))}
@@ -61,7 +64,7 @@ export const WhitepaperContent = ({
               ? content.text.split('\n').map((item, idx) => {
                   const [title, content] = item.split(':')
                   return (
-                    <li key={idx} className="mb-2">
+                    <li key={item} className="mb-2">
                       {content && <span className="font-bold">{title}:</span>}{' '}
                       {content || title}
                     </li>
@@ -74,9 +77,9 @@ export const WhitepaperContent = ({
         return (
           <ul className="list-disc list-inside text-infoForeground paragraph mb-4">
             {typeof content.text === 'string'
-              ? content.text.split('\n').map((item, idx) => {
+              ? content.text.split('\n').map((item) => {
                   return (
-                    <li key={idx} className="pl-4">
+                    <li key={item} className="pl-4">
                       {item}
                     </li>
                   )
@@ -209,8 +212,8 @@ export const WhitepaperContent = ({
             </Balancer>
           </h2>
 
-          {activeSectionContent.content.map((content, idx) => (
-            <div key={idx}>{renderContent(content)}</div>
+          {activeSectionContent.content.map((content) => (
+            <div key={JSON.stringify(content)}>{renderContent(content)}</div>
           ))}
 
           <NavigationContainer

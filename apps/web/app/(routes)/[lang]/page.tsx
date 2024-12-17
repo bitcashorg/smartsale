@@ -1,8 +1,8 @@
 import { NewHomeHero } from '@/components/routes/home/hero/index'
-import { getDictionary } from '@/dictionaries'
-import type { Lang } from '@/dictionaries/locales'
 import { getProjects } from '@/lib/projects'
+import type { Lang } from '@smartsale/content'
 import dynamic from 'next/dynamic'
+import { getDictionary } from '../../../../../packages/smartsale-content/src/dictionaries'
 
 export default async function IndexPage({ params: { lang } }: IndexPageProps) {
   const dict = await getDictionary(lang)
@@ -14,7 +14,7 @@ export default async function IndexPage({ params: { lang } }: IndexPageProps) {
       <DynamicUpcoming projects={projects} dict={dict} />
 
       <div className="narrow-container">
-        <DynamicFeatures lang={lang} dict={dict} id="features" />
+        <DynamicFeatures dict={dict} id="features" />
         <DynamicWhyChooseUs lang={lang} dict={dict} />
         <DynamicStepsSection lang={lang} dict={dict} id="steps" />
         <DynamicReferralSection />

@@ -1,13 +1,13 @@
 'use client'
 
 import { ActiveLink } from '@/components/shared/active-link'
+import { appConfig } from '@/config'
 import { useMobileNav } from '@/hooks/use-mobile-navigation'
 import { useSession } from '@/hooks/use-session'
-import { appConfig } from '@/lib/config'
-import { cn } from '@/lib/utils'
 import type { LangProp } from '@/types/routing.type'
 import { useAccountModal, useConnectModal } from '@rainbow-me/rainbowkit'
-import { formatAddress } from '@repo/utils'
+import { formatAddress } from '@smartsale/lib'
+import { cn } from '@smartsale/ui'
 import { LogOut, Wallet } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { v4 as uuidv4 } from 'uuid'
@@ -195,5 +195,6 @@ export function NavLinks({
 
 interface NavLinksProps extends LangProp {
   mobile?: boolean
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   dict: any
 }

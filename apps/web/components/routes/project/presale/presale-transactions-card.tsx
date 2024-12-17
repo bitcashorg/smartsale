@@ -1,12 +1,20 @@
 'use client'
 
+import { appConfig } from '@/config'
+import { allChains, eosEvmMainnet, eosEvmTestnet } from '@smartsale/chains'
+import { formatAddress } from '@smartsale/lib'
+import {
+  type PresaleContribution,
+  getPresaleContributions,
+} from '@smartsale/supabase'
+import { useSupabaseClient } from '@smartsale/supabase/src/sdk'
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from '@/components/ui/card'
+} from '@smartsale/ui'
 import {
   Table,
   TableBody,
@@ -14,21 +22,10 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from '@/components/ui/table'
-import { appConfig } from '@/lib/config'
-import { useSupabaseClient } from '@/services/supabase'
-import {
-  type PresaleContribution,
-  getPresaleContributions,
-} from '@/services/supabase/service'
-import { allChains, eosEvmMainnet, eosEvmTestnet } from '@repo/chains'
-import { formatAddress } from '@repo/utils'
+} from '@smartsale/ui'
 import { useEffect, useState } from 'react'
 
-const explorerUrl =
-  appConfig.env === 'prod'
-    ? eosEvmMainnet.blockExplorers?.default.url
-    : eosEvmTestnet.blockExplorers?.default.url
+const explorerUrl = eosEvmTestnet.blockExplorers?.default.url
 
 export function PresaleTransactionsCard(params: {
   contributions: PresaleContribution[]

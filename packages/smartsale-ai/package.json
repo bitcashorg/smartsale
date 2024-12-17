@@ -1,0 +1,36 @@
+{
+  "name": "@smartsale/ai",
+  "main": "src/index.tsx",
+  "types": "src/index.tsx",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.0.0",
+    "next": "14.x",
+    "react": "18.x",
+    "react-dom": "18.x"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0",
+    "react": "18.x",
+    "react-dom": "18.x",
+    "next": "14.x"
+  },
+  "dependencies": {
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "@ai-sdk/openai": "^0.0.71",
+    "@huggingface/inference": "^2.8.1",
+    "rehype-katex": "^7.0.1",
+    "remark-gfm": "^4.0.0",
+    "remark-math": "^6.0.0",
+    "ai": "^3.4.9",
+    "@xenova/transformers": "^2.17.2",
+    "@vercel/kv": "^3.0.0",
+    "react-syntax-highlighter": "^15.5.0",
+    "react-markdown": "^9.0.1",
+    "react": "18.x",
+    "react-dom": "18.x",
+    "@smartsale/errors": "workspace:*",
+    "@smartsale/lib": "workspace:*",
+    "@smartsale/ui": "workspace:*"
+  }
+}

@@ -31,5 +31,6 @@ export function MobileNavLoader() {
 }
 
 interface MobileNavProps extends LangProp {
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   dict: any
 }

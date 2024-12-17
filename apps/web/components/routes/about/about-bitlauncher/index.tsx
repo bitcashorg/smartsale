@@ -2,9 +2,8 @@ import { LearnSection } from '@/components/routes/home/section/learn-section'
 import StepsSection from '@/components/routes/home/section/steps-section'
 import { Banner } from '@/components/shared/banner'
 import { CommunityCard } from '@/components/shared/community-card'
-import { getDictionary } from '@/dictionaries'
-import type { Lang } from '@/dictionaries/locales'
-import Image from 'next/image'
+import { getDictionary } from '@smartsale/content'
+import type { Lang } from '@smartsale/content'
 import Balancer from 'react-wrap-balancer'
 
 export async function AboutBitlauncherPageLanding({
@@ -46,7 +45,7 @@ export async function AboutBitlauncherPageLanding({
   )
 }
 
-interface Image {
+interface BitlauncherImage {
   alt: string
   src: string
   width: number
@@ -58,7 +57,7 @@ export interface AboutBitlauncherPageContent {
   paragraph: React.ReactNode
   paragraph2: React.ReactNode
   paragraph3: React.ReactNode
-  image: Image
+  image: BitlauncherImage
 }
 
 interface AboutBitlauncherPageProps {

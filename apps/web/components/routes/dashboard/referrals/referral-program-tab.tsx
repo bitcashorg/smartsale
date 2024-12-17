@@ -1,18 +1,15 @@
 'use client'
 
-import { IconReferral } from '@/components/ui/icons'
-import { Skeleton } from '@/components/ui/skeleton'
 import { useCopyShortLink } from '@/hooks/use-copy-shortlink'
 import { useSession } from '@/hooks/use-session'
-import { chaingraphService } from '@repo/chaingraph'
+import { chaingraphService } from '@smartsale/chaingraph'
+import { Skeleton } from '@smartsale/ui'
+import { IconReferral } from '@smartsale/ui'
+import { Card, CardContent, CardHeader } from '@smartsale/ui'
 import { AnimatePresence } from 'framer-motion'
 import { Copy, LucideCheck, LucideLoader2, LucideX } from 'lucide-react'
 import Image from 'next/image'
 import { useAsync } from 'react-use'
-import { Card, CardContent, CardHeader } from '../../../ui/card'
-import ReferralDesktopList from './referral-desktop-list'
-import ReferralMobileList from './referral-mobile-list'
-import ReferralShareButton from './referral-share-button'
 
 export default function ReferralProgramTab() {
   // Hook is created separated due useSession is being used somewhere where the referral hook is not at the useSession context, even though the SessionProvider is being used in the main layout.tsx
@@ -22,36 +19,12 @@ export default function ReferralProgramTab() {
     checkShareLink,
     [session?.account],
   )
-  const { value: accountReferrals, loading } = useAsync(
+  const { value: accountReferrals } = useAsync(
     async () =>
       await chaingraphService.checkAccountReferral(session?.account || ''),
     [session?.account],
   )
 
-  const referralList = [
-    {
-      id: 1,
-      date: '12/09/2024 17:09',
-      referralUser: 'Test',
-      contribution: 100,
-      myReward: 20,
-      contributionDate: '12/09/2024 17:09',
-      project: 'Bitlauncher',
-      accreditation: 'Test',
-      contributionToken: 'EOS',
-    },
-    {
-      id: 2,
-      date: '12/09/2024 17:09',
-      referralUser: 'Test',
-      contribution: 100,
-      myReward: 20,
-      contributionDate: '12/09/2024 17:09',
-      project: 'Bitlauncher',
-      accreditation: 'Test',
-      contributionToken: 'EOS',
-    },
-  ]
   return (
     <>
       <h1 className="text-3xl font-bold text-center">Referral Program</h1>
@@ -154,10 +127,10 @@ export default function ReferralProgramTab() {
                   </Card>
 
                   <div className="hidden h-full w-1/3 justify-end items-center md:flex">
-                    <ReferralShareButton
+                    {/* <ReferralShareButton
                       title="Signup in Bitcash App!"
                       url={shareLinkData?.data?.short_link || ''}
-                    />
+                    /> */}
                   </div>
                 </div>
               </div>
@@ -184,8 +157,6 @@ export default function ReferralProgramTab() {
               copyToClipboard()
             }
           }}
-          tabIndex={0}
-          role="button"
           className="bg-primary px-4 py-2 w-32 min-w-32 max-w-32 flex justify-start items-center gap-x-3 cursor-pointer border rounded-full border-[#747394]"
         >
           <span className="text-sm text-accent-500 select-none">
@@ -194,10 +165,10 @@ export default function ReferralProgramTab() {
           <AnimatePresence>{iconsMap[status]}</AnimatePresence>
         </div>
 
-        <ReferralShareButton
+        {/* <ReferralShareButton
           title="Signup in Bitcash App!"
           url={shareLinkData?.data?.short_link || ''}
-        />
+        /> */}
       </div>
     </>
   )

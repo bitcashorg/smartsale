@@ -1,7 +1,7 @@
 import { Section } from '@/components/shared/section'
-import { Card } from '@/components/ui/card'
-import type { Lang } from '@/dictionaries/locales'
 import type { Feature } from '@/types/home'
+import type { Lang } from '@smartsale/content'
+import { Card } from '@smartsale/ui'
 import * as Icons from 'lucide-react'
 
 export function WhyChooseUs({ lang, dict }: WhyChooseUsProps) {
@@ -12,7 +12,7 @@ export function WhyChooseUs({ lang, dict }: WhyChooseUsProps) {
         {content.features.map((feature: Feature) => {
           const IconComponent = Icons[feature.icon] as React.ElementType
           return (
-            <li className="list-none group p-0">
+            <li className="list-none group p-0" key={feature.title}>
               <Card className="flex h-full flex-col items-center px-3 py-6 text-center border-card/30 bg-card backdrop-blur-lg">
                 <IconComponent className="w-12 h-12 mb-5 text-gray-50" />
                 <h3 className="mb-5 text-lg font-bold min-h-20">
@@ -31,6 +31,7 @@ export function WhyChooseUs({ lang, dict }: WhyChooseUsProps) {
 }
 
 export interface WhyChooseUsProps {
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   dict: any
   lang: Lang
 }

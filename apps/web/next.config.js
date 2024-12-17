@@ -1,8 +1,14 @@
 /** @type {import('next').NextConfig} */
-
-const { hostname } = require('node:os')
 const path = require('node:path')
-const webpack = require('webpack')
+const dotenv = require('dotenv')
+
+// Load environment variables from root .env files
+const rootPath = path.join(__dirname, '../..')
+dotenv.config({ path: path.join(rootPath, '.env') })
+dotenv.config({ path: path.join(rootPath, '.env.local') })
+dotenv.config({ path: path.join(rootPath, '.env.development') })
+dotenv.config({ path: path.join(rootPath, '.env.production') })
+
 const nextConfig = {
   async headers() {
     return [
@@ -51,6 +57,17 @@ const nextConfig = {
       },
     ]
   },
+  transpilePackages: [
+    '@smartsale/ui',
+    '@smartsale/ai',
+    '@smartsale/supabase',
+    '@smartsale/core',
+    '@smartsale/hooks',
+    '@smartsale/alchemy',
+    '@smartsale/trigger',
+    '@smartsale/lib',
+    '@smartsale/content',
+  ],
   experimental: {
     ...(process.env.NODE_ENV === 'development'
       ? { outputFileTracingRoot: path.join(__dirname, '../../') }
@@ -77,9 +94,6 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'datocms-assets.com',
-      },
-      {
-        hostname: 'cdn.sanity.io',
       },
       {
         hostname: 'i.ytimg.com',

@@ -1,9 +1,9 @@
-import { getDictionary } from '@/dictionaries'
 import { getProjectBySlug } from '@/lib/projects'
 import type {
   ProjectPageProps,
   ProjectPagePropsWithChildren,
 } from '@/types/routing.type'
+import { getDictionary } from '@smartsale/content'
 import type { Metadata } from 'next'
 
 export default function ProjectPagesLayout({

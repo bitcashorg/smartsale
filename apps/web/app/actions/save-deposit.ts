@@ -1,9 +1,9 @@
 'use server'
 
-import { type ActionResult, failure, success } from '@/lib/actions'
-import { createSupabaseServerClient } from '@/services/supabase'
-import { type Tables, presaleDepositInsertSchema } from '@repo/supabase'
-import { chainTypeSchema } from '@repo/supabase'
+import { type ActionResult, failure, success } from '@smartsale/lib'
+import { type Tables, presaleDepositInsertSchema } from '@smartsale/supabase'
+import { chainTypeSchema } from '@smartsale/supabase'
+import { createSupabaseServerClient } from '@smartsale/supabase/src/sdk'
 import { createSafeActionClient } from 'next-safe-action'
 import { z } from 'zod'
 

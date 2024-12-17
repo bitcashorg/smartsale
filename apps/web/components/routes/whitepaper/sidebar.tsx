@@ -1,7 +1,7 @@
 import { Transition } from '@/components/shared/transition'
-import { WHITE_PAPER } from '@/dictionaries/en/whitepaper'
 import { AnimatePresence } from 'framer-motion'
 import React, { useState, type SVGProps, useEffect } from 'react'
+import { WHITE_PAPER } from '../../../../../packages/smartsale-content/src/dictionaries/en/whitepaper'
 
 export function WhitepaperSidebar({
   activeSection,
