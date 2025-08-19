@@ -42,3 +42,4 @@ _dev
 
 # nohup.out
 nohup.out 
+.env*.local

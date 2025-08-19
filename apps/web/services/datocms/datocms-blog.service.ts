@@ -358,6 +358,50 @@ export type BlogArticleData = {
   topics: string[]
 }
 
+async function ensureDirectoryExists(dirPath: string): Promise<void> {
+  try {
+    await fs.promises.mkdir(getFilePath(dirPath), { recursive: true })
+  } catch (error) {
+    // Directory might already exist, ignore error
+  }
+}
+
+async function createStaticFileFromEnglish(
+  lang: Lang,
+  category: string,
+  slug: string,
+): Promise<BlogArticleData | null> {
+  const englishFilePath = path.resolve(
+    `/dictionaries/en/blog/${category}/${slug}.json`,
+  )
+
+  try {
+    const englishData: BlogArticleData = parseFile(englishFilePath)
+    if (englishData) {
+      const targetDirPath = `/dictionaries/${lang}/blog/${category}`
+      const targetFilePath = path.resolve(targetDirPath, `${slug}.json`)
+
+      // Ensure target directory exists
+      await ensureDirectoryExists(targetDirPath)
+
+      // Write the file
+      fs.writeFileSync(
+        getFilePath(targetFilePath),
+        JSON.stringify(englishData, null, 2),
+      )
+      console.log(
+        `✅ Created static file from English: ${getFilePath(targetFilePath)}`,
+      )
+
+      return englishData
+    }
+  } catch (error) {
+    console.warn(`⚠️ Could not copy from English version: ${error}`)
+  }
+
+  return null
+}
+
 export async function getBlogArticleData(
   lang: Lang,
   category: string,
@@ -368,25 +412,33 @@ export async function getBlogArticleData(
   const filePath = path.resolve(dirPath, fileName)
 
   let fileContents: BlogArticleData | undefined
-  // return cached translations
+
+  // First: Try to read existing static file
   try {
-    // ? The idea is to get the file contents and return it if it exists and it should be up to date with the latest on DatoCMS, so we can reduce the amount of requests to DatoCMS
     fileContents = parseFile(filePath)
-    // ? Due we are not updating the file contents frequently, we can return the file contents directly
-    // console.info('in', process.env.NODE_ENV)
-    if (process.env.NODE_ENV === 'production') {
+
+    // In production, always return the static file if it exists
+    if (process.env.NODE_ENV === 'production' && fileContents) {
       return fileContents as BlogArticleData
     }
   } catch (error) {
-    try {
-      const englishVersion: BlogArticleData = parseFile(
-        `/dictionaries/en/blog/${category}/${slug}.json`,
-      )
-      if (englishVersion) return englishVersion
-    } catch (error) {
-      console.error('❌ Failed to get cached file. Fetching new data', error)
+    console.log(`📝 Static file not found: ${getFilePath(filePath)}`)
+  }
+
+  // Second: If static file doesn't exist, try to create it from English version
+  if (!fileContents) {
+    console.log('🔄 Attempting to create static file from English version...')
+    const englishData = await createStaticFileFromEnglish(lang, category, slug)
+    if (englishData) {
+      return englishData
     }
   }
+
+  // Third: If no static file exists (neither for the language nor English),
+  // generate it from DatoCMS and create the static file
+  console.log(
+    `🌐 Generating static file from DatoCMS for: ${lang}/${category}/${slug}`,
+  )
 
   // console.log('getBlogArticleData', { locale, category, slug })
   const [i18n, categories] = await Promise.all([
@@ -405,9 +457,13 @@ export async function getBlogArticleData(
   const data: any = categories[`${blogCategory}Data`]
   const error: any = categories[`${blogCategory}Error`]
 
-  let categoryContent: any[]
-  categoryContent = data
-  if (categoryContent.length < 1 || error) return null
+  const categoryContent: any[] = data
+  if (categoryContent.length < 1 || error) {
+    console.error(
+      `❌ No data found in DatoCMS for: ${lang}/${category}/${slug}`,
+    )
+    return null
+  }
 
   let relatedBlogs: any = []
   const blogContent = categoryContent[0]
@@ -443,29 +499,16 @@ export async function getBlogArticleData(
       )
   }
 
-  // always create an english dictionary
+  // Always create the static file from DatoCMS data
   const result: BlogArticleData = { relatedBlogs, blogContent, topics }
-  const fullPath = getFilePath(filePath)
 
-  if (fileContents?.blogContent) {
-    // Check file article against new article. If no updated found on files, then we update the article
-    const fileArticle = fileContents
-    if (
-      fileArticle.blogContent.title === blogContent.title &&
-      fileArticle.blogContent._publishedAt === blogContent._publishedAt
-    ) {
-      return fileArticle
-    }
-  }
-
-  // TODO: Fix cache file update on production build.
-  // ! It's not updating the file and we might choose to add cache to the user's browser instead.
-  // ? Or moving this to actions.ts
+  // Always create/update the static file
   try {
-    fs.mkdirSync(getFilePath(dirPath), { recursive: true })
+    await ensureDirectoryExists(dirPath)
     fs.writeFileSync(getFilePath(filePath), JSON.stringify(result, null, 2))
+    console.log(`✅ Created static file from DatoCMS: ${getFilePath(filePath)}`)
   } catch (error) {
-    console.error('❌❌❌❌ Failed to update cache on file.', error)
+    console.error(`❌ Failed to create static file: ${error}`)
   }
 
   return result

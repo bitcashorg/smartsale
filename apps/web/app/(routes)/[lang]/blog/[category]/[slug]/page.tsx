@@ -20,7 +20,7 @@ export default async function ArticlePage(props: ArticlePageProps) {
 
   const { blogContent, relatedBlogs } = data
   const canonicalUrl = `https://bitlauncher.ai/${lang}/${category}/${slug}`
-  const dub = await generateShortLink(canonicalUrl)
+  const dub = await generateShortLink(canonicalUrl, false)
 
   return (
     <BlogPage

@@ -7643,8 +7643,15 @@
   ],
   "pageSeo": {
     "pageSeo": {
-      "description": "Lorem ipsum dolor sit amet consort sit emet.",
-      "image": null,
+      "description": "Curating Pioneering Research",
+      "image": {
+        "alt": null,
+        "height": 816,
+        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png",
+        "title": null,
+        "size": 1995960,
+        "width": 1456
+      },
       "title": "AI Research",
       "twitterCard": "summary_large_image"
     },

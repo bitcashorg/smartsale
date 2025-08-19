@@ -3679,8 +3679,15 @@
   ],
   "pageSeo": {
     "pageSeo": {
-      "description": "Lorem ipsum dolor sit amet",
-      "image": null,
+      "description": "Intelligence, Reimagined.",
+      "image": {
+        "alt": null,
+        "height": 862,
+        "url": "https://www.datocms-assets.com/101962/1690754998-ab5-img1.png",
+        "title": null,
+        "size": 617154,
+        "width": 862
+      },
       "title": "AI | Bitcash Blog",
       "twitterCard": "summary_large_image"
     },

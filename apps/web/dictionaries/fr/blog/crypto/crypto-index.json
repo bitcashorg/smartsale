@@ -2505,8 +2505,15 @@
   ],
   "pageSeo": {
     "pageSeo": {
-      "description": "Lorem ipsum dolor sit amet",
-      "image": null,
+      "description": "Unlocking the Power of Digital Currency",
+      "image": {
+        "alt": null,
+        "height": 1024,
+        "url": "https://www.datocms-assets.com/101962/1686795237-bb5-img3.png",
+        "title": null,
+        "size": 910505,
+        "width": 1024
+      },
       "title": "Crypto | Bitcash Blog",
       "twitterCard": "summary_large_image"
     },

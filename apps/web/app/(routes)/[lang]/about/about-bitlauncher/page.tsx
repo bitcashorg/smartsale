@@ -10,12 +10,14 @@ export default async function AboutBitlauncher({ params }: CommonPageProps) {
   const dict = await getDictionary(params.lang)
   return (
     <div className="container max-w-[100vw] !overflow-hidden mx-auto md:px-4 md:py-[5rem]">
-      <AboutBitlauncherPageLanding
-        content={content}
-        params={{
-          lang: 'en',
-        }}
-      />
+      {
+        await AboutBitlauncherPageLanding({
+          content,
+          params: {
+            lang: 'en',
+          },
+        })
+      }
     </div>
   )
 }

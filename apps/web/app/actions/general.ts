@@ -88,18 +88,18 @@ async function getCookieData() {
   return new Promise((resolve) =>
     setTimeout(() => {
       resolve(cookieData)
-    }, 1000)
+    }, 1000),
   )
 }
 
 // generate dub.co links
 export async function generateShortLink(url: string, withCookies = true) {
-  let cookieStorage: ReturnType<typeof cookies>;
-  let getShareLinkCookies: { value: string } | undefined;
-  
+  let cookieStorage: ReturnType<typeof cookies>
+  let getShareLinkCookies: { value: string } | undefined
+
   try {
     if (withCookies) {
-      cookieStorage = await getCookieData() as ReturnType<typeof cookies>;
+      cookieStorage = (await getCookieData()) as ReturnType<typeof cookies>
       getShareLinkCookies = cookieStorage.get('bitlauncher-share-link')
 
       if (getShareLinkCookies?.value) {
@@ -112,31 +112,32 @@ export async function generateShortLink(url: string, withCookies = true) {
       }
     }
 
-    const resolved: DubShareLinkResponse = !getShareLinkCookies || !withCookies
-      ? await axios
-          .post(
-            `https://api.dub.co/links?workspaceId=${process.env.DUB_WORKSPACE_ID}`,
-            {
-              domain: 'bitcash.to',
-              url,
-            },
-            {
-              headers: {
-                Authorization: `Bearer ${process.env.DUB_API_KEY}`,
-                'Content-Type': 'application/json',
-              },
-            },
-          )
-          .then((res) => res.data)
-      : (JSON.parse(getShareLinkCookies.value) as DubShareLinkResponse)
+    // const resolved: DubShareLinkResponse =
+    //   !getShareLinkCookies || !withCookies
+    //     ? await axios
+    //         .post(
+    //           `https://api.dub.co/links?workspaceId=${process.env.DUB_WORKSPACE_ID}`,
+    //           {
+    //             domain: 'bitcash.to',
+    //             url,
+    //           },
+    //           {
+    //             headers: {
+    //               Authorization: `Bearer ${process.env.DUB_API_KEY}`,
+    //               'Content-Type': 'application/json',
+    //             },
+    //           },
+    //         )
+    //         .then((res) => res.data)
+    //     : (JSON.parse(getShareLinkCookies.value) as DubShareLinkResponse)
 
-    if (!resolved) throw new Error('Failed to generate short link')
+    // if (!resolved) throw new Error('Failed to generate short link')
 
     return {
       data: {
-        key: resolved.key,
-        shortLink: resolved.shortLink,
-        qrCode: resolved.qrCode,
+        key: url.split('/').pop(),
+        shortLink: url,
+        qrCode: null,
       },
       error: null,
     }
@@ -145,7 +146,10 @@ export async function generateShortLink(url: string, withCookies = true) {
     console.log('Failed to generate short link: ==> ', errorData)
     return {
       data: null,
-      error: errorData.data.error.message,
+      error:
+        errorData?.data?.error?.message ||
+        (error as Error)?.message ||
+        'Unknown error',
     }
   }
 }

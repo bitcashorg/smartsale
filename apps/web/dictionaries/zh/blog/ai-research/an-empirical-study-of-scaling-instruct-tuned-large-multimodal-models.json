@@ -566,8 +566,5 @@
     "Instruction Tuning",
     "Multimodal"
   ],
-  "shortLink": {
-    "data": null,
-    "error": "You've reached your monthly limit of 1000 links on the Pro plan. Please upgrade to add more links."
-  }
+  "shortLink": "https://bitlauncher.ai/zh/blog/ai-research/an-empirical-study-of-scaling-instruct-tuned-large-multimodal-models"
 }

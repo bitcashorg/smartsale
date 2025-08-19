@@ -1,4 +1,5 @@
 import { NewHomeHero } from '@/components/routes/home/hero/index'
+import { RecentArticles } from '@/components/routes/home/section/recent-articles'
 import { getDictionary } from '@/dictionaries'
 import type { Lang } from '@/dictionaries/locales'
 import { getProjects } from '@/lib/projects'
@@ -19,7 +20,7 @@ export default async function IndexPage({ params: { lang } }: IndexPageProps) {
         <DynamicStepsSection lang={lang} dict={dict} id="steps" />
         <DynamicReferralSection />
         <DynamicLearnSection />
-        <DynamicRecentArticles lang={lang} />
+        {await RecentArticles({ lang })}
         <DynamicFAQ lang={lang} dict={dict} />
       </div>
     </div>
@@ -57,14 +58,6 @@ const DynamicLearnSection = dynamic(
   () =>
     import('@/components/routes/home/section/learn-section').then(
       (mod) => mod.LearnSection,
-    ),
-  { ssr: false },
-)
-
-const DynamicRecentArticles = dynamic(
-  () =>
-    import('@/components/routes/home/section/recent-articles').then(
-      (mod) => mod.RecentArticles,
     ),
   { ssr: false },
 )

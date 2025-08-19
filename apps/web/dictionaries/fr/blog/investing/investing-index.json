@@ -1275,8 +1275,15 @@
   ],
   "pageSeo": {
     "pageSeo": {
-      "description": "Lorem ipsum dolro sit amet",
-      "image": null,
+      "description": "Where Futures are Forged.",
+      "image": {
+        "alt": null,
+        "height": 1024,
+        "url": "https://www.datocms-assets.com/101962/1694215767-lsn7-img3.png",
+        "title": null,
+        "size": 1111006,
+        "width": 1024
+      },
       "title": "Investing | Bitcash Blog",
       "twitterCard": "summary_large_image"
     },

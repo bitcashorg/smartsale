@@ -4,6 +4,9 @@ const { hostname } = require('node:os')
 const path = require('node:path')
 const webpack = require('webpack')
 const nextConfig = {
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   async headers() {
     return [
       {

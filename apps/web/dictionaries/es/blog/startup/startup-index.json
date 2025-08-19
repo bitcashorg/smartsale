@@ -1151,8 +1151,15 @@
   ],
   "pageSeo": {
     "pageSeo": {
-      "description": "Lorem ipsum dolor sit amet",
-      "image": null,
+      "description": "Dream It. Build It. Scale It.",
+      "image": {
+        "alt": null,
+        "height": 936,
+        "url": "https://www.datocms-assets.com/101962/1691982774-abls4-img2.png",
+        "title": null,
+        "size": 677844,
+        "width": 936
+      },
       "title": "Startups | Bitcash Blog",
       "twitterCard": "summary_large_image"
     },

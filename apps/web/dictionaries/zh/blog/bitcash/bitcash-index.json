@@ -507,8 +507,15 @@
   ],
   "pageSeo": {
     "pageSeo": {
-      "description": "Lorem ipsum dolor sit amet",
-      "image": null,
+      "description": "Igniting Innovation in Crypto & AI Ventures",
+      "image": {
+        "alt": null,
+        "height": 1536,
+        "url": "https://www.datocms-assets.com/101962/1715638953-bitcash-logo-frame-w-bg.png",
+        "title": null,
+        "size": 44077,
+        "width": 2048
+      },
       "title": "Bitcash | Bitcash Blog",
       "twitterCard": "summary_large_image"
     },

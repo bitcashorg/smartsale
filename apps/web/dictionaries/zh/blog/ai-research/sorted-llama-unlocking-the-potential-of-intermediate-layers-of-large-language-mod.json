@@ -550,8 +550,5 @@
     "LLM",
     "Fine-tuning"
   ],
-  "shortLink": {
-    "data": null,
-    "error": "You've reached your monthly limit of 1000 links on the Pro plan. Please upgrade to add more links."
-  }
+  "shortLink": "https://bitlauncher.ai/zh/blog/ai-research/sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod"
 }

@@ -1,16 +1,55 @@
-import { Button } from '@/components/ui/button'
-import Link from 'next/link'
-import { IconBitlauncher } from '../../ui/icons'
-import { NavLinks } from './nav-links'
-
 import { SessionButtonLoader } from '@/components/dialogs/session/session-button'
+import { Button } from '@/components/ui/button'
 import { appConfig } from '@/lib/config'
 import type { LangProp } from '@/types/routing.type'
 import dynamic from 'next/dynamic'
+import Link from 'next/link'
 import { Suspense } from 'react'
-import { LangSelector } from './lang-selector'
+import { IconBitlauncher } from '../../ui/icons'
 import { MobileNavLoader } from './mobile-nav'
-import { Navigation } from './new-nav'
+
+const DynamicLangSelector = dynamic(
+  () => import('./lang-selector').then((c) => c.LangSelector),
+  {
+    loading: () => <div>Loading...</div>,
+    ssr: false,
+  },
+)
+
+const DynamicMobileNav = dynamic(
+  () => import('./mobile-nav').then((c) => c.MobileNav),
+  {
+    loading: MobileNavLoader,
+    ssr: false,
+  },
+)
+
+const DynamicNavigation = dynamic(
+  () => import('./new-nav').then((c) => c.Navigation),
+  {
+    loading: () => <div>Loading...</div>,
+    ssr: false,
+  },
+)
+
+const DynamicNavLinks = dynamic(
+  () => import('./nav-links').then((c) => c.NavLinks),
+  {
+    loading: () => <div>Loading...</div>,
+    ssr: false,
+  },
+)
+
+const DynamicSessionButton = dynamic(
+  () =>
+    import('@/components/dialogs/session/session-button').then(
+      (c) => c.SessionButton,
+    ),
+  {
+    loading: SessionButtonLoader,
+    ssr: false,
+  },
+)
 
 export function Header({ lang, dict }: HeaderProps) {
   return (
@@ -27,9 +66,13 @@ export function Header({ lang, dict }: HeaderProps) {
         <nav className="justify-center hidden space-x-4 sm:text-sm lg:text-base md:flex md:flex-1 lg:space-x-8">
           {/* // ? Development only */}
           {appConfig.features.newNavStruct ? (
-            <Navigation lang={lang} />
+            <Suspense fallback={<div>Loading...</div>}>
+              <DynamicNavigation lang={lang} />
+            </Suspense>
           ) : (
-            <NavLinks lang={lang} dict={dict} />
+            <Suspense fallback={<div>Loading...</div>}>
+              <DynamicNavLinks lang={lang} dict={dict} />
+            </Suspense>
           )}
         </nav>
 
@@ -40,7 +83,11 @@ export function Header({ lang, dict }: HeaderProps) {
               <DynamicSessionButton />
             </Suspense>
           </div>
-          {appConfig.features.i18n ? <LangSelector lang={lang} /> : null}
+          {appConfig.features.i18n ? (
+            <Suspense fallback={<div>Loading...</div>}>
+              <DynamicLangSelector lang={lang} />
+            </Suspense>
+          ) : null}
           <div className="flex md:hidden">
             <DynamicMobileNav lang={lang} dict={dict} />
           </div>
@@ -49,25 +96,6 @@ export function Header({ lang, dict }: HeaderProps) {
     </header>
   )
 }
-
-const DynamicMobileNav = dynamic(
-  () => import('./mobile-nav').then((c) => c.MobileNav),
-  {
-    loading: MobileNavLoader,
-    ssr: false,
-  },
-)
-
-const DynamicSessionButton = dynamic(
-  () =>
-    import('@/components/dialogs/session/session-button').then(
-      (c) => c.SessionButton,
-    ),
-  {
-    loading: SessionButtonLoader,
-    ssr: false,
-  },
-)
 
 interface HeaderProps extends LangProp {
   dict: any

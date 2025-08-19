@@ -239,7 +239,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Our team, also working on bitlauncher (powered by bitcash), is creating a launchpad to assist AI startups in fundraising from non-US contributors via Web3. This dual focus on efficient fundraising and organizational tools positions us uniquely in the market. We believe that building a community, fostering a collaborative culture, and adhering to proper tokenomics will establish Masterbots as a leading open-source AI brand."
+                      "value": "Our team, also working on bitlauncher (powered by bitcash), is creating a launchpad to assist AI startups in fundraising from non-US investors via Web3. This dual focus on efficient fundraising and organizational tools positions us uniquely in the market. We believe that building a community, fostering a collaborative culture, and adhering to proper tokenomics will establish Masterbots as a leading open-source AI brand."
                     }
                   ]
                 }
@@ -327,5 +327,5 @@
   "topics": [
     "Apps"
   ],
-  "shortLink": ""
+  "shortLink": "https://bitlauncher.ai/en/blog/ai/masterbots-elevating-ai-beyond-chatgpt-with-social-sharing-and-user-friendly-inno"
 }

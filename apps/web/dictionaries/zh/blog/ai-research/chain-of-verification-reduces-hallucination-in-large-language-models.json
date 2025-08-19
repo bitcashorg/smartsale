@@ -1103,8 +1103,5 @@
     "LLM",
     "Hallucination"
   ],
-  "shortLink": {
-    "data": null,
-    "error": "You've reached your monthly limit of 1000 links on the Pro plan. Please upgrade to add more links."
-  }
+  "shortLink": "https://bitlauncher.ai/zh/blog/ai-research/chain-of-verification-reduces-hallucination-in-large-language-models"
 }
