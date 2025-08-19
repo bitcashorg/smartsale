@@ -65,9 +65,9 @@ export const getBlogData = async () => {
 export async function getArticleSections(
   lang: Lang,
 ): Promise<ArticlesSection[]> {
-  const dirPath = `/dictionaries/${lang}/blog/`
+  const dirPath = path.join('dictionaries', lang, 'blog')
   const fileName = 'blog-index.json'
-  const filePath = path.resolve(dirPath, fileName)
+  const filePath = path.join(dirPath, fileName)
 
   let fileContents: { sections: ArticlesSection[] } | undefined
   // return cached translations
@@ -76,14 +76,14 @@ export async function getArticleSections(
     fileContents = parseFile(filePath)
     // ? Due we are not updating the file contents frequently, we can return the file contents directly
     // console.info('in', process.env.NODE_ENV)
-    if (process.env.NODE_ENV === 'production') {
-      return fileContents?.sections as ArticlesSection[]
-    }
+    // if (process.env.NODE_ENV === 'production') {
+    return fileContents?.sections as ArticlesSection[]
   } catch (error) {
     console.log('😬 translation not found', getErrorMessage(error))
     try {
       console.log('😬 trying english version', { dirPath, filePath, fileName })
-      const englishVersion = parseFile(`/dictionaries/en/blog/${fileName}`)
+      const englishFilePath = path.join('dictionaries', 'en', 'blog', fileName)
+      const englishVersion = parseFile(englishFilePath)
       if (englishVersion) {
         console.log('😬 returning english version')
         return englishVersion.sections
@@ -275,9 +275,9 @@ export async function getBlogCategoryLandingData(
     getPageSeoText(category),
   ])
 
-  const dirPath = `/dictionaries/${lang}/blog/${category}`
+  const dirPath = path.join('dictionaries', lang, 'blog', category)
   const fileName = `${category}-index.json`
-  const filePath = path.resolve(dirPath, fileName)
+  const filePath = path.join(dirPath, fileName)
   // console.log('getBlogCategoryLandingData', { dirPath, filePath })
 
   let fileContents: { sections: ArticlesSection[] } | undefined
@@ -295,9 +295,14 @@ export async function getBlogCategoryLandingData(
   } catch (error) {
     // console.log('error', error)
     try {
-      const englishVersion = parseFile(
-        `/dictionaries/en/blog/${category}/${fileName}`,
+      const englishFilePath = path.join(
+        'dictionaries',
+        'en',
+        'blog',
+        category,
+        fileName,
       )
+      const englishVersion = parseFile(englishFilePath)
       if (englishVersion) return englishVersion
     } catch (error) {
       console.error('❌ Failed to get cached file. Fetching new data', error)
@@ -401,15 +406,19 @@ async function createStaticFileFromEnglish(
   category: string,
   slug: string,
 ): Promise<BlogArticleData | null> {
-  const englishFilePath = path.resolve(
-    `/dictionaries/en/blog/${category}/${slug}.json`,
+  const englishFilePath = path.join(
+    'dictionaries',
+    'en',
+    'blog',
+    category,
+    `${slug}.json`,
   )
 
   try {
     const englishData: BlogArticleData = parseFile(englishFilePath)
     if (englishData) {
-      const targetDirPath = `/dictionaries/${lang}/blog/${category}`
-      const targetFilePath = path.resolve(targetDirPath, `${slug}.json`)
+      const targetDirPath = path.join('dictionaries', lang, 'blog', category)
+      const targetFilePath = path.join(targetDirPath, `${slug}.json`)
 
       // Ensure target directory exists
       await ensureDirectoryExists(targetDirPath)
@@ -437,16 +446,15 @@ export async function getBlogArticleData(
   category: string,
   slug: string,
 ) {
-  const dirPath = `/dictionaries/${lang}/blog/${category}`
+  const dirPath = path.join('dictionaries', lang, 'blog', category)
   const fileName = `${slug}.json`
-  const filePath = path.resolve(dirPath, fileName)
+  const filePath = path.join(dirPath, fileName)
 
   let fileContents: BlogArticleData | undefined
 
   // First: Try to read existing static file
   try {
     fileContents = parseFile(filePath)
-
     // In production, always return the static file if it exists
     // if (process.env.NODE_ENV === 'production' && fileContents) {
     if (fileContents) {
@@ -536,7 +544,12 @@ export async function getBlogArticleData(
   // Always create/update the static file
   try {
     await ensureDirectoryExists(dirPath)
-    fs.writeFileSync(getFilePath(filePath), JSON.stringify(result, null, 2))
+    const transformedAssetUrls = transformAssetUrls(result)
+    fs.writeFileSync(
+      getFilePath(filePath),
+      // JSON.stringify(transformedAssetUrls, null, 2),
+      JSON.stringify(result, null, 2),
+    )
     console.log(`✅ Created static file from DatoCMS: ${getFilePath(filePath)}`)
   } catch (error) {
     console.error(`❌ Failed to create static file: ${error}`)

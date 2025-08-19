@@ -7,9 +7,9 @@ export function parseFile(filePath: string) {
 }
 
 export function getFilePath(filePath: string) {
-  const root = path.resolve('./')
-  const vercel = process.env.VERCEL
+  const isDeployed = process.env.VERCEL || process.env.NODE_ENV === 'production'
+  const root = isDeployed ? process.cwd() : path.resolve('./')
   const fullPath = path.join(root, filePath)
-  // console.log('🍓 file paths', { root, vercel, filePath, fullPath, __dirname })
+  // console.log('🍓 file paths', { root, isDeployed, filePath, fullPath, __dirname })
   return fullPath
 }
