@@ -1,139 +1,26 @@
-import * as fs from 'node:fs'
-import { createWriteStream } from 'node:fs'
-import * as path from 'node:path'
-import { pipeline } from 'node:stream/promises'
-import archiver from 'archiver'
 import type { NextRequest } from 'next/server'
 import { NextResponse } from 'next/server'
 
-interface SimpleAsset {
-  url: string
-  filename: string
-}
-
-class SimpleAssetExtractor {
-  private readonly blogDirectory = path.join(
-    process.cwd(),
-    'dictionaries/en/blog',
-  )
-  private readonly publicImagesDir = path.join(
-    process.cwd(),
-    'public/images/blog',
-  )
-
-  async extractAllAssets(): Promise<SimpleAsset[]> {
-    const assets: SimpleAsset[] = []
-    const seenUrls = new Set<string>()
-
-    // Enhanced regex to match all DatoCMS assets including SVG
-    const assetUrlRegex =
-      /https:\/\/www\.datocms-assets\.com\/101962\/[^\s"']+\.(png|jpg|jpeg|gif|webp|svg)/gi
-
-    try {
-      const categories = fs
-        .readdirSync(this.blogDirectory)
-        .filter((item) =>
-          fs.statSync(path.join(this.blogDirectory, item)).isDirectory(),
-        )
-
-      for (const category of categories) {
-        const categoryPath = path.join(this.blogDirectory, category)
-        const files = fs
-          .readdirSync(categoryPath)
-          .filter((file) => file.endsWith('.json'))
-
-        for (const file of files) {
-          const filePath = path.join(categoryPath, file)
-
-          try {
-            const content = fs.readFileSync(filePath, 'utf-8')
-            const matches = content.match(assetUrlRegex) || []
-
-            for (const url of matches) {
-              if (!seenUrls.has(url)) {
-                seenUrls.add(url)
-                assets.push({
-                  url,
-                  filename: this.extractFilename(url),
-                })
-              }
-            }
-          } catch (error) {
-            console.warn(`⚠️ Failed to read ${filePath}:`, error)
-          }
-        }
-      }
-    } catch (error) {
-      console.error('❌ Failed to extract assets:', error)
-    }
-
-    return assets
-  }
-
-  private extractFilename(url: string): string {
-    try {
-      const urlObj = new URL(url)
-      const pathname = urlObj.pathname
-      const parts = pathname.split('/')
-
-      // DatoCMS URLs: /101962/timestamp-filename.ext
-      if (parts.length >= 3) {
-        const filenameWithTimestamp = parts[parts.length - 1]
-        // Remove timestamp prefix (e.g., "1712270604-" from "1712270604-screenshot.png")
-        const match = filenameWithTimestamp.match(/^\d+-(.+)$/)
-        return match ? match[1] : filenameWithTimestamp
-      }
-
-      return parts[parts.length - 1] || 'unknown-asset'
-    } catch (error) {
-      console.warn(`⚠️ Failed to extract filename from URL: ${url}`)
-      return `asset-${Date.now()}`
-    }
-  }
-
-  async downloadAsset(
-    asset: SimpleAsset,
-  ): Promise<{ success: boolean; error?: string }> {
-    const localPath = path.join(this.publicImagesDir, asset.filename)
-
-    // Check if file already exists
-    if (fs.existsSync(localPath)) {
-      return { success: true }
-    }
-
-    try {
-      // Ensure directory exists
-      fs.mkdirSync(path.dirname(localPath), { recursive: true })
-
-      const response = await fetch(asset.url)
-      if (!response.ok) {
-        throw new Error(`HTTP ${response.status}: ${response.statusText}`)
-      }
-
-      const fileStream = createWriteStream(localPath)
-
-      if (response.body) {
-        await pipeline(response.body as any, fileStream)
-      }
-
-      return { success: true }
-    } catch (error) {
-      return {
-        success: false,
-        error: error instanceof Error ? error.message : 'Unknown error',
-      }
-    }
-  }
-}
-
 export async function GET(request: NextRequest) {
+  // Block in production to prevent accidental usage
+  if (process.env.NODE_ENV === 'production') {
+    return NextResponse.json(
+      { error: 'Asset extraction is not allowed in production.' },
+      { status: 403 },
+    )
+  }
+
   const { searchParams } = new URL(request.url)
   const action = searchParams.get('action') || 'stats'
   const download = searchParams.get('download') === 'true'
 
-  const assetExtractor = new SimpleAssetExtractor()
-
   try {
+    // Dynamic import to avoid bundling heavy dependencies
+    const { SimpleAssetExtractor } = await import(
+      '../../../actions/asset-extractor'
+    )
+    const assetExtractor = new SimpleAssetExtractor()
+
     switch (action) {
       case 'stats':
         return await handleStats(assetExtractor)
@@ -165,9 +52,10 @@ export async function GET(request: NextRequest) {
   }
 }
 
-async function handleStats(assetExtractor: SimpleAssetExtractor) {
+async function handleStats(assetExtractor: any) {
+  const { fs, path } = await import('./deps')
   const assets = await assetExtractor.extractAllAssets()
-  const existingAssets = assets.filter((asset: SimpleAsset) =>
+  const existingAssets = assets.filter((asset: any) =>
     fs.existsSync(
       path.join(process.cwd(), 'public/images/blog', asset.filename),
     ),
@@ -183,15 +71,16 @@ async function handleStats(assetExtractor: SimpleAssetExtractor) {
   })
 }
 
-async function handlePrepareAssets(assetExtractor: SimpleAssetExtractor) {
+async function handlePrepareAssets(assetExtractor: any) {
+  const { fs, path } = await import('./deps')
   const assets = await assetExtractor.extractAllAssets()
-  const existingAssets = assets.filter((asset: SimpleAsset) =>
+  const existingAssets = assets.filter((asset: any) =>
     fs.existsSync(
       path.join(process.cwd(), 'public/images/blog', asset.filename),
     ),
   )
   const missingAssets = assets.filter(
-    (asset: SimpleAsset) =>
+    (asset: any) =>
       !fs.existsSync(
         path.join(process.cwd(), 'public/images/blog', asset.filename),
       ),
@@ -208,10 +97,11 @@ async function handlePrepareAssets(assetExtractor: SimpleAssetExtractor) {
   })
 }
 
-async function handleDownloadAssets(assetExtractor: SimpleAssetExtractor) {
+async function handleDownloadAssets(assetExtractor: any) {
+  const { fs, path } = await import('./deps')
   const assets = await assetExtractor.extractAllAssets()
   const missingAssets = assets.filter(
-    (asset: SimpleAsset) =>
+    (asset: any) =>
       !fs.existsSync(
         path.join(process.cwd(), 'public/images/blog', asset.filename),
       ),
@@ -242,7 +132,6 @@ async function handleDownloadAssets(assetExtractor: SimpleAssetExtractor) {
       results.push({ filename: asset.filename, error: result.error })
     }
 
-    // Small delay to avoid overwhelming the server
     await new Promise((resolve) => setTimeout(resolve, 100))
   }
 
@@ -256,11 +145,11 @@ async function handleDownloadAssets(assetExtractor: SimpleAssetExtractor) {
   })
 }
 
-async function handleZipDownload(assetExtractor: SimpleAssetExtractor) {
+async function handleZipDownload(assetExtractor: any) {
   try {
+    const { fs, path, archiver } = await import('./deps')
     const publicImagesDir = path.join(process.cwd(), 'public/images/blog')
 
-    // Check if directory exists
     if (!fs.existsSync(publicImagesDir)) {
       return NextResponse.json(
         { error: 'Blog images directory not found. Download assets first.' },
@@ -268,7 +157,6 @@ async function handleZipDownload(assetExtractor: SimpleAssetExtractor) {
       )
     }
 
-    // Get all files in the blog images directory
     const files = fs.readdirSync(publicImagesDir)
     if (files.length === 0) {
       return NextResponse.json(
@@ -277,12 +165,10 @@ async function handleZipDownload(assetExtractor: SimpleAssetExtractor) {
       )
     }
 
-    // Create zip stream
     const archive = archiver('zip', {
-      zlib: { level: 9 }, // Maximum compression
+      zlib: { level: 9 },
     })
 
-    // Add all files to the zip
     for (const file of files) {
       const filePath = path.join(publicImagesDir, file)
       const stats = fs.statSync(filePath)
@@ -292,10 +178,8 @@ async function handleZipDownload(assetExtractor: SimpleAssetExtractor) {
       }
     }
 
-    // Finalize the archive
     await archive.finalize()
 
-    // Convert archive to readable stream
     const chunks: Buffer[] = []
 
     return new Promise<NextResponse>((resolve, reject) => {
