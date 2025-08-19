@@ -9,12 +9,12 @@
     "slug": "mastering-ai-a-comprehensive-introduction-to-large-language-models-llms",
     "authorName": "Prof. Otto Nomos",
     "authorPicture": {
-      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      "url": "/images/blog/profottonomosheadshot.png"
     },
     "_publishedAt": "2023-10-05T05:24:02+01:00",
     "description": "Kickstart your AI career with our detailed guide to LLMs. Learn about their history, uniqueness, and future potential in this evolving field.",
     "thumbnail": {
-      "url": "https://www.datocms-assets.com/101962/1690162707-ab-img1a.png"
+      "url": "/images/blog/ab-img1a.png"
     },
     "contentBlock": [
       {
@@ -124,7 +124,7 @@
             "filename": "ab-img1a.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690162707-ab-img1a.png"
+            "url": "/images/blog/ab-img1a.png"
           }
         ]
       },
@@ -207,7 +207,7 @@
             "filename": "ab-img2.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690163228-ab-img2.png"
+            "url": "/images/blog/ab-img2.png"
           }
         ]
       },
@@ -303,7 +303,7 @@
             "filename": "ab-img3.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690165916-ab-img3.png"
+            "url": "/images/blog/ab-img3.png"
           }
         ]
       },
@@ -408,7 +408,7 @@
             "filename": "ab-img4.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690165901-ab-img4.png"
+            "url": "/images/blog/ab-img4.png"
           }
         ]
       },
@@ -495,7 +495,7 @@
             "filename": "ab-img5.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690166040-ab-img5.png"
+            "url": "/images/blog/ab-img5.png"
           }
         ]
       },
@@ -582,7 +582,7 @@
             "filename": "ab-img6.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690168841-ab-img6.png"
+            "url": "/images/blog/ab-img6.png"
           }
         ]
       },
@@ -651,7 +651,7 @@
             "filename": "ab-img7.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690169242-ab-img7.png"
+            "url": "/images/blog/ab-img7.png"
           }
         ]
       }
@@ -665,7 +665,7 @@
         "height": 870,
         "title": null,
         "alt": null,
-        "url": "https://www.datocms-assets.com/101962/1690162707-ab-img1a.png"
+        "url": "/images/blog/ab-img1a.png"
       }
     }
   },

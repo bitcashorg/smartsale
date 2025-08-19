@@ -12,12 +12,12 @@
     "slug": "lmdx-language-model-based-document-information-extraction-and-localization",
     "authorName": "Prof. Otto Nomos",
     "authorPicture": {
-      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      "url": "/images/blog/profottonomosheadshot.png"
     },
     "_publishedAt": "2024-05-24T05:20:31+01:00",
     "description": "Abstract Commentary & Rating",
     "thumbnail": {
-      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      "url": "/images/blog/researchpaper9.png"
     },
     "contentBlock": [
       {
@@ -471,7 +471,7 @@
             "filename": "researchpaper9.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+            "url": "/images/blog/researchpaper9.png"
           }
         ]
       }
@@ -485,7 +485,7 @@
         "height": 816,
         "title": null,
         "alt": null,
-        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+        "url": "/images/blog/researchpaper9.png"
       }
     }
   },

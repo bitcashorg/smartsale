@@ -9,12 +9,12 @@
     "slug": "how-to-register-and-kyc-to-bitcash",
     "authorName": "Roberto \"Andler\" Lucas",
     "authorPicture": {
-      "url": "https://www.datocms-assets.com/101962/1715639160-andler-file-photo.jpg"
+      "url": "/images/blog/andler-file-photo.jpg"
     },
     "_publishedAt": "2024-06-20T16:20:40+01:00",
     "description": "We are covering a range of topics, including registering for a Bitcash account, setting up an account name and referrer, identifying and securing devices, providing identification and personal information for KYC, taking photos for KYC verification, and waiting for approval and joining the community.",
     "thumbnail": {
-      "url": "https://www.datocms-assets.com/101962/1715638953-bitcash-logo-frame-w-bg.png"
+      "url": "/images/blog/bitcash-logo-frame-w-bg.png"
     },
     "contentBlock": [
       {
@@ -45,7 +45,7 @@
             "filename": "splash-edited.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1715831775-splash-edited.png"
+            "url": "/images/blog/splash-edited.png"
           }
         ]
       },
@@ -437,7 +437,7 @@
             "filename": "kyc-step-frame-1.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1715841179-kyc-step-frame-1.png"
+            "url": "/images/blog/kyc-step-frame-1.png"
           }
         ]
       },
@@ -608,7 +608,7 @@
             "filename": "kyc-step-frame-2.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1715841173-kyc-step-frame-2.png"
+            "url": "/images/blog/kyc-step-frame-2.png"
           }
         ]
       },
@@ -1111,7 +1111,7 @@
             "filename": "kyc-step-frame-3.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1715841166-kyc-step-frame-3.png"
+            "url": "/images/blog/kyc-step-frame-3.png"
           }
         ]
       },
@@ -1170,7 +1170,7 @@
             "filename": "kyc-step-frame-4.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1715841161-kyc-step-frame-4.png"
+            "url": "/images/blog/kyc-step-frame-4.png"
           },
           {
             "basename": "kyc-step-frame-5",
@@ -1179,7 +1179,7 @@
             "filename": "kyc-step-frame-5.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1715841154-kyc-step-frame-5.png"
+            "url": "/images/blog/kyc-step-frame-5.png"
           }
         ]
       },
@@ -1273,7 +1273,7 @@
             "filename": "kyc-step-frame-6.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1715841149-kyc-step-frame-6.png"
+            "url": "/images/blog/kyc-step-frame-6.png"
           }
         ]
       },
@@ -1431,7 +1431,7 @@
             "filename": "kyc-step-frame-7.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1715841141-kyc-step-frame-7.png"
+            "url": "/images/blog/kyc-step-frame-7.png"
           }
         ]
       }
@@ -1445,7 +1445,7 @@
         "height": 1440,
         "title": null,
         "alt": null,
-        "url": "https://www.datocms-assets.com/101962/1715831775-splash-edited.png"
+        "url": "/images/blog/splash-edited.png"
       }
     }
   },

@@ -10,12 +10,12 @@
     "slug": "securing-the-castle-exploring-llms-and-the-frontier-of-data-privacy",
     "authorName": "Prof. Otto Nomos",
     "authorPicture": {
-      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      "url": "/images/blog/profottonomosheadshot.png"
     },
     "_publishedAt": "2023-10-05T06:04:45+01:00",
     "description": "Dive deep into the world of LLMs and data privacy. Unearth the challenges and how they are being conquered, one step at a time.",
     "thumbnail": {
-      "url": "https://www.datocms-assets.com/101962/1690404787-ab8-img1.png"
+      "url": "/images/blog/ab8-img1.png"
     },
     "contentBlock": [
       {
@@ -92,7 +92,7 @@
             "filename": "ab8-img1.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690404787-ab8-img1.png"
+            "url": "/images/blog/ab8-img1.png"
           }
         ]
       },
@@ -170,7 +170,7 @@
             "filename": "ab8-img2a.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690404985-ab8-img2a.png"
+            "url": "/images/blog/ab8-img2a.png"
           }
         ]
       },
@@ -248,7 +248,7 @@
             "filename": "ab8-img3.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690405012-ab8-img3.png"
+            "url": "/images/blog/ab8-img3.png"
           }
         ]
       },
@@ -335,7 +335,7 @@
             "filename": "ab8-img4.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690405169-ab8-img4.png"
+            "url": "/images/blog/ab8-img4.png"
           }
         ]
       },
@@ -422,7 +422,7 @@
             "filename": "ab8-img6.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690405267-ab8-img6.png"
+            "url": "/images/blog/ab8-img6.png"
           }
         ]
       },
@@ -518,7 +518,7 @@
             "filename": "ab8-img6b.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690405546-ab8-img6b.png"
+            "url": "/images/blog/ab8-img6b.png"
           }
         ]
       },
@@ -596,7 +596,7 @@
             "filename": "ab8-img7.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690405219-ab8-img7.png"
+            "url": "/images/blog/ab8-img7.png"
           }
         ]
       }
@@ -610,7 +610,7 @@
         "height": 870,
         "title": null,
         "alt": null,
-        "url": "https://www.datocms-assets.com/101962/1690404787-ab8-img1.png"
+        "url": "/images/blog/ab8-img1.png"
       }
     }
   },

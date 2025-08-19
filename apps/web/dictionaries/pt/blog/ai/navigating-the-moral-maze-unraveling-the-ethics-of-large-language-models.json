@@ -11,12 +11,12 @@
     "slug": "navigating-the-moral-maze-unraveling-the-ethics-of-large-language-models",
     "authorName": "Prof. Otto Nomos",
     "authorPicture": {
-      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      "url": "/images/blog/profottonomosheadshot.png"
     },
     "_publishedAt": "2023-10-05T05:27:55+01:00",
     "description": "Embark on a journey through the complex landscape of AI ethics. Discover how bias infiltrates LLMs and learn the steps being taken to ensure responsible usage.",
     "thumbnail": {
-      "url": "https://www.datocms-assets.com/101962/1690399140-ab6-img1.png"
+      "url": "/images/blog/ab6-img1.png"
     },
     "contentBlock": [
       {
@@ -98,7 +98,7 @@
             "filename": "ab6-img1.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690399140-ab6-img1.png"
+            "url": "/images/blog/ab6-img1.png"
           }
         ]
       },
@@ -197,7 +197,7 @@
             "filename": "ab6-img4.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690399504-ab6-img4.png"
+            "url": "/images/blog/ab6-img4.png"
           }
         ]
       },
@@ -305,7 +305,7 @@
             "filename": "ab6-img3.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690399434-ab6-img3.png"
+            "url": "/images/blog/ab6-img3.png"
           }
         ]
       },
@@ -431,7 +431,7 @@
             "filename": "ab6-img2.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690399254-ab6-img2.png"
+            "url": "/images/blog/ab6-img2.png"
           }
         ]
       },
@@ -539,7 +539,7 @@
             "filename": "ab6-img5.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1693964711-ab6-img5.png"
+            "url": "/images/blog/ab6-img5.png"
           }
         ]
       },
@@ -629,7 +629,7 @@
             "filename": "ab6-img6.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690399634-ab6-img6.png"
+            "url": "/images/blog/ab6-img6.png"
           }
         ]
       }
@@ -643,7 +643,7 @@
         "height": 870,
         "title": null,
         "alt": null,
-        "url": "https://www.datocms-assets.com/101962/1690399140-ab6-img1.png"
+        "url": "/images/blog/ab6-img1.png"
       }
     }
   },

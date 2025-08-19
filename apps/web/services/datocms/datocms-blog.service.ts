@@ -192,6 +192,31 @@ export async function getArticleSections(
   return sections as ArticlesSection[]
 }
 
+function transformAssetUrls(obj: any): any {
+  if (!obj) return obj
+
+  if (typeof obj === 'string') {
+    return obj.replace(
+      /https:\/\/www\.datocms-assets\.com\/101962\/\d+-([^"']+\.(png|jpg|jpeg|gif|webp|svg))/g,
+      '/images/blog/$1',
+    )
+  }
+
+  if (Array.isArray(obj)) {
+    return obj.map(transformAssetUrls)
+  }
+
+  if (typeof obj === 'object') {
+    const transformed: any = {}
+    for (const [key, value] of Object.entries(obj)) {
+      transformed[key] = transformAssetUrls(value)
+    }
+    return transformed
+  }
+
+  return obj
+}
+
 export async function getRecentArticleSections(): Promise<ArticlesSection[]> {
   const {
     bitcoinData,
@@ -228,7 +253,13 @@ export async function getRecentArticleSections(): Promise<ArticlesSection[]> {
     },
   ]
 
-  return recentArticles
+  // Transform asset URLs for all articles
+  // ! Temp Fix. We should ask for the local files instead transforming the asset.
+  // ! For now it is fine; later improvement. @Andler
+  return recentArticles.map((section) => ({
+    ...section,
+    articles: section.articles.map((article) => transformAssetUrls(article)),
+  }))
 }
 
 export async function getBlogCategoryLandingData(
@@ -256,11 +287,10 @@ export async function getBlogCategoryLandingData(
     fileContents = parseFile(filePath)
     // ? Due we are not updating the file contents frequently, we can return the file contents directly
     // console.info('in', process.env.NODE_ENV)
-    if (process.env.NODE_ENV === 'production') {
-      return {
-        sections: fileContents?.sections as ArticlesSection[],
-        pageSeo,
-      }
+    // if (process.env.NODE_ENV === 'production') {
+    return {
+      sections: fileContents?.sections as ArticlesSection[],
+      pageSeo,
     }
   } catch (error) {
     // console.log('error', error)
@@ -418,7 +448,8 @@ export async function getBlogArticleData(
     fileContents = parseFile(filePath)
 
     // In production, always return the static file if it exists
-    if (process.env.NODE_ENV === 'production' && fileContents) {
+    // if (process.env.NODE_ENV === 'production' && fileContents) {
+    if (fileContents) {
       return fileContents as BlogArticleData
     }
   } catch (error) {

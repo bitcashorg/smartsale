@@ -11,12 +11,12 @@
       "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+        "url": "/images/blog/profottonomosheadshot.png"
       },
       "_publishedAt": "2023-10-05T09:19:45+01:00",
       "description": "Explore the math behind training LLMs with Quentin Anthony from Eleuther AI. Dive into the Transformers Math 101 article & master distributed training techniques for peak GPU performance.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1692324088-screenshot-2023-08-17-at-9-59-17-pm.png"
+        "url": "/images/blog/screenshot-2023-08-17-at-9-59-17-pm.png"
       },
       "seo": {
         "description": "Dive into the Transformers Math 101 article & master distributed training techniques for peak GPU performance.",
@@ -27,7 +27,7 @@
           "height": 554,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1692324088-screenshot-2023-08-17-at-9-59-17-pm.png"
+          "url": "/images/blog/screenshot-2023-08-17-at-9-59-17-pm.png"
         }
       }
     },
@@ -43,12 +43,12 @@
       "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+        "url": "/images/blog/profottonomosheadshot.png"
       },
       "_publishedAt": "2023-10-05T09:18:37+01:00",
       "description": "Explore the magic of MLC with Tianqi Chen: deploying 70B models on browsers & iPhones. Dive into XGBoost, TVM's creation, & the future of universal AI deployments. ",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
+        "url": "/images/blog/screenshot-2023-08-12-at-10-42-43-pm.png"
       },
       "seo": {
         "description": "Explore deploying 70B models on browsers & iPhones. Dive into XGBoost, TVM's creation, & the future of universal AI deployments. ",
@@ -59,7 +59,7 @@
           "height": 548,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
+          "url": "/images/blog/screenshot-2023-08-12-at-10-42-43-pm.png"
         }
       }
     },
@@ -76,12 +76,12 @@
       "slug": "latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+        "url": "/images/blog/profottonomosheadshot.png"
       },
       "_publishedAt": "2023-10-05T09:16:33+01:00",
       "description": "Join AI Breakdown & Latent Space for the summer AI tech roundup: Dive into GPT4.5, Llama 2, AI tools, the rising AI engineer, and more!",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png"
+        "url": "/images/blog/screenshot-2023-08-08-at-8-02-52-pm.png"
       },
       "seo": {
         "description": "Dive into GPT4.5, Llama 2, AI tools, the rising AI engineer, and more!",
@@ -92,7 +92,7 @@
           "height": 558,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png"
+          "url": "/images/blog/screenshot-2023-08-08-at-8-02-52-pm.png"
         }
       }
     },
@@ -108,12 +108,12 @@
       "slug": "latent-space-podcast-7-19-23-summary-llama-2-the-new-open-llm-sota-ft-nathan-lamb",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+        "url": "/images/blog/profottonomosheadshot.png"
       },
       "_publishedAt": "2023-10-05T09:12:38+01:00",
       "description": "Explore Llama 2, the latest AI breakthrough with experts Nathan Lambert, Matt Bornstein & more. Dive into datasets, benchmarks & AI predictions. Llama insights & drama await in this top podcast!",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1691968295-screenshot-2023-08-13-at-7-11-06-pm.png"
+        "url": "/images/blog/screenshot-2023-08-13-at-7-11-06-pm.png"
       },
       "seo": {
         "description": "Dive into datasets, benchmarks & AI predictions. Llama insights & drama await in this top podcast!",
@@ -124,7 +124,7 @@
           "height": 574,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1691968295-screenshot-2023-08-13-at-7-11-06-pm.png"
+          "url": "/images/blog/screenshot-2023-08-13-at-7-11-06-pm.png"
         }
       }
     },
@@ -139,12 +139,12 @@
       "slug": "latent-space-podcast-7-10-23-summary-code-interpreter-gpt-4-5-w-simon-willison-al",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+        "url": "/images/blog/profottonomosheadshot.png"
       },
       "_publishedAt": "2023-10-05T09:09:26+01:00",
       "description": "Explore ChatGPT's Code Interpreter: a game-changer in AI. Dive into its 1000x capabilities leap with Simon, Alex & top AI experts. #CodeAugmentedInference #GPT4_5",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1692048911-screenshot-2023-08-14-at-3-34-05-pm.png"
+        "url": "/images/blog/screenshot-2023-08-14-at-3-34-05-pm.png"
       },
       "seo": {
         "description": "Explore ChatGPT's Code Interpreter: a game-changer in AI. Dive into its 1000x capabilities leap with Simon, Alex & top AI experts. ",
@@ -155,7 +155,7 @@
           "height": 582,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1692048911-screenshot-2023-08-14-at-3-34-05-pm.png"
+          "url": "/images/blog/screenshot-2023-08-14-at-3-34-05-pm.png"
         }
       }
     },
@@ -170,12 +170,12 @@
       "slug": "latent-space-podcast-6-20-23-summary-commoditizing-the-petaflop-with-george-ho",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+        "url": "/images/blog/profottonomosheadshot.png"
       },
       "_publishedAt": "2023-10-05T09:07:15+01:00",
       "description": "George Hotz of tiny corp challenges Nvidia & Google! Dive into the world of AMD collaborations, insights on ggml, Mojo, Elon & GPT-4, plus a peek into AI Girlfriend. ",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1692154615-screenshot-2023-08-15-at-10-55-40-pm.png"
+        "url": "/images/blog/screenshot-2023-08-15-at-10-55-40-pm.png"
       },
       "seo": {
         "description": "George Hotz of tiny corp challenges Nvidia & Google! AMD collaborations, insights on ggml, Mojo, Elon & GPT-4, plus a peek into AI Girlfriend. ",
@@ -186,7 +186,7 @@
           "height": 508,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1692154615-screenshot-2023-08-15-at-10-55-40-pm.png"
+          "url": "/images/blog/screenshot-2023-08-15-at-10-55-40-pm.png"
         }
       }
     },
@@ -201,12 +201,12 @@
       "slug": "latent-space-podcast-6-14-23-summary-emergency-pod-openai-s-new-functions-api-75",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+        "url": "/images/blog/profottonomosheadshot.png"
       },
       "_publishedAt": "2023-10-05T09:05:04+01:00",
       "description": "Explore the June 2023 OpenAI updates with top AI engineers from Scale, Microsoft, Pinecone, & Huggingface. Dive into the Code x LLM paradigms and discover Recursive Function Agents.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1692221668-screenshot-2023-08-16-at-5-32-29-pm.png"
+        "url": "/images/blog/screenshot-2023-08-16-at-5-32-29-pm.png"
       },
       "seo": {
         "description": "Explore the June 2023 OpenAI updates with top AI engineers from Scale, Microsoft, Pinecone, & Huggingface. ",
@@ -217,7 +217,7 @@
           "height": 606,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1692221668-screenshot-2023-08-16-at-5-32-29-pm.png"
+          "url": "/images/blog/screenshot-2023-08-16-at-5-32-29-pm.png"
         }
       }
     },
@@ -232,12 +232,12 @@
       "slug": "latent-space-podcast-6-8-23-summary-from-rlhf-to-rlhb-the-case-for-learning-from",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+        "url": "/images/blog/profottonomosheadshot.png"
       },
       "_publishedAt": "2023-10-05T09:02:33+01:00",
       "description": "Explore AI & analytics with Jeffrey Wang & Joe Reeve on Latent Space Live! Dive into why AI values Analytics and the power of first-party behavioral data. ",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1692386432-screenshot-2023-08-18-at-3-17-04-pm.png"
+        "url": "/images/blog/screenshot-2023-08-18-at-3-17-04-pm.png"
       },
       "seo": {
         "description": "Explore AI & analytics with Jeffrey Wang & Joe Reeve on Latent Space Live! Dive into why AI values Analytics and the power of first-party behavioral data. ",
@@ -248,7 +248,7 @@
           "height": 550,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1692386432-screenshot-2023-08-18-at-3-17-04-pm.png"
+          "url": "/images/blog/screenshot-2023-08-18-at-3-17-04-pm.png"
         }
       }
     },
@@ -263,12 +263,12 @@
       "slug": "latent-space-podcast-6-1-23-summary-building-the-ai-x-ux-scenius-with-linus-le",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+        "url": "/images/blog/profottonomosheadshot.png"
       },
       "_publishedAt": "2023-10-05T09:00:12+01:00",
       "description": "Explore Notion AI's transformative approach to AI and UX. Dive into the future of AI-augmented workspaces, the value beyond chat interfaces, and insights on effective knowledge work. Recap of AI×UX NYC meetup included!",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1692390655-screenshot-2023-08-18-at-4-28-51-pm.png"
+        "url": "/images/blog/screenshot-2023-08-18-at-4-28-51-pm.png"
       },
       "seo": {
         "description": "Explore Notion AI's transformative approach to AI and UX. ",
@@ -279,7 +279,7 @@
           "height": 546,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1692390655-screenshot-2023-08-18-at-4-28-51-pm.png"
+          "url": "/images/blog/screenshot-2023-08-18-at-4-28-51-pm.png"
         }
       }
     },
@@ -295,12 +295,12 @@
       "slug": "latent-space-podcast-5-25-23-summary-debugging-the-internet-with-ai-agents-with",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+        "url": "/images/blog/profottonomosheadshot.png"
       },
       "_publishedAt": "2023-10-05T08:58:27+01:00",
       "description": "Explore the future of AI with Itamar Friedman from Codium AI on 'Debugging the Internet'. Dive into 'Extreme DRY' agents, the rapid sync of specs & tests, and the balance between code & testing. Plus, insights from Toran & an exclusive look at AutoGPT's roadmap!",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1692397413-screenshot-2023-08-18-at-6-10-09-pm.png"
+        "url": "/images/blog/screenshot-2023-08-18-at-6-10-09-pm.png"
       },
       "seo": {
         "description": "Dive into 'Extreme DRY' agents, the rapid sync of specs & tests, and the balance between code & testing. ",
@@ -311,7 +311,7 @@
           "height": 548,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1692397413-screenshot-2023-08-18-at-6-10-09-pm.png"
+          "url": "/images/blog/screenshot-2023-08-18-at-6-10-09-pm.png"
         }
       }
     },
@@ -325,12 +325,12 @@
       "slug": "latent-space-podcast-5-20-23-summary-mpt-7b-and-the-beginning-of-context-infinity",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+        "url": "/images/blog/profottonomosheadshot.png"
       },
       "_publishedAt": "2023-10-05T08:57:33+01:00",
       "description": "Dive into MosaicML's 9-day, $200k \"llongboi\" MPT-7B training, data prep insights, & the rise of open AI models with experts Frankle & Venigalla.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1692409795-screenshot-2023-08-18-at-9-49-21-pm.png"
+        "url": "/images/blog/screenshot-2023-08-18-at-9-49-21-pm.png"
       },
       "seo": {
         "description": "Dive into MosaicML's 9-day, $200k \"llongboi\" MPT-7B training, data prep insights, & the rise of open AI models ",
@@ -341,7 +341,7 @@
           "height": 556,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1692409795-screenshot-2023-08-18-at-9-49-21-pm.png"
+          "url": "/images/blog/screenshot-2023-08-18-at-9-49-21-pm.png"
         }
       }
     },
@@ -355,12 +355,12 @@
       "slug": "latent-space-podcast-5-15-23-summary-guaranteed-quality-and-structure-in-llm-outp",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+        "url": "/images/blog/profottonomosheadshot.png"
       },
       "_publishedAt": "2023-10-05T08:56:26+01:00",
       "description": "Explore Ep. 12 with Shreya Rajpal of Guardrails AI: Dive deep into validating LLM outputs, refining answers through re-asking loops, and establishing SLAs for models. Master the nuances of AI quality assurance.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1692495732-screenshot-2023-08-19-at-9-38-27-pm.png"
+        "url": "/images/blog/screenshot-2023-08-19-at-9-38-27-pm.png"
       },
       "seo": {
         "description": "Explore Ep. 12 with Shreya Rajpal of Guardrails AI: Dive deep into validating LLM outputs.",
@@ -371,7 +371,7 @@
           "height": 512,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1692495732-screenshot-2023-08-19-at-9-38-27-pm.png"
+          "url": "/images/blog/screenshot-2023-08-19-at-9-38-27-pm.png"
         }
       }
     },
@@ -387,12 +387,12 @@
       "slug": "latent-space-podcast-5-8-23-summary-the-ai-founder-gene-being-early-building-fast",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+        "url": "/images/blog/profottonomosheadshot.png"
       },
       "_publishedAt": "2023-10-05T08:52:09+01:00",
       "description": "Ep.11 with Sharif Shameem of Lexica: Dive into the AI founder mindset, uncovering the secrets to pioneering innovation, building game-changing tech, training models, and the intriguing potential of Agents and genomic sequencing. ",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1692501984-screenshot-2023-08-19-at-11-24-05-pm.png"
+        "url": "/images/blog/screenshot-2023-08-19-at-11-24-05-pm.png"
       },
       "seo": {
         "description": "Ep.11 with Sharif Shameem of Lexica: Dive into the AI founder mindset, uncovering the secrets to pioneering innovation.",
@@ -403,7 +403,7 @@
           "height": 550,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1692501984-screenshot-2023-08-19-at-11-24-05-pm.png"
+          "url": "/images/blog/screenshot-2023-08-19-at-11-24-05-pm.png"
         }
       }
     },
@@ -418,12 +418,12 @@
       "slug": "latent-space-podcast-5-5-23-summary-no-moat-closed-ai-gets-its-open-source-wakeup",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+        "url": "/images/blog/profottonomosheadshot.png"
       },
       "_publishedAt": "2023-10-05T08:49:18+01:00",
       "description": "Explore 'No Moat: Closed AI's Open Source Awakening' with Simon Willison. Dive into leaked Google Moat memo insights, Google Brain Drain, and Python's speed boost with Mojo.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1692566921-screenshot-2023-08-20-at-5-25-53-pm.png"
+        "url": "/images/blog/screenshot-2023-08-20-at-5-25-53-pm.png"
       },
       "seo": {
         "description": "Explore 'No Moat: Closed AI's Open Source Awakening' with Simon Willison. Dive into leaked Google Moat memo insights.",
@@ -434,7 +434,7 @@
           "height": 532,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1692566921-screenshot-2023-08-20-at-5-25-53-pm.png"
+          "url": "/images/blog/screenshot-2023-08-20-at-5-25-53-pm.png"
         }
       }
     },
@@ -449,12 +449,12 @@
       "slug": "latent-space-podcast-5-3-23-summary-training-a-sota-code-llm-in-1-week-and-quanti",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+        "url": "/images/blog/profottonomosheadshot.png"
       },
       "_publishedAt": "2023-10-05T08:46:08+01:00",
       "description": "Ep. 10 with Reza Shabani: Dive deep into the rapid training of a state-of-the-art Code LLM, explore Replit Ghostwriter's future, and journey from Finance to AI. Discover the transition from Kaplan to Chinchilla and more!",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1692584998-screenshot-2023-08-20-at-10-17-26-pm.png"
+        "url": "/images/blog/screenshot-2023-08-20-at-10-17-26-pm.png"
       },
       "seo": {
         "description": "Ep. 10 with Reza Shabani: Dive deep into the rapid training of a state-of-the-art Code LLM!",
@@ -465,7 +465,7 @@
           "height": 530,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1692584998-screenshot-2023-08-20-at-10-17-26-pm.png"
+          "url": "/images/blog/screenshot-2023-08-20-at-10-17-26-pm.png"
         }
       }
     },
@@ -480,12 +480,12 @@
       "slug": "latent-space-podcast-4-28-23-summary-mapping-the-future-of-truly-open-models-and",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+        "url": "/images/blog/profottonomosheadshot.png"
       },
       "_publishedAt": "2023-10-05T08:33:12+01:00",
       "description": "Explore the future of open models with Mike Conover of Databricks. Dive deep into Dolly's creation, its transition from 1.0 to 2.0, & the influences behind its development. Ep.9 touches on model infrastructure, Databricks' vision, & more. #AI #OpenModels #Dolly",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1694038707-screenshot-2023-09-06-at-3-12-24-pm.png"
+        "url": "/images/blog/screenshot-2023-09-06-at-3-12-24-pm.png"
       },
       "seo": {
         "description": "Ep.9 touches on model infrastructure, Databricks' vision, & more. #AI #OpenModels #Dolly",
@@ -496,7 +496,7 @@
           "height": 628,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1694038707-screenshot-2023-09-06-at-3-12-24-pm.png"
+          "url": "/images/blog/screenshot-2023-09-06-at-3-12-24-pm.png"
         }
       }
     },
@@ -511,12 +511,12 @@
       "slug": "latent-space-podcast-4-21-23-summary-ai-powered-search-for-the-enterprise-with",
       "authorName": "Prof. Otto Nomos",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+        "url": "/images/blog/profottonomosheadshot.png"
       },
       "_publishedAt": "2023-10-05T08:31:31+01:00",
       "description": "Ep.8: Dive into AI in enterprise search with Deedy Das of Glean. Unpack challenges in creating an AI search giant, Google vs ChatGPT comparisons, AI infrastructure intricacies, spotting AI-generated text, and why businesses need more than just Document QA.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1694134074-screenshot-2023-09-07-at-5-43-48-pm.png"
+        "url": "/images/blog/screenshot-2023-09-07-at-5-43-48-pm.png"
       },
       "seo": {
         "description": "Ep.8: Dive into AI in enterprise search with Deedy Das of Glean. Unpack challenges in creating an AI search giant, Google vs ChatGPT ...",
@@ -527,7 +527,7 @@
           "height": 530,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1694134074-screenshot-2023-09-07-at-5-43-48-pm.png"
+          "url": "/images/blog/screenshot-2023-09-07-at-5-43-48-pm.png"
         }
       }
     }
@@ -542,12 +542,12 @@
     "slug": "decoding-the-mysteries-of-ai-a-deep-dive-into-large-language-models-knowledge-and",
     "authorName": "Prof. Otto Nomos",
     "authorPicture": {
-      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      "url": "/images/blog/profottonomosheadshot.png"
     },
     "_publishedAt": "2023-10-05T05:51:17+01:00",
     "description": "Unravel the enigma of Large Language Models (LLMs). Understand how they acquire knowledge, their cutoffs, limits, and the potential pitfalls on your AI journey.\"",
     "thumbnail": {
-      "url": "https://www.datocms-assets.com/101962/1690333798-ab4-img1.png"
+      "url": "/images/blog/ab4-img1.png"
     },
     "contentBlock": [
       {
@@ -615,7 +615,7 @@
             "filename": "ab4-img1.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690333798-ab4-img1.png"
+            "url": "/images/blog/ab4-img1.png"
           }
         ]
       },
@@ -744,7 +744,7 @@
             "filename": "ab4-img2.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690333892-ab4-img2.png"
+            "url": "/images/blog/ab4-img2.png"
           }
         ]
       },
@@ -873,7 +873,7 @@
             "filename": "ab4-img3.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690333961-ab4-img3.png"
+            "url": "/images/blog/ab4-img3.png"
           }
         ]
       },
@@ -1002,7 +1002,7 @@
             "filename": "ab4-img4.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690334013-ab4-img4.png"
+            "url": "/images/blog/ab4-img4.png"
           }
         ]
       },
@@ -1131,7 +1131,7 @@
             "filename": "ab4-img5.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690334091-ab4-img5.png"
+            "url": "/images/blog/ab4-img5.png"
           }
         ]
       },
@@ -1209,7 +1209,7 @@
             "filename": "ab4-img6.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690334121-ab4-img6.png"
+            "url": "/images/blog/ab4-img6.png"
           }
         ]
       }
@@ -1223,7 +1223,7 @@
         "height": 870,
         "title": null,
         "alt": null,
-        "url": "https://www.datocms-assets.com/101962/1690333798-ab4-img1.png"
+        "url": "/images/blog/ab4-img1.png"
       }
     }
   },

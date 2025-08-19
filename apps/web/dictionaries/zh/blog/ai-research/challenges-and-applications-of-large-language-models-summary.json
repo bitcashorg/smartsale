@@ -10,12 +10,12 @@
     "slug": "challenges-and-applications-of-large-language-models-summary",
     "authorName": "Prof. Otto Nomos",
     "authorPicture": {
-      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      "url": "/images/blog/profottonomosheadshot.png"
     },
     "_publishedAt": "2023-10-02T07:47:49+01:00",
     "description": "Explore our summary and key insights of 'Challenges and Applications of Large Language Models', a research paper that delves into the potential, challenges, and applications of LLMs.",
     "thumbnail": {
-      "url": "https://www.datocms-assets.com/101962/1690575713-abr-img1.png"
+      "url": "/images/blog/abr-img1.png"
     },
     "contentBlock": [
       {
@@ -96,7 +96,7 @@
             "filename": "abr-img1.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690575713-abr-img1.png"
+            "url": "/images/blog/abr-img1.png"
           }
         ]
       },
@@ -622,7 +622,7 @@
             "filename": "abr1-img2.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690575734-abr1-img2.png"
+            "url": "/images/blog/abr1-img2.png"
           }
         ]
       },
@@ -1722,7 +1722,7 @@
             "filename": "abr1-img3.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690576381-abr1-img3.png"
+            "url": "/images/blog/abr1-img3.png"
           }
         ]
       },
@@ -1768,7 +1768,7 @@
         "height": 936,
         "title": null,
         "alt": null,
-        "url": "https://www.datocms-assets.com/101962/1690575713-abr-img1.png"
+        "url": "/images/blog/abr-img1.png"
       }
     }
   },

@@ -13,12 +13,12 @@
           "slug": "masterbots-elevating-ai-beyond-chatgpt-with-social-sharing-and-user-friendly-inno",
           "authorName": "Jun Dam",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+            "url": "/images/blog/jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-06-22T16:00:40+01:00",
           "description": "The blog introduces Masterbots, a platform revolutionizing AI interaction with user-friendly, domain-specific chatbots and a unique social sharing feature, inviting collaborators to join its open-source, community-driven development.",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1712270604-screenshot-2024-04-04-at-3-43-11-pm.png"
+            "url": "/images/blog/screenshot-2024-04-04-at-3-43-11-pm.png"
           },
           "contentBlock": [],
           "seo": {
@@ -30,7 +30,7 @@
               "height": 934,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1712270604-screenshot-2024-04-04-at-3-43-11-pm.png"
+              "url": "/images/blog/screenshot-2024-04-04-at-3-43-11-pm.png"
             }
           }
         },
@@ -45,12 +45,12 @@
           "slug": "latent-space-podcast-8-16-23-summary-the-mathematics-of-training-llms-with-que",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+            "url": "/images/blog/profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:19:45+01:00",
           "description": "Explore the math behind training LLMs with Quentin Anthony from Eleuther AI. Dive into the Transformers Math 101 article & master distributed training techniques for peak GPU performance.",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1692324088-screenshot-2023-08-17-at-9-59-17-pm.png"
+            "url": "/images/blog/screenshot-2023-08-17-at-9-59-17-pm.png"
           },
           "contentBlock": [],
           "seo": {
@@ -62,7 +62,7 @@
               "height": 554,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1692324088-screenshot-2023-08-17-at-9-59-17-pm.png"
+              "url": "/images/blog/screenshot-2023-08-17-at-9-59-17-pm.png"
             }
           }
         },
@@ -78,12 +78,12 @@
           "slug": "latent-space-podcast-8-10-23-summary-llms-everywhere-running-70b-models-in-browse",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+            "url": "/images/blog/profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:18:37+01:00",
           "description": "Explore the magic of MLC with Tianqi Chen: deploying 70B models on browsers & iPhones. Dive into XGBoost, TVM's creation, & the future of universal AI deployments. ",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
+            "url": "/images/blog/screenshot-2023-08-12-at-10-42-43-pm.png"
           },
           "contentBlock": [],
           "seo": {
@@ -95,7 +95,7 @@
               "height": 548,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1691894611-screenshot-2023-08-12-at-10-42-43-pm.png"
+              "url": "/images/blog/screenshot-2023-08-12-at-10-42-43-pm.png"
             }
           }
         },
@@ -112,12 +112,12 @@
           "slug": "latent-space-podcast-8-4-23-summary-latent-space-x-ai-breakdown-crossover-pod",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+            "url": "/images/blog/profottonomosheadshot.png"
           },
           "_publishedAt": "2023-10-05T09:16:33+01:00",
           "description": "Join AI Breakdown & Latent Space for the summer AI tech roundup: Dive into GPT4.5, Llama 2, AI tools, the rising AI engineer, and more!",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png"
+            "url": "/images/blog/screenshot-2023-08-08-at-8-02-52-pm.png"
           },
           "contentBlock": [],
           "seo": {
@@ -129,7 +129,7 @@
               "height": 558,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1691539617-screenshot-2023-08-08-at-8-02-52-pm.png"
+              "url": "/images/blog/screenshot-2023-08-08-at-8-02-52-pm.png"
             }
           }
         }
@@ -152,12 +152,12 @@
           "slug": "adapting-large-language-models-via-reading-comprehension",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+            "url": "/images/blog/profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:34:22+01:00",
           "description": "Abstract Commentary & Rating",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+            "url": "/images/blog/researchpaper9.png"
           },
           "contentBlock": [],
           "seo": {
@@ -169,7 +169,7 @@
               "height": 816,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+              "url": "/images/blog/researchpaper9.png"
             }
           }
         },
@@ -183,12 +183,12 @@
           "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+            "url": "/images/blog/profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:34:02+01:00",
           "description": "Abstract Commentary & Rating",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+            "url": "/images/blog/researchpaper9.png"
           },
           "contentBlock": [],
           "seo": {
@@ -200,7 +200,7 @@
               "height": 816,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+              "url": "/images/blog/researchpaper9.png"
             }
           }
         },
@@ -214,12 +214,12 @@
           "slug": "pdftriage-question-answering-over-long-structured-documents",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+            "url": "/images/blog/profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:33:49+01:00",
           "description": "Abstract Commentary & Rating",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+            "url": "/images/blog/researchpaper9.png"
           },
           "contentBlock": [],
           "seo": {
@@ -231,7 +231,7 @@
               "height": 816,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+              "url": "/images/blog/researchpaper9.png"
             }
           }
         },
@@ -245,12 +245,12 @@
           "slug": "sorted-llama-unlocking-the-potential-of-intermediate-layers-of-large-language-mod",
           "authorName": "Prof. Otto Nomos",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+            "url": "/images/blog/profottonomosheadshot.png"
           },
           "_publishedAt": "2024-05-27T03:33:31+01:00",
           "description": "Abstract Commentary & Rating",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+            "url": "/images/blog/researchpaper9.png"
           },
           "contentBlock": [],
           "seo": {
@@ -262,7 +262,7 @@
               "height": 816,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+              "url": "/images/blog/researchpaper9.png"
             }
           }
         }
@@ -283,12 +283,12 @@
           "slug": "welcome-to-the-bitlauncher-presale-starting-september-16th",
           "authorName": "Jun Dam",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+            "url": "/images/blog/jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-09-12T21:10:12+01:00",
           "description": "Bitlauncher Presale begins September 16th, 2024, offering a unique opportunity to contribute capital in the intersection of AI and cryptocurrency. Secure your presale tokens at $1 each and be part of this transformative venture.",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1724390484-bitlauncherpresale2.jpg"
+            "url": "/images/blog/bitlauncherpresale2.jpg"
           },
           "contentBlock": [],
           "seo": {
@@ -300,7 +300,7 @@
               "height": 736,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1724390484-bitlauncherpresale2.jpg"
+              "url": "/images/blog/bitlauncherpresale2.jpg"
             }
           }
         },
@@ -315,12 +315,12 @@
           "slug": "what-is-a-public-token-presale",
           "authorName": "Jun Dam",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+            "url": "/images/blog/jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-08-27T05:32:23+01:00",
           "description": "Public token presales provide early investment chances at fixed prices before main sales. They help projects raise pre-launch funds, gauge interest, and build community, offering potential benefits for participants.",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1724733057-pre-sale-bitlauncher-blog.png"
+            "url": "/images/blog/pre-sale-bitlauncher-blog.png"
           },
           "contentBlock": [],
           "seo": {
@@ -332,7 +332,7 @@
               "height": 736,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1724733057-pre-sale-bitlauncher-blog.png"
+              "url": "/images/blog/pre-sale-bitlauncher-blog.png"
             }
           }
         },
@@ -347,12 +347,12 @@
           "slug": "what-is-the-bitlauncher-bl-token",
           "authorName": "Jun Dam",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+            "url": "/images/blog/jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-08-27T05:06:47+01:00",
           "description": "Bitlauncher's public token presale offers early investment opportunities in AI and blockchain projects. Secure tokens at $1 each, contribute to pre-launch funding, and join the growing community.",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1724389825-whatisbltoken1.webp"
+            "url": "/images/blog/whatisbltoken1.webp"
           },
           "contentBlock": [],
           "seo": {
@@ -364,7 +364,7 @@
               "height": 603,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1724356923-bl-thumbnail.png"
+              "url": "/images/blog/bl-thumbnail.png"
             }
           }
         }
@@ -383,12 +383,12 @@
           "slug": "ensuring-trust-and-integrity-regulatory-compliance-and-security-measures",
           "authorName": "Jun Dam",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+            "url": "/images/blog/jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-06-20T16:21:42+01:00",
           "description": "This section outlines our platform's proactive approach to adhering to global regulatory standards and implementing advanced security measures, ensuring a safe and compliant environment for users in the crypto and AI spaces.",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1710562461-bitlauncherregsecimg.webp"
+            "url": "/images/blog/bitlauncherregsecimg.webp"
           },
           "contentBlock": [],
           "seo": {
@@ -400,7 +400,7 @@
               "height": 700,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1710562461-bitlauncherregsecimg.webp"
+              "url": "/images/blog/bitlauncherregsecimg.webp"
             }
           }
         },
@@ -413,12 +413,12 @@
           "slug": "how-to-register-and-kyc-to-bitcash",
           "authorName": "Roberto \"Andler\" Lucas",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1715639160-andler-file-photo.jpg"
+            "url": "/images/blog/andler-file-photo.jpg"
           },
           "_publishedAt": "2024-06-20T16:20:40+01:00",
           "description": "We are covering a range of topics, including registering for a Bitcash account, setting up an account name and referrer, identifying and securing devices, providing identification and personal information for KYC, taking photos for KYC verification, and waiting for approval and joining the community.",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1715638953-bitcash-logo-frame-w-bg.png"
+            "url": "/images/blog/bitcash-logo-frame-w-bg.png"
           },
           "contentBlock": [],
           "seo": {
@@ -430,7 +430,7 @@
               "height": 1440,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1715831775-splash-edited.png"
+              "url": "/images/blog/splash-edited.png"
             }
           }
         },
@@ -443,12 +443,12 @@
           "slug": "strategic-roadmap-pioneering-blockchain-innovation-and-ai-startup-success",
           "authorName": "Jun Dam",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+            "url": "/images/blog/jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-03-15T05:13:30+00:00",
           "description": "Outlining bitLauncher's phased plan for groundbreaking technology deployment, community-driven growth, and the development of the equitable Antelope chain, to revolutionize the AI and cryptocurrency landscapes.",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1710479575-roadmapbitlauncher.webp"
+            "url": "/images/blog/roadmapbitlauncher.webp"
           },
           "contentBlock": [],
           "seo": {
@@ -460,7 +460,7 @@
               "height": 700,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1710479575-roadmapbitlauncher.webp"
+              "url": "/images/blog/roadmapbitlauncher.webp"
             }
           }
         },
@@ -473,12 +473,12 @@
           "slug": "the-technological-backbone-of-bitcash-launchpad",
           "authorName": "Jun Dam",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+            "url": "/images/blog/jdamx170-removebg-preview.png"
           },
           "_publishedAt": "2024-03-14T05:33:20+00:00",
           "description": "This section details bitLauncher's integration of cutting-edge blockchain technologies and innovative tools, including Bitcash payments, DAO governance, and a non-profit blockchain vision, setting the stage for transparent, secure, and equitable AI startup growth.",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1710011354-techsectionwpimg.webp"
+            "url": "/images/blog/techsectionwpimg.webp"
           },
           "contentBlock": [],
           "seo": {
@@ -490,7 +490,7 @@
               "height": 700,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1710011354-techsectionwpimg.webp"
+              "url": "/images/blog/techsectionwpimg.webp"
             }
           }
         }
@@ -510,12 +510,12 @@
           "slug": "mastering-cash-flow-the-ultimate-guide-for-startup-founders",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
+            "url": "/images/blog/startupblogger2.png"
           },
           "_publishedAt": "2024-06-20T16:40:26+01:00",
           "description": "Master cash flow with our ultimate guide for startup founders. Learn strategies to maintain liquidity, manage finances, and ensure business stability.",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1687312847-sb20-img1.png"
+            "url": "/images/blog/sb20-img1.png"
           },
           "contentBlock": [],
           "seo": {
@@ -527,7 +527,7 @@
               "height": 614,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1687312847-sb20-img1.png"
+              "url": "/images/blog/sb20-img1.png"
             }
           }
         },
@@ -541,12 +541,12 @@
           "slug": "smart-budgeting-for-startups-a-step-by-step-guide-to-building-a-strong-financial",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
+            "url": "/images/blog/startupblogger2.png"
           },
           "_publishedAt": "2024-06-20T16:40:00+01:00",
           "description": "Build a strong financial foundation with our smart budgeting guide for startups. Learn to manage funds effectively for sustainable business growth.",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1687310597-sb19-img1.png"
+            "url": "/images/blog/sb19-img1.png"
           },
           "contentBlock": [],
           "seo": {
@@ -558,7 +558,7 @@
               "height": 614,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1687310597-sb19-img1.png"
+              "url": "/images/blog/sb19-img1.png"
             }
           }
         },
@@ -572,12 +572,12 @@
           "slug": "building-a-dream-team-the-ultimate-guide-to-assembling-your-startup-squad",
           "authorName": "Bootstrap Briggs",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1694760071-startupblogger2.png"
+            "url": "/images/blog/startupblogger2.png"
           },
           "_publishedAt": "2024-06-19T03:48:19+01:00",
           "description": "Form your ideal startup team with our comprehensive guide. Boost team efficiency and startup growth with our expert advice.",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1687119615-sb5-img1.png"
+            "url": "/images/blog/sb5-img1.png"
           },
           "contentBlock": [],
           "seo": {
@@ -589,7 +589,7 @@
               "height": 1024,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1687119615-sb5-img1.png"
+              "url": "/images/blog/sb5-img1.png"
             }
           }
         },
@@ -603,12 +603,12 @@
           "slug": "the-blueprint-to-success-a-guide-to-crafting-a-winning-sales-plan-for-your-startu",
           "authorName": "Steve Savant",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1694760845-startupbloggeralt2.png"
+            "url": "/images/blog/startupbloggeralt2.png"
           },
           "_publishedAt": "2023-10-05T02:08:22+01:00",
           "description": "Craft a winning sales plan for your startup with our blueprint to success. Gain insights into driving revenue and achieving sustainable growth.",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1687212250-sb16-img1.png"
+            "url": "/images/blog/sb16-img1.png"
           },
           "contentBlock": [],
           "seo": {
@@ -620,7 +620,7 @@
               "height": 994,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1687212250-sb16-img1.png"
+              "url": "/images/blog/sb16-img1.png"
             }
           }
         }
@@ -640,12 +640,12 @@
           "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
           "authorName": "Crypto Clairity",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+            "url": "/images/blog/cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:17:23+01:00",
           "description": "Uncover the pitfalls of using token value as a performance metric in blockchain platforms. Learn to design effective incentive systems.",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+            "url": "/images/blog/cbc3-img1.png"
           },
           "contentBlock": [],
           "seo": {
@@ -657,7 +657,7 @@
               "height": 862,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+              "url": "/images/blog/cbc3-img1.png"
             }
           }
         },
@@ -671,12 +671,12 @@
           "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
           "authorName": "Crypto Clairity",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+            "url": "/images/blog/cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:17:05+01:00",
           "description": "Discover the power of performance metrics in blockchain pay-for-performance systems. Learn to align incentives with platform goals effectively.",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+            "url": "/images/blog/cbc2-img1.png"
           },
           "contentBlock": [],
           "seo": {
@@ -688,7 +688,7 @@
               "height": 862,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+              "url": "/images/blog/cbc2-img1.png"
             }
           }
         },
@@ -702,12 +702,12 @@
           "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
           "authorName": "Crypto Clairity",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+            "url": "/images/blog/cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:15:12+01:00",
           "description": "Dive into the complexities of pay-for-performance incentives in blockchain platforms. Learn the trade-offs and design considerations for success.",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+            "url": "/images/blog/cbc1-img1.png"
           },
           "contentBlock": [],
           "seo": {
@@ -719,7 +719,7 @@
               "height": 862,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+              "url": "/images/blog/cbc1-img1.png"
             }
           }
         },
@@ -733,12 +733,12 @@
           "slug": "incomplete-contracts-and-blockchain-commentary",
           "authorName": "Crypto Clairity",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+            "url": "/images/blog/cryptoclaraty5.png"
           },
           "_publishedAt": "2023-10-05T09:14:44+01:00",
           "description": "Demystify the relationship between incomplete contracts and blockchain. Understand how blockchain can fill contractual gaps.",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1690856249-cbc5-img1.png"
+            "url": "/images/blog/cbc5-img1.png"
           },
           "contentBlock": [],
           "seo": {
@@ -750,7 +750,7 @@
               "height": 862,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1690856249-cbc5-img1.png"
+              "url": "/images/blog/cbc5-img1.png"
             }
           }
         }
@@ -771,12 +771,12 @@
           "slug": "unlocking-the-power-of-bitcoin-mining-an-introduction-to-proof-of-work-algorithms",
           "authorName": "Maxi Millie",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
+            "url": "/images/blog/maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:55:09+01:00",
           "description": "Delve into the world of Bitcoin mining and the fascinating concept of proof-of-work algorithms. Explore the potential and rewards of this transformative technology.",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1686858321-bb9-img0edited.png"
+            "url": "/images/blog/bb9-img0edited.png"
           },
           "contentBlock": [],
           "seo": {
@@ -788,7 +788,7 @@
               "height": 1024,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1686858321-bb9-img0edited.png"
+              "url": "/images/blog/bb9-img0edited.png"
             }
           }
         },
@@ -802,12 +802,12 @@
           "slug": "the-economic-security-of-bitcoin-how-proof-of-work-enables-a-safe-and-secure-netw",
           "authorName": "Maxi Millie",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
+            "url": "/images/blog/maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:53:43+01:00",
           "description": "Discover the economic security of Bitcoin and the power of proof-of-work. Explore how this innovative technology ensures a safe and secure network for the future.",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1686856982-bb8-img1.png"
+            "url": "/images/blog/bb8-img1.png"
           },
           "contentBlock": [],
           "seo": {
@@ -819,7 +819,7 @@
               "height": 1024,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1686856982-bb8-img1.png"
+              "url": "/images/blog/bb8-img1.png"
             }
           }
         },
@@ -833,12 +833,12 @@
           "slug": "navigating-the-legal-and-regulatory-landscape-of-bitcoin-understanding-the-rules",
           "authorName": "Maxi Millie",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
+            "url": "/images/blog/maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:52:05+01:00",
           "description": "Stay informed and compliant with our comprehensive guide to the legal and regulatory landscape of Bitcoin. Navigate the complexities of cryptocurrency with confidence.",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1686855768-bb7-img1edited.png"
+            "url": "/images/blog/bb7-img1edited.png"
           },
           "contentBlock": [],
           "seo": {
@@ -850,7 +850,7 @@
               "height": 1024,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1686855768-bb7-img1edited.png"
+              "url": "/images/blog/bb7-img1edited.png"
             }
           }
         },
@@ -864,12 +864,12 @@
           "slug": "the-future-of-bitcoin-storage-an-introduction-to-bitcoin-wallets-and-innovative-s",
           "authorName": "Maxi Millie",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
+            "url": "/images/blog/maximillie1.png"
           },
           "_publishedAt": "2023-10-05T05:50:52+01:00",
           "description": "Explore the world of Bitcoin wallets and innovative storage solutions. Learn how to secure and manage your digital assets with our comprehensive introductory guide.",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1686854653-bb6-img1.png"
+            "url": "/images/blog/bb6-img1.png"
           },
           "contentBlock": [],
           "seo": {
@@ -881,7 +881,7 @@
               "height": 1024,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1686854653-bb6-img1.png"
+              "url": "/images/blog/bb6-img1.png"
             }
           }
         }
@@ -901,12 +901,12 @@
           "slug": "unleashing-the-potential-mastering-alternative-investments-for-investor-success",
           "authorName": "Mister Moneybags",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+            "url": "/images/blog/investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:11:13+01:00",
           "description": "Expand your investment prowess with alternative investments! Dive into the world of private equity, hedge funds, and commodities to supercharge your portfolio. This blog provides expert guidance for investors seeking success in alternative investment strategies.",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1689120056-ib6-img1.png"
+            "url": "/images/blog/ib6-img1.png"
           },
           "contentBlock": [],
           "seo": {
@@ -918,7 +918,7 @@
               "height": 870,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1689120056-ib6-img1.png"
+              "url": "/images/blog/ib6-img1.png"
             }
           }
         },
@@ -932,12 +932,12 @@
           "slug": "unveiling-the-pros-and-cons-of-exchange-traded-funds-etfs-a-comprehensive-guide-f",
           "authorName": "Mister Moneybags",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+            "url": "/images/blog/investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:09:18+01:00",
           "description": "Discover the advantages and disadvantages of investing in ETFs. Make informed decisions and maximize your investment potential with this comprehensive guide.",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1689186966-ib8-img1.png"
+            "url": "/images/blog/ib8-img1.png"
           },
           "contentBlock": [],
           "seo": {
@@ -949,7 +949,7 @@
               "height": 870,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1689186966-ib8-img1.png"
+              "url": "/images/blog/ib8-img1.png"
             }
           }
         },
@@ -963,12 +963,12 @@
           "slug": "shield-your-investments-a-comprehensive-guide-to-recognizing-and-avoiding-investm",
           "authorName": "Mister Moneybags",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+            "url": "/images/blog/investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:08:41+01:00",
           "description": "Guard your hard-earned money! Learn to spot investment scams and protect your financial future with our comprehensive guide to avoiding investment fraud",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1689384626-ib19-img1.png"
+            "url": "/images/blog/ib19-img1.png"
           },
           "contentBlock": [],
           "seo": {
@@ -980,7 +980,7 @@
               "height": 870,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1689384626-ib19-img1.png"
+              "url": "/images/blog/ib19-img1.png"
             }
           }
         },
@@ -994,12 +994,12 @@
           "slug": "insurance-planning-101-navigating-life-disability-and-long-term-care-insurance",
           "authorName": "Mister Moneybags",
           "authorPicture": {
-            "url": "https://www.datocms-assets.com/101962/1694504607-investorblogger.png"
+            "url": "/images/blog/investorblogger.png"
           },
           "_publishedAt": "2023-10-05T02:07:57+01:00",
           "description": "Secure your future with smart insurance planning. Dive into life, disability, and long-term care insurance to safeguard your financial health.",
           "thumbnail": {
-            "url": "https://www.datocms-assets.com/101962/1689381721-ib18-img1.png"
+            "url": "/images/blog/ib18-img1.png"
           },
           "contentBlock": [],
           "seo": {
@@ -1011,7 +1011,7 @@
               "height": 870,
               "title": null,
               "alt": null,
-              "url": "https://www.datocms-assets.com/101962/1689381721-ib18-img1.png"
+              "url": "/images/blog/ib18-img1.png"
             }
           }
         }

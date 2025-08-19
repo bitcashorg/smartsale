@@ -11,12 +11,12 @@
     "slug": "open-problems-and-fundamental-limitations-of-reinforcement-learning-from-human-fe",
     "authorName": "Prof. Otto Nomos",
     "authorPicture": {
-      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      "url": "/images/blog/profottonomosheadshot.png"
     },
     "_publishedAt": "2023-10-02T07:49:23+01:00",
     "description": "Uncover the challenges, limitations, and future of Reinforcement Learning from Human Feedback (RLHF) in AI systems. Explore governance, safety, and more.",
     "thumbnail": {
-      "url": "https://www.datocms-assets.com/101962/1690837480-abr6-img1.png"
+      "url": "/images/blog/abr6-img1.png"
     },
     "contentBlock": [
       {
@@ -124,7 +124,7 @@
             "filename": "abr6-img1.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690837480-abr6-img1.png"
+            "url": "/images/blog/abr6-img1.png"
           }
         ]
       },
@@ -211,7 +211,7 @@
             "filename": "abr6-img6.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690838078-abr6-img6.png"
+            "url": "/images/blog/abr6-img6.png"
           }
         ]
       },
@@ -307,7 +307,7 @@
             "filename": "abr6-img2.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690837772-abr6-img2.png"
+            "url": "/images/blog/abr6-img2.png"
           }
         ]
       },
@@ -394,7 +394,7 @@
             "filename": "screenshot-2023-07-31-at-5-31-51-pm.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690839126-screenshot-2023-07-31-at-5-31-51-pm.png"
+            "url": "/images/blog/screenshot-2023-07-31-at-5-31-51-pm.png"
           }
         ]
       },
@@ -490,7 +490,7 @@
             "filename": "abr6-img3.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690837750-abr6-img3.png"
+            "url": "/images/blog/abr6-img3.png"
           }
         ]
       },
@@ -595,7 +595,7 @@
             "filename": "abr6-img4.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690837733-abr6-img4.png"
+            "url": "/images/blog/abr6-img4.png"
           }
         ]
       },
@@ -682,7 +682,7 @@
             "filename": "abr6-img5.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690837716-abr6-img5.png"
+            "url": "/images/blog/abr6-img5.png"
           }
         ]
       }
@@ -696,7 +696,7 @@
         "height": 862,
         "title": null,
         "alt": null,
-        "url": "https://www.datocms-assets.com/101962/1690837480-abr6-img1.png"
+        "url": "/images/blog/abr6-img1.png"
       }
     }
   },

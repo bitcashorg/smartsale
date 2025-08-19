@@ -11,12 +11,12 @@
       "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:11:14+01:00",
       "description": "Explore how blockchain enables network effects without the downsides of market power. Discover the game-changing Blockchain Effect.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+        "url": "/images/blog/cbc4-img1.png"
       },
       "seo": {
         "description": "Explore how blockchain enables network effects without the downsides of market power. Discover the game-changing Blockchain Effect.",
@@ -27,7 +27,7 @@
           "height": 862,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+          "url": "/images/blog/cbc4-img1.png"
         }
       }
     }
@@ -43,12 +43,12 @@
     "slug": "icos-leverage-network-effects-commentary",
     "authorName": "Crypto Clairity",
     "authorPicture": {
-      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      "url": "/images/blog/cryptoclaraty5.png"
     },
     "_publishedAt": "2023-10-05T09:12:06+01:00",
     "description": "Discover how ICOs harness the power of network effects to fuel their success. ICOs and network effects, a dynamic duo!",
     "thumbnail": {
-      "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+      "url": "/images/blog/cbc9-img1.png"
     },
     "contentBlock": [
       {
@@ -283,7 +283,7 @@
             "filename": "cbc9-img1.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+            "url": "/images/blog/cbc9-img1.png"
           }
         ]
       }
@@ -297,7 +297,7 @@
         "height": 862,
         "title": null,
         "alt": null,
-        "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+        "url": "/images/blog/cbc9-img1.png"
       }
     }
   },

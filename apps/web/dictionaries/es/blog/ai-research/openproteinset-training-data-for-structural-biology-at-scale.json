@@ -11,12 +11,12 @@
     "slug": "openproteinset-training-data-for-structural-biology-at-scale",
     "authorName": "Prof. Otto Nomos",
     "authorPicture": {
-      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      "url": "/images/blog/profottonomosheadshot.png"
     },
     "_publishedAt": "2023-10-04T06:50:58+01:00",
     "description": "Abstract Commentary & Rating",
     "thumbnail": {
-      "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
+      "url": "/images/blog/researchpaper10.png"
     },
     "contentBlock": [
       {
@@ -585,7 +585,7 @@
             "filename": "researchpaper10.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
+            "url": "/images/blog/researchpaper10.png"
           }
         ]
       }
@@ -599,7 +599,7 @@
         "height": 816,
         "title": null,
         "alt": null,
-        "url": "https://www.datocms-assets.com/101962/1692933540-researchpaper10.png"
+        "url": "/images/blog/researchpaper10.png"
       }
     }
   },

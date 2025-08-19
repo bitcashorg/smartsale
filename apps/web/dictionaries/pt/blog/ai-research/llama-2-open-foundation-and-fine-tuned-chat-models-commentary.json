@@ -10,12 +10,12 @@
     "slug": "llama-2-open-foundation-and-fine-tuned-chat-models-commentary",
     "authorName": "Prof. Otto Nomos",
     "authorPicture": {
-      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      "url": "/images/blog/profottonomosheadshot.png"
     },
     "_publishedAt": "2023-10-02T07:48:17+01:00",
     "description": "Deep dive into Llama 2: Explore the pretraining, fine-tuning, safety measures, and insightful discussions in our comprehensive summary.",
     "thumbnail": {
-      "url": "https://www.datocms-assets.com/101962/1690935728-abr7-img1.png"
+      "url": "/images/blog/abr7-img1.png"
     },
     "contentBlock": [
       {
@@ -101,7 +101,7 @@
             "filename": "abr7-img2.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690935921-abr7-img2.png"
+            "url": "/images/blog/abr7-img2.png"
           }
         ]
       },
@@ -215,7 +215,7 @@
             "filename": "abr7-img3.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690936099-abr7-img3.png"
+            "url": "/images/blog/abr7-img3.png"
           }
         ]
       },
@@ -320,7 +320,7 @@
             "filename": "abr7-img4.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690936128-abr7-img4.png"
+            "url": "/images/blog/abr7-img4.png"
           }
         ]
       },
@@ -407,7 +407,7 @@
             "filename": "abr7-img5.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690936144-abr7-img5.png"
+            "url": "/images/blog/abr7-img5.png"
           }
         ]
       },
@@ -494,7 +494,7 @@
             "filename": "abr7-img6.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690936163-abr7-img6.png"
+            "url": "/images/blog/abr7-img6.png"
           }
         ]
       }
@@ -508,7 +508,7 @@
         "height": 862,
         "title": null,
         "alt": null,
-        "url": "https://www.datocms-assets.com/101962/1690935728-abr7-img1.png"
+        "url": "/images/blog/abr7-img1.png"
       }
     }
   },

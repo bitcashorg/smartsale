@@ -9,12 +9,12 @@
     "slug": "masterbots-elevating-ai-beyond-chatgpt-with-social-sharing-and-user-friendly-inno",
     "authorName": "Jun Dam",
     "authorPicture": {
-      "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+      "url": "/images/blog/jdamx170-removebg-preview.png"
     },
     "_publishedAt": "2024-06-22T16:00:40+01:00",
     "description": "The blog introduces Masterbots, a platform revolutionizing AI interaction with user-friendly, domain-specific chatbots and a unique social sharing feature, inviting collaborators to join its open-source, community-driven development.",
     "thumbnail": {
-      "url": "https://www.datocms-assets.com/101962/1712270604-screenshot-2024-04-04-at-3-43-11-pm.png"
+      "url": "/images/blog/screenshot-2024-04-04-at-3-43-11-pm.png"
     },
     "contentBlock": [
       {
@@ -158,7 +158,7 @@
             "filename": "mbimg1.webp",
             "format": "webp",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1712270731-mbimg1.webp"
+            "url": "/images/blog/mbimg1.webp"
           }
         ]
       },
@@ -255,7 +255,7 @@
             "filename": "mbimg2.webp",
             "format": "webp",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1712270765-mbimg2.webp"
+            "url": "/images/blog/mbimg2.webp"
           }
         ]
       },
@@ -306,7 +306,7 @@
             "filename": "mbimg3.webp",
             "format": "webp",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1712270806-mbimg3.webp"
+            "url": "/images/blog/mbimg3.webp"
           }
         ]
       }
@@ -320,7 +320,7 @@
         "height": 934,
         "title": null,
         "alt": null,
-        "url": "https://www.datocms-assets.com/101962/1712270604-screenshot-2024-04-04-at-3-43-11-pm.png"
+        "url": "/images/blog/screenshot-2024-04-04-at-3-43-11-pm.png"
       }
     }
   },

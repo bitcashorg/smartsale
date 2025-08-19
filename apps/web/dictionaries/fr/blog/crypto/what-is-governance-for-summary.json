@@ -11,12 +11,12 @@
       "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:19:19+01:00",
       "description": "Navigate the complexities of blockchain governance with the Prysm Group Wheel. Your roadmap to effective blockchain governance design.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+        "url": "/images/blog/cbc11-img1.webp"
       },
       "seo": {
         "description": "Navigate the complexities of blockchain governance with the Prysm Group Wheel. Your roadmap to effective blockchain governance design.",
@@ -27,7 +27,7 @@
           "height": 1383,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+          "url": "/images/blog/cbc11-img1.webp"
         }
       }
     },
@@ -42,12 +42,12 @@
       "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:02:51+01:00",
       "description": "Unlock the future of startups with tokenomics! Explore how this innovative concept is reshaping the equity model and revolutionizing the startup landscape.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
+        "url": "/images/blog/tb2-img1.png"
       },
       "seo": {
         "description": "Explore how this innovative concept is reshaping the equity model and revolutionizing the startup landscape.",
@@ -58,7 +58,7 @@
           "height": 994,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
+          "url": "/images/blog/tb2-img1.png"
         }
       }
     },
@@ -72,12 +72,12 @@
       "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T08:57:02+01:00",
       "description": "Explore the rise of Decentralized Autonomous Organizations (DAOs) in our guide. Understand the future of business and the opportunities for startups.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1687381524-db1-img1.png"
+        "url": "/images/blog/db1-img1.png"
       },
       "seo": {
         "description": "Explore the rise of Decentralized Autonomous Organizations (DAOs) in our guide. Understand the future of business and the opportunities for startups.",
@@ -97,12 +97,12 @@
     "slug": "what-is-governance-for-summary",
     "authorName": "Crypto Clairity",
     "authorPicture": {
-      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      "url": "/images/blog/cryptoclaraty5.png"
     },
     "_publishedAt": "2023-10-05T09:10:45+01:00",
     "description": "Explore the role and importance of governance in blockchain systems. Understand how governance drives decentralization and growth.",
     "thumbnail": {
-      "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
+      "url": "/images/blog/cbc7-img1.png"
     },
     "contentBlock": [
       {
@@ -397,7 +397,7 @@
             "filename": "cbc7-img1.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
+            "url": "/images/blog/cbc7-img1.png"
           }
         ]
       }
@@ -411,7 +411,7 @@
         "height": 862,
         "title": null,
         "alt": null,
-        "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
+        "url": "/images/blog/cbc7-img1.png"
       }
     }
   },

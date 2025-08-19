@@ -10,12 +10,12 @@
     "slug": "large-language-models-crafting-personalized-digital-experiences",
     "authorName": "Prof. Otto Nomos",
     "authorPicture": {
-      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      "url": "/images/blog/profottonomosheadshot.png"
     },
     "_publishedAt": "2023-10-05T06:06:53+01:00",
     "description": "Unleash the potential of Large Language Models (LLMs) in creating hyper-personalized digital experiences and content recommendations. Ignite your AI career today!",
     "thumbnail": {
-      "url": "https://www.datocms-assets.com/101962/1690407851-ab10-img1.png"
+      "url": "/images/blog/ab10-img1.png"
     },
     "contentBlock": [
       {
@@ -92,7 +92,7 @@
             "filename": "ab10-img1.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690407851-ab10-img1.png"
+            "url": "/images/blog/ab10-img1.png"
           }
         ]
       },
@@ -188,7 +188,7 @@
             "filename": "ab10-img2.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690418701-ab10-img2.png"
+            "url": "/images/blog/ab10-img2.png"
           }
         ]
       },
@@ -284,7 +284,7 @@
             "filename": "ab10-img3.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690419248-ab10-img3.png"
+            "url": "/images/blog/ab10-img3.png"
           }
         ]
       },
@@ -482,7 +482,7 @@
             "filename": "ab10-img4.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690419449-ab10-img4.png"
+            "url": "/images/blog/ab10-img4.png"
           }
         ]
       },
@@ -560,7 +560,7 @@
             "filename": "ab10-img5.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690419623-ab10-img5.png"
+            "url": "/images/blog/ab10-img5.png"
           }
         ]
       },
@@ -638,7 +638,7 @@
             "filename": "ab10-img6.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690419987-ab10-img6.png"
+            "url": "/images/blog/ab10-img6.png"
           }
         ]
       }
@@ -652,7 +652,7 @@
         "height": 870,
         "title": null,
         "alt": null,
-        "url": "https://www.datocms-assets.com/101962/1690407851-ab10-img1.png"
+        "url": "/images/blog/ab10-img1.png"
       }
     }
   },
