@@ -11,12 +11,12 @@
     "slug": "lorahub-efficient-cross-task-generalization-via-dynamic-lora-composition-commenta",
     "authorName": "Prof. Otto Nomos",
     "authorPicture": {
-      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      "url": "/images/blog/profottonomosheadshot.png"
     },
     "_publishedAt": "2023-10-02T07:46:29+01:00",
     "description": "Explore the dynamic composition of LoRA modules with LoraHub for adaptable LLM performance. Dive into problem statements, methodology, evaluation, and more.",
     "thumbnail": {
-      "url": "https://www.datocms-assets.com/101962/1690946901-abr8-img1.png"
+      "url": "/images/blog/abr8-img1.png"
     },
     "contentBlock": [
       {
@@ -85,7 +85,7 @@
             "filename": "abr8-img1.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690946901-abr8-img1.png"
+            "url": "/images/blog/abr8-img1.png"
           }
         ]
       },
@@ -172,7 +172,7 @@
             "filename": "abr8-img2.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690947101-abr8-img2.png"
+            "url": "/images/blog/abr8-img2.png"
           }
         ]
       },
@@ -259,7 +259,7 @@
             "filename": "screenshot-2023-08-01-at-11-25-02-pm.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690947167-screenshot-2023-08-01-at-11-25-02-pm.png"
+            "url": "/images/blog/screenshot-2023-08-01-at-11-25-02-pm.png"
           }
         ]
       },
@@ -346,7 +346,7 @@
             "filename": "screenshot-2023-08-01-at-11-26-18-pm.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690947151-screenshot-2023-08-01-at-11-26-18-pm.png"
+            "url": "/images/blog/screenshot-2023-08-01-at-11-26-18-pm.png"
           }
         ]
       },
@@ -433,7 +433,7 @@
             "filename": "abr8-img5.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690947217-abr8-img5.png"
+            "url": "/images/blog/abr8-img5.png"
           }
         ]
       },
@@ -520,7 +520,7 @@
             "filename": "abr8-img6.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690947361-abr8-img6.png"
+            "url": "/images/blog/abr8-img6.png"
           }
         ]
       },
@@ -565,7 +565,7 @@
             "filename": "abr8-img7.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690947378-abr8-img7.png"
+            "url": "/images/blog/abr8-img7.png"
           }
         ]
       },
@@ -652,7 +652,7 @@
             "filename": "abr8-img8.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690947394-abr8-img8.png"
+            "url": "/images/blog/abr8-img8.png"
           }
         ]
       }
@@ -666,7 +666,7 @@
         "height": 862,
         "title": null,
         "alt": null,
-        "url": "https://www.datocms-assets.com/101962/1690946901-abr8-img1.png"
+        "url": "/images/blog/abr8-img1.png"
       }
     }
   },

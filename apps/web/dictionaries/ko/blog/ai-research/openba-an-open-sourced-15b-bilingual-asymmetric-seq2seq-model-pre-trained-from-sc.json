@@ -10,12 +10,12 @@
     "slug": "openba-an-open-sourced-15b-bilingual-asymmetric-seq2seq-model-pre-trained-from-sc",
     "authorName": "Prof. Otto Nomos",
     "authorPicture": {
-      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      "url": "/images/blog/profottonomosheadshot.png"
     },
     "_publishedAt": "2024-05-27T03:34:02+01:00",
     "description": "Abstract Commentary & Rating",
     "thumbnail": {
-      "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+      "url": "/images/blog/researchpaper9.png"
     },
     "contentBlock": [
       {
@@ -504,7 +504,7 @@
             "filename": "researchpaper9.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+            "url": "/images/blog/researchpaper9.png"
           }
         ]
       }
@@ -518,7 +518,7 @@
         "height": 816,
         "title": null,
         "alt": null,
-        "url": "https://www.datocms-assets.com/101962/1692843326-researchpaper9.png"
+        "url": "/images/blog/researchpaper9.png"
       }
     }
   },

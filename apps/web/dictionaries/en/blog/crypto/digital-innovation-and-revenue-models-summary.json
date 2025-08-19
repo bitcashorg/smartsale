@@ -10,12 +10,12 @@
       "slug": "what-is-voting-for-summary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:10:58+01:00",
       "description": "Unravel the essence of voting within decentralized systems. Gain insights into the true purpose and power of voting in blockchain.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+        "url": "/images/blog/cbc6-img1.png"
       },
       "seo": {
         "description": "Unravel the essence of voting within decentralized systems. Gain insights into the true purpose and power of voting in blockchain.",
@@ -26,7 +26,7 @@
           "height": 862,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+          "url": "/images/blog/cbc6-img1.png"
         }
       }
     },
@@ -40,12 +40,12 @@
       "slug": "what-is-governance-for-summary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:10:45+01:00",
       "description": "Explore the role and importance of governance in blockchain systems. Understand how governance drives decentralization and growth.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
+        "url": "/images/blog/cbc7-img1.png"
       },
       "seo": {
         "description": "Explore the role and importance of governance in blockchain systems. Understand how governance drives decentralization and growth.\n",
@@ -56,7 +56,7 @@
           "height": 862,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
+          "url": "/images/blog/cbc7-img1.png"
         }
       }
     },
@@ -70,12 +70,12 @@
       "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:10:02+01:00",
       "description": "Understand the core of blockchain incentive structures and their significance in driving user behavior and platform success.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+        "url": "/images/blog/cbc10-img1.png"
       },
       "seo": {
         "description": "Understand the core of blockchain incentive structures and their significance in driving user behavior and platform success.",
@@ -86,7 +86,7 @@
           "height": 862,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+          "url": "/images/blog/cbc10-img1.png"
         }
       }
     }
@@ -102,12 +102,12 @@
     "slug": "digital-innovation-and-revenue-models-summary",
     "authorName": "Crypto Clairity",
     "authorPicture": {
-      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      "url": "/images/blog/cryptoclaraty5.png"
     },
     "_publishedAt": "2023-10-05T09:11:35+01:00",
     "description": "Uncover how digital innovation reshapes product delivery in Prysm Group's 'Digital Innovation and Revenue Models'. Explore emerging tech economics.",
     "thumbnail": {
-      "url": "https://www.datocms-assets.com/101962/1690668517-cbr1-img1.png"
+      "url": "/images/blog/cbr1-img1.png"
     },
     "contentBlock": [
       {
@@ -578,7 +578,7 @@
             "filename": "cbr1-img2.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690668728-cbr1-img2.png"
+            "url": "/images/blog/cbr1-img2.png"
           }
         ]
       }
@@ -592,7 +592,7 @@
         "height": 862,
         "title": null,
         "alt": null,
-        "url": "https://www.datocms-assets.com/101962/1690668517-cbr1-img1.png"
+        "url": "/images/blog/cbr1-img1.png"
       }
     }
   },

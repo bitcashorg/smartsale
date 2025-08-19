@@ -10,12 +10,12 @@
     "slug": "copy-that-llms-copyright-and-the-plagiarism-predicament",
     "authorName": "Prof. Otto Nomos",
     "authorPicture": {
-      "url": "https://www.datocms-assets.com/101962/1692842125-profottonomosheadshot.png"
+      "url": "/images/blog/profottonomosheadshot.png"
     },
     "_publishedAt": "2023-10-05T05:54:04+01:00",
     "description": "Unearth the intricacies of how Large Language Models navigate the labyrinth of copyright laws and the looming threat of plagiarism.",
     "thumbnail": {
-      "url": "https://www.datocms-assets.com/101962/1690402165-ab7-img1.png"
+      "url": "/images/blog/ab7-img1.png"
     },
     "contentBlock": [
       {
@@ -88,7 +88,7 @@
             "filename": "ab7-img1.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690402165-ab7-img1.png"
+            "url": "/images/blog/ab7-img1.png"
           }
         ]
       },
@@ -175,7 +175,7 @@
             "filename": "ab7-img2.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690402372-ab7-img2.png"
+            "url": "/images/blog/ab7-img2.png"
           }
         ]
       },
@@ -271,7 +271,7 @@
             "filename": "ab7-img3.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690402496-ab7-img3.png"
+            "url": "/images/blog/ab7-img3.png"
           }
         ]
       },
@@ -358,7 +358,7 @@
             "filename": "ab7-img4.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690403446-ab7-img4.png"
+            "url": "/images/blog/ab7-img4.png"
           }
         ]
       },
@@ -427,7 +427,7 @@
             "filename": "ab7-img5.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690403364-ab7-img5.png"
+            "url": "/images/blog/ab7-img5.png"
           }
         ]
       },
@@ -496,7 +496,7 @@
             "filename": "ab7-img6.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690403464-ab7-img6.png"
+            "url": "/images/blog/ab7-img6.png"
           }
         ]
       }
@@ -510,7 +510,7 @@
         "height": 870,
         "title": null,
         "alt": null,
-        "url": "https://www.datocms-assets.com/101962/1690402165-ab7-img1.png"
+        "url": "/images/blog/ab7-img1.png"
       }
     }
   },
