@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { headers } from 'next/headers'
 
 type OgType =
   | 'website'
@@ -25,10 +24,12 @@ interface PageSEO {
   twitterCard: string
 }
 
-export const generateMetadataFromSEO = (pageSeo: PageSEO): Metadata => {
-  const headersList = headers()
-  const pathname = headersList.get('x-invoke-path') || ''
-  const currentUrl = process.env.NEXT_PUBLIC_VERCEL_URL + pathname
+export const generateMetadataFromSEO = (
+  pageSeo: PageSEO,
+  currentUrl?: string,
+): Metadata => {
+  const url =
+    currentUrl || process.env.NEXT_PUBLIC_VERCEL_URL || 'https://bitlauncher.ai'
   return {
     title: pageSeo.title || '',
     description: pageSeo.description || '',
@@ -36,12 +37,12 @@ export const generateMetadataFromSEO = (pageSeo: PageSEO): Metadata => {
       type: pageSeo.ogType as OgType,
       title: pageSeo.title,
       description: pageSeo.description,
-      url: currentUrl,
+      url: url,
       images: pageSeo.ogImageUrl ? [{ url: pageSeo.ogImageUrl }] : [],
     },
     twitter: {
       card: pageSeo.twitterCard as TwitterCard,
-      site: currentUrl,
+      site: url,
       title: pageSeo.title,
       description: pageSeo.description,
       images: pageSeo.ogImageUrl ? [pageSeo.ogImageUrl] : [],

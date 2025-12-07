@@ -16,6 +16,9 @@ import type { ProjectPageProps } from '@/types/routing.type'
 import { redirect } from 'next/navigation'
 import { getAddress } from 'viem'
 
+// This page uses Supabase server client which requires cookies, so it must be dynamic
+export const dynamic = 'force-dynamic'
+
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const dict = await getDictionary(params.lang)
   const project = (await getProjectBySlug(

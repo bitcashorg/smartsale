@@ -126,6 +126,16 @@ function generateNonce() {
   return nonce
 }
 
+// Copy dictionaries to public folder for deployment
+if (process.env.NODE_ENV === 'production' || process.env.VERCEL) {
+  try {
+    const { copyDictionaries } = require('./scripts/copy-dictionaries.js')
+    copyDictionaries()
+  } catch (error) {
+    console.warn('⚠️ Failed to copy dictionaries:', error.message)
+  }
+}
+
 const withBundleAnalyzer = require('@next/bundle-analyzer')()
 
 module.exports =

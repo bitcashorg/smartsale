@@ -27,8 +27,7 @@ export function BlogPage({
 }: BlogPageProps) {
   const category = params.category
 
-  let block
-  block = blogContent.contentBlock
+  let block = blogContent.contentBlock
     .map(({ mainContent }) => {
       return mainContent.value.document.children.filter(
         ({ type, level }) => (type === 'heading' && level === 2) || level === 3,
@@ -43,9 +42,11 @@ export function BlogPage({
   // console.log(blogContent)
   const title =
     blogContent.title ||
-    blogContent.slug
-      ?.replace(/-/g, ' ')
-      .replace(/\b\w/g, (l) => l.toUpperCase()) ||
+    blogContent?.slug
+      .replace(/-/g, ' ')
+      .replace(/\b\w/g, (l) => l.toUpperCase())
+      .replace(/\s+/g, ' ')
+      .trim() ||
     ''
 
   const headingTexts = block
@@ -64,8 +65,8 @@ export function BlogPage({
       return {
         level: item[0].level,
         text: headingItem.value,
-        anchor: headingItem.value
-          ?.trim()
+        anchor: (headingItem?.value || '')
+          .trim()
           .toLowerCase()
           .replace(/ /g, '-')
           .replace(/[^\w-]+/g, '')

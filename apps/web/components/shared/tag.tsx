@@ -12,7 +12,9 @@ export const Tag = (props: any) => {
         props.classNameTitle,
       )}
     >
-      {title.replace('_', ' ')}
+      {title && typeof title === 'string'
+        ? title.replace('_', ' ')
+        : title || ''}
     </button>
   )
 }

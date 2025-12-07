@@ -24,6 +24,7 @@ import { merge } from 'lodash'
 import { ThemeProvider as NextThemesProvider } from 'next-themes'
 import type { ThemeProviderProps } from 'next-themes/dist/types'
 import { NuqsAdapter } from 'nuqs/adapters/next/app'
+import { useEffect } from 'react'
 import { WagmiProvider } from 'wagmi'
 import {
   arbitrum,
@@ -77,18 +78,33 @@ const customRainbowKitTheme = merge(lightTheme(), {
   // }
 } as Theme)
 
-if (typeof window !== 'undefined') {
-  const multibaseKey = appConfig.analytics.multibase.key
-
-  if (!multibaseKey) {
-    console.error('Missing MULTIBASE_API_KEY')
-  } else {
-    multibase.init(multibaseKey)
-    console.info('Multibase Initialized')
-  }
-}
-
 export function Providers({ children, ...props }: ThemeProviderProps) {
+  const isMaintenanceMode = appConfig.maintenanceMode
+
+  useEffect(() => {
+    // Initialize multibase on client side only
+    if (typeof window !== 'undefined') {
+      const multibaseKey = appConfig.analytics.multibase.key
+
+      if (!multibaseKey) {
+        console.error('Missing MULTIBASE_API_KEY')
+      } else {
+        multibase.init(multibaseKey)
+        console.info('Multibase Initialized')
+      }
+    }
+  }, [])
+
+  if (isMaintenanceMode) {
+    return (
+      <NextThemesProvider {...props}>
+        <NuqsAdapter>
+          <TooltipProvider>{children}</TooltipProvider>
+        </NuqsAdapter>
+      </NextThemesProvider>
+    )
+  }
+
   return (
     <NextThemesProvider {...props}>
       <NuqsAdapter>

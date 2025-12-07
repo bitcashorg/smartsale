@@ -1,15 +1,18 @@
+'use client'
+
 import type { Project } from '@/lib/projects'
 import { cn, formatCurrency } from '@/lib/utils'
-import { createSupabaseServerClient, getPresaleData } from '@/services/supabase'
+import { getSupabaseBrowserClient } from '@/services/supabase/client'
+import { getPresaleData } from '@/services/supabase/service'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Suspense } from 'react'
+import { Suspense, useEffect, useState } from 'react'
 import { isMobile } from 'react-device-detect'
 import Balancer from 'react-wrap-balancer'
 import { AuctionCardButtons } from './auction-card-buttons'
 import { MotionFigcaption } from './motion-figcaption'
 
-export async function AuctionCard({
+export function AuctionCard({
   project,
   dict,
 }: {
@@ -26,13 +29,22 @@ export async function AuctionCard({
     badgeText,
     linkPath,
   } = project
-  let presale
-  try {
-    const supabase = await createSupabaseServerClient()
-    presale = await getPresaleData({ projectId: project.id, supabase })
-  } catch (error) {
-    console.error('Error fetching presale data:', error)
-  }
+  
+  const [presale, setPresale] = useState<any>(null)
+  
+  useEffect(() => {
+    async function fetchPresaleData() {
+      try {
+        const supabase = getSupabaseBrowserClient()
+        const presaleData = await getPresaleData({ projectId: project.id, supabase })
+        setPresale(presaleData)
+      } catch (error) {
+        console.error('Error fetching presale data:', error)
+      }
+    }
+    
+    fetchPresaleData()
+  }, [project.id])
 
   const isFutureOrComingAuction = badgeText.match(/(FUTURE|COMING SOON)/)
 

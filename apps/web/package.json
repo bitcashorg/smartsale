@@ -6,7 +6,7 @@
     "build:workers": "tsc -p tsconfig.workers.config.json",
     "watch:workers": "tsc -p tsconfig.workers.config.json --watch",
     "dev": "rm -rf .next && next dev --turbo",
-    "build": "next build",
+    "build": "node scripts/copy-dictionaries.js && next build",
     "start": "next start",
     "lint": "next lint",
     "analyze": "ANALYZE=true bun run build",

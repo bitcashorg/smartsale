@@ -13,6 +13,9 @@ coverage
 out/
 build
 
+# generated dictionaries (copied during build)
+public/dictionaries/
+
 # misc
 .DS_Store
 *.pem
