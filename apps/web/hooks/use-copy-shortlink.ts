@@ -1,3 +1,5 @@
+'use client'
+
 import { generateShortLink } from '@/app/actions/general'
 import { useSession } from '@/hooks/use-session'
 import { useSupabaseClient } from '@/services/supabase'

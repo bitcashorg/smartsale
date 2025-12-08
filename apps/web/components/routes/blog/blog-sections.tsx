@@ -27,7 +27,10 @@ export function BlogSections({
             >
               <div className="flex items-center justify-between text-xl mb-space-32">
                 <span className="font-semibold sub-2-lg">
-                  / {section.name.replace(/_/g, ' ')}
+                  /{' '}
+                  {section?.name && typeof section.name === 'string'
+                    ? section.name.replace(/_/g, ' ')
+                    : 'Unnamed Section'}
                 </span>
                 <Link
                   // TODO: fix add lang prefix on links there seems to a bug where it gets ovewritten
@@ -36,7 +39,9 @@ export function BlogSections({
                     'flex items-center align-middle text-black focus-within:!text-accent hover:!text-accent dark:text-white',
                   )}
                 >
-                  {section.name.replace(/_/g, ' ')}
+                  {section?.name && typeof section.name === 'string'
+                    ? section.name.replace(/_/g, ' ')
+                    : 'Unnamed Section'}
                   <LucideIcons.chevronRight className="h-4 w-7" />
                 </Link>
               </div>

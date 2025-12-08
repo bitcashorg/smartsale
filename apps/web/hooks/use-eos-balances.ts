@@ -1,3 +1,5 @@
+'use client'
+
 import { getBitUsdBalance, getEosBalance } from '@/lib/eos'
 import { useEffect } from 'react'
 import { useSetState } from 'react-use'

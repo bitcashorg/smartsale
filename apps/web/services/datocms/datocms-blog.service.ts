@@ -65,9 +65,9 @@ export const getBlogData = async () => {
 export async function getArticleSections(
   lang: Lang,
 ): Promise<ArticlesSection[]> {
-  const dirPath = `/dictionaries/${lang}/blog/`
+  const dirPath = path.join('dictionaries', lang, 'blog')
   const fileName = 'blog-index.json'
-  const filePath = path.resolve(dirPath, fileName)
+  const filePath = path.join(dirPath, fileName)
 
   let fileContents: { sections: ArticlesSection[] } | undefined
   // return cached translations
@@ -76,14 +76,14 @@ export async function getArticleSections(
     fileContents = parseFile(filePath)
     // ? Due we are not updating the file contents frequently, we can return the file contents directly
     // console.info('in', process.env.NODE_ENV)
-    if (process.env.NODE_ENV === 'production') {
-      return fileContents?.sections as ArticlesSection[]
-    }
+    // if (process.env.NODE_ENV === 'production') {
+    return fileContents?.sections as ArticlesSection[]
   } catch (error) {
     console.log('😬 translation not found', getErrorMessage(error))
     try {
       console.log('😬 trying english version', { dirPath, filePath, fileName })
-      const englishVersion = parseFile(`/dictionaries/en/blog/${fileName}`)
+      const englishFilePath = path.join('dictionaries', 'en', 'blog', fileName)
+      const englishVersion = parseFile(englishFilePath)
       if (englishVersion) {
         console.log('😬 returning english version')
         return englishVersion.sections
@@ -192,6 +192,31 @@ export async function getArticleSections(
   return sections as ArticlesSection[]
 }
 
+function transformAssetUrls(obj: any): any {
+  if (!obj) return obj
+
+  if (typeof obj === 'string') {
+    return obj.replace(
+      /https:\/\/www\.datocms-assets\.com\/101962\/\d+-([^"']+\.(png|jpg|jpeg|gif|webp|svg))/g,
+      '/images/blog/$1',
+    )
+  }
+
+  if (Array.isArray(obj)) {
+    return obj.map(transformAssetUrls)
+  }
+
+  if (typeof obj === 'object') {
+    const transformed: any = {}
+    for (const [key, value] of Object.entries(obj)) {
+      transformed[key] = transformAssetUrls(value)
+    }
+    return transformed
+  }
+
+  return obj
+}
+
 export async function getRecentArticleSections(): Promise<ArticlesSection[]> {
   const {
     bitcoinData,
@@ -228,7 +253,13 @@ export async function getRecentArticleSections(): Promise<ArticlesSection[]> {
     },
   ]
 
-  return recentArticles
+  // Transform asset URLs for all articles
+  // ! Temp Fix. We should ask for the local files instead transforming the asset.
+  // ! For now it is fine; later improvement. @Andler
+  return recentArticles.map((section) => ({
+    ...section,
+    articles: section.articles.map((article) => transformAssetUrls(article)),
+  }))
 }
 
 export async function getBlogCategoryLandingData(
@@ -244,9 +275,9 @@ export async function getBlogCategoryLandingData(
     getPageSeoText(category),
   ])
 
-  const dirPath = `/dictionaries/${lang}/blog/${category}`
+  const dirPath = path.join('dictionaries', lang, 'blog', category)
   const fileName = `${category}-index.json`
-  const filePath = path.resolve(dirPath, fileName)
+  const filePath = path.join(dirPath, fileName)
   // console.log('getBlogCategoryLandingData', { dirPath, filePath })
 
   let fileContents: { sections: ArticlesSection[] } | undefined
@@ -256,18 +287,22 @@ export async function getBlogCategoryLandingData(
     fileContents = parseFile(filePath)
     // ? Due we are not updating the file contents frequently, we can return the file contents directly
     // console.info('in', process.env.NODE_ENV)
-    if (process.env.NODE_ENV === 'production') {
-      return {
-        sections: fileContents?.sections as ArticlesSection[],
-        pageSeo,
-      }
+    // if (process.env.NODE_ENV === 'production') {
+    return {
+      sections: fileContents?.sections as ArticlesSection[],
+      pageSeo,
     }
   } catch (error) {
     // console.log('error', error)
     try {
-      const englishVersion = parseFile(
-        `/dictionaries/en/blog/${category}/${fileName}`,
+      const englishFilePath = path.join(
+        'dictionaries',
+        'en',
+        'blog',
+        category,
+        fileName,
       )
+      const englishVersion = parseFile(englishFilePath)
       if (englishVersion) return englishVersion
     } catch (error) {
       console.error('❌ Failed to get cached file. Fetching new data', error)
@@ -358,35 +393,91 @@ export type BlogArticleData = {
   topics: string[]
 }
 
+async function ensureDirectoryExists(dirPath: string): Promise<void> {
+  try {
+    await fs.promises.mkdir(getFilePath(dirPath), { recursive: true })
+  } catch (error) {
+    // Directory might already exist, ignore error
+  }
+}
+
+async function createStaticFileFromEnglish(
+  lang: Lang,
+  category: string,
+  slug: string,
+): Promise<BlogArticleData | null> {
+  const englishFilePath = path.join(
+    'dictionaries',
+    'en',
+    'blog',
+    category,
+    `${slug}.json`,
+  )
+
+  try {
+    const englishData: BlogArticleData = parseFile(englishFilePath)
+    if (englishData) {
+      const targetDirPath = path.join('dictionaries', lang, 'blog', category)
+      const targetFilePath = path.join(targetDirPath, `${slug}.json`)
+
+      // Ensure target directory exists
+      await ensureDirectoryExists(targetDirPath)
+
+      // Write the file
+      fs.writeFileSync(
+        getFilePath(targetFilePath),
+        JSON.stringify(englishData, null, 2),
+      )
+      console.log(
+        `✅ Created static file from English: ${getFilePath(targetFilePath)}`,
+      )
+
+      return englishData
+    }
+  } catch (error) {
+    console.warn(`⚠️ Could not copy from English version: ${error}`)
+  }
+
+  return null
+}
+
 export async function getBlogArticleData(
   lang: Lang,
   category: string,
   slug: string,
 ) {
-  const dirPath = `/dictionaries/${lang}/blog/${category}`
+  const dirPath = path.join('dictionaries', lang, 'blog', category)
   const fileName = `${slug}.json`
-  const filePath = path.resolve(dirPath, fileName)
+  const filePath = path.join(dirPath, fileName)
 
   let fileContents: BlogArticleData | undefined
-  // return cached translations
+
+  // First: Try to read existing static file
   try {
-    // ? The idea is to get the file contents and return it if it exists and it should be up to date with the latest on DatoCMS, so we can reduce the amount of requests to DatoCMS
     fileContents = parseFile(filePath)
-    // ? Due we are not updating the file contents frequently, we can return the file contents directly
-    // console.info('in', process.env.NODE_ENV)
-    if (process.env.NODE_ENV === 'production') {
+    // In production, always return the static file if it exists
+    // if (process.env.NODE_ENV === 'production' && fileContents) {
+    if (fileContents) {
       return fileContents as BlogArticleData
     }
   } catch (error) {
-    try {
-      const englishVersion: BlogArticleData = parseFile(
-        `/dictionaries/en/blog/${category}/${slug}.json`,
-      )
-      if (englishVersion) return englishVersion
-    } catch (error) {
-      console.error('❌ Failed to get cached file. Fetching new data', error)
+    console.log(`📝 Static file not found: ${getFilePath(filePath)}`)
+  }
+
+  // Second: If static file doesn't exist, try to create it from English version
+  if (!fileContents) {
+    console.log('🔄 Attempting to create static file from English version...')
+    const englishData = await createStaticFileFromEnglish(lang, category, slug)
+    if (englishData) {
+      return englishData
     }
   }
+
+  // Third: If no static file exists (neither for the language nor English),
+  // generate it from DatoCMS and create the static file
+  console.log(
+    `🌐 Generating static file from DatoCMS for: ${lang}/${category}/${slug}`,
+  )
 
   // console.log('getBlogArticleData', { locale, category, slug })
   const [i18n, categories] = await Promise.all([
@@ -405,9 +496,13 @@ export async function getBlogArticleData(
   const data: any = categories[`${blogCategory}Data`]
   const error: any = categories[`${blogCategory}Error`]
 
-  let categoryContent: any[]
-  categoryContent = data
-  if (categoryContent.length < 1 || error) return null
+  const categoryContent: any[] = data
+  if (categoryContent.length < 1 || error) {
+    console.error(
+      `❌ No data found in DatoCMS for: ${lang}/${category}/${slug}`,
+    )
+    return null
+  }
 
   let relatedBlogs: any = []
   const blogContent = categoryContent[0]
@@ -443,29 +538,21 @@ export async function getBlogArticleData(
       )
   }
 
-  // always create an english dictionary
+  // Always create the static file from DatoCMS data
   const result: BlogArticleData = { relatedBlogs, blogContent, topics }
-  const fullPath = getFilePath(filePath)
 
-  if (fileContents?.blogContent) {
-    // Check file article against new article. If no updated found on files, then we update the article
-    const fileArticle = fileContents
-    if (
-      fileArticle.blogContent.title === blogContent.title &&
-      fileArticle.blogContent._publishedAt === blogContent._publishedAt
-    ) {
-      return fileArticle
-    }
-  }
-
-  // TODO: Fix cache file update on production build.
-  // ! It's not updating the file and we might choose to add cache to the user's browser instead.
-  // ? Or moving this to actions.ts
+  // Always create/update the static file
   try {
-    fs.mkdirSync(getFilePath(dirPath), { recursive: true })
-    fs.writeFileSync(getFilePath(filePath), JSON.stringify(result, null, 2))
+    await ensureDirectoryExists(dirPath)
+    const transformedAssetUrls = transformAssetUrls(result)
+    fs.writeFileSync(
+      getFilePath(filePath),
+      // JSON.stringify(transformedAssetUrls, null, 2),
+      JSON.stringify(result, null, 2),
+    )
+    console.log(`✅ Created static file from DatoCMS: ${getFilePath(filePath)}`)
   } catch (error) {
-    console.error('❌❌❌❌ Failed to update cache on file.', error)
+    console.error(`❌ Failed to create static file: ${error}`)
   }
 
   return result

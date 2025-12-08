@@ -2,17 +2,21 @@
   "relatedBlogs": [
     {
       "id": "180563939",
-      "topics": ["DAO", "Tokenomics", "Commentary"],
+      "topics": [
+        "DAO",
+        "Tokenomics",
+        "Commentary"
+      ],
       "title": "A Framework for Blockchain Governance Design: The Prysm Group Wheel [Commentary]",
       "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:19:19+01:00",
       "description": "Navigate the complexities of blockchain governance with the Prysm Group Wheel. Your roadmap to effective blockchain governance design.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+        "url": "/images/blog/cbc11-img1.webp"
       },
       "seo": {
         "description": "Navigate the complexities of blockchain governance with the Prysm Group Wheel. Your roadmap to effective blockchain governance design.",
@@ -23,23 +27,26 @@
           "height": 1383,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+          "url": "/images/blog/cbc11-img1.webp"
         }
       }
     },
     {
       "id": "180217169",
-      "topics": ["Tokenomics", "Commentary"],
+      "topics": [
+        "Tokenomics",
+        "Commentary"
+      ],
       "title": "Economics of Tokenized Incentives 3: Token Value Won’t Align Stakeholders [Commentary]",
       "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:17:23+01:00",
       "description": "Uncover the pitfalls of using token value as a performance metric in blockchain platforms. Learn to design effective incentive systems.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+        "url": "/images/blog/cbc3-img1.png"
       },
       "seo": {
         "description": "Uncover the pitfalls of using token value as a performance metric in blockchain platforms. Learn to design effective incentive systems.",
@@ -50,23 +57,26 @@
           "height": 862,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+          "url": "/images/blog/cbc3-img1.png"
         }
       }
     },
     {
       "id": "180217082",
-      "topics": ["Tokenomics", "Commentary"],
+      "topics": [
+        "Tokenomics",
+        "Commentary"
+      ],
       "title": "Economics of Tokenized Incentives 1: Intro to Pay for Performance [Commentary]",
       "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:15:12+01:00",
       "description": "Dive into the complexities of pay-for-performance incentives in blockchain platforms. Learn the trade-offs and design considerations for success.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+        "url": "/images/blog/cbc1-img1.png"
       },
       "seo": {
         "description": "Dive into the complexities of pay-for-performance incentives in blockchain platforms. Learn the trade-offs and design considerations for success",
@@ -77,23 +87,27 @@
           "height": 862,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+          "url": "/images/blog/cbc1-img1.png"
         }
       }
     },
     {
       "id": "180563918",
-      "topics": ["Tokenomics", "Commentary", "Fundraising"],
+      "topics": [
+        "Tokenomics",
+        "Commentary",
+        "Fundraising"
+      ],
       "title": "Tokens: Investment Vehicle or Medium of Exchange (Not Both) [Commentary]",
       "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:13:31+01:00",
       "description": "Delve into the dual role of tokens in the blockchain economy. Uncover the fine line between investment vehicle and medium of exchange.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
+        "url": "/images/blog/cbc8-img1.png"
       },
       "seo": {
         "description": "Delve into the dual role of tokens in the blockchain economy. Uncover the fine line between investment vehicle and medium of exchange.",
@@ -104,23 +118,27 @@
           "height": 862,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
+          "url": "/images/blog/cbc8-img1.png"
         }
       }
     },
     {
       "id": "180563922",
-      "topics": ["Fundraising", "Tokenomics", "Commentary"],
+      "topics": [
+        "Fundraising",
+        "Tokenomics",
+        "Commentary"
+      ],
       "title": "ICOs Leverage Network Effects [Commentary]",
       "slug": "icos-leverage-network-effects-commentary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:12:06+01:00",
       "description": "Discover how ICOs harness the power of network effects to fuel their success. ICOs and network effects, a dynamic duo!",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+        "url": "/images/blog/cbc9-img1.png"
       },
       "seo": {
         "description": "Discover how ICOs harness the power of network effects to fuel their success. ICOs and network effects, a dynamic duo!",
@@ -131,23 +149,27 @@
           "height": 862,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1690860184-cbc9-img1.png"
+          "url": "/images/blog/cbc9-img1.png"
         }
       }
     },
     {
       "id": "180556595",
-      "topics": ["Fundraising", "Tokenomics", "Commentary"],
+      "topics": [
+        "Fundraising",
+        "Tokenomics",
+        "Commentary"
+      ],
       "title": "The Blockchain Effect: Network Effects without Market Power Costs [Commentary]",
       "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:11:14+01:00",
       "description": "Explore how blockchain enables network effects without the downsides of market power. Discover the game-changing Blockchain Effect.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+        "url": "/images/blog/cbc4-img1.png"
       },
       "seo": {
         "description": "Explore how blockchain enables network effects without the downsides of market power. Discover the game-changing Blockchain Effect.",
@@ -158,23 +180,26 @@
           "height": 862,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+          "url": "/images/blog/cbc4-img1.png"
         }
       }
     },
     {
       "id": "180563931",
-      "topics": ["Tokenomics", "Commentary"],
+      "topics": [
+        "Tokenomics",
+        "Commentary"
+      ],
       "title": "Blockchain Incentive Structures: What they are and why they matter [Commentary]",
       "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:10:02+01:00",
       "description": "Understand the core of blockchain incentive structures and their significance in driving user behavior and platform success.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+        "url": "/images/blog/cbc10-img1.png"
       },
       "seo": {
         "description": "Understand the core of blockchain incentive structures and their significance in driving user behavior and platform success.",
@@ -185,23 +210,26 @@
           "height": 862,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+          "url": "/images/blog/cbc10-img1.png"
         }
       }
     },
     {
       "id": "167101094",
-      "topics": ["Getting Started", "Tokenomics"],
+      "topics": [
+        "Getting Started",
+        "Tokenomics"
+      ],
       "title": "Tokenomics 101: Unleashing the Power of Cryptocurrency!",
       "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T08:57:58+01:00",
       "description": "Discover the power of cryptocurrency through Tokenomics 101 - an in-depth guide to understanding the economics behind digital assets.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1687391799-tb1-img1.png"
+        "url": "/images/blog/tb1-img1.png"
       },
       "seo": {
         "description": "an in-depth guide to understanding the economics behind digital assets.",
@@ -212,24 +240,27 @@
           "height": 994,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1687391799-tb1-img1.png"
+          "url": "/images/blog/tb1-img1.png"
         }
       }
     }
   ],
   "blogContent": {
     "id": "180217123",
-    "topics": ["Tokenomics", "Commentary"],
+    "topics": [
+      "Tokenomics",
+      "Commentary"
+    ],
     "title": "Economics of Tokenized Incentives 2: Selecting Effective Performance Metrics [Commentary]",
     "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
     "authorName": "Crypto Clairity",
     "authorPicture": {
-      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      "url": "/images/blog/cryptoclaraty5.png"
     },
     "_publishedAt": "2023-10-05T09:17:05+01:00",
     "description": "Discover the power of performance metrics in blockchain pay-for-performance systems. Learn to align incentives with platform goals effectively.",
     "thumbnail": {
-      "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+      "url": "/images/blog/cbc2-img1.png"
     },
     "contentBlock": [
       {
@@ -244,7 +275,9 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "Original Link: "
                     },
                     {
@@ -253,7 +286,9 @@
                       "children": [
                         {
                           "type": "span",
-                          "marks": ["strong"],
+                          "marks": [
+                            "strong"
+                          ],
                           "value": "Economics of Tokenized Incentives 2: Selecting Effective Performance Metrics"
                         }
                       ]
@@ -265,7 +300,9 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "Author: "
                     },
                     {
@@ -292,7 +329,9 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "Summary"
                     }
                   ]
@@ -312,7 +351,9 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "Commentary"
                     }
                   ]
@@ -332,7 +373,9 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "Actionable Insights"
                     }
                   ]
@@ -349,7 +392,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Choose Metrics Carefully"
                             },
                             {
@@ -368,7 +413,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Consider Other Incentive Structures"
                             },
                             {
@@ -387,7 +434,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Monitor and Adjust"
                             },
                             {
@@ -406,7 +455,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Communicate Clearly"
                             },
                             {
@@ -431,7 +482,7 @@
             "filename": "cbc2-img1.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+            "url": "/images/blog/cbc2-img1.png"
           }
         ]
       }
@@ -445,9 +496,13 @@
         "height": 862,
         "title": null,
         "alt": null,
-        "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+        "url": "/images/blog/cbc2-img1.png"
       }
     }
   },
-  "topics": ["Tokenomics", "Commentary"]
+  "topics": [
+    "Tokenomics",
+    "Commentary"
+  ],
+  "shortLink": "https://bitlauncher.ai/en/blog/crypto/economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme"
 }

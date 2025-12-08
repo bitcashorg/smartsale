@@ -39,28 +39,21 @@ export async function getAllArticles() {
       ),
     )
 
+    // Check if data exists and is valid
+    if (!data || typeof data !== 'object') {
+      console.error('getAllArticles: No data returned from CMS')
+      return []
+    }
+
     const articles = Object.entries(data).map(([key, value]) => ({
       category: getCategoryKey(key) || 'notfoundcategory',
       articles: value as BlogArticleRecord[],
     }))
 
-    // Convert data to a string format
-    // const dataString = JSON.stringify(articles, null, 2)
-
-    // // Define the file path and name
-    // const filePath = './all-articles-data.json'
-
-    // // Save the console output to a file
-    // fs.writeFile(filePath, dataString, (err: NodeJS.ErrnoException | null) => {
-    //   if (err) {
-    //     return console.log('Error writing to file', err)
-    //   }
-    //   console.log('Console output saved to', filePath)
-    // })
-
     return articles
   } catch (error) {
     console.error('getAllArticlesSlugs error:', error)
+    return [] // Return empty array instead of undefined
   }
 }
 

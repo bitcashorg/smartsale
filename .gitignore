@@ -39,3 +39,7 @@ yarn-error.log*
 _dev
 
 .react-email
+
+# nohup.out
+nohup.out 
+.env*.local

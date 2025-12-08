@@ -1,9 +1,11 @@
+'use client'
+
 import type { Project } from '@/lib/projects'
 import { cn, formatCurrency } from '@/lib/utils'
 import { createSupabaseServerClient, getPresaleData } from '@/services/supabase'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Suspense } from 'react'
+import { Suspense, useEffect, useState } from 'react'
 import { isMobile } from 'react-device-detect'
 import Balancer from 'react-wrap-balancer'
 import { AuctionCardButtons } from './auction-card-buttons'
@@ -15,7 +17,7 @@ export async function AuctionCard({
 }: {
   project: Project
   dict: any
-  }) {
+}) {
   const {
     id,
     title,
@@ -26,7 +28,7 @@ export async function AuctionCard({
     badgeText,
     linkPath,
   } = project
-  let presale
+  let presale: any
   try {
     const supabase = await createSupabaseServerClient()
     presale = await getPresaleData({ projectId: project.id, supabase })
@@ -87,7 +89,9 @@ export async function AuctionCard({
                 {dict.auction.maxAllocation}
               </span>
               <b className="text-xs md:text-sm lg:text-base">
-                {presale?.max_allocation ? formatCurrency({ value: presale.max_allocation / 100 }) : maxAllocation}
+                {presale?.max_allocation
+                  ? formatCurrency({ value: presale.max_allocation / 100 })
+                  : maxAllocation}
               </b>
             </li>
           </ul>

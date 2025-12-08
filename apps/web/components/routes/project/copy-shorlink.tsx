@@ -1,5 +1,4 @@
 'use client'
-import { generateShortLink } from '@/app/actions/general'
 import { useCopyShortLink } from '@/hooks/use-copy-shortlink'
 import { useReferral } from '@/hooks/use-referral'
 import { useSession } from '@/hooks/use-session'

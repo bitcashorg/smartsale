@@ -590,12 +590,12 @@ const defaultBlogArticle: BlogArticleRecord = {
   slug: 'the-art-of-researching-and-evaluating-bitcoin-exchanges-a-guide-for-contributors',
   authorName: 'Jun Dam',
   authorPicture: {
-    url: 'https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png',
+    url: '/images/blog/jdamx170-removebg-preview.png',
   },
   _publishedAt: '2023-06-15T03:14:17+01:00',
   description: '',
   thumbnail: {
-    url: 'https://www.datocms-assets.com/101962/1686794861-bb5-img1.png',
+    url: '/images/blog/bb5-img1.png',
   },
   topics: ['bitcoin'],
   contentBlock: [

@@ -20,7 +20,7 @@ export const HeroArticleCard = ({
         <figure className="relative w-full overflow-hidden rounded-md h-space-400">
           <Image
             src={post?.thumbnail?.url}
-            alt={post.title}
+            alt={post?.title || 'Blog post'}
             {...(isMobile
               ? post.id !== 1
                 ? { loading: 'lazy' }

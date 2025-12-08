@@ -2,17 +2,19 @@
   "relatedBlogs": [
     {
       "id": "CD89KaoLSh6nQbiMhxX0EQ",
-      "topics": ["launchpad"],
+      "topics": [
+        "launchpad"
+      ],
       "title": "Ensuring Trust and Integrity: Regulatory Compliance and Security Measures",
       "slug": "ensuring-trust-and-integrity-regulatory-compliance-and-security-measures",
       "authorName": "Jun Dam",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+        "url": "/images/blog/jdamx170-removebg-preview.png"
       },
       "_publishedAt": "2024-06-20T16:21:42+01:00",
       "description": "This section outlines our platform's proactive approach to adhering to global regulatory standards and implementing advanced security measures, ensuring a safe and compliant environment for users in the crypto and AI spaces.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1710562461-bitlauncherregsecimg.webp"
+        "url": "/images/blog/bitlauncherregsecimg.webp"
       },
       "seo": {
         "description": "This section outlines our platform's proactive approach to adhering to global regulatory standards and implementing advanced security measures.",
@@ -23,23 +25,25 @@
           "height": 700,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1710562461-bitlauncherregsecimg.webp"
+          "url": "/images/blog/bitlauncherregsecimg.webp"
         }
       }
     },
     {
       "id": "fbM-UqrYQXGhw6HB4C6swQ",
-      "topics": ["launchpad"],
+      "topics": [
+        "launchpad"
+      ],
       "title": "Strategic Roadmap: Pioneering Blockchain Innovation and AI Startup Success",
       "slug": "strategic-roadmap-pioneering-blockchain-innovation-and-ai-startup-success",
       "authorName": "Jun Dam",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+        "url": "/images/blog/jdamx170-removebg-preview.png"
       },
       "_publishedAt": "2024-03-15T05:13:30+00:00",
       "description": "Outlining bitLauncher's phased plan for groundbreaking technology deployment, community-driven growth, and the development of the equitable Antelope chain, to revolutionize the AI and cryptocurrency landscapes.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1710479575-roadmapbitlauncher.webp"
+        "url": "/images/blog/roadmapbitlauncher.webp"
       },
       "seo": {
         "description": "Outlining bitLauncher's phased plan for groundbreaking technology deployment",
@@ -50,23 +54,25 @@
           "height": 700,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1710479575-roadmapbitlauncher.webp"
+          "url": "/images/blog/roadmapbitlauncher.webp"
         }
       }
     },
     {
       "id": "I4jShMnWRruvJgDbrucwDw",
-      "topics": ["launchpad"],
+      "topics": [
+        "launchpad"
+      ],
       "title": "The Technological Backbone of bitLauncher",
       "slug": "the-technological-backbone-of-bitcash-launchpad",
       "authorName": "Jun Dam",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+        "url": "/images/blog/jdamx170-removebg-preview.png"
       },
       "_publishedAt": "2024-03-14T05:33:20+00:00",
       "description": "This section details bitLauncher's integration of cutting-edge blockchain technologies and innovative tools, including Bitcash payments, DAO governance, and a non-profit blockchain vision, setting the stage for transparent, secure, and equitable AI startup growth.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1710011354-techsectionwpimg.webp"
+        "url": "/images/blog/techsectionwpimg.webp"
       },
       "seo": {
         "description": "This section details bitLauncher's integration of cutting-edge blockchain technologies and innovative tools.",
@@ -77,23 +83,28 @@
           "height": 700,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1710011354-techsectionwpimg.webp"
+          "url": "/images/blog/techsectionwpimg.webp"
         }
       }
     },
     {
       "id": "NZeB3i5XRzuELW2UWBDyRQ",
-      "topics": ["research", "dao", "fundraising", "launchpad"],
+      "topics": [
+        "research",
+        "dao",
+        "fundraising",
+        "launchpad"
+      ],
       "title": "Navigating the Convergence: A Comprehensive Market Analysis of AI and the Cryptocurrency Dynamic",
       "slug": "navigating-the-convergence-a-comprehensive-market-analysis-of-ai-and-cryptocurren",
       "authorName": "Jun Dam",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+        "url": "/images/blog/jdamx170-removebg-preview.png"
       },
       "_publishedAt": "2024-03-14T05:30:05+00:00",
       "description": "This section explores the dynamic intersection of AI and cryptocurrency, highlighting key trends, challenges, and opportunities, and positions bitcash Launchpad as a pioneering platform for open-source AI projects.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1709276586-marketanalysis-img2.webp"
+        "url": "/images/blog/marketanalysis-img2.webp"
       },
       "seo": {
         "description": "Key trends, challenges, and opportunities, and positions bitcash Launchpad as a pioneering platform for open-source AI projects.",
@@ -104,23 +115,27 @@
           "height": 700,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1709276586-marketanalysis-img2.webp"
+          "url": "/images/blog/marketanalysis-img2.webp"
         }
       }
     },
     {
       "id": "VgGHDFI9T9qzTCHPAm5WLg",
-      "topics": ["dao", "fundraising", "launchpad"],
+      "topics": [
+        "dao",
+        "fundraising",
+        "launchpad"
+      ],
       "title": "Empowering Next-Gen Open-Source AI Unicorns: A Revolutionary Launchpad ",
       "slug": "empowering-next-gen-open-source-ai-unicorns-a-revolutionary-launchpad",
       "authorName": "Jun Dam",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+        "url": "/images/blog/jdamx170-removebg-preview.png"
       },
       "_publishedAt": "2024-03-14T05:28:42+00:00",
       "description": "bitLauncher Whitepaper Introduction",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1709177635-whitepaperintroimage.webp"
+        "url": "/images/blog/whitepaperintroimage.webp"
       },
       "seo": {
         "description": "bitcash Launchpad Whitepaper Introduction",
@@ -131,23 +146,25 @@
           "height": 1012,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1709177635-whitepaperintroimage.webp"
+          "url": "/images/blog/whitepaperintroimage.webp"
         }
       }
     },
     {
       "id": "MICfokr1TVuScAB4Qh9YGw",
-      "topics": ["launchpad"],
+      "topics": [
+        "launchpad"
+      ],
       "title": "Empowering Innovation: Tokenomics and Funding Strategy of bitcash",
       "slug": "empowering-innovation-tokenomics-and-funding-strategy-of-bitcash",
       "authorName": "Jun Dam",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+        "url": "/images/blog/jdamx170-removebg-preview.png"
       },
       "_publishedAt": "2024-03-14T05:27:37+00:00",
       "description": "This section details bitcash's mint-and-burn utility token model and its strategic approach to equitable funding and value growth, underpinning the launchpad's mission to empower AI development with transparent and sustainable tokenomics.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1710053905-tokenomicswpimg.webp"
+        "url": "/images/blog/tokenomicswpimg.webp"
       },
       "seo": {
         "description": "This section details bitcash's mint-and-burn utility token model and its strategic approach to equitable funding and value growth",
@@ -158,23 +175,25 @@
           "height": 1012,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1710053905-tokenomicswpimg.webp"
+          "url": "/images/blog/tokenomicswpimg.webp"
         }
       }
     },
     {
       "id": "BSDdY8byQWipv749rApFRA",
-      "topics": ["launchpad"],
+      "topics": [
+        "launchpad"
+      ],
       "title": "Unlocking Potential: Use Cases and Applications of bitLauncher",
       "slug": "unlocking-potential-use-cases-and-applications-of-bitlauncher",
       "authorName": "Jun Dam",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+        "url": "/images/blog/jdamx170-removebg-preview.png"
       },
       "_publishedAt": "2024-03-14T05:26:22+00:00",
-      "description": "This section explores how bitLauncer revolutionizes AI startup funding and global market access, showcasing sustainable open-source models, strategic startup culture, and the global contributor ecosystem through targeted use cases and the pioneering Masterbots.ai project.",
+      "description": "This section explores how bitLauncer revolutionizes AI startup funding and global market access, showcasing sustainable open-source models, strategic startup culture, and the global investor ecosystem through targeted use cases and the pioneering Masterbots.ai project.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1710393954-usecaseappsimg.webp"
+        "url": "/images/blog/usecaseappsimg.webp"
       },
       "seo": {
         "description": "This section explores how bitLauncher revolutionizes AI startup funding, global market access, and the pioneering Masterbots.ai project.",
@@ -185,24 +204,26 @@
           "height": 1012,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1710393954-usecaseappsimg.webp"
+          "url": "/images/blog/usecaseappsimg.webp"
         }
       }
     }
   ],
   "blogContent": {
     "id": "BEfgGhndSsCn5MBU89RO3A",
-    "topics": ["launchpad"],
+    "topics": [
+      "launchpad"
+    ],
     "title": "Empowering Innovation: Vision, Mission, and Strategic Goals of bitLauncher",
     "slug": "empowering-innovation-vision-mission-and-strategic-goals-of-bitcash-launchpad",
     "authorName": "Jun Dam",
     "authorPicture": {
-      "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+      "url": "/images/blog/jdamx170-removebg-preview.png"
     },
     "_publishedAt": "2024-03-14T05:31:29+00:00",
     "description": "This section outlines bitcash Launchpad's vision to revolutionize AI innovation with cryptocurrency, detailing our mission to democratize AI development and our strategic goals for creating a community-driven, transparent, and ethical technological future.",
     "thumbnail": {
-      "url": "https://www.datocms-assets.com/101962/1709370139-whitepaper-p4.webp"
+      "url": "/images/blog/whitepaper-p4.webp"
     },
     "contentBlock": [
       {
@@ -246,7 +267,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Our vision is to become the cornerstone of open-source AI innovation, where the most groundbreaking AI solutions find their footing and flourish. We envision a future where bitLauncher acts as the catalyst for creating a sustainable ecosystem of AI technologies that are owned and shaped by a global community of contributors, contributors, and users. Through democratizing access to resources and investment, we aim to unlock the full potential of AI to solve complex global challenges, fostering a world where technology advances hand in hand with ethical principles and inclusive growth."
+                      "value": "Our vision is to become the cornerstone of open-source AI innovation, where the most groundbreaking AI solutions find their footing and flourish. We envision a future where bitLauncher acts as the catalyst for creating a sustainable ecosystem of AI technologies that are owned and shaped by a global community of contributors, investors, and users. Through democratizing access to resources and investment, we aim to unlock the full potential of AI to solve complex global challenges, fostering a world where technology advances hand in hand with ethical principles and inclusive growth."
                     }
                   ]
                 },
@@ -272,7 +293,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Fostering Innovation"
                             },
                             {
@@ -291,7 +314,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Revolutionize AI Project Funding"
                             },
                             {
@@ -310,12 +335,14 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Community Building"
                             },
                             {
                               "type": "span",
-                              "value": ": To cultivate a vibrant community of over 50,000 active members, including AI developers, crypto contributors, and technology enthusiasts, who actively participate in governance, funding, and collaboration."
+                              "value": ": To cultivate a vibrant community of over 50,000 active members, including AI developers, crypto investors, and technology enthusiasts, who actively participate in governance, funding, and collaboration."
                             }
                           ]
                         }
@@ -329,7 +356,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Sustainable Growth"
                             },
                             {
@@ -348,7 +377,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Global Impact"
                             },
                             {
@@ -383,7 +414,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Strategic Partnerships"
                             },
                             {
@@ -402,12 +435,14 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Innovative Funding Models"
                             },
                             {
                               "type": "span",
-                              "value": ": Utilizing tokenomics and DAOs to create fair, transparent, and efficient funding mechanisms that align the interests of developers and contributors."
+                              "value": ": Utilizing tokenomics and DAOs to create fair, transparent, and efficient funding mechanisms that align the interests of developers and investors."
                             }
                           ]
                         }
@@ -421,7 +456,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Education and Outreach"
                             },
                             {
@@ -440,7 +477,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Technology Development"
                             },
                             {
@@ -484,7 +523,7 @@
             "filename": "whitepaper-p4.webp",
             "format": "webp",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1709370139-whitepaper-p4.webp"
+            "url": "/images/blog/whitepaper-p4.webp"
           }
         ]
       }
@@ -498,9 +537,12 @@
         "height": 700,
         "title": null,
         "alt": null,
-        "url": "https://www.datocms-assets.com/101962/1709370139-whitepaper-p4.webp"
+        "url": "/images/blog/whitepaper-p4.webp"
       }
     }
   },
-  "topics": ["launchpad"]
+  "topics": [
+    "launchpad"
+  ],
+  "shortLink": "https://bitlauncher.ai/en/blog/bitcash/empowering-innovation-vision-mission-and-strategic-goals-of-bitcash-launchpad"
 }

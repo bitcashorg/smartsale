@@ -1,8 +1,6 @@
-import '@/app/globals.css'
-
+import { HiatusDialog } from '@/components/dialogs/hiatus-dialog'
 import Footer from '@/components/layout/footer/footer'
 import { Header } from '@/components/layout/header'
-import { Providers } from '@/components/layout/providers'
 import { getDictionary } from '@/dictionaries'
 import { locales } from '@/dictionaries/locales'
 import { appConfig } from '@/lib/config'
@@ -10,7 +8,6 @@ import { FuturaPTBold, FuturaPTDemi, LufgaBold } from '@/lib/fonts'
 import { cn } from '@/lib/utils'
 import type { CommonPageParams } from '@/types/routing.type'
 import { GoogleAnalytics } from '@next/third-parties/google'
-import '@rainbow-me/rainbowkit/styles.css'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { Metadata, Viewport } from 'next'
@@ -18,6 +15,20 @@ import dynamic from 'next/dynamic'
 import type React from 'react'
 import { isMobile } from 'react-device-detect'
 import { Toaster } from 'sonner'
+
+import '@/app/globals.css'
+import '@rainbow-me/rainbowkit/styles.css'
+
+// Dynamically import providers to avoid SSR issues with wallet libraries
+const Providers = dynamic(
+  () =>
+    import('@/components/layout/providers').then((mod) => ({
+      default: mod.Providers,
+    })),
+  {
+    ssr: false,
+  },
+)
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -33,6 +44,7 @@ export default async function RootLayout({
   params,
 }: RootLayoutProps) {
   const dict = await getDictionary(params.lang)
+  const isMaintenanceMode = appConfig.maintenanceMode
   return (
     <html
       lang={params.lang || 'en'}
@@ -43,28 +55,42 @@ export default async function RootLayout({
         style={{ width: '100%', maxWidth: '100%' }}
         className={`${FuturaPTDemi.variable} ${FuturaPTBold.variable} ${LufgaBold.variable}`}
       >
-        <Providers
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Header lang={params.lang} dict={dict} />
-          <Toaster position="bottom-right" />
-          <main
-            className={cn(
-              'flex w-full max-w-[100vw] flex-1 flex-col',
-              isMobile && 'overflow-hidden',
-            )}
+        {isMaintenanceMode ? (
+          <>
+            <main
+              className={cn(
+                'flex w-full max-w-[100vw] flex-1 flex-col',
+                isMobile && 'overflow-hidden',
+              )}
+            >
+              <HiatusDialog />
+            </main>
+            {await Footer({ params })}
+          </>
+        ) : (
+          <Providers
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
           >
-            {children}
-          </main>
-          <Footer params={params} />
-          <DynamicSessionDialog />
-          <DynamicEsrDialog />
-          <DynamicAiAssistant />
-          <DynamicVConsole />
-        </Providers>
+            <Header lang={params.lang} dict={dict} />
+            <Toaster position="bottom-right" />
+            <main
+              className={cn(
+                'flex w-full max-w-[100vw] flex-1 flex-col',
+                isMobile && 'overflow-hidden',
+              )}
+            >
+              {children}
+            </main>
+            {await Footer({ params })}
+            <DynamicSessionDialog />
+            <DynamicEsrDialog />
+            <DynamicAiAssistant />
+            <DynamicVConsole />
+          </Providers>
+        )}
 
         <GoogleAnalytics gaId="G-78N0Z7NPQJ" />
         <Analytics />

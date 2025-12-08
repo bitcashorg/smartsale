@@ -8,6 +8,7 @@ export const appConfig = {
   env: appEnv,
   ...loadEnvConfig(appEnv),
   eosRpc: 'https://eos.greymass.com',
+  maintenanceMode: process.env.NEXT_PUBLIC_MAINTENANCE_MODE === 'true',
   trigger: {
     apiKey: process.env.TRIGGER_SECRET_KEY || '',
   },

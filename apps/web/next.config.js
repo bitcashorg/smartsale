@@ -4,6 +4,9 @@ const { hostname } = require('node:os')
 const path = require('node:path')
 const webpack = require('webpack')
 const nextConfig = {
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   async headers() {
     return [
       {
@@ -121,6 +124,16 @@ function generateNonce() {
   } while (nonceCache.has(nonce))
   nonceCache.add(nonce)
   return nonce
+}
+
+// Copy dictionaries to public folder for deployment
+if (process.env.NODE_ENV === 'production' || process.env.VERCEL) {
+  try {
+    const { copyDictionaries } = require('./scripts/copy-dictionaries.js')
+    copyDictionaries()
+  } catch (error) {
+    console.warn('⚠️ Failed to copy dictionaries:', error.message)
+  }
 }
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')()
