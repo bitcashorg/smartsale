@@ -20,6 +20,7 @@
     "dev:jobs": "turbo jobs --filter=@repo/jobs",
     "dev:faucet": "turbo dev --filter=@repo/faucet",
     "clean": "git clean -xdf node_modules",
+    "prepare": "husky prepare",
     "clean:workspaces": "turbo clean",
     "format-and-lint": "biome check .",
     "format-and-lint:fix": "biome check . --write",
