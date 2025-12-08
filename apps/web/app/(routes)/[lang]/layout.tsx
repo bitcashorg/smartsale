@@ -55,45 +55,42 @@ export default async function RootLayout({
         style={{ width: '100%', maxWidth: '100%' }}
         className={`${FuturaPTDemi.variable} ${FuturaPTBold.variable} ${LufgaBold.variable}`}
       >
-        <Providers
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Header lang={params.lang} dict={dict} />
-          <Toaster position="bottom-right" />
-          {isMaintenanceMode ? (
-            <>
-              <main
-                className={cn(
-                  'flex w-full max-w-[100vw] flex-1 flex-col',
-                  isMobile && 'overflow-hidden',
-                )}
-              >
-                <HiatusDialog />
-                {children}
-              </main>
-              {await Footer({ params })}
-            </>
-          ) : (
-            <>
-              <main
-                className={cn(
-                  'flex w-full max-w-[100vw] flex-1 flex-col',
-                  isMobile && 'overflow-hidden',
-                )}
-              >
-                {children}
-              </main>
-              {await Footer({ params })}
-              <DynamicSessionDialog />
-              <DynamicEsrDialog />
-              <DynamicAiAssistant />
-              <DynamicVConsole />
-            </>
-          )}
-        </Providers>
+        {isMaintenanceMode ? (
+          <>
+            <main
+              className={cn(
+                'flex w-full max-w-[100vw] flex-1 flex-col',
+                isMobile && 'overflow-hidden',
+              )}
+            >
+              <HiatusDialog />
+            </main>
+            {await Footer({ params })}
+          </>
+        ) : (
+          <Providers
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Header lang={params.lang} dict={dict} />
+            <Toaster position="bottom-right" />
+            <main
+              className={cn(
+                'flex w-full max-w-[100vw] flex-1 flex-col',
+                isMobile && 'overflow-hidden',
+              )}
+            >
+              {children}
+            </main>
+            {await Footer({ params })}
+            <DynamicSessionDialog />
+            <DynamicEsrDialog />
+            <DynamicAiAssistant />
+            <DynamicVConsole />
+          </Providers>
+        )}
 
         <GoogleAnalytics gaId="G-78N0Z7NPQJ" />
         <Analytics />

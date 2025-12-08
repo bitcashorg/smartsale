@@ -79,8 +79,6 @@ const customRainbowKitTheme = merge(lightTheme(), {
 } as Theme)
 
 export function Providers({ children, ...props }: ThemeProviderProps) {
-  const isMaintenanceMode = appConfig.maintenanceMode
-
   useEffect(() => {
     // Initialize multibase on client side only
     if (typeof window !== 'undefined') {
@@ -94,16 +92,6 @@ export function Providers({ children, ...props }: ThemeProviderProps) {
       }
     }
   }, [])
-
-  if (isMaintenanceMode) {
-    return (
-      <NextThemesProvider {...props}>
-        <NuqsAdapter>
-          <TooltipProvider>{children}</TooltipProvider>
-        </NuqsAdapter>
-      </NextThemesProvider>
-    )
-  }
 
   return (
     <NextThemesProvider {...props}>
