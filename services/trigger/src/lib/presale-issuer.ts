@@ -1,22 +1,18 @@
-import type { Database } from '@repo/supabase'
 import {
   http,
   type Address,
-  type Chain,
   ContractFunctionExecutionError,
-  Hex,
   HttpRequestError,
   createWalletClient,
-  encodeFunctionData,
   erc20Abi,
   formatUnits,
   isAddress,
-  isHex,
-  stringify,
 } from 'viem'
 
 import { privateKeyToAccount } from 'viem/accounts'
 import { z } from 'zod'
+import { eosEvmMainnet, eosEvmTestnet } from '../../../../packages/chains'
+import { appConfig } from '../config'
 import { insertTransaction } from './supabase'
 
 const envSchema = z.object({
@@ -43,16 +39,20 @@ export async function issuePresaleTokens(
   try {
     const parsedEnv = envSchema.safeParse(process.env)
     if (!parsedEnv.success)
-      throw new Error(`Environment validation failed: ${parsedEnv.error.message}`)
+      throw new Error(
+        `Environment validation failed: ${parsedEnv.error.message}`,
+      )
 
     const account = privateKeyToAccount(`0x${parsedEnv.data.ISSUER_KEY}`)
 
     const walletClient = createWalletClient({
       // key: parsedEnv.data.ISSUER_KEY,
       account,
-      chain: eosEvmTestnet, // TODO: make this dynamic based on token data
+      chain: appConfig.env === 'prod' ? eosEvmMainnet : eosEvmTestnet,
       transport: http(),
     })
+
+    console.log(`Issuing ${formatUnits(amount, 6)} tokens to ${to}`, amount)
 
     const trxHash = await walletClient.writeContract({
       address: tokenAddress,
@@ -63,12 +63,15 @@ export async function issuePresaleTokens(
 
     console.log(
       `Issued ${formatUnits(amount, 6)} tokens to ${to} on transaction ${trxHash}`,
+      eosEvmMainnet,
     )
 
     const result = await insertTransaction({
       hash: trxHash,
-      // TODO: make this dynamic based on token.chain_id and chain data
-      chain_id: 15557, // eos_evm tesnet,
+      chain_id: (appConfig.env === 'prod'
+        ? eosEvmMainnet.id
+        : eosEvmTestnet.id
+      ).toString(),
       chain_type: 'evm',
       trx_type: 'presale_token_issuance',
     })
@@ -91,26 +94,4 @@ export async function issuePresaleTokens(
     console.log('===========================================')
     return null
   }
-}
-
-// import from packages arent working
-export const eosEvmTestnet: Chain = {
-  nativeCurrency: {
-    name: 'EOS',
-    symbol: 'EOS',
-    decimals: 18,
-  },
-  id: 15557,
-  name: 'EOS EVM Testnet',
-  rpcUrls: {
-    default: { http: ['https://api.testnet.evm.eosnetwork.com'] },
-    public: { http: ['https://api.testnet.evm.eosnetwork.com'] },
-  },
-  blockExplorers: {
-    default: {
-      name: 'EOS EVM Testnet Explorer',
-      url: 'https://explorer.testnet.evm.eosnetwork.com',
-    },
-  },
-  testnet: true,
 }

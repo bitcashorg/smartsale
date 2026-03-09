@@ -1,40 +1,13 @@
-import '@/app/globals.css'
-import {
-  FuturaPTBold,
-  FuturaPTBook,
-  FuturaPTDemi,
-  FuturaPTExtraBold,
-  FuturaPTHeavy,
-  FuturaPTLight,
-  FuturaPTMedium,
-  LufgaBlack,
-  LufgaBlackItalic,
-  LufgaBold,
-  LufgaBoldItalic,
-  LufgaExtraBold,
-  LufgaExtraBoldItalic,
-  LufgaExtraLight,
-  LufgaExtraLightItalic,
-  LufgaItalic,
-  LufgaLight,
-  LufgaLightItalic,
-  LufgaMedium,
-  LufgaMediumItalic,
-  LufgaRegular,
-  LufgaSemiBold,
-  LufgaSemiBoldItalic,
-  LufgaThin,
-  LufgaThinItalic,
-} from '@/assets/fonts/fonts'
+import { HiatusDialog } from '@/components/dialogs/hiatus-dialog'
 import Footer from '@/components/layout/footer/footer'
 import { Header } from '@/components/layout/header'
-import { Providers } from '@/components/layout/providers'
 import { getDictionary } from '@/dictionaries'
 import { locales } from '@/dictionaries/locales'
+import { appConfig } from '@/lib/config'
+import { FuturaPTBold, FuturaPTDemi, LufgaBold } from '@/lib/fonts'
 import { cn } from '@/lib/utils'
 import type { CommonPageParams } from '@/types/routing.type'
 import { GoogleAnalytics } from '@next/third-parties/google'
-import '@rainbow-me/rainbowkit/styles.css'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { Metadata, Viewport } from 'next'
@@ -42,7 +15,20 @@ import dynamic from 'next/dynamic'
 import type React from 'react'
 import { isMobile } from 'react-device-detect'
 import { Toaster } from 'sonner'
-import '../../globals.css'
+
+import '@/app/globals.css'
+import '@rainbow-me/rainbowkit/styles.css'
+
+// Dynamically import providers to avoid SSR issues with wallet libraries
+const Providers = dynamic(
+  () =>
+    import('@/components/layout/providers').then((mod) => ({
+      default: mod.Providers,
+    })),
+  {
+    ssr: false,
+  },
+)
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -53,8 +39,12 @@ export const viewport: Viewport = {
   // interactiveWidget: 'resizes-visual',
 }
 
-export default async function RootLayout({ children, params }: RootLayoutProps) {
+export default async function RootLayout({
+  children,
+  params,
+}: RootLayoutProps) {
   const dict = await getDictionary(params.lang)
+  const isMaintenanceMode = appConfig.maintenanceMode
   return (
     <html
       lang={params.lang || 'en'}
@@ -63,27 +53,44 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
     >
       <body
         style={{ width: '100%', maxWidth: '100%' }}
-        className={`${FuturaPTBook.variable} ${FuturaPTLight.variable} ${FuturaPTMedium.variable} ${FuturaPTDemi.variable} ${FuturaPTHeavy.variable} ${FuturaPTBold.variable} ${FuturaPTExtraBold.variable} ${LufgaRegular.variable} ${LufgaItalic.variable} ${LufgaThin.variable} ${LufgaThinItalic.variable} ${LufgaExtraLight.variable} ${LufgaExtraLightItalic.variable} ${LufgaLight.variable} ${LufgaLightItalic.variable} ${LufgaMedium.variable} ${LufgaMediumItalic.variable} ${LufgaSemiBold.variable} ${LufgaSemiBoldItalic.variable} ${LufgaBold.variable} ${LufgaBoldItalic.variable} ${LufgaExtraBold.variable} ${LufgaExtraBoldItalic.variable} ${LufgaBlack.variable} ${LufgaBlackItalic.variable}`}
+        className={`${FuturaPTDemi.variable} ${FuturaPTBold.variable} ${LufgaBold.variable}`}
       >
-        <Providers
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Header lang={params.lang} dict={dict} />
-          <Toaster position="bottom-right" />
-          <main
-            className={cn(
-              'flex w-full max-w-[100vw] flex-1 flex-col',
-              isMobile && 'overflow-hidden',
-            )}
+        {isMaintenanceMode ? (
+          <>
+            <main
+              className={cn(
+                'flex w-full max-w-[100vw] flex-1 flex-col',
+                isMobile && 'overflow-hidden',
+              )}
+            >
+              <HiatusDialog />
+            </main>
+            {await Footer({ params })}
+          </>
+        ) : (
+          <Providers
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
           >
-            {children}
-          </main>
-          <Footer params={params} />
-          <DynamicSessionDialog />
-        </Providers>
+            <Header lang={params.lang} dict={dict} />
+            <Toaster position="bottom-right" />
+            <main
+              className={cn(
+                'flex w-full max-w-[100vw] flex-1 flex-col',
+                isMobile && 'overflow-hidden',
+              )}
+            >
+              {children}
+            </main>
+            {await Footer({ params })}
+            <DynamicSessionDialog />
+            <DynamicEsrDialog />
+            <DynamicAiAssistant />
+            <DynamicVConsole />
+          </Providers>
+        )}
 
         <GoogleAnalytics gaId="G-78N0Z7NPQJ" />
         <Analytics />
@@ -98,11 +105,34 @@ export async function generateStaticParams() {
   return locales.map((lang) => ({ lang }))
 }
 
+const DynamicVConsole = dynamic(
+  () =>
+    import('../../../components/layout/vconsole').then((mod) => mod.VConsole),
+  {
+    ssr: false,
+  },
+)
 const DynamicSessionDialog = dynamic(
   () =>
     import('../../../components/dialogs/session/session-dialog').then(
       (mod) => mod.SessionDialog,
     ),
+  {
+    ssr: false,
+  },
+)
+const DynamicEsrDialog = dynamic(
+  () =>
+    import('../../../components/dialogs/esr/esr-dialog').then(
+      (mod) => mod.EsrDialog,
+    ),
+  {
+    ssr: false,
+  },
+)
+const DynamicAiAssistant = dynamic(
+  () =>
+    import('../../../components/ai-assistant').then((mod) => mod.AiAssistant),
   {
     ssr: false,
   },
@@ -118,7 +148,8 @@ export const metadata: Metadata = {
     absolute: 'Bitlauncher',
     template: '%s | Bitlauncher',
   },
-  description: 'Be part of the intelligent future and join the Ai/Web3 revolution now!',
+  description:
+    'Be part of the intelligent future and join the Ai/Web3 revolution now!',
   metadataBase: new URL('https://bitlauncher.ai'),
   alternates: {
     canonical: '/',
@@ -130,7 +161,8 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://bitlauncher.ai',
     title: 'bitlauncher',
-    description: 'Be part of the intelligent future and join the Ai/Web3 revolution now!',
+    description:
+      'Be part of the intelligent future and join the Ai/Web3 revolution now!',
     images: [
       {
         url: 'https://bitlauncher.ai/images/og-image.webp',
@@ -164,6 +196,11 @@ export const metadata: Metadata = {
     'launch',
     'pad',
     'launching',
-    'launching',
   ],
+  other: {
+    'google-site-verification': appConfig.analytics.google.siteVerification,
+    'p:domain_verify': appConfig.analytics.pinterest.domainVerification,
+    'theme-color': '#080e44',
+    'apple-mobile-web-app-status-bar-style': 'black-translucent',
+  },
 }

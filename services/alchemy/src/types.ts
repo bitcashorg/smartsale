@@ -1,4 +1,6 @@
 import type { Network } from 'alchemy-sdk'
+import type { Address, Hex } from 'viem'
+
 export interface AlchemyWebhookEvent {
   webhookId: string
   id: string
@@ -14,27 +16,27 @@ export type AlchemyWebhookType =
   | 'ADDRESS_ACTIVITY'
 
 export interface AlchemyActivity {
-  fromAddress: string
-  toAddress: string
+  fromAddress: Address
+  toAddress: Address
   blockNum: string
   hash: string
   value: number
   asset: string
   category: string
   rawContract: {
-    rawValue: string
-    address: string
+    rawValue: Hex
+    address: Address
     decimals: number
   }
   log?: {
-    address: string
-    topics: string[]
-    data: string
-    blockNumber: string
-    transactionHash: string
-    transactionIndex: string
-    blockHash: string
-    logIndex: string
+    address: Address
+    topics: Hex[]
+    data: Hex
+    blockNumber: Hex
+    transactionHash: Hex
+    transactionIndex: Hex
+    blockHash: Hex
+    logIndex: Hex
     removed: boolean
   }
 }

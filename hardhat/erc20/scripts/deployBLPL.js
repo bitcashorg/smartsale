@@ -2,7 +2,7 @@ const { ethers } = require('hardhat')
 
 async function main() {
   const BLPLToken = await ethers.getContractFactory('BLPLToken')
-  const token = await BLPLToken.deploy(ethers.utils.parseUnits('1000000', 18))
+  const token = await BLPLToken.deploy(ethers.utils.parseUnits('400000', 18))
 
   await token.deployed()
 

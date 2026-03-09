@@ -2,17 +2,19 @@
   "relatedBlogs": [],
   "blogContent": {
     "id": "H_DP7HFORBuw9rID5Jkhhw",
-    "topics": ["how_to"],
+    "topics": [
+      "how_to"
+    ],
     "title": "How to Register and KYC to Bitcash",
     "slug": "how-to-register-and-kyc-to-bitcash",
     "authorName": "Roberto \"Andler\" Lucas",
     "authorPicture": {
-      "url": "https://www.datocms-assets.com/101962/1715639160-andler-file-photo.jpg"
+      "url": "/images/blog/andler-file-photo.jpg"
     },
     "_publishedAt": "2024-06-20T16:20:40+01:00",
     "description": "We are covering a range of topics, including registering for a Bitcash account, setting up an account name and referrer, identifying and securing devices, providing identification and personal information for KYC, taking photos for KYC verification, and waiting for approval and joining the community.",
     "thumbnail": {
-      "url": "https://www.datocms-assets.com/101962/1715638953-bitcash-logo-frame-w-bg.png"
+      "url": "/images/blog/bitcash-logo-frame-w-bg.png"
     },
     "contentBlock": [
       {
@@ -43,7 +45,7 @@
             "filename": "splash-edited.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1715831775-splash-edited.png"
+            "url": "/images/blog/splash-edited.png"
           }
         ]
       },
@@ -69,7 +71,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "If you are an contributor and you want to participate in the presale of our upcoming "
+                      "value": "If you are an investor and you want to participate in the pre-sale of our upcoming "
                     },
                     {
                       "url": "https://bitlauncher.ai/bitcash-bitlauncher",
@@ -83,7 +85,9 @@
                       "children": [
                         {
                           "type": "span",
-                          "marks": ["strong"],
+                          "marks": [
+                            "strong"
+                          ],
                           "value": "BC token"
                         }
                       ]
@@ -120,7 +124,9 @@
                               "children": [
                                 {
                                   "type": "span",
-                                  "marks": ["strong"],
+                                  "marks": [
+                                    "strong"
+                                  ],
                                   "value": "bitlauncher.ai"
                                 }
                               ]
@@ -131,7 +137,9 @@
                             },
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Only 3 Steps Needed"
                             },
                             {
@@ -214,7 +222,9 @@
                     },
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "a"
                     },
                     {
@@ -223,7 +233,9 @@
                     },
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "z "
                     },
                     {
@@ -232,7 +244,9 @@
                     },
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "1 "
                     },
                     {
@@ -241,7 +255,9 @@
                     },
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "5"
                     },
                     {
@@ -250,7 +266,9 @@
                     },
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "up to 9"
                     },
                     {
@@ -259,7 +277,9 @@
                     },
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": ".bk "
                     },
                     {
@@ -358,7 +378,9 @@
                     },
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "referrer "
                     },
                     {
@@ -367,7 +389,9 @@
                     },
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": ".bk"
                     },
                     {
@@ -376,7 +400,9 @@
                     },
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "bank.bk "
                     },
                     {
@@ -411,7 +437,7 @@
             "filename": "kyc-step-frame-1.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1715841179-kyc-step-frame-1.png"
+            "url": "/images/blog/kyc-step-frame-1.png"
           }
         ]
       },
@@ -459,7 +485,9 @@
                     },
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "Device Name "
                     },
                     {
@@ -468,7 +496,9 @@
                     },
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "Next button"
                     },
                     {
@@ -477,7 +507,9 @@
                     },
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "passkey "
                     },
                     {
@@ -486,7 +518,9 @@
                     },
                     {
                       "type": "span",
-                      "marks": ["code"],
+                      "marks": [
+                        "code"
+                      ],
                       "value": "WebAuthN "
                     },
                     {
@@ -507,7 +541,9 @@
                         },
                         {
                           "type": "span",
-                          "marks": ["strong"],
+                          "marks": [
+                            "strong"
+                          ],
                           "value": "Google"
                         },
                         {
@@ -516,7 +552,9 @@
                         },
                         {
                           "type": "span",
-                          "marks": ["strong"],
+                          "marks": [
+                            "strong"
+                          ],
                           "value": "Opera (Not Mini)"
                         },
                         {
@@ -525,7 +563,9 @@
                         },
                         {
                           "type": "span",
-                          "marks": ["strong"],
+                          "marks": [
+                            "strong"
+                          ],
                           "value": "Safari"
                         },
                         {
@@ -543,7 +583,9 @@
                         },
                         {
                           "type": "span",
-                          "marks": ["strong"],
+                          "marks": [
+                            "strong"
+                          ],
                           "value": "passkeys"
                         },
                         {
@@ -566,7 +608,7 @@
             "filename": "kyc-step-frame-2.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1715841173-kyc-step-frame-2.png"
+            "url": "/images/blog/kyc-step-frame-2.png"
           }
         ]
       },
@@ -608,7 +650,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Full name:"
                             },
                             {
@@ -627,7 +671,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Identification Type and Number:"
                             },
                             {
@@ -636,7 +682,9 @@
                             },
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "National ID"
                             },
                             {
@@ -645,7 +693,9 @@
                             },
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": " Drivers License "
                             },
                             {
@@ -654,7 +704,9 @@
                             },
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Passport"
                             },
                             {
@@ -673,7 +725,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Country:"
                             },
                             {
@@ -682,7 +736,9 @@
                             },
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "identification origin"
                             },
                             {
@@ -701,7 +757,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Phone Number:"
                             },
                             {
@@ -720,7 +778,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Email Address:"
                             },
                             {
@@ -739,7 +799,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Photo ID:"
                             },
                             {
@@ -748,7 +810,9 @@
                             },
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "selfie photo"
                             },
                             {
@@ -757,7 +821,9 @@
                             },
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "close-up identification photo ID"
                             },
                             {
@@ -830,7 +896,9 @@
                     },
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "Grant Permission "
                     },
                     {
@@ -839,7 +907,9 @@
                     },
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "localization "
                     },
                     {
@@ -848,7 +918,9 @@
                     },
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "camera"
                     },
                     {
@@ -906,7 +978,9 @@
                             },
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Photo is OK"
                             },
                             {
@@ -929,7 +1003,9 @@
                             },
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Take Selfie"
                             },
                             {
@@ -952,7 +1028,9 @@
                             },
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Selfie"
                             },
                             {
@@ -961,7 +1039,9 @@
                             },
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Photo is OK "
                             },
                             {
@@ -970,7 +1050,9 @@
                             },
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Continue "
                             },
                             {
@@ -992,7 +1074,9 @@
                     },
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "Taking Selfie "
                     },
                     {
@@ -1027,7 +1111,7 @@
             "filename": "kyc-step-frame-3.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1715841166-kyc-step-frame-3.png"
+            "url": "/images/blog/kyc-step-frame-3.png"
           }
         ]
       },
@@ -1050,7 +1134,9 @@
                         },
                         {
                           "type": "span",
-                          "marks": ["strong"],
+                          "marks": [
+                            "strong"
+                          ],
                           "value": "Card ID Photo "
                         },
                         {
@@ -1059,7 +1145,9 @@
                         },
                         {
                           "type": "span",
-                          "marks": ["strong"],
+                          "marks": [
+                            "strong"
+                          ],
                           "value": "Selfie"
                         },
                         {
@@ -1082,7 +1170,7 @@
             "filename": "kyc-step-frame-4.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1715841161-kyc-step-frame-4.png"
+            "url": "/images/blog/kyc-step-frame-4.png"
           },
           {
             "basename": "kyc-step-frame-5",
@@ -1091,7 +1179,7 @@
             "filename": "kyc-step-frame-5.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1715841154-kyc-step-frame-5.png"
+            "url": "/images/blog/kyc-step-frame-5.png"
           }
         ]
       },
@@ -1130,7 +1218,9 @@
                     },
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "success"
                     },
                     {
@@ -1149,7 +1239,9 @@
                       "children": [
                         {
                           "type": "span",
-                          "marks": ["strong"],
+                          "marks": [
+                            "strong"
+                          ],
                           "value": "Discord Community"
                         }
                       ]
@@ -1181,7 +1273,7 @@
             "filename": "kyc-step-frame-6.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1715841149-kyc-step-frame-6.png"
+            "url": "/images/blog/kyc-step-frame-6.png"
           }
         ]
       },
@@ -1339,7 +1431,7 @@
             "filename": "kyc-step-frame-7.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1715841141-kyc-step-frame-7.png"
+            "url": "/images/blog/kyc-step-frame-7.png"
           }
         ]
       }
@@ -1353,9 +1445,12 @@
         "height": 1440,
         "title": null,
         "alt": null,
-        "url": "https://www.datocms-assets.com/101962/1715831775-splash-edited.png"
+        "url": "/images/blog/splash-edited.png"
       }
     }
   },
-  "topics": ["how_to"]
+  "topics": [
+    "how_to"
+  ],
+  "shortLink": "https://bitlauncher.ai/en/blog/bitcash/how-to-register-and-kyc-to-bitcash"
 }

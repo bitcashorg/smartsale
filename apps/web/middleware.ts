@@ -6,7 +6,7 @@ import { defaultLocale, locales } from './dictionaries/locales'
 
 export function middleware(request: NextRequest) {
   const cookieStore = cookies()
-  const { pathname } = request.nextUrl
+  const { pathname, ...rest } = request.nextUrl
 
   // Redirect all requests matching any language followed by /blog to English /blog
   // const blogRegex = /^\/(\w{2})\/blog\//
@@ -20,13 +20,17 @@ export function middleware(request: NextRequest) {
     (lang) => pathname.startsWith(`/${lang}/`) || pathname === `/${lang}`,
   )
 
-  // console.log('🍓 has lang', hasLang, pathname)
-  if (hasLang) return NextResponse.next()
+  let response: NextResponse
 
-  const lang = getLocale(request)
-  request.nextUrl.pathname = `/${lang}${pathname}`
+  if (hasLang) {
+    response = NextResponse.next({ request })
+  } else {
+    const lang = getLocale(request)
+    request.nextUrl.pathname = `/${lang}${pathname}`
+    response = NextResponse.redirect(request.nextUrl)
+  }
 
-  return NextResponse.redirect(request.nextUrl)
+  return response
 }
 
 function getLocale(request: NextRequest): string {
@@ -41,8 +45,9 @@ function getLocale(request: NextRequest): string {
   const languages = negotiator.languages()
   return match(languages, locales, defaultLocale)
 }
+
 export const config = {
   matcher: [
-    '/((?!_next|_nextjs|images|api|studio|media|favicon.ico|__nextjs_original-stack-frame).*)',
+    '/((?!_next|_nextjs|images|api|studio|workers|media|favicon.ico|__nextjs_original-stack-frame).*)',
   ],
 }

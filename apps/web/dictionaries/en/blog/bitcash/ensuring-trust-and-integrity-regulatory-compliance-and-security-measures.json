@@ -2,17 +2,19 @@
   "relatedBlogs": [
     {
       "id": "fbM-UqrYQXGhw6HB4C6swQ",
-      "topics": ["launchpad"],
+      "topics": [
+        "launchpad"
+      ],
       "title": "Strategic Roadmap: Pioneering Blockchain Innovation and AI Startup Success",
       "slug": "strategic-roadmap-pioneering-blockchain-innovation-and-ai-startup-success",
       "authorName": "Jun Dam",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+        "url": "/images/blog/jdamx170-removebg-preview.png"
       },
       "_publishedAt": "2024-03-15T05:13:30+00:00",
       "description": "Outlining bitLauncher's phased plan for groundbreaking technology deployment, community-driven growth, and the development of the equitable Antelope chain, to revolutionize the AI and cryptocurrency landscapes.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1710479575-roadmapbitlauncher.webp"
+        "url": "/images/blog/roadmapbitlauncher.webp"
       },
       "seo": {
         "description": "Outlining bitLauncher's phased plan for groundbreaking technology deployment",
@@ -23,23 +25,25 @@
           "height": 700,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1710479575-roadmapbitlauncher.webp"
+          "url": "/images/blog/roadmapbitlauncher.webp"
         }
       }
     },
     {
       "id": "BEfgGhndSsCn5MBU89RO3A",
-      "topics": ["launchpad"],
+      "topics": [
+        "launchpad"
+      ],
       "title": "Empowering Innovation: Vision, Mission, and Strategic Goals of bitLauncher",
       "slug": "empowering-innovation-vision-mission-and-strategic-goals-of-bitcash-launchpad",
       "authorName": "Jun Dam",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+        "url": "/images/blog/jdamx170-removebg-preview.png"
       },
       "_publishedAt": "2024-03-14T05:31:29+00:00",
       "description": "This section outlines bitcash Launchpad's vision to revolutionize AI innovation with cryptocurrency, detailing our mission to democratize AI development and our strategic goals for creating a community-driven, transparent, and ethical technological future.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1709370139-whitepaper-p4.webp"
+        "url": "/images/blog/whitepaper-p4.webp"
       },
       "seo": {
         "description": "This section outlines our vision, mission and goals to revolutionize AI innovation with cryptocurrency.",
@@ -50,23 +54,28 @@
           "height": 700,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1709370139-whitepaper-p4.webp"
+          "url": "/images/blog/whitepaper-p4.webp"
         }
       }
     },
     {
       "id": "NZeB3i5XRzuELW2UWBDyRQ",
-      "topics": ["research", "dao", "fundraising", "launchpad"],
+      "topics": [
+        "research",
+        "dao",
+        "fundraising",
+        "launchpad"
+      ],
       "title": "Navigating the Convergence: A Comprehensive Market Analysis of AI and the Cryptocurrency Dynamic",
       "slug": "navigating-the-convergence-a-comprehensive-market-analysis-of-ai-and-cryptocurren",
       "authorName": "Jun Dam",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+        "url": "/images/blog/jdamx170-removebg-preview.png"
       },
       "_publishedAt": "2024-03-14T05:30:05+00:00",
       "description": "This section explores the dynamic intersection of AI and cryptocurrency, highlighting key trends, challenges, and opportunities, and positions bitcash Launchpad as a pioneering platform for open-source AI projects.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1709276586-marketanalysis-img2.webp"
+        "url": "/images/blog/marketanalysis-img2.webp"
       },
       "seo": {
         "description": "Key trends, challenges, and opportunities, and positions bitcash Launchpad as a pioneering platform for open-source AI projects.",
@@ -77,23 +86,25 @@
           "height": 700,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1709276586-marketanalysis-img2.webp"
+          "url": "/images/blog/marketanalysis-img2.webp"
         }
       }
     },
     {
       "id": "MICfokr1TVuScAB4Qh9YGw",
-      "topics": ["launchpad"],
+      "topics": [
+        "launchpad"
+      ],
       "title": "Empowering Innovation: Tokenomics and Funding Strategy of bitcash",
       "slug": "empowering-innovation-tokenomics-and-funding-strategy-of-bitcash",
       "authorName": "Jun Dam",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+        "url": "/images/blog/jdamx170-removebg-preview.png"
       },
       "_publishedAt": "2024-03-14T05:27:37+00:00",
       "description": "This section details bitcash's mint-and-burn utility token model and its strategic approach to equitable funding and value growth, underpinning the launchpad's mission to empower AI development with transparent and sustainable tokenomics.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1710053905-tokenomicswpimg.webp"
+        "url": "/images/blog/tokenomicswpimg.webp"
       },
       "seo": {
         "description": "This section details bitcash's mint-and-burn utility token model and its strategic approach to equitable funding and value growth",
@@ -104,23 +115,25 @@
           "height": 1012,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1710053905-tokenomicswpimg.webp"
+          "url": "/images/blog/tokenomicswpimg.webp"
         }
       }
     },
     {
       "id": "BSDdY8byQWipv749rApFRA",
-      "topics": ["launchpad"],
+      "topics": [
+        "launchpad"
+      ],
       "title": "Unlocking Potential: Use Cases and Applications of bitLauncher",
       "slug": "unlocking-potential-use-cases-and-applications-of-bitlauncher",
       "authorName": "Jun Dam",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+        "url": "/images/blog/jdamx170-removebg-preview.png"
       },
       "_publishedAt": "2024-03-14T05:26:22+00:00",
-      "description": "This section explores how bitLauncer revolutionizes AI startup funding and global market access, showcasing sustainable open-source models, strategic startup culture, and the global contributor ecosystem through targeted use cases and the pioneering Masterbots.ai project.",
+      "description": "This section explores how bitLauncer revolutionizes AI startup funding and global market access, showcasing sustainable open-source models, strategic startup culture, and the global investor ecosystem through targeted use cases and the pioneering Masterbots.ai project.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1710393954-usecaseappsimg.webp"
+        "url": "/images/blog/usecaseappsimg.webp"
       },
       "seo": {
         "description": "This section explores how bitLauncher revolutionizes AI startup funding, global market access, and the pioneering Masterbots.ai project.",
@@ -131,24 +144,26 @@
           "height": 1012,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1710393954-usecaseappsimg.webp"
+          "url": "/images/blog/usecaseappsimg.webp"
         }
       }
     }
   ],
   "blogContent": {
     "id": "CD89KaoLSh6nQbiMhxX0EQ",
-    "topics": ["launchpad"],
+    "topics": [
+      "launchpad"
+    ],
     "title": "Ensuring Trust and Integrity: Regulatory Compliance and Security Measures",
     "slug": "ensuring-trust-and-integrity-regulatory-compliance-and-security-measures",
     "authorName": "Jun Dam",
     "authorPicture": {
-      "url": "https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png"
+      "url": "/images/blog/jdamx170-removebg-preview.png"
     },
     "_publishedAt": "2024-06-20T16:21:42+01:00",
     "description": "This section outlines our platform's proactive approach to adhering to global regulatory standards and implementing advanced security measures, ensuring a safe and compliant environment for users in the crypto and AI spaces.",
     "thumbnail": {
-      "url": "https://www.datocms-assets.com/101962/1710562461-bitlauncherregsecimg.webp"
+      "url": "/images/blog/bitlauncherregsecimg.webp"
     },
     "contentBlock": [
       {
@@ -208,7 +223,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Proactive Legal Monitoring"
                             },
                             {
@@ -227,7 +244,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "User Restrictions"
                             },
                             {
@@ -246,7 +265,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "KYC and AML Policies"
                             },
                             {
@@ -265,7 +286,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Data Protection and Privacy"
                             },
                             {
@@ -309,7 +332,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "End-to-End Encryption"
                             },
                             {
@@ -328,7 +353,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Regular Security Audits"
                             },
                             {
@@ -347,7 +374,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Smart Contract Audits"
                             },
                             {
@@ -366,7 +395,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "Decentralized Security Practices"
                             },
                             {
@@ -385,7 +416,9 @@
                           "children": [
                             {
                               "type": "span",
-                              "marks": ["strong"],
+                              "marks": [
+                                "strong"
+                              ],
                               "value": "User Education and Awareness"
                             },
                             {
@@ -419,7 +452,7 @@
             "filename": "bitlauncherregsecimg.webp",
             "format": "webp",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1710562461-bitlauncherregsecimg.webp"
+            "url": "/images/blog/bitlauncherregsecimg.webp"
           }
         ]
       }
@@ -433,9 +466,12 @@
         "height": 700,
         "title": null,
         "alt": null,
-        "url": "https://www.datocms-assets.com/101962/1710562461-bitlauncherregsecimg.webp"
+        "url": "/images/blog/bitlauncherregsecimg.webp"
       }
     }
   },
-  "topics": ["launchpad"]
+  "topics": [
+    "launchpad"
+  ],
+  "shortLink": "https://bitlauncher.ai/en/blog/bitcash/ensuring-trust-and-integrity-regulatory-compliance-and-security-measures"
 }

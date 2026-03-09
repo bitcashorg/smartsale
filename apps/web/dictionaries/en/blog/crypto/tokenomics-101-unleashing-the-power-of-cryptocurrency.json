@@ -2,17 +2,21 @@
   "relatedBlogs": [
     {
       "id": "180563939",
-      "topics": ["DAO", "Tokenomics", "Commentary"],
+      "topics": [
+        "DAO",
+        "Tokenomics",
+        "Commentary"
+      ],
       "title": "A Framework for Blockchain Governance Design: The Prysm Group Wheel [Commentary]",
       "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:19:19+01:00",
       "description": "Navigate the complexities of blockchain governance with the Prysm Group Wheel. Your roadmap to effective blockchain governance design.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+        "url": "/images/blog/cbc11-img1.webp"
       },
       "seo": {
         "description": "Navigate the complexities of blockchain governance with the Prysm Group Wheel. Your roadmap to effective blockchain governance design.",
@@ -23,23 +27,26 @@
           "height": 1383,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+          "url": "/images/blog/cbc11-img1.webp"
         }
       }
     },
     {
       "id": "180217169",
-      "topics": ["Tokenomics", "Commentary"],
+      "topics": [
+        "Tokenomics",
+        "Commentary"
+      ],
       "title": "Economics of Tokenized Incentives 3: Token Value Won’t Align Stakeholders [Commentary]",
       "slug": "economics-of-tokenized-incentives-3-token-value-won-t-align-stakeholders-commenta",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:17:23+01:00",
       "description": "Uncover the pitfalls of using token value as a performance metric in blockchain platforms. Learn to design effective incentive systems.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+        "url": "/images/blog/cbc3-img1.png"
       },
       "seo": {
         "description": "Uncover the pitfalls of using token value as a performance metric in blockchain platforms. Learn to design effective incentive systems.",
@@ -50,23 +57,26 @@
           "height": 862,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1690771457-cbc3-img1.png"
+          "url": "/images/blog/cbc3-img1.png"
         }
       }
     },
     {
       "id": "180217123",
-      "topics": ["Tokenomics", "Commentary"],
+      "topics": [
+        "Tokenomics",
+        "Commentary"
+      ],
       "title": "Economics of Tokenized Incentives 2: Selecting Effective Performance Metrics [Commentary]",
       "slug": "economics-of-tokenized-incentives-2-selecting-effective-performance-metrics-comme",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:17:05+01:00",
       "description": "Discover the power of performance metrics in blockchain pay-for-performance systems. Learn to align incentives with platform goals effectively.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+        "url": "/images/blog/cbc2-img1.png"
       },
       "seo": {
         "description": "Discover the power of performance metrics in blockchain pay-for-performance systems. Learn to align incentives with platform goals effectively.",
@@ -77,23 +87,26 @@
           "height": 862,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1690770918-cbc2-img1.png"
+          "url": "/images/blog/cbc2-img1.png"
         }
       }
     },
     {
       "id": "180217082",
-      "topics": ["Tokenomics", "Commentary"],
+      "topics": [
+        "Tokenomics",
+        "Commentary"
+      ],
       "title": "Economics of Tokenized Incentives 1: Intro to Pay for Performance [Commentary]",
       "slug": "economics-of-tokenized-incentives-1-intro-to-pay-for-performance",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:15:12+01:00",
       "description": "Dive into the complexities of pay-for-performance incentives in blockchain platforms. Learn the trade-offs and design considerations for success.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+        "url": "/images/blog/cbc1-img1.png"
       },
       "seo": {
         "description": "Dive into the complexities of pay-for-performance incentives in blockchain platforms. Learn the trade-offs and design considerations for success",
@@ -104,23 +117,27 @@
           "height": 862,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1690770568-cbc1-img1.png"
+          "url": "/images/blog/cbc1-img1.png"
         }
       }
     },
     {
       "id": "180563918",
-      "topics": ["Tokenomics", "Commentary", "Fundraising"],
+      "topics": [
+        "Tokenomics",
+        "Commentary",
+        "Fundraising"
+      ],
       "title": "Tokens: Investment Vehicle or Medium of Exchange (Not Both) [Commentary]",
       "slug": "tokens-investment-vehicle-or-medium-of-exchange-not-both-commentary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:13:31+01:00",
       "description": "Delve into the dual role of tokens in the blockchain economy. Uncover the fine line between investment vehicle and medium of exchange.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
+        "url": "/images/blog/cbc8-img1.png"
       },
       "seo": {
         "description": "Delve into the dual role of tokens in the blockchain economy. Uncover the fine line between investment vehicle and medium of exchange.",
@@ -131,23 +148,27 @@
           "height": 862,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1690859959-cbc8-img1.png"
+          "url": "/images/blog/cbc8-img1.png"
         }
       }
     },
     {
       "id": "180556595",
-      "topics": ["Fundraising", "Tokenomics", "Commentary"],
+      "topics": [
+        "Fundraising",
+        "Tokenomics",
+        "Commentary"
+      ],
       "title": "The Blockchain Effect: Network Effects without Market Power Costs [Commentary]",
       "slug": "the-blockchain-effect-network-effects-without-market-power-costs-commentary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:11:14+01:00",
       "description": "Explore how blockchain enables network effects without the downsides of market power. Discover the game-changing Blockchain Effect.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+        "url": "/images/blog/cbc4-img1.png"
       },
       "seo": {
         "description": "Explore how blockchain enables network effects without the downsides of market power. Discover the game-changing Blockchain Effect.",
@@ -158,23 +179,26 @@
           "height": 862,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1690855275-cbc4-img1.png"
+          "url": "/images/blog/cbc4-img1.png"
         }
       }
     },
     {
       "id": "180563931",
-      "topics": ["Tokenomics", "Commentary"],
+      "topics": [
+        "Tokenomics",
+        "Commentary"
+      ],
       "title": "Blockchain Incentive Structures: What they are and why they matter [Commentary]",
       "slug": "blockchain-incentive-structures-what-they-are-and-why-they-matter-commentary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:10:02+01:00",
       "description": "Understand the core of blockchain incentive structures and their significance in driving user behavior and platform success.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+        "url": "/images/blog/cbc10-img1.png"
       },
       "seo": {
         "description": "Understand the core of blockchain incentive structures and their significance in driving user behavior and platform success.",
@@ -185,23 +209,27 @@
           "height": 862,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1690860807-cbc10-img1.png"
+          "url": "/images/blog/cbc10-img1.png"
         }
       }
     },
     {
       "id": "167184977",
-      "topics": ["Tokenomics", "DAO", "Fundraising"],
+      "topics": [
+        "Tokenomics",
+        "DAO",
+        "Fundraising"
+      ],
       "title": "Revolutionizing the Equity Model: How Tokenomics is Disrupting the Startup World",
       "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:02:51+01:00",
       "description": "Unlock the future of startups with tokenomics! Explore how this innovative concept is reshaping the equity model and revolutionizing the startup landscape.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
+        "url": "/images/blog/tb2-img1.png"
       },
       "seo": {
         "description": "Explore how this innovative concept is reshaping the equity model and revolutionizing the startup landscape.",
@@ -212,23 +240,26 @@
           "height": 994,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
+          "url": "/images/blog/tb2-img1.png"
         }
       }
     },
     {
       "id": "166981063",
-      "topics": ["Getting Started", "DAO"],
+      "topics": [
+        "Getting Started",
+        "DAO"
+      ],
       "title": "The Future is Here: The Rise of Decentralized Autonomous Organizations (DAOs)",
       "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T08:57:02+01:00",
       "description": "Explore the rise of Decentralized Autonomous Organizations (DAOs) in our guide. Understand the future of business and the opportunities for startups.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1687381524-db1-img1.png"
+        "url": "/images/blog/db1-img1.png"
       },
       "seo": {
         "description": "Explore the rise of Decentralized Autonomous Organizations (DAOs) in our guide. Understand the future of business and the opportunities for startups.",
@@ -239,17 +270,20 @@
     },
     {
       "id": "165744328",
-      "topics": ["Getting Started", "How-To"],
+      "topics": [
+        "Getting Started",
+        "How-To"
+      ],
       "title": "Stay Ahead of the Game: A Guide to Staying Informed and Educated in the World of Cryptocurrency",
       "slug": "stay-ahead-of-the-game-a-guide-to-staying-informed-and-educated-in-the-world-of-c",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T08:52:39+01:00",
       "description": "Stay informed and educated in the dynamic world of cryptocurrency. Explore our comprehensive guide to stay ahead of the game and navigate the ever-evolving digital landscape.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1687049473-cb20-img1.png"
+        "url": "/images/blog/cb20-img1.png"
       },
       "seo": {
         "description": "Stay informed and educated in the dynamic world of cryptocurrency. ",
@@ -260,23 +294,26 @@
           "height": 1024,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1687049473-cb20-img1.png"
+          "url": "/images/blog/cb20-img1.png"
         }
       }
     },
     {
       "id": "165742753",
-      "topics": ["Getting Started", "Payments"],
+      "topics": [
+        "Getting Started",
+        "Payments"
+      ],
       "title": "Stablecoins: The Future of Cryptocurrency Transactions and Payments",
       "slug": "stablecoins-the-future-of-cryptocurrency-transactions-and-payments",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T08:49:51+01:00",
       "description": "Discover the future of cryptocurrency transactions and payments with stablecoins. Explore the stability and potential of these innovative digital assets in our insightful blog post.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1687049009-cb19-img3edited.png"
+        "url": "/images/blog/cb19-img3edited.png"
       },
       "seo": {
         "description": "Discover the future of cryptocurrency transactions and payments with stablecoins. ",
@@ -287,23 +324,26 @@
           "height": 1024,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1687049009-cb19-img3edited.png"
+          "url": "/images/blog/cb19-img3edited.png"
         }
       }
     },
     {
       "id": "165685913",
-      "topics": ["DeFi", "Getting Started"],
+      "topics": [
+        "DeFi",
+        "Getting Started"
+      ],
       "title": "Decentralize Your Finance: An Introduction to the World of DeFi",
       "slug": "decentralize-your-finance-an-introduction-to-the-world-of-defi",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T08:47:03+01:00",
       "description": "Unlock the power of decentralized finance (DeFi). Explore the innovative world of blockchain-based financial solutions in our comprehensive blog post.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1687047143-cb18-img1.png"
+        "url": "/images/blog/cb18-img1.png"
       },
       "seo": {
         "description": "Unlock the power of decentralized finance (DeFi). ",
@@ -314,23 +354,26 @@
           "height": 1024,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1687047143-cb18-img1.png"
+          "url": "/images/blog/cb18-img1.png"
         }
       }
     },
     {
       "id": "165685908",
-      "topics": ["Getting Started", "Fundraising"],
+      "topics": [
+        "Getting Started",
+        "Fundraising"
+      ],
       "title": "Disrupt the Status Quo: How Cryptocurrency is Revolutionizing Fundraising and Crowdfunding",
       "slug": "disrupt-the-status-quo-how-cryptocurrency-is-revolutionizing-fundraising-and-crow",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T08:33:36+01:00",
       "description": "Explore the groundbreaking potential of cryptocurrency in fundraising and crowdfunding. Discover how digital currencies are disrupting the traditional methods in our insightful blog post.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1687046260-cb17-img1edited.png"
+        "url": "/images/blog/cb17-img1edited.png"
       },
       "seo": {
         "description": "Explore the groundbreaking potential of cryptocurrency in fundraising and crowdfunding. ",
@@ -341,23 +384,26 @@
           "height": 1024,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1687046260-cb17-img1edited.png"
+          "url": "/images/blog/cb17-img1edited.png"
         }
       }
     },
     {
       "id": "165673014",
-      "topics": ["Getting Started", "Investment"],
+      "topics": [
+        "Getting Started",
+        "Investment"
+      ],
       "title": "Crypto Investing 101: How to Use Cryptocurrency for Investment and Asset Management",
       "slug": "crypto-investing-101-how-to-use-cryptocurrency-for-investment-and-asset-managemen",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T08:32:00+01:00",
       "description": "Master the art of crypto investing and asset management. Learn how to leverage cryptocurrency for optimal investment strategies in our comprehensive guide.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1687044673-cb16-img5.png"
+        "url": "/images/blog/cb16-img5.png"
       },
       "seo": {
         "description": "Master the art of crypto investing and asset management. ",
@@ -368,24 +414,27 @@
           "height": 1024,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1687044673-cb16-img5.png"
+          "url": "/images/blog/cb16-img5.png"
         }
       }
     }
   ],
   "blogContent": {
     "id": "167101094",
-    "topics": ["Getting Started", "Tokenomics"],
+    "topics": [
+      "Getting Started",
+      "Tokenomics"
+    ],
     "title": "Tokenomics 101: Unleashing the Power of Cryptocurrency!",
     "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
     "authorName": "Crypto Clairity",
     "authorPicture": {
-      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      "url": "/images/blog/cryptoclaraty5.png"
     },
     "_publishedAt": "2023-10-05T08:57:58+01:00",
     "description": "Discover the power of cryptocurrency through Tokenomics 101 - an in-depth guide to understanding the economics behind digital assets.",
     "thumbnail": {
-      "url": "https://www.datocms-assets.com/101962/1687391799-tb1-img1.png"
+      "url": "/images/blog/tb1-img1.png"
     },
     "contentBlock": [
       {
@@ -489,7 +538,7 @@
             "filename": "tb1-img1.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1687391799-tb1-img1.png"
+            "url": "/images/blog/tb1-img1.png"
           }
         ]
       },
@@ -603,7 +652,7 @@
             "filename": "tb1-img2.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1687393019-tb1-img2.png"
+            "url": "/images/blog/tb1-img2.png"
           }
         ]
       },
@@ -651,12 +700,14 @@
                     },
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "Tokenomics can reshape industries, economies, even societies!"
                     },
                     {
                       "type": "span",
-                      "value": " Think of it as a master key, capable of unlocking the chains that bind traditional systems. The music industry plagued by middlemen? Use tokens to connect artists directly with their fans. Real estate, a market that seems a closed club for the wealthy? Tokenize property and allow anyone to contribute in fractions of a home. Governance falling prey to inefficiency? Utilize tokens to allow direct, democratic decision making."
+                      "value": " Think of it as a master key, capable of unlocking the chains that bind traditional systems. The music industry plagued by middlemen? Use tokens to connect artists directly with their fans. Real estate, a market that seems a closed club for the wealthy? Tokenize property and allow anyone to invest in fractions of a home. Governance falling prey to inefficiency? Utilize tokens to allow direct, democratic decision making."
                     }
                   ]
                 },
@@ -674,7 +725,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Imagine a world where you wake up in Tokyo, provide consulting services to a client in London, receive payment in tokens, and use those tokens to buy coffee in New York, all without worrying about exchange rates, transaction fees, or processing delays. A world where you can contribute in a startup in Berlin while lounging on a beach in Bali. A world where your ideas, your creativity, your skills, aren't shackled by where you live or where you come from."
+                      "value": "Imagine a world where you wake up in Tokyo, provide consulting services to a client in London, receive payment in tokens, and use those tokens to buy coffee in New York, all without worrying about exchange rates, transaction fees, or processing delays. A world where you can invest in a startup in Berlin while lounging on a beach in Bali. A world where your ideas, your creativity, your skills, aren't shackled by where you live or where you come from."
                     }
                   ]
                 },
@@ -714,7 +765,9 @@
                     },
                     {
                       "type": "span",
-                      "marks": ["emphasis"],
+                      "marks": [
+                        "emphasis"
+                      ],
                       "value": "\"Why should I care about tokenomics?\""
                     },
                     {
@@ -723,7 +776,9 @@
                     },
                     {
                       "type": "span",
-                      "marks": ["emphasis"],
+                      "marks": [
+                        "emphasis"
+                      ],
                       "value": "\"Can I afford not to?\""
                     },
                     {
@@ -744,7 +799,7 @@
             "filename": "tb1-img3.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1687393035-tb1-img3.png"
+            "url": "/images/blog/tb1-img3.png"
           }
         ]
       },
@@ -858,7 +913,7 @@
             "filename": "tb1-img4.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1687392829-tb1-img4.png"
+            "url": "/images/blog/tb1-img4.png"
           }
         ]
       },
@@ -906,7 +961,9 @@
                     },
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "The world of tokenomics, my friends, is not a distant dream, it's here, it's now, and it's your time to embrace it!"
                     }
                   ]
@@ -947,7 +1004,9 @@
                     },
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "The beat is pounding, the stage is set, your tokenomics adventure awaits!"
                     }
                   ]
@@ -964,7 +1023,7 @@
             "filename": "tb1-img5.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1687393455-tb1-img5.png"
+            "url": "/images/blog/tb1-img5.png"
           }
         ]
       }
@@ -978,9 +1037,13 @@
         "height": 994,
         "title": null,
         "alt": null,
-        "url": "https://www.datocms-assets.com/101962/1687391799-tb1-img1.png"
+        "url": "/images/blog/tb1-img1.png"
       }
     }
   },
-  "topics": ["Getting Started", "Tokenomics"]
+  "topics": [
+    "Getting Started",
+    "Tokenomics"
+  ],
+  "shortLink": "https://bitlauncher.ai/en/blog/crypto/tokenomics-101-unleashing-the-power-of-cryptocurrency"
 }

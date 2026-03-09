@@ -18,10 +18,13 @@ export interface EnvConfig {
   }
   smartsale: {
     auction: Address
-    bk: string
   }
   supabase: {
     url: string
     anonKey: string
+  }
+  chaingraph: {
+    url: string
+    key: string
   }
 }

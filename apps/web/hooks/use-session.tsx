@@ -46,8 +46,6 @@ function useSessionFn() {
   const esrCode = loginSR?.value?.encode().toString().replace('esr://', '')
   const loginUri = `${bitcashRegisterUri}&esr=${esrCode}`
 
-  console.log('loginUri', loginUri)
-
   // Function to start a new session
   const startSession = useCallback(
     (session: Tables<'session'>) => {
@@ -63,18 +61,14 @@ function useSessionFn() {
   // Effect to subscribe to Supabase session changes
   useEffect(() => {
     if (isMobile) return // Skip subscription on mobile
-
-    console.log(`🧑🏻‍💻 🍓 subscribing to session ${newSessionId}`)
     const channel = supabase
       .channel('session')
       .on(
         'postgres_changes',
         { event: 'INSERT', schema: 'public', table: 'session' },
         (payload) => {
-          console.log('BAZINGA 🍓 new supabase session', payload.new)
           if (session || payload.new.id !== newSessionId) return
           const newSession = payload.new as Tables<'session'>
-          console.log(' ✅ supabase session id matches', newSession)
           startSession(newSession)
           toggleShowSessionDialog(false)
         },
@@ -90,7 +84,6 @@ function useSessionFn() {
   // Effect to handle session from URL parameters
   useEffect(() => {
     if (!paramsSessionId) return
-    console.log(`💥💥 url session effect  ${paramsSessionId}`)
 
     const getSession = async () => {
       console.log(`getting session ${paramsSessionId}`)
@@ -134,7 +127,9 @@ function useSessionFn() {
     console.log('login or connect', session, openConnectModal, isMobile)
 
     if (isMobile) {
-      session?.account && openConnectModal ? openConnectModal() : loginRedirect()
+      session?.account && openConnectModal
+        ? openConnectModal()
+        : loginRedirect()
       return
     }
 
@@ -152,7 +147,6 @@ function useSessionFn() {
 
   // Function to handle logout
   const logout = () => {
-    console.log('logout')
     setSession(null)
     router.refresh()
   }

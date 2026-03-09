@@ -1,4 +1,4 @@
-import type { Database, Tables } from '@repo/supabase'
+import type { Database, Tables, TablesInsert } from '@repo/supabase'
 import type { SupabaseClient } from '@supabase/supabase-js'
 import type { Address } from 'viem'
 
@@ -10,10 +10,13 @@ import type { Address } from 'viem'
  * @returns {Promise<any>} Presale data for the specified project
  * @throws {Error} If there's an error fetching the data
  */
-export async function getPresaleData({ projectId, supabase }: ProjectDataParams) {
+export async function getPresaleData({
+  projectId,
+  supabase,
+}: ProjectDataParams) {
   const { data, error } = await supabase
     .from('presale')
-    .select('*')
+    .select('*, presale_address(*)')
     .eq('project_id', projectId)
     .single()
 
@@ -22,7 +25,9 @@ export async function getPresaleData({ projectId, supabase }: ProjectDataParams)
     throw error
   }
 
-  return data as Tables<'presale'>
+  return data as Tables<'presale'> & {
+    presale_address: Tables<'presale_address'>[]
+  }
 }
 
 /**
@@ -31,7 +36,10 @@ export async function getPresaleData({ projectId, supabase }: ProjectDataParams)
  * @returns {Promise<any>} Project data for the specified project
  * @throws {Error} If there's an error fetching the data
  */
-export async function getProjectData({ projectId, supabase }: ProjectDataParams) {
+export async function getProjectData({
+  projectId,
+  supabase,
+}: ProjectDataParams) {
   const { data, error } = await supabase
     .from('project')
     .select('*')
@@ -49,7 +57,7 @@ export async function getProjectData({ projectId, supabase }: ProjectDataParams)
 // Interface for function parameters
 interface ProjectDataParams {
   projectId: number
-  supabase: SupabaseClient
+  supabase: SupabaseClient<Database>
 }
 
 /**
@@ -143,83 +151,33 @@ export async function getPresaleDeposits({
   return data
 }
 
-export async function getPresaleByAddress(address: Address, supabase: SupabaseClient) {
-  console.log('🚀 getPresaleByAddress', address)
-  const { data, error } = await supabase
-    .from('presale')
-    .select('*, project(*)') // Fetch associated project through presale.project_id
-    .ilike('address', address)
-    .single()
-
-  if (error) {
-    console.error('Error fetching presale by address:', error)
-    return null
-  }
-
-  return data
-}
-
-export async function getProcessedPresaleDeposits({
-  address,
-  projectId,
-  supabase,
-}: { address: Address; projectId: number; supabase: SupabaseClient }) {
-  const { data, error } = await supabase
-    .from('presale_deposit')
-    .select('*')
-    .eq('project_id', projectId)
-    .eq('address', address)
-    .eq('state', 'processed')
-
-  if (error) {
-    console.error('Error getting presale deposits data:', error)
-    throw error
-  }
-
-  return data
-}
-
-export async function setPresaleDepositStatus({
-  depositHash,
-  supabase,
-  state,
-}: {
-  depositHash: string
-  supabase: SupabaseClient
-  state: Database['public']['Enums']['state']
-}) {
-  const { data, error } = await supabase
-    .from('presale_deposit')
-    .update({ state })
-    .eq('deposit_hash', depositHash)
-    .select()
-    .single()
-
-  if (error) {
-    console.error('Error updating presale deposit status:', error)
-    return null
-  }
-
-  return data
-}
-
-export async function isDepositProcessing({
-  depositHash,
-  supabase,
-}: {
-  depositHash: string
-  supabase: SupabaseClient
-}): Promise<boolean> {
-  const { data, error } = await supabase
-    .from('presale_deposit')
-    .select('deposit_hash')
-    .eq('deposit_hash', depositHash)
-    .in('state', ['processing', 'processed'])
-
-  if (error) {
-    console.error('Error checking deposit processed status:', error)
+export async function insertTransaction(
+  transaction: TablesInsert<'transaction'>,
+  supabase: SupabaseClient,
+) {
+  const result = await supabase.from('transaction').insert(transaction).select()
+  if (!result) {
+    console.error('Error inserting transaction:', transaction)
     return false
   }
+  return true
+}
 
-  return data?.length > 0
+export async function getWhitelistedAddress(
+  account: string,
+  supabase: SupabaseClient<Database>,
+) {
+  const { data, error } = await supabase
+    .from('whitelist')
+    .select('*')
+    .eq('account', account)
+    .eq('project_id', 1) // TODO: make this dynamic
+    .single()
+
+  if (error || !data?.address) {
+    console.error('Error fetching whitelisted address:', error)
+    throw new Error('Error fetching whitelisted address')
+  }
+
+  return data.address as Address
 }

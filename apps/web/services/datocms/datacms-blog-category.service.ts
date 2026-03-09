@@ -117,14 +117,16 @@ export async function getBlogCategory(
       },
     })
 
-    dataRecord = data[categoryRecordName as keyof typeof data] as BlogArticleRecord[]
+    dataRecord = data[
+      categoryRecordName as keyof typeof data
+    ] as BlogArticleRecord[]
 
     if (!dataRecord.length) {
-      throw new Error('No records has been found for  ' + category)
+      throw new Error(`No records has been found for  ${category}`)
     }
   } catch (err) {
     console.log(
-      'datocms-blog-category.service::getBlogCategory::[ERROR]:: ' + category,
+      `datocms-blog-category.service::getBlogCategory::[ERROR]:: ${category}`,
       err,
     )
 
@@ -562,7 +564,10 @@ export async function getBlogCategories(): Promise<getBlogCategoriesTypes> {
 
     return data as unknown as getBlogCategoriesTypes
   } catch (error) {
-    console.error('datocms-blog-category.service::getBlogCategories::[ERROR]', error)
+    console.error(
+      'datocms-blog-category.service::getBlogCategories::[ERROR]',
+      error,
+    )
 
     return {
       allBlogBitcoins: [defaultBlogArticle],
@@ -585,12 +590,12 @@ const defaultBlogArticle: BlogArticleRecord = {
   slug: 'the-art-of-researching-and-evaluating-bitcoin-exchanges-a-guide-for-contributors',
   authorName: 'Jun Dam',
   authorPicture: {
-    url: 'https://www.datocms-assets.com/101962/1686758812-jdamx170-removebg-preview.png',
+    url: '/images/blog/jdamx170-removebg-preview.png',
   },
   _publishedAt: '2023-06-15T03:14:17+01:00',
   description: '',
   thumbnail: {
-    url: 'https://www.datocms-assets.com/101962/1686794861-bb5-img1.png',
+    url: '/images/blog/bb5-img1.png',
   },
   topics: ['bitcoin'],
   contentBlock: [

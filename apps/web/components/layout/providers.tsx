@@ -18,11 +18,13 @@ import {
   trustWallet,
   walletConnectWallet,
 } from '@rainbow-me/rainbowkit/wallets'
-import { eosEvmTestnet } from '@repo/chains'
+import { eosEvmMainnet, eosEvmTestnet } from '@repo/chains'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { merge } from 'lodash'
 import { ThemeProvider as NextThemesProvider } from 'next-themes'
 import type { ThemeProviderProps } from 'next-themes/dist/types'
+import { NuqsAdapter } from 'nuqs/adapters/next/app'
+import { useEffect } from 'react'
 import { WagmiProvider } from 'wagmi'
 import {
   arbitrum,
@@ -37,7 +39,16 @@ import {
 
 const queryClient = new QueryClient()
 
-const prodChains: _chains = [arbitrum, avalanche, base, mainnet, optimism, polygon, bsc]
+const prodChains: _chains = [
+  arbitrum,
+  avalanche,
+  base,
+  mainnet,
+  optimism,
+  polygon,
+  bsc,
+  { ...eosEvmMainnet, fees: undefined },
+]
 const devChains: _chains = [{ ...eosEvmTestnet, fees: undefined }, sepolia]
 
 export const wagmiConfig = getDefaultConfig({
@@ -67,42 +78,47 @@ const customRainbowKitTheme = merge(lightTheme(), {
   // }
 } as Theme)
 
-if (typeof window !== 'undefined') {
-  const multibaseKey = appConfig.multibase.key
-
-  if (!multibaseKey) {
-    console.error('Missing MULTIBASE_API_KEY')
-  } else {
-    multibase.init(multibaseKey)
-    console.info('Multibase Initialized')
-  }
-}
-
 export function Providers({ children, ...props }: ThemeProviderProps) {
+  useEffect(() => {
+    // Initialize multibase on client side only
+    if (typeof window !== 'undefined') {
+      const multibaseKey = appConfig.analytics.multibase.key
+
+      if (!multibaseKey) {
+        console.error('Missing MULTIBASE_API_KEY')
+      } else {
+        multibase.init(multibaseKey)
+        console.info('Multibase Initialized')
+      }
+    }
+  }, [])
+
   return (
     <NextThemesProvider {...props}>
-      <TooltipProvider>
-        <QueryClientProvider client={queryClient}>
-          <WagmiProvider config={wagmiConfig}>
-            <RainbowKitProvider
-              theme={customRainbowKitTheme}
-              modalSize="compact"
-              showRecentTransactions={true}
-              appInfo={{
-                appName: 'Bitlauncher',
-              }}
-            >
-              <MultibaseProvider client={multibase}>
-                <SessionProvider>
-                  <UseSigningRequestProvider>
-                    <MobileNavProvider>{children}</MobileNavProvider>
-                  </UseSigningRequestProvider>
-                </SessionProvider>
-              </MultibaseProvider>
-            </RainbowKitProvider>
-          </WagmiProvider>
-        </QueryClientProvider>
-      </TooltipProvider>
+      <NuqsAdapter>
+        <TooltipProvider>
+          <QueryClientProvider client={queryClient}>
+            <WagmiProvider config={wagmiConfig}>
+              <RainbowKitProvider
+                theme={customRainbowKitTheme}
+                modalSize="compact"
+                showRecentTransactions={true}
+                appInfo={{
+                  appName: 'Bitlauncher',
+                }}
+              >
+                <MultibaseProvider client={multibase}>
+                  <SessionProvider>
+                    <UseSigningRequestProvider>
+                      <MobileNavProvider>{children}</MobileNavProvider>
+                    </UseSigningRequestProvider>
+                  </SessionProvider>
+                </MultibaseProvider>
+              </RainbowKitProvider>
+            </WagmiProvider>
+          </QueryClientProvider>
+        </TooltipProvider>
+      </NuqsAdapter>
     </NextThemesProvider>
   )
 }

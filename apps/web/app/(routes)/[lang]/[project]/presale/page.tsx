@@ -16,9 +16,15 @@ import type { ProjectPageProps } from '@/types/routing.type'
 import { redirect } from 'next/navigation'
 import { getAddress } from 'viem'
 
+// This page uses Supabase server client which requires cookies, so it must be dynamic
+export const dynamic = 'force-dynamic'
+
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const dict = await getDictionary(params.lang)
-  const project = (await getProjectBySlug(params.project, dict)) as ProjectWithAuction
+  const project = (await getProjectBySlug(
+    params.project,
+    dict,
+  )) as ProjectWithAuction
 
   if (!project) redirect('/')
 
@@ -41,8 +47,6 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
   const tokenAddress = getAddress(projectData.token_address)
 
-  console.log('😍 tokenAddress', tokenAddress)
-
   return (
     <div className="flex min-h-[calc(83vh-4rem)] flex-col">
       <ProjectHeader project={project}>
@@ -61,8 +65,11 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           </Card>
 
           <PresaleDepositCard
-            project={project}
-            presaleAddress={getAddress(presale.address)}
+            project={{
+              ...project,
+              ...(presale || {}),
+            }}
+            presaleAddresses={presale.presale_address}
             tokenAddress={tokenAddress}
             isPresaleActive={isPresaleActive}
             isAuctionActive={isAuctionActive}

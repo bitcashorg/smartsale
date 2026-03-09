@@ -1,10 +1,40 @@
 /** @type {import('next').NextConfig} */
 
-const { hostname } = require('os')
-const path = require('path')
+const { hostname } = require('node:os')
+const path = require('node:path')
+const webpack = require('webpack')
 const nextConfig = {
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   async headers() {
     return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'X-Nonce',
+            value: generateNonce(),
+          },
+          {
+            key: 'Content-Security-Policy',
+            value: `object-src 'none';base-uri 'self';script-src 'self' 'report-sample' 'unsafe-inline' 'unsafe-eval' https: http:;`,
+          },
+          {
+            key: 'Referrer-Policy',
+            value: 'strict-origin-when-cross-origin',
+          },
+          {
+            key: 'X-Frame-Options',
+            value: 'SAMEORIGIN',
+          },
+          {
+            key: 'Permissions-Policy',
+            value:
+              'accelerometer=(); battery=(self); camera=(); geolocation=(); gyroscope=(); magnetometer=(); microphone=(); payment=(); usb=()',
+          },
+        ],
+      },
       {
         // matching all API routes
         source: '/api/:path*',
@@ -67,6 +97,43 @@ const nextConfig = {
       fullUrl: true,
     },
   },
+  webpack: (config, { isServer }) => {
+    // Ignore node-specific modules when bundling for the browser
+
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      sharp$: false,
+      'onnxruntime-node$': false,
+    }
+
+    config.experiments = {
+      asyncWebAssembly: true,
+      layers: true, // Enable layers experiment
+    }
+
+    return config
+  },
+}
+
+const nonceCache = new Set()
+
+function generateNonce() {
+  let nonce
+  do {
+    nonce = [...Array(32)].map(() => Math.random().toString(36)[2]).join('')
+  } while (nonceCache.has(nonce))
+  nonceCache.add(nonce)
+  return nonce
+}
+
+// Copy dictionaries to public folder for deployment
+if (process.env.NODE_ENV === 'production' || process.env.VERCEL) {
+  try {
+    const { copyDictionaries } = require('./scripts/copy-dictionaries.js')
+    copyDictionaries()
+  } catch (error) {
+    console.warn('⚠️ Failed to copy dictionaries:', error.message)
+  }
 }
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')()

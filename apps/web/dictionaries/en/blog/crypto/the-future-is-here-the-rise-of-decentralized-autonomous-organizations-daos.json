@@ -2,17 +2,21 @@
   "relatedBlogs": [
     {
       "id": "180563939",
-      "topics": ["DAO", "Tokenomics", "Commentary"],
+      "topics": [
+        "DAO",
+        "Tokenomics",
+        "Commentary"
+      ],
       "title": "A Framework for Blockchain Governance Design: The Prysm Group Wheel [Commentary]",
       "slug": "a-framework-for-blockchain-governance-design-the-prysm-group-wheel-commentary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:19:19+01:00",
       "description": "Navigate the complexities of blockchain governance with the Prysm Group Wheel. Your roadmap to effective blockchain governance design.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+        "url": "/images/blog/cbc11-img1.webp"
       },
       "seo": {
         "description": "Navigate the complexities of blockchain governance with the Prysm Group Wheel. Your roadmap to effective blockchain governance design.",
@@ -23,23 +27,26 @@
           "height": 1383,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1690861154-cbc11-img1.webp"
+          "url": "/images/blog/cbc11-img1.webp"
         }
       }
     },
     {
       "id": "180563903",
-      "topics": ["DAO", "Summary"],
+      "topics": [
+        "DAO",
+        "Summary"
+      ],
       "title": "What is Voting For? [Summary]",
       "slug": "what-is-voting-for-summary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:10:58+01:00",
       "description": "Unravel the essence of voting within decentralized systems. Gain insights into the true purpose and power of voting in blockchain.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+        "url": "/images/blog/cbc6-img1.png"
       },
       "seo": {
         "description": "Unravel the essence of voting within decentralized systems. Gain insights into the true purpose and power of voting in blockchain.",
@@ -50,23 +57,26 @@
           "height": 862,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+          "url": "/images/blog/cbc6-img1.png"
         }
       }
     },
     {
       "id": "180563908",
-      "topics": ["DAO", "Summary"],
+      "topics": [
+        "DAO",
+        "Summary"
+      ],
       "title": "What is Governance For? [Summary]",
       "slug": "what-is-governance-for-summary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:10:45+01:00",
       "description": "Explore the role and importance of governance in blockchain systems. Understand how governance drives decentralization and growth.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
+        "url": "/images/blog/cbc7-img1.png"
       },
       "seo": {
         "description": "Explore the role and importance of governance in blockchain systems. Understand how governance drives decentralization and growth.\n",
@@ -77,23 +87,27 @@
           "height": 862,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
+          "url": "/images/blog/cbc7-img1.png"
         }
       }
     },
     {
       "id": "167184977",
-      "topics": ["Tokenomics", "DAO", "Fundraising"],
+      "topics": [
+        "Tokenomics",
+        "DAO",
+        "Fundraising"
+      ],
       "title": "Revolutionizing the Equity Model: How Tokenomics is Disrupting the Startup World",
       "slug": "revolutionizing-the-equity-model-how-tokenomics-is-disrupting-the-startup-world",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:02:51+01:00",
       "description": "Unlock the future of startups with tokenomics! Explore how this innovative concept is reshaping the equity model and revolutionizing the startup landscape.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
+        "url": "/images/blog/tb2-img1.png"
       },
       "seo": {
         "description": "Explore how this innovative concept is reshaping the equity model and revolutionizing the startup landscape.",
@@ -104,23 +118,26 @@
           "height": 994,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1687395688-tb2-img1.png"
+          "url": "/images/blog/tb2-img1.png"
         }
       }
     },
     {
       "id": "166984334",
-      "topics": ["DAO", "Legal"],
+      "topics": [
+        "DAO",
+        "Legal"
+      ],
       "title": "Decentralized Autonomous Organizations (DAOs): Basic Legal Structures for Business and Non-Profit Purposes",
       "slug": "decentralized-autonomous-organizations-daos-basic-legal-structures-for-business-a",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T08:59:06+01:00",
       "description": "Discover the basic DAO legal structures for business and non-profit purposes. ",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1687384353-db2-img1.png"
+        "url": "/images/blog/db2-img1.png"
       },
       "seo": {
         "description": "Decentralized Autonomous Organizations (DAOs): Navigating Legal Structures for Business and Non-Profit Purposes",
@@ -131,23 +148,26 @@
           "height": 994,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1687384353-db2-img1.png"
+          "url": "/images/blog/db2-img1.png"
         }
       }
     },
     {
       "id": "167101094",
-      "topics": ["Getting Started", "Tokenomics"],
+      "topics": [
+        "Getting Started",
+        "Tokenomics"
+      ],
       "title": "Tokenomics 101: Unleashing the Power of Cryptocurrency!",
       "slug": "tokenomics-101-unleashing-the-power-of-cryptocurrency",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T08:57:58+01:00",
       "description": "Discover the power of cryptocurrency through Tokenomics 101 - an in-depth guide to understanding the economics behind digital assets.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1687391799-tb1-img1.png"
+        "url": "/images/blog/tb1-img1.png"
       },
       "seo": {
         "description": "an in-depth guide to understanding the economics behind digital assets.",
@@ -158,23 +178,26 @@
           "height": 994,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1687391799-tb1-img1.png"
+          "url": "/images/blog/tb1-img1.png"
         }
       }
     },
     {
       "id": "165744328",
-      "topics": ["Getting Started", "How-To"],
+      "topics": [
+        "Getting Started",
+        "How-To"
+      ],
       "title": "Stay Ahead of the Game: A Guide to Staying Informed and Educated in the World of Cryptocurrency",
       "slug": "stay-ahead-of-the-game-a-guide-to-staying-informed-and-educated-in-the-world-of-c",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T08:52:39+01:00",
       "description": "Stay informed and educated in the dynamic world of cryptocurrency. Explore our comprehensive guide to stay ahead of the game and navigate the ever-evolving digital landscape.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1687049473-cb20-img1.png"
+        "url": "/images/blog/cb20-img1.png"
       },
       "seo": {
         "description": "Stay informed and educated in the dynamic world of cryptocurrency. ",
@@ -185,23 +208,26 @@
           "height": 1024,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1687049473-cb20-img1.png"
+          "url": "/images/blog/cb20-img1.png"
         }
       }
     },
     {
       "id": "165742753",
-      "topics": ["Getting Started", "Payments"],
+      "topics": [
+        "Getting Started",
+        "Payments"
+      ],
       "title": "Stablecoins: The Future of Cryptocurrency Transactions and Payments",
       "slug": "stablecoins-the-future-of-cryptocurrency-transactions-and-payments",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T08:49:51+01:00",
       "description": "Discover the future of cryptocurrency transactions and payments with stablecoins. Explore the stability and potential of these innovative digital assets in our insightful blog post.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1687049009-cb19-img3edited.png"
+        "url": "/images/blog/cb19-img3edited.png"
       },
       "seo": {
         "description": "Discover the future of cryptocurrency transactions and payments with stablecoins. ",
@@ -212,23 +238,26 @@
           "height": 1024,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1687049009-cb19-img3edited.png"
+          "url": "/images/blog/cb19-img3edited.png"
         }
       }
     },
     {
       "id": "165685913",
-      "topics": ["DeFi", "Getting Started"],
+      "topics": [
+        "DeFi",
+        "Getting Started"
+      ],
       "title": "Decentralize Your Finance: An Introduction to the World of DeFi",
       "slug": "decentralize-your-finance-an-introduction-to-the-world-of-defi",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T08:47:03+01:00",
       "description": "Unlock the power of decentralized finance (DeFi). Explore the innovative world of blockchain-based financial solutions in our comprehensive blog post.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1687047143-cb18-img1.png"
+        "url": "/images/blog/cb18-img1.png"
       },
       "seo": {
         "description": "Unlock the power of decentralized finance (DeFi). ",
@@ -239,23 +268,26 @@
           "height": 1024,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1687047143-cb18-img1.png"
+          "url": "/images/blog/cb18-img1.png"
         }
       }
     },
     {
       "id": "165685908",
-      "topics": ["Getting Started", "Fundraising"],
+      "topics": [
+        "Getting Started",
+        "Fundraising"
+      ],
       "title": "Disrupt the Status Quo: How Cryptocurrency is Revolutionizing Fundraising and Crowdfunding",
       "slug": "disrupt-the-status-quo-how-cryptocurrency-is-revolutionizing-fundraising-and-crow",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T08:33:36+01:00",
       "description": "Explore the groundbreaking potential of cryptocurrency in fundraising and crowdfunding. Discover how digital currencies are disrupting the traditional methods in our insightful blog post.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1687046260-cb17-img1edited.png"
+        "url": "/images/blog/cb17-img1edited.png"
       },
       "seo": {
         "description": "Explore the groundbreaking potential of cryptocurrency in fundraising and crowdfunding. ",
@@ -266,24 +298,27 @@
           "height": 1024,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1687046260-cb17-img1edited.png"
+          "url": "/images/blog/cb17-img1edited.png"
         }
       }
     }
   ],
   "blogContent": {
     "id": "166981063",
-    "topics": ["Getting Started", "DAO"],
+    "topics": [
+      "Getting Started",
+      "DAO"
+    ],
     "title": "The Future is Here: The Rise of Decentralized Autonomous Organizations (DAOs)",
     "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
     "authorName": "Crypto Clairity",
     "authorPicture": {
-      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      "url": "/images/blog/cryptoclaraty5.png"
     },
     "_publishedAt": "2023-10-05T08:57:02+01:00",
     "description": "Explore the rise of Decentralized Autonomous Organizations (DAOs) in our guide. Understand the future of business and the opportunities for startups.",
     "thumbnail": {
-      "url": "https://www.datocms-assets.com/101962/1687381524-db1-img1.png"
+      "url": "/images/blog/db1-img1.png"
     },
     "contentBlock": [
       {
@@ -344,7 +379,9 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": ["emphasis"],
+                      "marks": [
+                        "emphasis"
+                      ],
                       "value": "Decentralization"
                     }
                   ]
@@ -363,7 +400,9 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": ["emphasis"],
+                      "marks": [
+                        "emphasis"
+                      ],
                       "value": "Transparency"
                     }
                   ]
@@ -382,7 +421,9 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": ["emphasis"],
+                      "marks": [
+                        "emphasis"
+                      ],
                       "value": "Efficiency"
                     }
                   ]
@@ -401,7 +442,9 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": ["emphasis"],
+                      "marks": [
+                        "emphasis"
+                      ],
                       "value": "Inclusivity"
                     }
                   ]
@@ -427,7 +470,7 @@
             "filename": "db1-img1.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1687381524-db1-img1.png"
+            "url": "/images/blog/db1-img1.png"
           }
         ]
       },
@@ -534,7 +577,7 @@
             "filename": "db1-img3.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1687382523-db1-img3.png"
+            "url": "/images/blog/db1-img3.png"
           }
         ]
       },
@@ -678,7 +721,7 @@
             "filename": "db1-img4.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1687382738-db1-img4.png"
+            "url": "/images/blog/db1-img4.png"
           }
         ]
       },
@@ -738,7 +781,7 @@
             "filename": "db1-img5.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1687382972-db1-img5.png"
+            "url": "/images/blog/db1-img5.png"
           }
         ]
       }
@@ -750,5 +793,9 @@
       "image": null
     }
   },
-  "topics": ["Getting Started", "DAO"]
+  "topics": [
+    "Getting Started",
+    "DAO"
+  ],
+  "shortLink": "https://bitlauncher.ai/en/blog/crypto/the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos"
 }

@@ -4,13 +4,12 @@ import { type ActionResult, failure, success } from '@/lib/actions'
 import { createSupabaseServerClient } from '@/services/supabase'
 import { type Tables, presaleDepositInsertSchema } from '@repo/supabase'
 import { chainTypeSchema } from '@repo/supabase'
-import { omit } from 'lodash'
 import { createSafeActionClient } from 'next-safe-action'
 import { z } from 'zod'
 
 const extendedPresaleDepositInsertSchema = presaleDepositInsertSchema.extend({
   chain_type: chainTypeSchema,
-  chainId: z.number(),
+  chainId: z.string(),
 })
 
 //Stores a deposit intent in the database, creating a pending transaction and a deposit record.
@@ -21,6 +20,7 @@ export const savePresaleDepositIntent = createSafeActionClient()
       parsedInput: transfer,
     }): Promise<ActionResult<Tables<'presale_deposit'>>> => {
       try {
+        console.log('savePresaleDepositIntent', transfer)
         const supabase = await createSupabaseServerClient()
 
         const transaction = await supabase
@@ -34,11 +34,22 @@ export const savePresaleDepositIntent = createSafeActionClient()
           })
           .select()
 
-        if (transaction.error) return failure('DB_OP_FAILURE', transaction.error)
+        if (transaction.error)
+          return failure('DB_OP_FAILURE', transaction.error)
 
         const deposit = await supabase
           .from('presale_deposit')
-          .insert(omit(transfer, ['chain_type', 'chainId']))
+          .insert({
+            account: transfer.account,
+            address: transfer.address,
+            amount: transfer.amount,
+            deposit_hash: transfer.deposit_hash,
+            issuance_hash: transfer.issuance_hash,
+            presale_id: transfer.presale_id,
+            project_id: transfer.project_id,
+            state: transfer.state,
+            created_at: transfer.created_at,
+          })
           .select()
 
         if (deposit.error) return failure('DB_OP_FAILURE', deposit.error)

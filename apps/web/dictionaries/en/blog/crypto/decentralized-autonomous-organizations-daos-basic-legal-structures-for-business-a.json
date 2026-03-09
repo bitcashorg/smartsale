@@ -2,17 +2,20 @@
   "relatedBlogs": [
     {
       "id": "180563903",
-      "topics": ["DAO", "Summary"],
+      "topics": [
+        "DAO",
+        "Summary"
+      ],
       "title": "What is Voting For? [Summary]",
       "slug": "what-is-voting-for-summary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:10:58+01:00",
       "description": "Unravel the essence of voting within decentralized systems. Gain insights into the true purpose and power of voting in blockchain.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+        "url": "/images/blog/cbc6-img1.png"
       },
       "seo": {
         "description": "Unravel the essence of voting within decentralized systems. Gain insights into the true purpose and power of voting in blockchain.",
@@ -23,23 +26,26 @@
           "height": 862,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1690859305-cbc6-img1.png"
+          "url": "/images/blog/cbc6-img1.png"
         }
       }
     },
     {
       "id": "180563908",
-      "topics": ["DAO", "Summary"],
+      "topics": [
+        "DAO",
+        "Summary"
+      ],
       "title": "What is Governance For? [Summary]",
       "slug": "what-is-governance-for-summary",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T09:10:45+01:00",
       "description": "Explore the role and importance of governance in blockchain systems. Understand how governance drives decentralization and growth.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
+        "url": "/images/blog/cbc7-img1.png"
       },
       "seo": {
         "description": "Explore the role and importance of governance in blockchain systems. Understand how governance drives decentralization and growth.\n",
@@ -50,23 +56,26 @@
           "height": 862,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1690859755-cbc7-img1.png"
+          "url": "/images/blog/cbc7-img1.png"
         }
       }
     },
     {
       "id": "166981063",
-      "topics": ["Getting Started", "DAO"],
+      "topics": [
+        "Getting Started",
+        "DAO"
+      ],
       "title": "The Future is Here: The Rise of Decentralized Autonomous Organizations (DAOs)",
       "slug": "the-future-is-here-the-rise-of-decentralized-autonomous-organizations-daos",
       "authorName": "Crypto Clairity",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+        "url": "/images/blog/cryptoclaraty5.png"
       },
       "_publishedAt": "2023-10-05T08:57:02+01:00",
       "description": "Explore the rise of Decentralized Autonomous Organizations (DAOs) in our guide. Understand the future of business and the opportunities for startups.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1687381524-db1-img1.png"
+        "url": "/images/blog/db1-img1.png"
       },
       "seo": {
         "description": "Explore the rise of Decentralized Autonomous Organizations (DAOs) in our guide. Understand the future of business and the opportunities for startups.",
@@ -78,17 +87,20 @@
   ],
   "blogContent": {
     "id": "166984334",
-    "topics": ["DAO", "Legal"],
+    "topics": [
+      "DAO",
+      "Legal"
+    ],
     "title": "Decentralized Autonomous Organizations (DAOs): Basic Legal Structures for Business and Non-Profit Purposes",
     "slug": "decentralized-autonomous-organizations-daos-basic-legal-structures-for-business-a",
     "authorName": "Crypto Clairity",
     "authorPicture": {
-      "url": "https://www.datocms-assets.com/101962/1694589819-cryptoclaraty5.png"
+      "url": "/images/blog/cryptoclaraty5.png"
     },
     "_publishedAt": "2023-10-05T08:59:06+01:00",
     "description": "Discover the basic DAO legal structures for business and non-profit purposes. ",
     "thumbnail": {
-      "url": "https://www.datocms-assets.com/101962/1687384353-db2-img1.png"
+      "url": "/images/blog/db2-img1.png"
     },
     "contentBlock": [
       {
@@ -113,7 +125,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "Decentralized Autonomous Organizations (DAOs) are innovative forms of decentralized, digital organizations that are enabled by blockchain technology. In the world of crypto and blockchain, DAOs have captured the imagination of entrepreneurs, contributors, and legal experts alike. However, when it comes to viewing DAOs legally, it's important to understand that they can be viewed as either a large general partnership or an unincorporated non-profit association."
+                      "value": "Decentralized Autonomous Organizations (DAOs) are innovative forms of decentralized, digital organizations that are enabled by blockchain technology. In the world of crypto and blockchain, DAOs have captured the imagination of entrepreneurs, investors, and legal experts alike. However, when it comes to viewing DAOs legally, it's important to understand that they can be viewed as either a large general partnership or an unincorporated non-profit association."
                     }
                   ]
                 }
@@ -129,7 +141,7 @@
             "filename": "db2-img1.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1687384353-db2-img1.png"
+            "url": "/images/blog/db2-img1.png"
           }
         ]
       },
@@ -146,7 +158,9 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "General Partnerships"
                     }
                   ]
@@ -197,7 +211,9 @@
                   "children": [
                     {
                       "type": "span",
-                      "marks": ["strong"],
+                      "marks": [
+                        "strong"
+                      ],
                       "value": "Non-profit Associations"
                     }
                   ]
@@ -250,7 +266,7 @@
             "filename": "db2-img3.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1687384462-db2-img3.png"
+            "url": "/images/blog/db2-img3.png"
           }
         ]
       }
@@ -264,9 +280,13 @@
         "height": 994,
         "title": null,
         "alt": null,
-        "url": "https://www.datocms-assets.com/101962/1687384353-db2-img1.png"
+        "url": "/images/blog/db2-img1.png"
       }
     }
   },
-  "topics": ["DAO", "Legal"]
+  "topics": [
+    "DAO",
+    "Legal"
+  ],
+  "shortLink": "https://bitlauncher.ai/en/blog/crypto/decentralized-autonomous-organizations-daos-basic-legal-structures-for-business-a"
 }

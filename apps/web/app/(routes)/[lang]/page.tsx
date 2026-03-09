@@ -1,12 +1,7 @@
-import { BannerOne } from '@/components/_wip/banner-one'
-import { Categories } from '@/components/_wip/categories'
-import { FeatureOne } from '@/components/_wip/feature-one'
-import { FeatureThree } from '@/components/_wip/feature-three'
-import { FeatureTwo } from '@/components/_wip/feature-two'
 import { NewHomeHero } from '@/components/routes/home/hero/index'
+import { RecentArticles } from '@/components/routes/home/section/recent-articles'
 import { getDictionary } from '@/dictionaries'
 import type { Lang } from '@/dictionaries/locales'
-import { appConfig } from '@/lib/config'
 import { getProjects } from '@/lib/projects'
 import dynamic from 'next/dynamic'
 
@@ -25,17 +20,8 @@ export default async function IndexPage({ params: { lang } }: IndexPageProps) {
         <DynamicStepsSection lang={lang} dict={dict} id="steps" />
         <DynamicReferralSection />
         <DynamicLearnSection />
-        <DynamicRecentArticles lang={lang} />
+        {await RecentArticles({ lang })}
         <DynamicFAQ lang={lang} dict={dict} />
-        {appConfig.features.explorations ? (
-          <>
-            <Categories />
-            <BannerOne />
-            <FeatureOne />
-            <FeatureTwo />
-            <FeatureThree />
-          </>
-        ) : null}
       </div>
     </div>
   )
@@ -56,7 +42,10 @@ const DynamicUpcoming = dynamic(
 )
 
 const DynamicWhyChooseUs = dynamic(
-  () => import('@/components/routes/home/why-choose-us').then((mod) => mod.WhyChooseUs),
+  () =>
+    import('@/components/routes/home/why-choose-us').then(
+      (mod) => mod.WhyChooseUs,
+    ),
   { ssr: false },
 )
 
@@ -73,16 +62,11 @@ const DynamicLearnSection = dynamic(
   { ssr: false },
 )
 
-const DynamicRecentArticles = dynamic(
-  () =>
-    import('@/components/routes/home/section/recent-articles').then(
-      (mod) => mod.RecentArticles,
-    ),
-  { ssr: false },
-)
-
 const DynamicFAQ = dynamic(
-  () => import('@/components/routes/home/section/faq-section').then((mod) => mod.FAQ),
+  () =>
+    import('@/components/routes/home/section/faq-section').then(
+      (mod) => mod.FAQ,
+    ),
   { ssr: false },
 )
 

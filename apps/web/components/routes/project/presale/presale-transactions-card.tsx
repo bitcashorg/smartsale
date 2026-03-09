@@ -15,15 +15,20 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table'
+import { appConfig } from '@/lib/config'
 import { useSupabaseClient } from '@/services/supabase'
 import {
   type PresaleContribution,
   getPresaleContributions,
 } from '@/services/supabase/service'
-import { TestnetBLPL } from '@repo/auction'
-import { evmChains } from '@repo/chains'
+import { allChains, eosEvmMainnet, eosEvmTestnet } from '@repo/chains'
 import { formatAddress } from '@repo/utils'
 import { useEffect, useState } from 'react'
+
+const explorerUrl =
+  appConfig.env === 'prod'
+    ? eosEvmMainnet.blockExplorers?.default.url
+    : eosEvmTestnet.blockExplorers?.default.url
 
 export function PresaleTransactionsCard(params: {
   contributions: PresaleContribution[]
@@ -107,7 +112,7 @@ export function PresaleTransactionsCard(params: {
               ))
             ) : (
               <TableRow>
-                <TableCell colSpan={6} className="text-center">
+                <TableCell colSpan={7} className="text-center">
                   No transactions found
                 </TableCell>
               </TableRow>
@@ -119,21 +124,32 @@ export function PresaleTransactionsCard(params: {
   )
 }
 
-function TransactionRow({ contribution }: { contribution: PresaleContribution }) {
-  const chain = evmChains.find((chain) => chain.id === contribution.transaction.chain_id)
+function TransactionRow({
+  contribution,
+}: { contribution: PresaleContribution }) {
+  const chain = allChains.find(
+    (chain) =>
+      chain.id.toString() === contribution.transaction.chain_id.toString(),
+  )
+  const isEvm = chain?.chainType === 'evm'
   return (
     <TableRow>
       <TableCell>
-        <div className="font-medium">{formatAddress(contribution.address)}</div>
+        <div className="font-medium">
+          {isEvm ? formatAddress(contribution.address) : contribution.account}
+        </div>
       </TableCell>
 
       <TableCell>
         {contribution.amount !== null
-          ? (contribution.amount / 1000000).toFixed(6)
+          ? (contribution.amount / 1000000).toFixed(6).split('.')[0]
           : 'N/A'}
       </TableCell>
 
-      <TableCell> {contribution.transaction.final ? 'Finalized' : 'Pending'}</TableCell>
+      <TableCell>
+        {' '}
+        {contribution.transaction.final ? 'Finalized' : 'Pending'}
+      </TableCell>
 
       <TableCell>
         {chain?.blockExplorers?.default ? (
@@ -151,9 +167,9 @@ function TransactionRow({ contribution }: { contribution: PresaleContribution })
       </TableCell>
 
       <TableCell>
-        {TestnetBLPL.chain?.blockExplorers?.default && contribution.issuance_hash ? (
+        {explorerUrl && contribution.issuance_hash ? (
           <a
-            href={`${TestnetBLPL.chain.blockExplorers.default.url}/tx/${contribution.issuance_hash}`}
+            href={`${explorerUrl}/tx/${contribution.issuance_hash}`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 hover:underline"

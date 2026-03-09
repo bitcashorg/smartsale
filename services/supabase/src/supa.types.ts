@@ -27,7 +27,7 @@ export type Database = {
         }
         Relationships: []
       }
-      alchemy_events: {
+      alchemy_hooks: {
         Row: {
           id: string
           is_active: boolean
@@ -191,6 +191,66 @@ export type Database = {
         }
         Relationships: []
       }
+      document_sections: {
+        Row: {
+          content: string
+          document_id: number
+          embedding: string | null
+          id: number
+        }
+        Insert: {
+          content: string
+          document_id: number
+          embedding?: string | null
+          id?: never
+        }
+        Update: {
+          content?: string
+          document_id?: number
+          embedding?: string | null
+          id?: never
+        }
+        Relationships: [
+          {
+            foreignKeyName: 'document_sections_document_id_fkey'
+            columns: ['document_id']
+            isOneToOne: false
+            referencedRelation: 'documents'
+            referencedColumns: ['id']
+          },
+          {
+            foreignKeyName: 'document_sections_document_id_fkey'
+            columns: ['document_id']
+            isOneToOne: false
+            referencedRelation: 'documents_with_storage_path'
+            referencedColumns: ['id']
+          },
+        ]
+      }
+      documents: {
+        Row: {
+          created_at: string
+          created_by: string
+          id: number
+          name: string
+          storage_object_id: string
+        }
+        Insert: {
+          created_at?: string
+          created_by?: string
+          id?: never
+          name: string
+          storage_object_id: string
+        }
+        Update: {
+          created_at?: string
+          created_by?: string
+          id?: never
+          name?: string
+          storage_object_id?: string
+        }
+        Relationships: []
+      }
       esr: {
         Row: {
           account: string
@@ -233,7 +293,6 @@ export type Database = {
       presale: {
         Row: {
           account: string
-          address: string
           close_timestamptz: string | null
           contributors: number
           created_at: string
@@ -247,7 +306,6 @@ export type Database = {
         }
         Insert: {
           account: string
-          address: string
           close_timestamptz?: string | null
           contributors?: number
           created_at?: string
@@ -261,7 +319,6 @@ export type Database = {
         }
         Update: {
           account?: string
-          address?: string
           close_timestamptz?: string | null
           contributors?: number
           created_at?: string
@@ -279,6 +336,38 @@ export type Database = {
             columns: ['project_id']
             isOneToOne: false
             referencedRelation: 'project'
+            referencedColumns: ['id']
+          },
+        ]
+      }
+      presale_address: {
+        Row: {
+          chain_id: string
+          chain_type: Database['public']['Enums']['chain_type']
+          created_at: string
+          deposit_address: string
+          presale_id: number
+        }
+        Insert: {
+          chain_id: string
+          chain_type: Database['public']['Enums']['chain_type']
+          created_at?: string
+          deposit_address: string
+          presale_id: number
+        }
+        Update: {
+          chain_id?: string
+          chain_type?: Database['public']['Enums']['chain_type']
+          created_at?: string
+          deposit_address?: string
+          presale_id?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: 'presale_addresses_presale_id_fkey'
+            columns: ['presale_id']
+            isOneToOne: false
+            referencedRelation: 'presale'
             referencedColumns: ['id']
           },
         ]
@@ -419,7 +508,7 @@ export type Database = {
       }
       transaction: {
         Row: {
-          chain_id: number
+          chain_id: string
           chain_type: Database['public']['Enums']['chain_type']
           created_at: string
           final: boolean
@@ -427,7 +516,7 @@ export type Database = {
           trx_type: Database['public']['Enums']['trx_type']
         }
         Insert: {
-          chain_id: number
+          chain_id: string
           chain_type: Database['public']['Enums']['chain_type']
           created_at?: string
           final?: boolean
@@ -435,7 +524,7 @@ export type Database = {
           trx_type: Database['public']['Enums']['trx_type']
         }
         Update: {
-          chain_id?: number
+          chain_id?: string
           chain_type?: Database['public']['Enums']['chain_type']
           created_at?: string
           final?: boolean
@@ -478,14 +567,39 @@ export type Database = {
       }
     }
     Views: {
-      [_ in never]: never
+      documents_with_storage_path: {
+        Row: {
+          created_at: string | null
+          created_by: string | null
+          id: number | null
+          name: string | null
+          storage_object_id: string | null
+          storage_object_path: string | null
+        }
+        Relationships: []
+      }
     }
     Functions: {
-      [_ in never]: never
+      match_document_sections: {
+        Args: {
+          embedding: string
+          match_threshold: number
+        }
+        Returns: {
+          content: string
+          document_id: number
+          embedding: string | null
+          id: number
+        }[]
+      }
+      supabase_url: {
+        Args: Record<PropertyKey, never>
+        Returns: string
+      }
     }
     Enums: {
       chain_type: 'evm' | 'eos' | 'solana' | 'cosmos'
-      state: 'created' | 'processing' | 'processed'
+      state: 'created' | 'processing' | 'processed' | 'error'
       trx_type:
         | 'presale_deposit'
         | 'usdcred_deposit'
@@ -517,7 +631,8 @@ export type Tables<
     : never
   : PublicTableNameOrOptions extends keyof (PublicSchema['Tables'] &
         PublicSchema['Views'])
-    ? (PublicSchema['Tables'] & PublicSchema['Views'])[PublicTableNameOrOptions] extends {
+    ? (PublicSchema['Tables'] &
+        PublicSchema['Views'])[PublicTableNameOrOptions] extends {
         Row: infer R
       }
       ? R
@@ -577,4 +692,19 @@ export type Enums<
   ? Database[PublicEnumNameOrOptions['schema']]['Enums'][EnumName]
   : PublicEnumNameOrOptions extends keyof PublicSchema['Enums']
     ? PublicSchema['Enums'][PublicEnumNameOrOptions]
+    : never
+
+export type CompositeTypes<
+  PublicCompositeTypeNameOrOptions extends
+    | keyof PublicSchema['CompositeTypes']
+    | { schema: keyof Database },
+  CompositeTypeName extends PublicCompositeTypeNameOrOptions extends {
+    schema: keyof Database
+  }
+    ? keyof Database[PublicCompositeTypeNameOrOptions['schema']]['CompositeTypes']
+    : never = never,
+> = PublicCompositeTypeNameOrOptions extends { schema: keyof Database }
+  ? Database[PublicCompositeTypeNameOrOptions['schema']]['CompositeTypes'][CompositeTypeName]
+  : PublicCompositeTypeNameOrOptions extends keyof PublicSchema['CompositeTypes']
+    ? PublicSchema['CompositeTypes'][PublicCompositeTypeNameOrOptions]
     : never

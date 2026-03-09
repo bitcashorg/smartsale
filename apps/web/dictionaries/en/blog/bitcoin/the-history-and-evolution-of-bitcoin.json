@@ -2,17 +2,20 @@
   "relatedBlogs": [
     {
       "id": "165365457",
-      "topics": ["Getting Started", " Payments"],
+      "topics": [
+        "Getting Started",
+        " Payments"
+      ],
       "title": "Streamlining Online Purchases with Bitcoin: A Guide to Using Bitcoin for Transactions",
       "slug": "streamlining-online-purchases-with-bitcoin-a-guide-to-using-bitcoin-for-transacti",
       "authorName": "Maxi Millie",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
+        "url": "/images/blog/maximillie1.png"
       },
       "_publishedAt": "2023-10-05T06:03:51+01:00",
       "description": "Unlock the convenience of online purchases with Bitcoin. Learn how to effortlessly use Bitcoin for secure and seamless transactions in our comprehensive guide.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1686858962-bb10-img1.png"
+        "url": "/images/blog/bb10-img1.png"
       },
       "seo": {
         "description": "Learn how to effortlessly use Bitcoin for secure and seamless transactions in our comprehensive guide",
@@ -23,23 +26,27 @@
           "height": 1024,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1686858962-bb10-img1.png"
+          "url": "/images/blog/bb10-img1.png"
         }
       }
     },
     {
       "id": "165362142",
-      "topics": ["Getting Started", "Proof-of-Work", "Mining"],
+      "topics": [
+        "Getting Started",
+        "Proof-of-Work",
+        "Mining"
+      ],
       "title": "Unlocking the Power of Bitcoin Mining: An Introduction to Proof-of-Work Algorithms",
       "slug": "unlocking-the-power-of-bitcoin-mining-an-introduction-to-proof-of-work-algorithms",
       "authorName": "Maxi Millie",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
+        "url": "/images/blog/maximillie1.png"
       },
       "_publishedAt": "2023-10-05T05:55:09+01:00",
       "description": "Delve into the world of Bitcoin mining and the fascinating concept of proof-of-work algorithms. Explore the potential and rewards of this transformative technology.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1686858321-bb9-img0edited.png"
+        "url": "/images/blog/bb9-img0edited.png"
       },
       "seo": {
         "description": "Delve into the world of Bitcoin mining and the fascinating concept of proof-of-work algorithms. ",
@@ -50,23 +57,26 @@
           "height": 1024,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1686858321-bb9-img0edited.png"
+          "url": "/images/blog/bb9-img0edited.png"
         }
       }
     },
     {
       "id": "165340146",
-      "topics": ["Getting Started", "Proof-of-Work"],
+      "topics": [
+        "Getting Started",
+        "Proof-of-Work"
+      ],
       "title": "The Economic Security of Bitcoin: How Proof-of-Work Enables a Safe and Secure Network",
       "slug": "the-economic-security-of-bitcoin-how-proof-of-work-enables-a-safe-and-secure-netw",
       "authorName": "Maxi Millie",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
+        "url": "/images/blog/maximillie1.png"
       },
       "_publishedAt": "2023-10-05T05:53:43+01:00",
       "description": "Discover the economic security of Bitcoin and the power of proof-of-work. Explore how this innovative technology ensures a safe and secure network for the future.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1686856982-bb8-img1.png"
+        "url": "/images/blog/bb8-img1.png"
       },
       "seo": {
         "description": "Explore how this innovative technology ensures a safe and secure network for the future.",
@@ -77,23 +87,26 @@
           "height": 1024,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1686856982-bb8-img1.png"
+          "url": "/images/blog/bb8-img1.png"
         }
       }
     },
     {
       "id": "165340050",
-      "topics": ["Getting Started", "Legal"],
+      "topics": [
+        "Getting Started",
+        "Legal"
+      ],
       "title": "Navigating the Legal and Regulatory Landscape of Bitcoin: Understanding the Rules and Opportunities",
       "slug": "navigating-the-legal-and-regulatory-landscape-of-bitcoin-understanding-the-rules",
       "authorName": "Maxi Millie",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
+        "url": "/images/blog/maximillie1.png"
       },
       "_publishedAt": "2023-10-05T05:52:05+01:00",
       "description": "Stay informed and compliant with our comprehensive guide to the legal and regulatory landscape of Bitcoin. Navigate the complexities of cryptocurrency with confidence.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1686855768-bb7-img1edited.png"
+        "url": "/images/blog/bb7-img1edited.png"
       },
       "seo": {
         "description": "Stay informed and compliant with our comprehensive guide to the legal and regulatory landscape of Bitcoin. ",
@@ -104,23 +117,26 @@
           "height": 1024,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1686855768-bb7-img1edited.png"
+          "url": "/images/blog/bb7-img1edited.png"
         }
       }
     },
     {
       "id": "165337859",
-      "topics": ["Getting Started", "Security"],
+      "topics": [
+        "Getting Started",
+        "Security"
+      ],
       "title": "The Future of Bitcoin Storage: An Introduction to Bitcoin Wallets and Innovative Storage Solutions",
       "slug": "the-future-of-bitcoin-storage-an-introduction-to-bitcoin-wallets-and-innovative-s",
       "authorName": "Maxi Millie",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
+        "url": "/images/blog/maximillie1.png"
       },
       "_publishedAt": "2023-10-05T05:50:52+01:00",
       "description": "Explore the world of Bitcoin wallets and innovative storage solutions. Learn how to secure and manage your digital assets with our comprehensive introductory guide.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1686854653-bb6-img1.png"
+        "url": "/images/blog/bb6-img1.png"
       },
       "seo": {
         "description": "Learn how to secure and manage your digital assets with our comprehensive introductory guide.",
@@ -131,23 +147,25 @@
           "height": 1024,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1686854653-bb6-img1.png"
+          "url": "/images/blog/bb6-img1.png"
         }
       }
     },
     {
       "id": "165005184",
-      "topics": ["Getting Started"],
-      "title": "The Art of Researching and Evaluating Bitcoin Exchanges: A Guide for Contributors",
-      "slug": "the-art-of-researching-and-evaluating-bitcoin-exchanges-a-guide-for-contributors",
+      "topics": [
+        "Getting Started"
+      ],
+      "title": "The Art of Researching and Evaluating Bitcoin Exchanges: A Guide for Investors",
+      "slug": "the-art-of-researching-and-evaluating-bitcoin-exchanges-a-guide-for-investors",
       "authorName": "Maxi Millie",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
+        "url": "/images/blog/maximillie1.png"
       },
       "_publishedAt": "2023-10-05T05:50:29+01:00",
       "description": "Unlock the secrets of researching and evaluating Bitcoin exchanges. Discover essential tips and insights for confident investing.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1686794861-bb5-img1.png"
+        "url": "/images/blog/bb5-img1.png"
       },
       "seo": {
         "description": "Unlock the secrets of researching and evaluating Bitcoin exchanges. Discover essential tips and insights for confident investing.",
@@ -158,23 +176,26 @@
           "height": 1024,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1686794861-bb5-img1.png"
+          "url": "/images/blog/bb5-img1.png"
         }
       }
     },
     {
       "id": "165004875",
-      "topics": ["Getting Started", "Security"],
+      "topics": [
+        "Getting Started",
+        "Security"
+      ],
       "title": "How to Keep Your Bitcoins Safe in the Digital Age",
       "slug": "how-to-keep-your-bitcoins-safe-in-the-digital-age",
       "authorName": "Maxi Millie",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
+        "url": "/images/blog/maximillie1.png"
       },
       "_publishedAt": "2023-10-05T05:28:36+01:00",
       "description": "Safeguard your Bitcoins in the digital era with our expert tips and strategies. Learn essential techniques to protect your valuable digital assets.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1686791711-bb3-img1.png"
+        "url": "/images/blog/bb3-img1.png"
       },
       "seo": {
         "description": "Safeguard your Bitcoins in the digital era with our expert tips and strategies. Learn essential techniques to protect your valuable digital assets.",
@@ -185,23 +206,26 @@
           "height": 1024,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1686791711-bb3-img1.png"
+          "url": "/images/blog/bb3-img1.png"
         }
       }
     },
     {
       "id": "165005107",
-      "topics": ["Getting Started", "Exchange"],
+      "topics": [
+        "Getting Started",
+        "Exchange"
+      ],
       "title": "The Simplified Guide to Buying and Selling Bitcoins",
       "slug": "the-simplified-guide-to-buying-and-selling-bitcoins",
       "authorName": "Maxi Millie",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
+        "url": "/images/blog/maximillie1.png"
       },
       "_publishedAt": "2023-10-05T05:26:26+01:00",
       "description": "Master the art of buying and selling Bitcoin with our simplified guide. Learn step-by-step strategies and expert tips.",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1686793200-bb4-img1.png"
+        "url": "/images/blog/bb4-img1.png"
       },
       "seo": {
         "description": "Master the art of buying and selling Bitcoin with our simplified guide. Learn step-by-step strategies and expert tips.",
@@ -212,23 +236,25 @@
           "height": 1024,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1686793200-bb4-img1.png"
+          "url": "/images/blog/bb4-img1.png"
         }
       }
     },
     {
       "id": "164904960",
-      "topics": ["Getting Started"],
+      "topics": [
+        "Getting Started"
+      ],
       "title": "Think Differently About Bitcoin: The Future of Decentralized Currency",
       "slug": "think-differently-about-bitcoin-the-future-of-decentralized-currency",
       "authorName": "Maxi Millie",
       "authorPicture": {
-        "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
+        "url": "/images/blog/maximillie1.png"
       },
       "_publishedAt": "2023-10-05T04:44:43+01:00",
       "description": "Discover how to think differently about Bitcoin and its revolutionary potential with our captivating blog post. Explore Don't miss out!",
       "thumbnail": {
-        "url": "https://www.datocms-assets.com/101962/1686760978-bb1-img1.png"
+        "url": "/images/blog/bb1-img1.png"
       },
       "seo": {
         "description": "Discover how to think differently about Bitcoin and its revolutionary potential with our captivating blog post. Explore Don't miss out!",
@@ -239,24 +265,27 @@
           "height": 1024,
           "title": null,
           "alt": null,
-          "url": "https://www.datocms-assets.com/101962/1686760978-bb1-img1.png"
+          "url": "/images/blog/bb1-img1.png"
         }
       }
     }
   ],
   "blogContent": {
     "id": "164973196",
-    "topics": ["Getting Started", "History"],
+    "topics": [
+      "Getting Started",
+      "History"
+    ],
     "title": "The History and Evolution of Bitcoin",
     "slug": "the-history-and-evolution-of-bitcoin",
     "authorName": "Maxi Millie",
     "authorPicture": {
-      "url": "https://www.datocms-assets.com/101962/1694419898-maximillie1.png"
+      "url": "/images/blog/maximillie1.png"
     },
     "_publishedAt": "2023-10-05T05:38:06+01:00",
     "description": "Trace the captivating journey of Bitcoin's history and evolution. Uncover the origins, milestones, and transformative impact of this groundbreaking technology.",
     "thumbnail": {
-      "url": "https://www.datocms-assets.com/101962/1686789411-bb2-img1edited.png"
+      "url": "/images/blog/bb2-img1edited.png"
     },
     "contentBlock": [
       {
@@ -324,7 +353,7 @@
             "filename": "bb2-img1edited.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1686789411-bb2-img1edited.png"
+            "url": "/images/blog/bb2-img1edited.png"
           }
         ]
       },
@@ -359,7 +388,7 @@
                   "children": [
                     {
                       "type": "span",
-                      "value": "As the value of Bitcoin continued to rise, it attracted the attention of contributors and entrepreneurs, who saw the potential for it to disrupt traditional financial systems. In 2011, the first Bitcoin ATM was installed in Vancouver, Canada, further increasing the accessibility of the technology."
+                      "value": "As the value of Bitcoin continued to rise, it attracted the attention of investors and entrepreneurs, who saw the potential for it to disrupt traditional financial systems. In 2011, the first Bitcoin ATM was installed in Vancouver, Canada, further increasing the accessibility of the technology."
                     }
                   ]
                 },
@@ -384,7 +413,7 @@
             "filename": "bb2-img2edited.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1686789668-bb2-img2edited.png"
+            "url": "/images/blog/bb2-img2edited.png"
           }
         ]
       },
@@ -444,7 +473,7 @@
             "filename": "bb2-img3edited.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1686790123-bb2-img3edited.png"
+            "url": "/images/blog/bb2-img3edited.png"
           }
         ]
       },
@@ -495,7 +524,7 @@
             "filename": "bb2-img5.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1686790244-bb2-img5.png"
+            "url": "/images/blog/bb2-img5.png"
           }
         ]
       },
@@ -546,7 +575,7 @@
             "filename": "bb2-img4.png",
             "format": "png",
             "alt": null,
-            "url": "https://www.datocms-assets.com/101962/1686790297-bb2-img4.png"
+            "url": "/images/blog/bb2-img4.png"
           }
         ]
       }
@@ -560,9 +589,13 @@
         "height": 1024,
         "title": null,
         "alt": null,
-        "url": "https://www.datocms-assets.com/101962/1686789411-bb2-img1edited.png"
+        "url": "/images/blog/bb2-img1edited.png"
       }
     }
   },
-  "topics": ["Getting Started", "History"]
+  "topics": [
+    "Getting Started",
+    "History"
+  ],
+  "shortLink": "https://bitlauncher.ai/en/blog/bitcoin/the-history-and-evolution-of-bitcoin"
 }
